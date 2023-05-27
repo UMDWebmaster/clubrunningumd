@@ -23,6 +23,8 @@ function App() {
             <head>
                 <meta charset="UTF-8"/>
                 <meta name="viewport" content="width=device-width"/>
+                <meta name="keywords" content="maryland,umd,terp runners, terps, club, running, collegiate, track, field, cross country, recwell, university, college, newsletter, weekly, email, nirca" />
+
 
             </head>
             <Header />
