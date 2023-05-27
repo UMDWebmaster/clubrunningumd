@@ -1,0 +1,19 @@
+.App {
+    
+}
+
+
+body {
+    min-width: 1000px;
+    max-width: 6000px;
+    background: linear-gradient(100deg, #bfbfbf, #f2f2f2);
+    background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+

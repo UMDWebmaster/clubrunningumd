@@ -1,0 +1,114 @@
+/* Races.css */
+body {
+    margin-top: 30px;
+}
+
+/* Races page container */
+.page-container.races-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+    .teamPic-container {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    z-index: -1;
+}
+
+.teamPic {
+    width: 55vw;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Wrapper */
+.race-table-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+}
+
+.records {
+    margin-bottom: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+/* Table */
+table.races {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+
+
+    table.races th {
+        background-color: #790c0c;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+
+    table.races td {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+        table.races td a {
+            color: blue;
+            text-decoration: none;
+        }
+
+            table.races td a:hover {
+                text-decoration: underline;
+            }
+
+    .divider {
+        margin-bottom: 50px;
+    }
+
+/* Note styles */
+p strong {
+    color: #333;
+    font-weight: bold;
+    margin-top: 30px;
+    line-height: 2;
+}
+
+p {
+    color: #333;
+    line-height: 2.25;
+}
+
+
+.tabs li a:active{
+    background-color: none;
+}
+
+/* Styles for small mobile devices (up to 479px) */
+@media only screen and (max-width: 479px) {
+    .teamPic-container{
+        width: 250vw;
+    }
+
+    table.races{
+        width: 200vw;
+        margin-left: 40px;
+    }
+
+   
+}
+

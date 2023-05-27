@@ -1,0 +1,82 @@
+.App-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #ffffff;
+}
+
+.tabs ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background: linear-gradient(180deg, #000000, #520505);
+	font-size: 18px;
+	overflow: hidden;
+}
+
+.tabs li {
+	float: right;
+	width: 110px;
+}
+
+.tabs .home {
+	float: left;
+	width: 450px;
+}
+
+	.tabs .home a {
+		color: #c20101;
+		font-weight: bold;
+		font-size: 19px;
+		user-select: none;
+	}
+
+		.tabs .home a:hover {
+			background-color: transparent;
+		}
+
+.tabs li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+	.tabs li a:hover {
+		background-color: red;
+	}
+
+.tabs li .dropdown li.active a {
+	background-color: red;
+}
+
+
+ul li ul.dropdown {
+	width: 110px;
+	background-color: black;
+	position: absolute;
+	z-index: 999;
+	display: none;
+}
+
+ul li a:hover {
+	background-color: red;
+}
+
+ul li:hover ul.dropdown {
+	display: block;
+}
+
+@media only screen and (max-width: 479px) {
+	.App-header {
+		width: 250vw;
+	}
+
+	body {
+		background-repeat: no-repeat;
+	}
+}

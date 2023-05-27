@@ -1,0 +1,97 @@
+/* About.css */
+body {
+    background-color: #e8e8e8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-us-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 80px; /* Adjust the value as needed */
+}
+
+.about-us-card {
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    padding: 16px;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+    .about-us-card:last-child {
+        margin-bottom: 0;
+    }
+
+.about-us-card2 {
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    padding: 16px;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order of flex items */
+}
+
+    .about-us-card2 .image {
+        margin-top: 10px;
+        margin-left: 90px; /* Adjust the margin to create space between image and content */
+        margin-right: -90px; /* Adjust the negative margin to offset the content spacing */
+        border-radius: 20px;
+    }
+
+    .about-us-card2:last-child .image {
+        margin-top: 40px;
+        margin-left: 90px; /* Adjust the margin to create space between image and content */
+        margin-right: -80px; /* Adjust the negative margin to offset the content spacing */
+    }
+
+    .about-us-card2 .content {
+        margin-left: 10px; /* Adjust the margin to create space between image and content */
+        margin-right: -60px; /* Adjust the negative margin to offset the content spacing */
+        text-align: center;
+    }
+
+.image {
+    flex: 0 0 auto;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.maxImage {
+    margin-top: 40px;
+}
+
+.about-us-image {
+    height: 60%;
+    width: 80%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2;
+    margin-left: -70px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 10px; /* Adjust the margin-bottom to decrease space */
+}
+
+.h2-title {
+    margin-top: 20px; /* Adjust the value as needed */
+}
+
+.text-container {
+    flex: 1;
+    text-align: left; /* Align text to the left within the container */
+}

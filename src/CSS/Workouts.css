@@ -1,0 +1,83 @@
+/* Races.css */
+body {
+    margin-top: 30px;
+}
+
+/* Races page container */
+.page-container.workouts-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Wrapper */
+.race-table-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+}
+
+.records {
+    margin-bottom: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+    .container h3 {
+        font-size: 25px;
+    }
+
+/* Table */
+table.workoutPlans {
+    width: 120%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: -90px;
+}
+
+    table.workoutPlans th {
+        background-color: #790c0c;
+        color: #fff;
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    table.workoutPlans td {
+        padding: 10px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+    }
+
+        table.workoutPlans td a {
+            color: blue;
+            text-decoration: none;
+        }
+
+            table.workoutPlans td a:hover {
+                text-decoration: underline;
+            }
+
+.divider {
+    margin-bottom: 50px;
+}
+
+/* Note styles */
+p strong {
+    color: #333;
+    font-weight: bold;
+    margin-top: 30px;
+    line-height: 2;
+}
+
+p {
+    color: #333;
+    line-height: 2.25;
+}
+
+
