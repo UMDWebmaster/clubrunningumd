@@ -1,12 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
     "\\src",
     "\\src\\components",
     "\\src\\CSS",
     "\\src\\images",
-    "\\src\\pages",
-    "\\src\\Pictures"
+    "\\src\\pages"
   ],
   "PreviewInSolutionExplorer": false
 }
