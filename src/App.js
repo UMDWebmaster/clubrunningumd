@@ -1,5 +1,4 @@
 ﻿import React from 'react';
-import { Helmet } from 'react-helmet';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -20,16 +19,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
     return (
-        <div className="App">
-            <Helmet>
-                <meta name="keywords" content="umd, club, running, terplink, run, runners, athlete, student-athlete, maryland, university, University of Maryland, college park" />
-            </Helmet>
         <Router>
-            <head>
-                <meta charset="UTF-8"/>
-                <meta name="viewport" content="width=device-width"/>
-
-            </head>
+            
             <Header />
 
             <Routes>
@@ -47,8 +38,7 @@ function App() {
             </Routes>
 
             <Footer />
-            </Router>
-        </div>
+        </Router>
     );
 }
 
