@@ -75,7 +75,7 @@ function Races() {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>3/31/2023-4/1/2023</td>
+                                    <td>4/1/2023</td>
                                     <td>*Towson Invitational</td>
                                     <td>Towson, MD</td>
                                     <td>
@@ -86,7 +86,7 @@ function Races() {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>4/15/2023-4/16/2023</td>
+                                    <td>4/16/2023</td>
                                     <td>NIRCA Track and Field Nationals</td>
                                     <td>Olivet, MI</td>
                                     <td>

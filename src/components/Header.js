@@ -49,8 +49,14 @@ function Header() {
                             </ul>
 
                         </li>
-                        <li><a href="/about">About</a></li>
-                        
+                        <li>
+                            <a href="/about" class="dropdown-toggle">About</a>
+                            <ul className="dropdown">
+                                <li><a href="/about">Officers</a></li>
+                                <li><a href="/JoinUs">Join Us</a></li>
+                            </ul>
+
+                        </li>
 
 
                     </ul>

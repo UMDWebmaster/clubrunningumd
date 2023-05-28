@@ -17,13 +17,11 @@ function Home() {
 
 
                 <div className="container">
+                    <h1>About Us</h1>
                     <p>
-                        Maryland Club Running is a member of the{' '}
-                        <a href="clubrunning.org">National Intercollegiate Running Club Association</a> (NIRCA).
-                        NIRCA hosts races throughout the Fall Cross Country, Winter Indoor, and Spring Outdoor
-                        Track seasons. Our club participates in both NIRCA hosted meets and open college meets.
-                        During the fall, we primarily compete in NIRCA or club meets, while in the spring, our
-                        focus shifts to open college meets
+                        Please sign up to join us Mon-Fri at the School of Public Health (SPH) East Side (closest to Xfinity Center) under the overhang starting January 30th. Practices now start at 5pm!
+
+                        Our mission is to support and encourage a healthy approach to running and training for all members of the University of Maryland. We provide an atmosphere in which runners of all abilities can meet each other, share running knowledge and simply enjoy running together as well as compete against other club college teams.
                     </p>
 
                     <div class="divider"></div>
@@ -35,7 +33,6 @@ function Home() {
     );
 }
 
-// Custom Previous and Next arrow components
 
 
 export default Home;

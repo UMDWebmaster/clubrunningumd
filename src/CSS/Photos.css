@@ -1,0 +1,38 @@
+.fredHalfPic {
+    width: 55vw;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+    table.photoAlbums th {
+        background-color: #790c0c;
+        color: #fff;
+        padding: 10px;
+        width: 300px;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+table.photoAlbums td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+    table.photoAlbums td a {
+        color: blue;
+        text-decoration: none;
+    }
+
+        table.photoAlbums td a:hover {
+            text-decoration: underline;
+        }
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff;
+}

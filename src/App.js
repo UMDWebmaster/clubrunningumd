@@ -13,6 +13,7 @@ import Records from './pages/Records';
 import Workouts from './pages/Workouts';
 import Photos from './pages/Photos';
 import Paths from './pages/Routes';
+import JoinUs from './pages/JoinUs'
 
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -34,6 +35,7 @@ function App() {
                 <Route path="/workouts" element={<Workouts />} />
                 <Route path="/photos" element={<Photos />} />
                 <Route path="/routes" element={<Paths />} />
+                <Route path="/joinus" element={<JoinUs />} />
 
             </Routes>
 
