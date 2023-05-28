@@ -50,10 +50,9 @@
 		background-color: red;
 	}
 
-.tabs li .dropdown li.active a {
+.tabs li.active:not(.no-highlight) > a {
 	background-color: red;
 }
-
 
 ul li ul.dropdown {
 	width: 110px;

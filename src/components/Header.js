@@ -11,18 +11,19 @@ function Header() {
             item.classList.remove('active');
         });
 
-        const activeListItem = document.querySelector(`.tabs li a[href="${location.pathname}"]`);
+        const activeListItem = document.querySelector(`.tabs li a[href*="${location.pathname}"]`);
         if (activeListItem) {
             activeListItem.parentElement.classList.add('active');
         }
     }, [location]);
+
 
     return (
         <div>
             <header class="App-header">
                 <div class="tabs">
                     <ul>
-                        <li className="home"><a href="/home">UNIVERSITY OF MARYLAND CLUB RUNNING</a></li>
+                        <li className="home no-highlight"><a href="/home">UNIVERSITY OF MARYLAND CLUB RUNNING</a></li>
                         <li dropdown-toggleOff><a href="https://gmail.us4.list-manage.com/subscribe/post?u=aea7db195a60f69f817e5110d&amp;id=c08d6f1486&amp;f_id=002edfe8f0">Sign-Up</a></li>
                         
                         <li><a href="/Blog">Blog</a></li>
