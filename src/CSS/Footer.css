@@ -9,7 +9,7 @@ body {
     padding: 40px 0;
     text-align: center;
     margin: 0;
-    width: 100vw;
+    width: 100%;
 }
 
     #footer .inner {
@@ -71,8 +71,12 @@ body {
         font-size: 13px;
     }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 1000px) {
     #footer {
-        width: 250vw;
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        height: 200px;
+        width: 100%;
     }
 }

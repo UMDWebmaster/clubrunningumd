@@ -70,10 +70,8 @@ ul li:hover ul.dropdown {
 	display: block;
 }
 
-@media only screen and (max-width: 479px) {
-	.App-header {
-		width: 250vw;
-	}
+@media only screen and (max-width: 1000) {
+	
 
 	body {
 		background-repeat: no-repeat;

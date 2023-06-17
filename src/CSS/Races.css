@@ -1,28 +1,29 @@
 /* Races.css */
 body {
+
     margin-top: 30px;
 }
 
+
+
 /* Races page container */
 .page-container.races-page {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+    
 }
+
+
+
 
 
     .teamPic-container {
     position: relative;
-    width: 100vw;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
     background-color: black;
     z-index: -1;
 }
 
 .teamPic {
-    width: 55vw;
+    width: 60%;
     border-radius: 30px;
     display: block;
     margin: 0 auto;
@@ -30,6 +31,8 @@ body {
 
 /* Wrapper */
 .race-table-container {
+    text-align: center;
+    width: 100%;
     margin-top: 40px;
     padding: 20px;
     background-color: #f1f1f1;
@@ -99,16 +102,24 @@ p {
 }
 
 /* Styles for small mobile devices (up to 479px) */
-@media only screen and (max-width: 479px) {
-    .teamPic-container{
-        width: 250vw;
+@media only screen and (max-width: 1000px) {
+    body {
+        margin-top: 30px;
+        font-size: 18px;
+        margin-bottom: 100px;
     }
 
-    table.races{
-        width: 200vw;
-        margin-left: 40px;
+    .teamPic {
+        width: 90%;
     }
 
-   
+    .race-table-container {
+        margin-top: 0;
+        margin-left: -20px;
+        margin-bottom: -30px;
+        padding: 20px;
+        background-color: transparent;
+        width: 100%;
+    }
 }
 
