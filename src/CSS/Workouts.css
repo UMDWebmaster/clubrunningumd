@@ -5,9 +5,8 @@ body {
 
 /* Races page container */
 .page-container.workouts-page {
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px;
     text-align: center;
 }
 
@@ -80,4 +79,12 @@ p {
     line-height: 2.25;
 }
 
+
+@media only screen and (max-width: 1000px) {
+    .race-table-container {
+      
+        background-color: transparent;
+    }
+    
+}
 

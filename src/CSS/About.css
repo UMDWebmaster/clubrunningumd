@@ -97,18 +97,30 @@ h2 {
 }
 
 
-@media only screen and (max-width: 479px) {
-    .about-us-card {
-        margin-left: -50px;
-        flex-direction: column;
-        width: 130%;
+@media only screen and (max-width: 1000px) {
+    body{
         text-align: center;
+        
+
+    }
+    .about-us-container {
+        
+        max-width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+
+        margin-top: 100px; /* Adjust the value as needed */
+    }
+    
+    .about-us-card {
+  
+        flex-direction: column;
+        width: 100%;
     }
 
     .about-us-card2 {
-        margin-left: -50px;
         flex-direction: column;
-        width: 130%;
+        width: 100%;
         text-align: center;
     }
 

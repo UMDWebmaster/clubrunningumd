@@ -1,51 +1,33 @@
 /* Races.css */
+
 body {
-
+    width:100%;
+    max-width:100%;
     margin-top: 30px;
+    text-align:center;
 }
 
-
-
-/* Races page container */
-.page-container.races-page {
-    
-}
-
-
-
-
-
-    .teamPic-container {
-    position: relative;
+.teamPic-container {
     width: 100%;
     background-color: black;
     z-index: -1;
 }
 
 .teamPic {
-    width: 60%;
+    width: 50vw;
     border-radius: 30px;
     display: block;
     margin: 0 auto;
 }
 
-/* Wrapper */
-.race-table-container {
-    text-align: center;
-    width: 100%;
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #f1f1f1;
-    border-radius: 30px;
-}
+
 
 .records {
     margin-bottom: 20px;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 900px;
+    width: 90%;
 }
 
 /* Table */
@@ -54,9 +36,6 @@ table.races {
     border-collapse: collapse;
     margin-top: 20px;
 }
-
-
-
 
     table.races th {
         background-color: #790c0c;
@@ -79,9 +58,9 @@ table.races {
                 text-decoration: underline;
             }
 
-    .divider {
-        margin-bottom: 50px;
-    }
+.divider {
+    margin-bottom: 50px;
+}
 
 /* Note styles */
 p strong {
@@ -96,30 +75,31 @@ p {
     line-height: 2.25;
 }
 
-
-.tabs li a:active{
+.tabs li a:active {
     background-color: none;
 }
 
-/* Styles for small mobile devices (up to 479px) */
+/* Styles for small mobile devices (up to 1000px) */
 @media only screen and (max-width: 1000px) {
     body {
         margin-top: 30px;
         font-size: 18px;
         margin-bottom: 100px;
+        width:90%;
+
     }
 
-    .teamPic {
-        width: 90%;
+    .teamPic-container{
+
     }
+
+
 
     .race-table-container {
-        margin-top: 0;
-        margin-left: -20px;
-        margin-bottom: -30px;
-        padding: 20px;
-        background-color: transparent;
-        width: 100%;
+        width: 95%;
+    }
+
+    table.races {
+        margin-left:-40px;
     }
 }
-

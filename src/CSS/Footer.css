@@ -76,7 +76,12 @@ body {
         position: fixed;
         left: 0px;
         bottom: 0px;
-        height: 200px;
+        height: 10%;
+        
         width: 100%;
     }
+
+        #footer p  {
+            margin-top:-20px;
+        }
 }
