@@ -3,42 +3,39 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #ffffff;
+	background-color: #000000;
 }
 
-.tabs ul {
+.tab {
 	width: 100%;
-	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background: linear-gradient(180deg, #000000, #520505);
+	background: black;
 	font-size: 18px;
 	overflow: hidden;
+	font-weight: bold;
 }
 
-.tabs li {
+.tab {
 	float: right;
 	width: 110px;
 }
 
-.tabs .home {
+.home {
+	margin: 0;
+	padding: 0;
 	float: left;
-	width: 450px;
+	width: 30%;
+	color: #c20101;
+	font-weight: bold;
+	font-size: 19px;
+	user-select: none;
 }
 
-	.tabs .home a {
-		color: #c20101;
-		font-weight: bold;
-		font-size: 19px;
-		user-select: none;
-	}
+		
 
-		.tabs .home a:hover {
-			background-color: transparent;
-		}
-
-.tabs li a {
+.tab a {
 	display: block;
 	color: white;
 	text-align: center;
@@ -47,15 +44,20 @@
 	font-weight: bold;
 }
 
-	.tabs li a:hover {
+	.tab a:hover:not(.no-highlight) {
 		background-color: red;
 	}
 
-.tabs li.active:not(.no-highlight) > a {
+.tab.active:not(.no-highlight) {
 	background-color: red;
 }
 
-ul li ul.dropdown {
+.no-highlight a:hover {
+	background-color: transparent !important;
+}
+
+
+.tab ul.dropdown {
 	width: 110px;
 	background-color: black;
 	position: absolute;
@@ -63,11 +65,10 @@ ul li ul.dropdown {
 	display: none;
 }
 
-ul li a:hover {
-	background-color: red;
-}
 
-ul li:hover ul.dropdown {
+
+
+.tab:hover ul.dropdown {
 	display: block;
 }
 

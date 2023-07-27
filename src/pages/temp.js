@@ -1,8 +1,6 @@
-import React from 'react';
 import { Tab } from '@headlessui/react'
 
-function Routes() {
-
+function temp() {
     return (
         <Tab.Group>
             <Tab.List>
@@ -18,5 +16,3 @@ function Routes() {
         </Tab.Group>
     )
 }
-
-export default Routes;

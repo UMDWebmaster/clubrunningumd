@@ -1,3 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 .App {
     width: 100%;
     max-width: 100%;
@@ -15,7 +19,6 @@ body {
     margin-top: 60px;
     min-width: 100%;
     max-width: 100%;
-    background: #808080;
     background-repeat: no-repeat;
 }
 
