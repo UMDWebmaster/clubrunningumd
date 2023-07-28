@@ -4,7 +4,6 @@ import construcPic from '../Pictures/trafficcone.png';
 
 
 function SignUp() {
-
     return (
         <div className="construc-container">
             <main>

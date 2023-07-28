@@ -18,11 +18,7 @@ function Footer() {
 
                     </ul>
 
-                    <ul className="copyright">
-                        <li><b>Follow us on social media!</b></li>
-                    </ul>
-
-                    <p>This content is not endorsed, approved, sponsored, or provided by or on behalf of the University of Maryland or its affiliates, but it is endorsed, approved, sponsored, and provided by your president Sohan Ganatra</p>
+                    
                 </div>
             </footer>
         </div>

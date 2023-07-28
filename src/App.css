@@ -19,6 +19,7 @@ body {
     margin-top: 60px;
     min-width: 100%;
     max-width: 100%;
+    background: linear-gradient(to top right, #666699 0%, #cc0000 100%);
     background-repeat: no-repeat;
 }
 

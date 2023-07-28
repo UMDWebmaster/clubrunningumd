@@ -4,9 +4,10 @@ body {
 }
 
 #footer {
-    background: linear-gradient(0deg, #1c1b1b, #520505);
+    background: black;
+    border-top: 1px solid rgba(255,255,255, 0.3);
     color: #fff;
-    padding: 40px 0;
+    padding: 20px 0;
     text-align: center;
     margin: 0;
     width: 100%;

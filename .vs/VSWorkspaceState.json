@@ -1,6 +1,7 @@
 {
   "ExpandedNodes": [
     "",
+    "\\dist",
     "\\public",
     "\\src",
     "\\src\\components",
@@ -9,5 +10,6 @@
     "\\src\\pages",
     "\\src\\Pictures"
   ],
+  "SelectedNode": "\\src\\index.css",
   "PreviewInSolutionExplorer": false
 }

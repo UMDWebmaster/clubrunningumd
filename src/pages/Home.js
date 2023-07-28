@@ -1,16 +1,53 @@
 import React from 'react';
 import '../CSS/Home.css';
+import 'react-image-gallery/styles/css/image-gallery.css';
+import ImageGallery from 'react-image-gallery';
 import natsPic from '../Pictures/natsTeamPic.JPG';
+import lillianCapital from '../Pictures/lillianCapital.JPG';
+import fredHalfPic from '../Pictures/fredHalfTeam.JPG';
+
+
 
 function Home() {
-    
+
+    const images = [
+        {
+            original: natsPic,
+            description: 'Welcome to UMD Club Running!', 
+        },
+        {
+            original: lillianCapital,
+            description: 'Welcome to UMD Club Running!', 
+        },
+        {
+            original: fredHalfPic,
+            description: 'Welcome to UMD Club Running!', 
+        },
+        
+    ];
+
+    const renderCustomImageItem = (item) => {
+        return (
+            <div className="image-gallery-image">
+                <img src={item.original} alt={item.originalAlt} />
+                {item.description && (
+                    <div className="image-gallery-description">
+                        <p>{item.description}</p>
+                    </div>
+                )}
+            </div>
+        );
+    };
+
+   
 
     return (
         <div className="Home-container home-page">
 
 
             <div class="teamPic-container">
-                <img src={natsPic} alt="" className="teamPic" />
+                <ImageGallery items={images} renderItem={renderCustomImageItem} showFullscreenButton={false} showPlayButton={false} autoPlay={true}
+                    slideInterval={5000}/>   
             </div>
 
             <section id="main" className="race-table-container records">

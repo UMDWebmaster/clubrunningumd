@@ -9,7 +9,7 @@ body {
 
 .teamPic-container {
     width: 100%;
-    background-color: black;
+    background-color: #0f0f0f;
     z-index: -1;
 }
 
@@ -96,7 +96,7 @@ p {
 
 
     .race-table-container {
-        width: 95%;
+        width: 85%;
     }
 
     table.races {
