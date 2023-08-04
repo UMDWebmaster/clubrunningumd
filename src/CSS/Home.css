@@ -1,13 +1,10 @@
-/* Carousel.css */
 
-/* Add custom styles for the carousel images */
 .image-gallery-slide img {
-    max-width: 50vw; /* Adjust the maximum width as per your requirement */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 50vw; 
+    height: auto; 
     border-radius: 30px;
 }
 
-/* Center the carousel container horizontally */
 .teamPic-container {
     display: flex;
     justify-content: center;
@@ -26,20 +23,20 @@
         border-radius: 30px;
         font-size: 20px;
         background-color: #0f0f0f;
-        color: #ffffff !important; /* Text color for the caption - Override any conflicting styles */
+        color: #ffffff !important;
     }
 
 .image-gallery-left-nav,
 .image-gallery-right-nav {
-    top: 50px; /* Adjust the top offset as per your requirement */
+    top: 50px; 
 }
 
 .image-gallery-left-nav {
-    left: -50% !important; /* Adjust the left offset for the left arrow */
+    left: -50% !important;
 }
 
 .image-gallery-right-nav {
-    right: -50% !important; /* Adjust the right offset for the right arrow */
+    right: -50% !important; 
 }
 
 @media only screen and (max-width: 1000px) {

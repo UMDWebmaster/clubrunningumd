@@ -62,15 +62,28 @@
 	display: block;
 }
 
-
-
-@media only screen and (max-width: 1000) {
-
-	
-
-	
-	
-
-
-	
+.MobileHome{
+	margin-top: 3%;
+	margin-bottom: 3%;
+	margin-left: 3%;
 }
+
+.hamburger-icon {
+	margin-top: 3%;
+	margin-bottom: 3%;
+	margin-right: 10%;
+}
+
+
+	@media (max-width: 768px) {
+		.tabs-container .tabs {
+			display: none;
+		}
+	}
+	
+
+	
+	
+
+
+	
