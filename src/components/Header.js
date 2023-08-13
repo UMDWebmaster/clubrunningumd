@@ -51,7 +51,7 @@ function Header() {
                             Sign-Up
                         </a>
                     </Tab>
-                    <Tab className="tab">
+                    <Tab className="tab active:text-red-600">
                         <a href="/Blog">Blog</a>
                     </Tab>
                     <Tab className="tab">

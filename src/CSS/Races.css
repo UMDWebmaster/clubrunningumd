@@ -1,16 +1,8 @@
-/* Races.css */
-
 body {
     width:100%;
     max-width:100%;
     margin-top: 30px;
     text-align:center;
-}
-
-.teamPic-container {
-    width: 100%;
-    background-color: #0f0f0f;
-    z-index: -1;
 }
 
 .teamPic {
@@ -19,8 +11,6 @@ body {
     display: block;
     margin: 0 auto;
 }
-
-
 
 .records {
     margin-bottom: 20px;
@@ -88,12 +78,6 @@ p {
         width:90%;
 
     }
-
-    .teamPic-container{
-
-    }
-
-
 
     .race-table-container {
         width: 85%;
