@@ -13,42 +13,32 @@
 }
 
 .home {
-	margin: 0;
-	padding: 0;
 	float: left;
 	width: 30%;
 	user-select: none;
 }
 
-
-		
-
 .tab a {
-
 	display: block;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-weight: bold;
 }
-
-
 	.tab a:hover:not(.no-highlight) {
 		text-decoration: underline red 3px;
-		text-underline-offset: 10px; /* Adjust this value to set the desired space */
+		text-underline-offset: 10px; 
+		}
+
+	.tab.active:not(.no-highlight) {
+		text-decoration: underline red 3px;
+		color: red;
+		text-underline-offset: 10px; 
 	}
-
-.tab.active:not(.no-highlight) {
-	text-decoration: underline red 3px;
-	color: red;
-	text-underline-offset: 10px; /* Adjust this value to set the desired space */
-}
-
 
 .no-highlight a:hover {
 	text-decoration: transparent !important;
 }
-
 
 .tab ul.dropdown {
 	width: 110px;
@@ -62,28 +52,58 @@
 	display: block;
 }
 
+/*mobile scroll menu*/
+div.scrollmenu {
+	border-top: 1px solid rgba(255,255,255, 0.3);
+	overflow: auto;
+	white-space: nowrap;
+}
+
+	div.scrollmenu a {
+		display: inline-block;
+		text-align: center;
+		padding: 12px;
+		text-decoration: none;
+	}
+
+	div.scrollmenu a:hover {
+		text-decoration: underline red 3px;
+		text-underline-offset: 10px;
+	}
+
+
 .MobileHome{
 	margin-top: 3%;
 	margin-bottom: 3%;
 	margin-left: 3%;
 }
 
-.hamburger-icon {
-	margin-top: 3%;
-	margin-bottom: 3%;
-	margin-right: 10%;
+/*Hamburger menu stuff*/
+.container {
+	display: inline-block; 
+	cursor: pointer;
 }
 
+.bar1, .bar2, .bar3 {
+	margin: 6px 0;
+	transition: 0.4s;
+}
 
-	@media (max-width: 768px) {
-		.tabs-container .tabs {
-			display: none;
-		}
+.change .bar1 {
+	transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+	opacity: 0;
+}
+
+.change .bar3 {
+	transform: translate(0, -11px) rotate(45deg);
+}
+
+/*hide traditional tabs on mobile*/
+@media (max-width: 768px) {
+	.tabs-container .tabs {
+		display: none;
 	}
-	
-
-	
-	
-
-
-	
+}
