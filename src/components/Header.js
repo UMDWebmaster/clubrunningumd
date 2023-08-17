@@ -76,7 +76,7 @@ function Header() {
                         <a href="/about" className="dropdown-toggle">About</a>
                         <ul className="dropdown">
                             <li><a href="/about">Officers</a></li>
-                            <li><a href="/JoinUs">Join Us</a></li>
+                            <li><a href="https://docs.google.com/document/d/1AbWsGq4yMjutG-I_jPUq9fuutEBvtcoPZ5IwTnRc1Ns/edit#heading=h.vkmalmlatt01">Join Us</a></li>
                         </ul>
                     </Tab>
                 </Tab.List>

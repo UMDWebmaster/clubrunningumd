@@ -45,6 +45,47 @@
 }
 
 
+.button {
+    border-radius: 20px;
+    background-color: red;
+    border: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    padding: 7px;
+    width: 10%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.3s;
+    }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+    .button:hover span {
+        padding-right: 25px;
+    }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+
 @media only screen and (max-width: 1000px) {
     .image-gallery-slide img {
         max-width: 100%;
@@ -58,6 +99,10 @@
 
     .image-gallery-right-nav {
         margin-right: 0 !important;
+    }
+
+    .button{
+        width: 40%;
     }
 
 }
