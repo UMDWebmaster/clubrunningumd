@@ -14,7 +14,7 @@ function About() {
 
     return (
         <div className="about-us-container">
-					<div className="bio-card1"> {/*Image on the left*/}
+					<div className="bio-card"> {/*Image on the left*/}
 						<div className="align-left md:w-1/2">
 							<img src={sohanImage} alt="Sohan Pic"/>
 						</div>
@@ -32,8 +32,8 @@ function About() {
 						</div>
 					</div>
 
-					<div className="bio-card1"> {/*Image on the left*/}
-						<div className="align-left md:w-1/2">
+					<div className="bio-card"> {/*Image on the left*/}
+						<div className="align-left md:w-1/2 md:order-2">
 							<img src={lillianImage} alt="Lillian Pic" />
 						</div>
 						<div className="flex flex-col md:w-1/2 ml-5 mr-5">
@@ -48,8 +48,8 @@ function About() {
 						</div>
 					</div>
 
-					<div className="bio-card1"> {/*Image on the left*/}
-						<div className="align-left md:w-1/2">
+					<div className="bio-card"> {/*Image on the left*/}
+						<div className="align-left md:w-1/2 md:order-2">
 							<img src={maxImage} alt="Max Pic" />
 						</div>
 						<div className="flex flex-col md:w-1/2 ml-5 mr-5">
@@ -66,8 +66,8 @@ function About() {
 					</div>
 
 
-					<div className="bio-card1"> {/*Image on the left*/}
-						<div className="align-left md:w-1/2">
+					<div className="bio-card"> {/*Image on the left*/}
+						<div className="align-left md:w-1/2 md:order-2">
 							<img src={jbImage} alt="JB Pic" />
 						</div>
 						<div className="flex flex-col md:w-1/2 ml-5 mr-5">
@@ -84,7 +84,7 @@ function About() {
 					</div>
 
 
-					<div className="bio-card1"> {/*Image on the left*/}
+					<div className="bio-card"> {/*Image on the left*/}
 						<div className="align-left md:w-1/2">
 							<img src={domImage} alt="dom Pic" />
 						</div>
@@ -101,8 +101,8 @@ function About() {
 						</div>
 					</div>
 
-					<div className="bio-card1"> {/*Image on the left*/}
-						<div className="align-left md:w-1/2">
+					<div className="bio-card"> {/*Image on the left*/}
+						<div className="align-left md:w-1/2 md:order-2">
 							<img src={eamonImage} alt="eamon Pic" />
 						</div>
 						<div className="flex flex-col md:w-1/2 ml-5 mr-5">
@@ -115,7 +115,7 @@ function About() {
 						</div>
 					</div>
 
-					<div className="bio-card1"> {/*Image on the left*/}
+					<div className="bio-card"> {/*Image on the left*/}
 						<div className="align-left md:w-1/2">
 							<img src={zachImage} alt="zach Pic" />
 						</div>
@@ -131,8 +131,8 @@ function About() {
 						</div>
 					</div>
 
-					<div className="bio-card1"> {/*Image on the left*/}
-						<div className="align-left md:w-1/2">
+					<div className="bio-card"> {/*Image on the left*/}
+						<div className="align-left md:w-1/2 md:order-2">
 							<img src={calebImage} alt="caleb Pic" />
 						</div>
 						<div className="flex flex-col md:w-1/2 ml-5 mr-5">
@@ -145,7 +145,14 @@ function About() {
 								Talk to Caleb if you ever want to discuss fascinating topics such as these.
 							</p>
 						</div>
-					</div>				
+					</div>
+
+
+					
+
+
+
+
         </div>
     );
 }
