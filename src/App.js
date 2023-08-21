@@ -5,7 +5,6 @@ import Footer from './components/Footer';
 
 
 import Home from './pages/Home';
-import SignUp from './pages/SignUp';
 import About from './pages/About';
 import Blog from './pages/Blog';
 import Races from './pages/Races';
@@ -27,7 +26,6 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Home />} />
-                <Route path="/signup" element={<SignUp />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/races" element={<Races />} />

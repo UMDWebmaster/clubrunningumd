@@ -6,22 +6,14 @@ import lillianCapital from '../Pictures/lillianCapital.JPG';
 function About() {
 
     return (
-        <div className="page-container workouts-page">
-
-
+        <div>
             <div class="teamPic-container">
                 <img src={lillianCapital} alt="" className="teamPic" />
             </div>
 
-            <section id="main" className="race-table-container records">
-
-
-                <div className="container">
-                  
-
-                    <h3 className="title">Maryland Club Running Workout Schedules</h3>
-                    <div id="post">
-                        <table className="workoutPlans">
+            <div className="flex flex-col items-center justify-center">
+                <h3 className="text-white text-3xl font-bold mt-5 mb-5">Maryland Club Running Workout Schedules</h3>
+                        <table className="workouts">
                             <thead>
                                 <tr>
                                     <th>Year</th>
@@ -84,9 +76,7 @@ function About() {
                                 
                             </tbody>
                         </table>
-                    </div>
                 </div>
-            </section>
         </div>
     );
 }

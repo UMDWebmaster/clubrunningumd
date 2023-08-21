@@ -6,33 +6,35 @@
 }
 
 
-    table.photoAlbums th {
-        background-color: #790c0c;
-        color: #fff;
+    table th {
+        background-color: black;
+        color: white;
         padding: 10px;
-        width: 300px;
+        width: 50vw;
         margin-left: 10px;
         text-align: center;
+        border-bottom: 1px solid white;
     }
 
-table.photoAlbums td {
+table td {
     padding: 10px;
+    color: #eee6e6;
     border-bottom: 1px solid #ccc;
 }
 
-    table.photoAlbums td a {
-        color: blue;
-        text-decoration: none;
+    table td a {
+        color: #7e2ef1;
+        text-decoration: underline;
     }
 
-        table.photoAlbums td a:hover {
-            text-decoration: underline;
-        }
 
-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+table tr {
+    background: rgba(255,255,255,0.3);
 }
 
-table tr:nth-child(odd) {
-    background-color: #fff;
+@media only screen and (min-width: 1000px) {
+    table th {   
+        width: 25vw;
+    }
+    
 }

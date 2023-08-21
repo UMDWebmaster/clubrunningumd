@@ -3,6 +3,10 @@ body {
     margin-top: 30px;
 }
 
+.workouts {
+    width: 100%;
+}
+
 /* Races page container */
 .page-container.workouts-page {
     width: 100%;
@@ -84,6 +88,10 @@ p {
     .race-table-container {
       
         background-color: transparent;
+    }
+
+    .workouts {
+        width: 100%;
     }
     
 }

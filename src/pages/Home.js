@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../CSS/Home.css';
+import '../CSS/SignUp.css';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import ImageGallery from 'react-image-gallery';
 import natsPic from '../Pictures/natsTeamPic.JPG';
@@ -13,6 +14,12 @@ function Home() {
         {original: lillianCapital, description: 'Welcome to UMD Club Running!',},
         {original: fredHalfPic, description: 'Welcome to UMD Club Running!',},
     ];
+
+    const [showModal, setShowModal] = useState(false);
+
+    const toggleModal = () => {
+        setShowModal(!showModal);
+    };
 
     const renderCustomImageItem = (item) => {
         return (
@@ -64,9 +71,24 @@ function Home() {
                         <p className="text-black mb-6">
                             Stay in the loop! Subscribe to our weekly mailing list to learn all about our upcoming social events, practices, races, and more! Whether you're a seasoned runner or just starting out, being part of our listserv is the best way to stay informed and engaged. Don't miss out on the latest opportunities to run and connect with fellow club runners!
                         </p>
-                        <a href="https://docs.google.com/document/d/1AbWsGq4yMjutG-I_jPUq9fuutEBvtcoPZ5IwTnRc1Ns/edit#heading=h.vkmalmlatt01">
-                            <button className="button"><span>Sign-Up!</span></button>
-                        </a>
+
+                        <div>
+                        <button className="button" onClick={toggleModal}><span>Sign-Up!</span></button>
+                            {showModal && (
+                                <div className="modal">
+                                    <div onClick={toggleModal} className="overlay"></div>
+                                    <div className="modal-content mt-10">
+                                        <h2>Sign-Up</h2>
+                                        <p>
+                                            Temp
+                                        </p>
+                                        <button className="close-modal" onClick={toggleModal}>
+                                            X
+                                        </button>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </div>
             </section>
