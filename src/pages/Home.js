@@ -89,11 +89,16 @@ function Home() {
                                                 <input type="text" placeholder="First Name" name="fName" required/>
 
                                                 <label for="lName">Last Name</label>
-                                                <input type="text" placeholder="Last Name" name="lName" required/>
+                                                <input type="text" placeholder="Last Name" name="lName" required />
 
                                                 <div class="clearfix mb-5 mt-2">
                                                     <button className="button1 bg-green-500" type="submit">Sign Up</button>
                                                     <button className="button1 bg-red-500" type="button" onClick={toggleModal}>Cancel</button>
+                                                </div>
+                                                <div className="text-center flex justify-center items-center"> {/* Center the Mailchimp logo */}
+                                                    <a href="http://eepurl.com/h8EvGH" title="Mailchimp Logo" className="flex justify-center items-center">
+                                                        <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" alt="mailChimp" />
+                                                    </a>
                                                 </div>
                                             </div>
                                         </form>
