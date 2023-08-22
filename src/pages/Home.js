@@ -73,18 +73,31 @@ function Home() {
                         </p>
 
                         <div>
-                        <button className="button" onClick={toggleModal}><span>Sign-Up!</span></button>
+                            <button className="button" onClick={toggleModal}><span>Sign-Up!</span></button>
                             {showModal && (
                                 <div className="modal">
                                     <div onClick={toggleModal} className="overlay"></div>
-                                    <div className="modal-content mt-10">
-                                        <h2>Sign-Up</h2>
-                                        <p>
-                                            Temp
-                                        </p>
-                                        <button className="close-modal" onClick={toggleModal}>
-                                            X
-                                        </button>
+                                    <div className="modal-content mt-10 ">
+                                        <form>
+                                            <div class="container">
+                                                <h1 className="font-bold mb-5 md:text-2xl">CLUB RUNNING 2023-2024 EMAIL LIST</h1>
+
+                                                <label for="email">Email</label>
+                                                <input type="text" placeholder="Email Address" name="email" required/>
+
+                                                <label for="fName">First Name</label>
+                                                <input type="text" placeholder="First Name" name="fName" required/>
+
+                                                <label for="lName">Last Name</label>
+                                                <input type="text" placeholder="Last Name" name="lName" required/>
+
+                                                <div class="clearfix mb-5 mt-2">
+                                                    <button className="button1 bg-green-500" type="submit">Sign Up</button>
+                                                    <button className="button1 bg-red-500" type="button" onClick={toggleModal}>Cancel</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                       
                                     </div>
                                 </div>
                             )}

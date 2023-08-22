@@ -12,15 +12,11 @@ body.active-modal {
 .modal, .overlay {
     width: 100vw;
     height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
 }
 
 .overlay {
-    background: rgba(49,49,49,0.8);
+    background: rgba(0,0,0,0.8);
 }
 
 .modal-content {
@@ -31,14 +27,56 @@ body.active-modal {
     line-height: 1.4;
     background: #f1f1f1;
     padding: 14px 28px;
-    border-radius: 3px;
+    border-radius: 30px;
     max-width: 600px;
     min-width: 300px;
 }
 
-.close-modal {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 7px;
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    background: #ddd;
+}
+
+    input[type=text]:focus, input[type=password]:focus {
+        border: 2px solid blue;
+        color: black;
+    }
+
+    label {
+        font-weight: bold;
+        float: left;
+        clear: left;
+        width: 100%;
+        text-align: left;
+    }
+
+    
+.float-left {
+    float: left;
+    clear: left;
+    width: 100%;
+    text-align: left;
+}
+
+
+
+/* Set a style for all buttons */
+.button1 {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 30px;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
 }
