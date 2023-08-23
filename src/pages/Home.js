@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../CSS/Home.css';
 import '../CSS/SignUp.css';
 import 'react-image-gallery/styles/css/image-gallery.css';
@@ -8,6 +8,32 @@ import lillianCapital from '../Pictures/lillianCapital.JPG';
 import fredHalfPic from '../Pictures/fredHalfTeam.JPG';
 
 function Home() {
+
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js';
+        script.async = true;
+        document.body.appendChild(script);
+
+        script.onload = () => {
+            const $ = window.jQuery; // Assuming jQuery is loaded by the Mailchimp script
+
+            if ($) {
+                // Ensure these variables are accessible
+                window.fnames = window.fnames || [];
+                window.ftypes = window.ftypes || [];
+
+                window.fnames[0] = 'EMAIL';
+                window.ftypes[0] = 'email';
+                window.fnames[1] = 'FNAME';
+                window.ftypes[1] = 'text';
+                window.fnames[2] = 'LNAME';
+                window.ftypes[2] = 'text';
+
+                const $mcj = $.noConflict(true);
+            }
+        };
+    }, []); // Run the effect only once
 
     const images = [
         {original: natsPic, description: 'Welcome to UMD Club Running!',},
@@ -80,16 +106,23 @@ function Home() {
                                     <div className="modal-content mt-10 ">
                                         <form action="https://gmail.us4.list-manage.com/subscribe/post?u=aea7db195a60f69f817e5110d&amp;id=c08d6f1486&amp;f_id=002edfe8f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                                             <div class="container">
-                                                <h1 className="font-bold mb-5 md:text-2xl">CLUB RUNNING 2023-2024 EMAIL LIST</h1>
+                                                <h1 className="font-bold mb-5 md:text-2xl color-black">CLUB RUNNING 2023-2024 EMAIL LIST</h1>
 
-                                                <label for="email">Email</label>
-                                                <input type="text" placeholder="Email Address" name="email" required/>
 
-                                                <label for="fName">First Name</label>
-                                                <input type="text" placeholder="First Name" name="fName" required/>
+                                                <label for="email">Email *</label>
+                                                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required placeholder="Email Address" />
 
-                                                <label for="lName">Last Name</label>
-                                                <input type="text" placeholder="Last Name" name="lName" required />
+                                                <label for="fName">First Name *</label>
+                                                <input type="text" name="FNAME" class=" text" id="mce-FNAME" placeholder="First Name" required />
+
+                                                <label for="lName">Last Name *</label>
+                                                <input type="text" name="LNAME" class=" text" id="mce-LNAME" placeholder="Last Name" required />                                        
+                                                                                             
+                                                <div hidden=""><input type="hidden" name="tags" value="7835950" /></div>
+                                                <div id="mce-responses" class="clear foot">
+                                                    <div class="response" id="mce-error-response"></div>
+                                                    <div class="response" id="mce-success-response"></div>
+                                                </div>
 
                                                 <div class="clearfix mb-5 mt-2">
                                                     <button className="button1 bg-green-500" type="submit">Sign Up</button>
@@ -102,6 +135,7 @@ function Home() {
                                                 </div>
 
                                             </div>
+                                           
                                         </form>
                                        
                                     </div>
