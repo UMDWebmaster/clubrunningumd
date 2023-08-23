@@ -35,6 +35,15 @@ table tr {
 @media only screen and (min-width: 1000px) {
     table th {   
         width: 25vw;
-    }
+    }  
     
+}
+
+@media only screen and (max-width: 1000px){
+
+    .fredHalfPic {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
 }
