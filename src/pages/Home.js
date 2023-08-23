@@ -78,7 +78,7 @@ function Home() {
                                 <div className="modal">
                                     <div onClick={toggleModal} className="overlay"></div>
                                     <div className="modal-content mt-10 ">
-                                        <form>
+                                        <form action="https://gmail.us4.list-manage.com/subscribe/post?u=aea7db195a60f69f817e5110d&amp;id=c08d6f1486&amp;f_id=002edfe8f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                                             <div class="container">
                                                 <h1 className="font-bold mb-5 md:text-2xl">CLUB RUNNING 2023-2024 EMAIL LIST</h1>
 
@@ -100,6 +100,7 @@ function Home() {
                                                         <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" alt="mailChimp" />
                                                     </a>
                                                 </div>
+
                                             </div>
                                         </form>
                                        
