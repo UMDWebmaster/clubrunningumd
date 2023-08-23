@@ -47,7 +47,7 @@ function Header() {
                         <a href="/home">UNIVERSITY OF MARYLAND CLUB RUNNING</a>
                     </Tab>
                     <Tab className="tab">
-                        <a href="https://gmail.us4.list-manage.com/subscribe/post?u=aea7db195a60f69f817e5110d&amp;id=c08d6f1486&amp;f_id=002edfe8f0">
+                        <a href="/signup">
                             Sign-Up
                         </a>
                     </Tab>
@@ -58,7 +58,7 @@ function Header() {
                         <a href="/Photos" className="dropdown-toggle">Archive</a>
                         <ul className="dropdown">
                             <li><a href="/Photos">Photos</a></li>
-                            <li><a href="https://us4.campaign-archive.com/home/?u=aea7db195a60f69f817e5110d&amp;id=c08d6f1486">Emails</a></li>
+                            <li><a href="/SignUp">Emails</a></li>
                         </ul>
                     </Tab>
                     <Tab className="tab">
@@ -96,7 +96,7 @@ function Header() {
 
             {isMobileView && isHamburgerOpen && ( //scrollable menu on click
                 <div className="scrollmenu font-bold text-white">
-                    <a href="https://gmail.us4.list-manage.com/subscribe/post?u=aea7db195a60f69f817e5110d&amp;id=c08d6f1486&amp;f_id=002edfe8f0">Sign-Up</a>
+                    <a href="/SignUp">Sign-Up</a>
                     <a href="/Blog">Blog</a>
                     <a href="/Photos">Photos</a>
                     <a href="/Races">Races</a>

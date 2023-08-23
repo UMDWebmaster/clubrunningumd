@@ -30,7 +30,6 @@ function Home() {
                 window.fnames[2] = 'LNAME';
                 window.ftypes[2] = 'text';
 
-                const $mcj = $.noConflict(true);
             }
         };
     }, []); // Run the effect only once

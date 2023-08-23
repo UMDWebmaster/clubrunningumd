@@ -6,13 +6,14 @@ import Footer from './components/Footer';
 
 import Home from './pages/Home';
 import About from './pages/About';
-import Blog from './pages/Blog';
 import Races from './pages/Races';
+import Blog from './pages/Blog';
 import Records from './pages/Records';
 import Workouts from './pages/Workouts';
 import Photos from './pages/Photos';
 import Paths from './pages/Routes';
-import JoinUs from './pages/JoinUs'
+import JoinUs from './pages/JoinUs';
+import SignUp from './pages/SignUp';
 
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -27,14 +28,14 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/blog" element={<Blog />} />
+                <Route path="/signup" element={<SignUp />} />
                 <Route path="/races" element={<Races />} />
+                <Route path="/blog" element={<Blog />} />
                 <Route path="/records" element={<Records />} />
                 <Route path="/workouts" element={<Workouts />} />
                 <Route path="/photos" element={<Photos />} />
                 <Route path="/routes" element={<Paths />} />
                 <Route path="/joinus" element={<JoinUs />} />
-
             </Routes>
 
             <Footer />
