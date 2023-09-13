@@ -58,7 +58,7 @@ function Header() {
                         <a href="/Photos" className="dropdown-toggle">Archive</a>
                         <ul className="dropdown">
                             <li><a href="/Photos">Photos</a></li>
-                            <li><a href="/SignUp">Emails</a></li>
+                            <li><a href="https://us4.campaign-archive.com/home/?u=aea7db195a60f69f817e5110d&id=c08d6f1486">Emails</a></li>
                         </ul>
                     </Tab>
                     <Tab className="tab">
@@ -68,7 +68,7 @@ function Header() {
                         <ul className="dropdown">
                             <li><a href="/Races">Races</a></li>
                             <li><a href="/Records">Records</a></li>
-                            <li><a href="/Workouts">Workouts</a></li>
+                            <li><a href="/Workouts">Train</a></li>
                             <li><a href="/Routes">Routes</a></li>
                         </ul>
                     </Tab>
@@ -81,6 +81,8 @@ function Header() {
                     </Tab>
                 </Tab.List>
             </Tab.Group>
+
+           
 
             {isMobileView && ( //hamburger menu
                 <>

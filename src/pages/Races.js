@@ -16,7 +16,10 @@ function Races() {
                
 
                 <div>
-                    <p>
+                   
+
+                <div className="flex flex-col items-center justify-center">
+                    <p className="text-white w-3/4 mt-8 mb-8">
                         Maryland Club Running is a member of the{' '}
                         <a href="clubrunning.org">National Intercollegiate Running Club Association</a> (NIRCA).
                         NIRCA hosts races throughout the Fall Cross Country, Winter Indoor, and Spring Outdoor
@@ -25,72 +28,59 @@ function Races() {
                         focus shifts to open college meets
                     </p>
 
-                    <div class="divider"></div>
-
-                    <div className="flex flex-col items-center justify-center">
-                        <h3 className="text-white text-3xl font-bold mt-5 mb-5">Fall 2023 Race Schedule</h3>
                     
-                        <table>
+                        <h3 className="text-white text-3xl font-bold mt-5 mb-5">Fall 2023 Race Schedule</h3> 
+                        <table className="mb-10">
                             <thead>
                                 <tr>
                                     <th>Date</th>
                                     <th>Race</th>
-                                    <th>Location</th>
-                                    
+                                    <th>Location</th>                                    
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>2/11/2023</td>
-                                    <td>Happy Valley Invite</td>
-                                    <td>State College, PA</td>                              
+                                    <td>9/9/2023</td>
+                                    <td>Terrapin Time Trial</td>
+                                    <td>Greenbelt, MD</td>                              
                                 </tr>
                                 <tr>
-                                    <td>2/25/2023</td>
-                                    <td>Capital Relays - American University</td>
-                                    <td>Washington, DC</td>
+                                    <td>9/16/2023</td>
+                                    <td>Cavalier Invite</td>
+                                    <td>Charlottesville, VA</td>
                                 </tr>
                                 <tr>
-                                    <td>3/25/2023</td>
-                                    <td>Dashing Dukes Invitational - JMU</td>
-                                    <td>Harrisonburg, VA</td>
+                                    <td>9/30/2023</td>
+                                    <td>Paul Short Run</td>
+                                    <td>Lehigh, VA</td>
                                   
                                 </tr>
                                 <tr>
-                                    <td>4/1/2023</td>
-                                    <td>*Towson Invitational</td>
-                                    <td>Towson, MD</td>
+                                    <td>10/7/2023</td>
+                                    <td>Dashing Dukes Invite</td>
+                                    <td>Elkton, VA</td>
                                    
                                 </tr>
                                 <tr>
-                                    <td>4/16/2023</td>
-                                    <td>NIRCA Track and Field Nationals</td>
-                                    <td>Olivet, MI</td>
+                                    <td>10/21/2023</td>
+                                    <td>NIRCA Regionals</td>
+                                    <td>Lehigh, PA</td>
                                    
                                 </tr>
                                 <tr>
-                                    <td>4/29/2023</td>
-                                    <td>**Paul Kaiser Invite</td>
-                                    <td>Shippensburg, PA</td>
+                                    <td>11/11/2023</td>
+                                    <td>NIRCA Nationals</td>
+                                    <td>Shellbysville, IN</td>
                                    
                                 </tr>
-                                <tr>
-                                    <td>5/5/2023</td>
-                                    <td>*Kehoe Twilight</td>
-                                    <td>College Park, MD</td>
-                                   
-                                </tr>
-                                <tr>
-                                    <td>5/7/2023</td>
-                                    <td>Frederick Half Marathon</td>
-                                    <td>Frederick, MD</td>
-                                    
-                                </tr>
+                               
                             </tbody>
-                        </table>
-                    </div>
+                    </table>
+                   
 
-                    <div class="divider"></div>                  
+                </div>
+              
+
                  
                 </div>
             

@@ -1,13 +1,13 @@
 import React from 'react';
 import '../CSS/Photos.css';
-import fredHalfPic from '../Pictures/fredHalfTeam.JPG';
+import JimmyRun from '../Pictures/JimmyRun.JPG';
 
 
 function Races() {
     return (
         <div>
             <div class="teamPic-container">
-                <img src={fredHalfPic} alt="" className="fredHalfPic" />
+                <img src={JimmyRun} alt="" className="fredHalfPic" />
             </div>
 
             <div className="flex flex-col items-center justify-center">  

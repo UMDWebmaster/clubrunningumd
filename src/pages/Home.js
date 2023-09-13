@@ -6,6 +6,7 @@ import ImageGallery from 'react-image-gallery';
 import natsPic from '../Pictures/natsTeamPic.JPG';
 import lillianCapital from '../Pictures/lillianCapital.JPG';
 import fredHalfPic from '../Pictures/fredHalfTeam.JPG';
+import people from '../Pictures/4people.JPG';
 
 function Home() {
 
@@ -89,7 +90,7 @@ function Home() {
             <section id="main" className="flex flex-col items-center md:flex-row justify-center">
                 <div className="rounded-xl border-2 border-white mt-10 mb-10 w-11/12 bg-white bg-opacity-70 flex flex-col md:flex-row">
                     <div className="align-left md:w-1/2 md:order-2">
-                        <img src={natsPic} alt="Team Pic" className="rounded-xl" />
+                        <img src={people} alt="Team Pic" className="rounded-xl" />
                     </div>
                     <div className="flex flex-col md:w-1/2 ml-5 mr-5">
                         <h1 className="text-black font-bold text-3xl mb-4 mt-5 md:mt-20 underline">Weekly Newsletter</h1>
