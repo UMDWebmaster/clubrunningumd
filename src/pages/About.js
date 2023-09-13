@@ -122,11 +122,11 @@ function About() {
 						<div className="flex flex-col md:w-1/2 ml-5 mr-5">
 					<h1 className="bio-content">Social Chair: Zach Kiedrowski</h1>
 							<p className="text-black mb-6">
-								Zach Kiedrowski is a third year member of the club and an Aberdeen High School alum.
-								He is dual degreeing in environmental science and statistics. Zach started running his sophomore
-								year of high school and fell in love the sport, acting as the captain of his track team his senior
-								year. Zach ran 2:55:38 at the 2022 Baltimore Marathon and is now training for the steeplechase
-								this track season.
+								Zach Kiedrowski is a third year member of the club and an Aberdeen High School
+								alum. He is dual degreeing in environmental science and statistics. Zach started
+								running his sophomore year of high school and fell in love the sport, acting as the captain
+								of his track team his senior year. Zach ran 2:55:38 at the 2022 Baltimore Marathon and now
+								has his sights set on cross country season and the Boston Marathon.
 							</p>
 						</div>
 					</div>
