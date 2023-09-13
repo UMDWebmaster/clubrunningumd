@@ -47,10 +47,13 @@ function Header() {
                         <a href="/home">UNIVERSITY OF MARYLAND CLUB RUNNING</a>
                     </Tab>
                     <Tab className="tab">
-                        <a href="/signup">
-                            Sign-Up
-                        </a>
+                        <a href="/signup" className="dropdown-toggle">Join Us</a>
+                        <ul className="dropdown">
+                            <li><a href="https://docs.google.com/document/d/1AbWsGq4yMjutG-I_jPUq9fuutEBvtcoPZ5IwTnRc1Ns/edit#heading=h.vkmalmlatt01">How To</a></li>
+                            <li><a href="/SignUp">Emails</a></li>
+                        </ul>
                     </Tab>
+                   
                     <Tab className="tab active:text-red-600">
                         <a href="/Blog">Blog</a>
                     </Tab>
@@ -73,11 +76,7 @@ function Header() {
                         </ul>
                     </Tab>
                     <Tab className="tab">
-                        <a href="/about" className="dropdown-toggle">About</a>
-                        <ul className="dropdown">
-                            <li><a href="/about">Officers</a></li>
-                            <li><a href="https://docs.google.com/document/d/1AbWsGq4yMjutG-I_jPUq9fuutEBvtcoPZ5IwTnRc1Ns/edit#heading=h.vkmalmlatt01">Join Us</a></li>
-                        </ul>
+                        <a href="/about">About</a>
                     </Tab>
                 </Tab.List>
             </Tab.Group>
@@ -98,7 +97,7 @@ function Header() {
 
             {isMobileView && isHamburgerOpen && ( //scrollable menu on click
                 <div className="scrollmenu font-bold text-white">
-                    <a href="/SignUp">Sign-Up</a>
+                    
                     <a href="/Blog">Blog</a>
                     <a href="/Photos">Photos</a>
                     <a href="/Races">Races</a>
@@ -106,6 +105,7 @@ function Header() {
                     <a href="/Workouts">Workouts</a>
                     <a href="/Routes">Routes</a>
                     <a href="/about">Officers</a>
+                    <a href="/SignUp">Email List</a>
                     <a href="https://docs.google.com/document/d/1AbWsGq4yMjutG-I_jPUq9fuutEBvtcoPZ5IwTnRc1Ns/edit">Join Us</a>
                 </div>
             )}
