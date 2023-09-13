@@ -37,8 +37,8 @@ function Home() {
 
     const images = [
         {original: natsPic, description: 'Welcome to UMD Club Running!',},
-        {original: lillianCapital, description: 'Welcome to UMD Club Running!',},
-        {original: fredHalfPic, description: 'Welcome to UMD Club Running!',},
+        {original: lillianCapital, description: 'Cross Country is here!',},
+        { original: fredHalfPic, description: 'Sprint Workouts Are Here!',},
     ];
 
     const [showModal, setShowModal] = useState(false);
