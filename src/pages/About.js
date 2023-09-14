@@ -5,7 +5,7 @@ import maxImage from '../Pictures/maxw.jpg';
 import domImage from '../Pictures/dominick.png';
 import zachImage from '../Pictures/zack.jpeg';
 import calebImage from '../Pictures/CalebBio.JPG';
-import lillianImage from '../Pictures/lillian.jpeg';
+import lillianImage from '../Pictures/lillianBioPic.jpeg';
 import eamonImage from '../Pictures/eamon2021.jpeg';
 import jbImage from '../Pictures/JacobBio.jpg';
 
