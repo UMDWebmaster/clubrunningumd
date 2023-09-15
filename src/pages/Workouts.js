@@ -1,5 +1,5 @@
 import React from 'react';
-import lillianCapital from '../Pictures/lillianCapital.JPG';
+import gabeZach from '../Pictures/gabe+zach.JPG';
 
 
 function About() {
@@ -7,7 +7,7 @@ function About() {
     return (
         <div>
             <div class="teamPic-container">
-                <img src={lillianCapital} alt="" className="teamPic" />
+                <img src={gabeZach} alt="" className="teamPic" />
             </div>
 
             <div className="flex flex-col items-center justify-center">

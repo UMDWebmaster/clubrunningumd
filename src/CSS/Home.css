@@ -21,12 +21,20 @@
     background: transparent !important;
 }
 
+
+
     .image-gallery-description p {
 
-        border-radius: 30px;
-        font-size: 20px;
+        border-radius: 40px;
+        font-weight: bold;
+        font-size: 22px;
         background-color: #0f0f0f;
         color: #ffffff !important;
+    }
+    .image-gallery-description .no-bold {
+
+        font-weight: none !important;
+      
     }
 
 .image-gallery-left-nav,
@@ -105,7 +113,9 @@
 
 }
 
-@media (max-width: 768px) {
+
+
+@media (max-width: 1000px) {
     .flex.flex-row {
         flex-direction: column-reverse;
     }
@@ -113,5 +123,11 @@
     .align-left {
         text-align: center;
     }
+
+    .image-gallery-description p {
+        font-size: 15px;
+    }
+    
+    
 }
 

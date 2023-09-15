@@ -5,8 +5,9 @@ import 'react-image-gallery/styles/css/image-gallery.css';
 import ImageGallery from 'react-image-gallery';
 import natsPic from '../Pictures/natsTeamPic.JPG';
 import lillianCapital from '../Pictures/lillianCapital.JPG';
-import fredHalfPic from '../Pictures/fredHalfTeam.JPG';
+import stillTrain from '../Pictures/Nationals-51.jpg';
 import people from '../Pictures/4people.JPG';
+import sprinting from '../Pictures/sprintPic.JPG';
 
 function Home() {
 
@@ -36,9 +37,10 @@ function Home() {
     }, []); // Run the effect only once
 
     const images = [
-        {original: natsPic, description: 'Welcome to UMD Club Running!',},
-        {original: lillianCapital, description: 'Cross Country is here!',},
-        { original: fredHalfPic, description: 'Sprint Workouts Are Here!',},
+        {original: natsPic, subdescription: 'Learn More About Our Club Below!', description: 'WELCOME TO MARYLAND CLUB RUNNING!',link:"",},
+        {original: lillianCapital, subdescription: 'Click Here To View Our Fall Training Plan!',description: 'CROSS COUNTRY IS HERE!',link:"https://docs.google.com/spreadsheets/d/1H2lJ0vdM073JJne8gObCv5u0RLwX3T6gv_9Z8tNiW8M/edit#gid=803727052",},
+        {original: sprinting, subdescription: 'Check Out The Sprinter Training Plan Here!',description: 'SPRINT WORKOUTS ARE HERE!',link:"https://docs.google.com/spreadsheets/d/1AbHRNlHQpEJKqNt1qOdgkTryfs4FNwnhgEYYr0_1PTc/edit#gid=0",},
+        {original: stillTrain, subdescription: 'Yes! Join us Mon-Fri at SPH @ 5pm',description: 'ARE WE STILL TRAINING?',link:"",},
     ];
 
     const [showModal, setShowModal] = useState(false);
@@ -51,11 +53,19 @@ function Home() {
         return (
             <div className="image-gallery-image">
                 <img src={item.original} alt={item.originalAlt} />
-                {item.description && (
-                    <div className="image-gallery-description">
-                        <p>{item.description}</p>
-                    </div>
-                )}
+                
+                
+                <div className="image-gallery-description">
+                    
+                    <p className="pt-1">
+                        {item.description}
+                        <div className="md:-mt-6 pb-2 ">
+                            <a href={item.link} className=" md:text-base sm:text-sm text-red-300">{item.subdescription}</a>
+                        </div>
+                        
+                    </p>
+                </div>
+                
             </div>
         );
     };

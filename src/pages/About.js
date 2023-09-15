@@ -49,7 +49,7 @@ function About() {
 					</div>
 
 					<div className="bio-card"> {/*Image on the left*/}
-						<div className="align-left md:w-1/2 md:order-2">
+						<div className="align-left md:w-1/2">
 							<img src={maxImage} alt="Max Pic" />
 						</div>
 						<div className="flex flex-col md:w-1/2 ml-5 mr-5">
