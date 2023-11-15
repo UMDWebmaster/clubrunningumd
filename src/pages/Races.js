@@ -11,13 +11,7 @@ function Races() {
             <div class="teamPic-container">
                 <img src={natsPic} alt="" className="teamPic" /> 
             </div>
-
-            
-               
-
                 <div>
-                   
-
                 <div className="flex flex-col items-center justify-center">
                     <p className="text-white w-3/4 mt-8 mb-8">
                         Maryland Club Running is a member of the{' '}
@@ -52,38 +46,27 @@ function Races() {
                                 <tr>
                                     <td>9/30/2023</td>
                                     <td>Paul Short Run</td>
-                                    <td>Lehigh, VA</td>
-                                  
+                                    <td>Lehigh, VA</td>                             
                                 </tr>
                                 <tr>
                                     <td>10/7/2023</td>
                                     <td>Dashing Dukes Invite</td>
-                                    <td>Elkton, VA</td>
-                                   
+                                    <td>Elkton, VA</td>                              
                                 </tr>
                                 <tr>
                                     <td>10/21/2023</td>
                                     <td>NIRCA Regionals</td>
-                                    <td>Lehigh, PA</td>
-                                   
+                                    <td>Lehigh, PA</td>                             
                                 </tr>
                                 <tr>
                                     <td>11/11/2023</td>
                                     <td>NIRCA Nationals</td>
-                                    <td>Shellbysville, IN</td>
-                                   
-                                </tr>
-                               
+                                    <td>Shellbysville, IN</td>                                 
+                                </tr>                           
                             </tbody>
-                    </table>
-                   
-
+                    </table>              
                 </div>
-              
-
-                 
                 </div>
-            
         </div>
     );
 }
