@@ -55,7 +55,7 @@ function Header() {
                     </Tab>
                    
                     <Tab className="tab active:text-red-600">
-                        <a href="/Blog">Blog</a>
+                        <a href="https://evanmasiello.com/clubrunning/">Blog</a>
                     </Tab>
                     <Tab className="tab">
                         <a href="/Photos" className="dropdown-toggle">Archive</a>
