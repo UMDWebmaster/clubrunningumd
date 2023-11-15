@@ -1,6 +1,6 @@
 import React from 'react';
 import '../CSS/Races.css';
-import natsPic from '../Pictures/natsTeamPic.JPG';
+import sohanPic from '../Pictures/sohanRUnnn.JPG';
 
 
 function Routes() {
@@ -9,7 +9,7 @@ function Routes() {
 
 
             <div class="teamPic-container">
-                <img src={natsPic} alt="" className="teamPic" />
+                <img src={sohanPic} alt="" className="teamPic" />
             </div>
             <div>
                 <div className="flex flex-col items-center justify-center">
@@ -100,7 +100,7 @@ function Routes() {
                                 <td><a href="https://www.mapmyrun.com/routes/view/1391623825">Metro</a></td>
                                 <td>6.06 Miles</td>
                                 <td><a href="https://www.mapmyrun.com/routes/view/1821782096">Cherry Kill</a></td>
-                                <td>11.23 Miles</td>
+                                <td>11.23n Miles</td>
                             </tr>                                                                                                   
                         </tbody>
                        

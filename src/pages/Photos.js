@@ -1,8 +1,6 @@
 import React from 'react';
 import '../CSS/Photos.css';
 import JimmyRun from '../Pictures/JimmyRun.JPG';
-
-
 function Races() {
     return (
         <div>
@@ -21,6 +19,51 @@ function Races() {
                          </tr>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td>11/11/2023</td>
+                            <td>NIRCA Nationals 2023</td>
+                            <td>
+                                <a href="https://photos.google.com/share/AF1QipOstGlgRZfQgHAM094sA_siA4X5HnAwFIhUbKJnQUcq7kXI9kl6UNnSNyyKFU6veA?key=bVo4TW92b3dCUVRlTEJYdEVaaW12d1lTdFg5dzVR">
+                                    Photos
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10/21/2023</td>
+                            <td>NIRCA Regionals 2023</td>
+                            <td>
+                                <a href="https://photos.google.com/share/AF1QipMsDUYHAHua1fFYUsIFcVZu5bm_90KcX6kIFgjhKKfP4G__xx5S6lC0iEuuWsuZ3Q?key=MTdTZGFFdTRUQzNCOVZhcUNSQXJCUkFjWmlDMHBR">
+                                    Photos
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10/7/2023</td>
+                            <td>Dashing Dukes XC 2023</td>
+                            <td>
+                                <a href="https://photos.google.com/share/AF1QipNk7X6yEdye1o8JnG8zPUFOFAiODmemgcwvajG4DN9M1KREEK5TdMel1GL5Em8UsA?key=OE1xVG4yaEpnRDZ1WjdOY2ZrbUpNajFWajhUUW9B">
+                                    Photos
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9/30/2023</td>
+                            <td>Paul Short 2023</td>
+                            <td>
+                                <a href="https://photos.google.com/share/AF1QipMKACaYj5t1NuzNi451TLYXpY8uD2lT9Cr_FPw2q5rgAMPLBnQamWPA2vY1imUsfQ?key=V19HaDlRT2YtOEFHemthb3M4QU9uRlFWZHlNZGV3">
+                                    Photos
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9/16/2023</td>
+                            <td>Cavalier Invite 2023</td>
+                            <td>
+                                <a href="https://photos.google.com/share/AF1QipOcLTcEBoTdPRM7k1vpK5vzlezX88tJgHix0SarS4kp2X6KZpJNh-Jn0Om00FVwLA?key=YmtxWnpsVE5TZFNPR05oZ09UYlQ1SFVaSnRVVjhR">
+                                    Photos
+                                </a>
+                            </td>
+                        </tr>
                         <tr>
                             <td>5/7/2023</td>
                             <td>Frederick Half Marathon</td>
