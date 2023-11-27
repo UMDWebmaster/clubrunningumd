@@ -98,7 +98,7 @@ function Header() {
             {isMobileView && isHamburgerOpen && ( //scrollable menu on click
                 <div className="scrollmenu font-bold text-white">
                     
-                    <a href="/Blog">Blog</a>
+                    <a href="https://evanmasiello.com/clubrunning/">Blog</a>
                     <a href="/Photos">Photos</a>
                     <a href="/Races">Races</a>
                     <a href="/Records">Records</a>
