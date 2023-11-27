@@ -6,7 +6,7 @@ import ImageGallery from 'react-image-gallery';
 import natsPic from '../Pictures/natsTeamPic.JPG';
 import lillianCapital from '../Pictures/lillianCapital.JPG';
 import stillTrain from '../Pictures/Nationals-51.jpg';
-import people from '../Pictures/4people.JPG';
+import people from '../Pictures/IMG_5180_Original.jpg';
 import sprinting from '../Pictures/sprintPic.JPG';
 
 function Home() {
