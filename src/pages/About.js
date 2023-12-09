@@ -136,7 +136,7 @@ function About() {
 							<img src={calebImage} alt="caleb Pic" />
 						</div>
 						<div className="flex flex-col md:w-1/2 ml-5 mr-5">
-							<h1 className="bio-content">Webmaster: Caleb Holland (for now...)</h1>
+							<h1 className="bio-content">Webmaster: Caleb Holland (for now....)</h1>
 							<p className="text-black mb-6">
 								Caleb Holland is a sophomore studying computer science. More commonly known as C Holland,
 								Caleb is known for his absolutely breathtaking strava content, and crowning achievement
