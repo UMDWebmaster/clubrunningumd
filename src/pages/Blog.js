@@ -11,7 +11,7 @@ function Records() {
                 <script>window.location.replace("https://evanmasiello.com/clubrunning/");</script>
                 <h1>Under Construction</h1>
                 <img src={construcPic} alt="Under Construction" className="construction-img" />
-                <p color="blue"><strong><a href="https://evanmasiello.com/clubrunning/">You can find the new blog <span text-decoration="underline">here!</span></a></strong></p>
+                <p color="blue"><strong><a href="https://evanmasiello.com/clubrunning/">You can find the new blog: <span text-decoration="underline">here!</span></a></strong></p>
             </main>
         </div>
     );
