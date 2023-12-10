@@ -51,7 +51,7 @@ function Routes() {
                             <tr>
                                 <td><a href="https://www.mapmyrun.com/routes/view/2289717640">Cherry Chill Loop</a></td>
                                 <td>4.88 Miles</td>
-                                <td><a href="https://www.mapmyrun.com/routes/view/1403696812">Hyatschill</a></td>
+                                <td><a href="https://www.mapmyrun.com/routes/view/1403696812">Hyattschill</a></td>
                                 <td>8.09 Miles</td>
                             </tr>
                             <tr>
@@ -100,7 +100,7 @@ function Routes() {
                                 <td><a href="https://www.mapmyrun.com/routes/view/1391623825">Metro</a></td>
                                 <td>6.06 Miles</td>
                                 <td><a href="https://www.mapmyrun.com/routes/view/1821782096">Cherry Kill</a></td>
-                                <td>11.23n Miles</td>
+                                <td>11.23 Miles</td>
                             </tr>                                                                                                   
                         </tbody>
                        
