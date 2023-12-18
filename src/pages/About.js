@@ -4,7 +4,7 @@ import sohanImage from '../Pictures/sohanintro.jpeg';
 import maxImage from '../Pictures/maxw.jpg';
 import domImage from '../Pictures/dominick.png';
 import zachImage from '../Pictures/zack.jpeg';
-import calebImage from '../Pictures/CalebBio.JPG';
+import evanImage from '../Pictures/evanProfile.png';
 import lillianImage from '../Pictures/lillianBioPic.jpeg';
 import eamonImage from '../Pictures/eamon2021.jpeg';
 import jbImage from '../Pictures/JacobBio.jpg';
@@ -133,16 +133,16 @@ function About() {
 
 					<div className="bio-card"> {/*Image on the left*/}
 						<div className="align-left md:w-1/2 md:order-2">
-							<img src={calebImage} alt="caleb Pic" />
+							<img src={evanImage} alt="Evan Pic" />
 						</div>
 						<div className="flex flex-col md:w-1/2 ml-5 mr-5">
-							<h1 className="bio-content">Webmaster: Caleb Holland (for now...)</h1>
+							<h1 className="bio-content">Webmaster: Evan Masiello</h1>
 							<p className="text-black mb-6">
-								Caleb Holland is a sophomore studying computer science. More commonly known as C Holland,
-								Caleb is known for his absolutely breathtaking strava content, and crowning achievement
-								as the 2023 hot sauce night co-champion. In his free time, Caleb ponders life's biggest questions,
-								such as: "Should you salt your chocolate milk?" and "does pizza taste better upside down?"
-								Talk to Caleb if you ever want to discuss fascinating topics such as these.
+								Evan Masiello is a sophomore studying computer science. Evan is known for hosting the most elite radio
+								show of all time "Yoshi City Subway" and he is also the creator of the least toxic and most loved
+								social media app "Geo Cam". Evan is currently eyeing a big PR this spring in the Freddy half and is somewhat
+								interested in running track races. Evan would also like to shoutout previous webamster Caleb Holland for creating
+								this new website!
 							</p>
 						</div>
 					</div>

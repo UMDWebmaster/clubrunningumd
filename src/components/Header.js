@@ -31,7 +31,7 @@ function Header() {
     const toggleMenu = () => { setIsHamburgerOpen(!isHamburgerOpen); };
 
     return (
-        <header className="App-header bg-black">
+        <header className="App-header bg-neutral-900">
             
             {isMobileView && (//title on mobile
                 <div className="MobileHome">

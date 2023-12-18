@@ -42,7 +42,7 @@
 
 .tab ul.dropdown {
 	width: 110px;
-	background-color: black;
+	background-color: #171717;
 	position: absolute;
 	z-index: 999;
 	display: none;

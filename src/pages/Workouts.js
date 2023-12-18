@@ -12,7 +12,7 @@ function About() {
 
             <div className="flex flex-col items-center justify-center">
                 <h3 className="text-white text-3xl font-bold mt-5 mb-5">Maryland Club Running Workout Schedules</h3>
-                        <table>
+                        <table class="mb-10">
                             <thead>
                                 <tr>
                                     <th>Year</th>

@@ -41,7 +41,7 @@ input[type=text], input[type=email] {
 
     input[type=text]:focus, input[type=email]:focus {
         border: 2px solid blue;
-        color: black;
+        color: #171717;
     }
 
     label {

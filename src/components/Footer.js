@@ -4,7 +4,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaStrava, FaEnvelope } from 'react-
 function Footer() {
     return (
         <>
-            <footer id="footer" className="bg-black flex items-center justify-center border-t border-white border-opacity-70 text-white py-6 w-full">
+            <footer id="footer" className="bg-neutral-900 flex items-center justify-center border-t border-white border-opacity-70 text-white py-6 w-full">
                 <div className="inner">
                     <ul className="flex color-white">
                         <li className="inline-block mr-5 color-white"><a href="https://www.facebook.com/UMDclubrunning/?fref=ts"><FaFacebook size={32}/></a></li>
