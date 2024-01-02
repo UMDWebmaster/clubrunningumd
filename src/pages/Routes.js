@@ -91,13 +91,13 @@ function Routes() {
                                 <td>9.89 Miles</td>
                             </tr>   
                             <tr>
-                                <td><a href="https://www.mapmyrun.com/routes/view/2648473711">Hills 4 Days V2</a></td>
+                                <td><a href="https://www.mapmyrun.com/routes/view/2648473711">Old Hills 4 Days</a></td>
                                 <td>6.07 Miles</td>
                                 <td><a href="https://www.mapmyrun.com/routes/view/2289733390">Sligo</a></td>
                                 <td>11.10 Miles</td>
                             </tr>  
                             <tr>
-                                <td><a href="https://www.mapmyrun.com/routes/view/5868878107">Old Hills 4 Days</a></td>
+                                <td><a href="https://www.mapmyrun.com/routes/view/5868878107">Hills 4 Days V2</a></td>
                                 <td>6.07 Miles</td>
                                 <td><a href="https://www.mapmyrun.com/routes/view/1821782096">Cherry Kill</a></td>
                                 <td>11.23 Miles</td>
