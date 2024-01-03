@@ -72,11 +72,11 @@ function About() {
 						<div className="flex flex-col md:w-1/2 ml-5 mr-5">
 							<h1 className="bio-content">Co-Treasurer: Lillian Hsu</h1>
 							<p className="text-black mb-6">
-							Lillian is an environmental major from Germantown, Maryland. After a year of being Vice President of the club
-							she decided that she’d rather spend her free time looking at the club’s Venmo transactions as your
-							Club Financial Treasurer. Lillian can also be found taking photos at meets (and she doesn’t charge for or 
-							watermark them which is a nice perk). She is also a collector of singlets and is currently
-							in the market for a UM-Duluth single (if you know anyone).
+							Lillian is an environmental science major from Germantown, Maryland. After a year of being Vice President
+							of the club she decided that she’d rather spend her free time looking at the club’s Venmo transactions as
+							your Club Financial Treasurer. Lillian can also be found taking photos at meets (and she doesn’t charge for
+							or watermark them which is a nice perk). She is also a collector of singlets and is currently in the market
+							for a UM-Duluth singlet (if you know anyone).
 							</p>
 						</div>
 					</div>
