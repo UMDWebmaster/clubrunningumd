@@ -1,13 +1,12 @@
 import React from 'react';
 import '../CSS/About.css';
-import sohanImage from '../Pictures/sohanintro.jpeg';
 import maxImage from '../Pictures/maxw.jpg';
 import domImage from '../Pictures/dominick.png';
 import zachImage from '../Pictures/zack.jpeg';
 import evanImage from '../Pictures/evanProfile.png';
 import lillianImage from '../Pictures/lillianProfile.JPG';
 import eamonImage from '../Pictures/eamon2021.jpeg';
-import jbImage from '../Pictures/JacobBio.jpg';
+import jonahImage from '../Pictures/JonahProfile.jpeg';
 
 
 function About() {
@@ -115,16 +114,17 @@ function About() {
 
 					<div className="bio-card"> {/*Image on the left*/}
 						<div className="align-left md:w-1/2">
-							<img src={zachImage} alt="zach Pic" />
+							<img src={jonahImage} alt="Jonah Pic" />
 						</div>
 						<div className="flex flex-col md:w-1/2 ml-5 mr-5">
-					<h1 className="bio-content">Social Chair: Zach Kiedrowski</h1>
+					<h1 className="bio-content">Social Chair: Jonah Plotkin</h1>
 							<p className="text-black mb-6">
-								Zach Kiedrowski is a third year member of the club and an Aberdeen High School
-								alum. He is dual degreeing in environmental science and statistics. Zach started
-								running his sophomore year of high school and fell in love the sport, acting as the captain
-								of his track team his senior year. Zach ran 2:55:38 at the 2022 Baltimore Marathon and now
-								has his sights set on cross country season and the Boston Marathon.
+							Jonah Plotkin is a freshman majoring in computer science from Bethesda, Maryland. He has been an avid runner 
+							since early middle school and was a varsity runner for the Walt Whitman Vikings. If you ever ask him where his 
+							favorite place to run, he will almost always say, "The canal!" (It will be long before the canal is dethroned). 
+							Aside from running, Jonah loves to ski, sail, learn guitar riffs, and follow NFL and Formula One. His future 
+							athletic ambitions include becoming a marathoner, possibly a triathlete, and running more PRs. He also really 
+							wants to visit the Grand Canyon.  As social chair, Jonah aims to ensure club running is a memorable experience for everyone.
 							</p>
 						</div>
 					</div>
@@ -145,13 +145,6 @@ function About() {
 							</p>
 						</div>
 					</div>
-
-
-					
-
-
-
-
         </div>
     );
 }
