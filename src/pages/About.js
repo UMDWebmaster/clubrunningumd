@@ -5,7 +5,7 @@ import maxImage from '../Pictures/maxw.jpg';
 import domImage from '../Pictures/dominick.png';
 import zachImage from '../Pictures/zack.jpeg';
 import evanImage from '../Pictures/evanProfile.png';
-import lillianImage from '../Pictures/lillianBioPic.jpeg';
+import lillianImage from '../Pictures/lillianProfile.JPG';
 import eamonImage from '../Pictures/eamon2021.jpeg';
 import jbImage from '../Pictures/JacobBio.jpg';
 
@@ -67,17 +67,16 @@ function About() {
 
 					<div className="bio-card"> {/*Image on the left*/}
 						<div className="align-left md:w-1/2 md:order-2">
-							<img src={jbImage} alt="JB Pic" />
+							<img src={lillianImage} alt="Lillian Pic" />
 						</div>
 						<div className="flex flex-col md:w-1/2 ml-5 mr-5">
-							<h1 className="bio-content">Co-Treasurer: Jacob Bush</h1>
+							<h1 className="bio-content">Co-Treasurer: Lillian Hsu</h1>
 							<p className="text-black mb-6">
-								Jacob is a junior studying computer science. He ran for treasurer because he
-								felt like managing more than the usual 2 digit number in his personal bank account.
-								He is currently trying his best to fight tax fraud and a suppressed gambling addiction.
-								When he's not frolicking in club funds he enjoys ice skating, impromptu sports,
-								and most of all being with his friends. If you ever want to talk about life and all of
-								its crazy intricacies you should go meet him!
+							Lillian is an environmental major from Germantown, Maryland. After a year of being Vice President of the club
+							she decided that she’d rather spend her free time looking at the club’s Venmo transactions as your
+							Club Financial Treasurer. Lillian can also be found taking photos at meets (and she doesn’t charge for or 
+							watermark them which is a nice perk). She is also a collector of singlets and is currently
+							in the market for a UM-Duluth single (if you know anyone).
 							</p>
 						</div>
 					</div>
