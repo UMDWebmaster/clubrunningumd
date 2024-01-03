@@ -16,18 +16,17 @@ function About() {
         <div className="about-us-container">
 					<div className="bio-card"> {/*Image on the left*/}
 						<div className="align-left md:w-1/2">
-							<img src={sohanImage} alt="Sohan Pic"/>
+							<img src={zachImage} alt="Zach Pic"/>
 						</div>
 						<div className="flex flex-col md:w-1/2 ml-5 mr-5">
-							<h1 className="bio-content">President: Sohan Ganatra</h1>
+							<h1 className="bio-content">President: Zach Kiedrowski</h1>
 							<p className="text-black mb-6">
-								Sohan is a senior computer science major and avid believer in the magical healing powers of E-Fields.
-								When not running, Sohan spends his time thinking of ways to improve his Strava presence in hopes of
-								pursuing a career as a Strava influencer. Some other things Sohan loves are fried tofu, the mind goblin,
-								his dog Sophie, and studying up on Club Running and Brian Lau lore. Sohan is also a big fan of professional
-								running and always looking to hear your hot takes and race predictions. Recently Sohan has been interested
-								in making custom singlets (sometimes lacking in quality but always made with love), so talk to him if you
-								have any great singlet ideas.
+							Zach is a third-year member of the club and an Aberdeen High School alum.
+							He is pursuing a dual degree in environmental science and statistics.
+							Zach started running his sophomore year of high school and fell in love the sport,
+							acting as the captain of his track team his senior year.
+							Zach ran 2:55:38 at the 2022 Baltimore Marathon but his crowning achievement
+							is winning the 2023 Ice Cream Trifecta Run!
 							</p>
 						</div>
 					</div>
@@ -140,7 +139,8 @@ function About() {
 							<p className="text-black mb-6">
 								Evan Masiello is a sophomore studying computer science. Evan is known for hosting the most elite radio
 								show of all time "Yoshi City Subway" and he is also the creator of the least toxic and most loved
-								social media app "Geo Cam". Evan is currently eyeing a big PR this spring in the Freddy half and is somewhat
+								social media app "Geo Cam". Evan started running in 5th grade and has been grinding ever since, becoming a captain and
+								key member of the Voorhees Higschool 2022 Sectional Championship Cross Country Team. Evan is currently eyeing a big PR this spring in the Freddy half and is somewhat
 								interested in running track races. Evan would also like to shoutout previous webamster Caleb Holland for creating
 								this new website!
 							</p>
