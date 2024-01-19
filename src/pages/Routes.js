@@ -210,6 +210,8 @@ function Routes() {
   const [selectedSorting, setSelectedSorting] = useState("popularity");
   const [searchVal, setSearchVal] = useState("");
 
+  routesList.sort((a, b) => a.distance - b.distance);
+
   switch (selectedSorting) {
     case "popularity":
       routesList.sort((a, b) => b.popularity - a.popularity);
