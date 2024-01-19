@@ -2,12 +2,17 @@
   display: inline-block;
 }
 
-input[type="text"],
-input[type="email"] {
+input[type="text"] {
   width: auto;
   padding: 2px;
   margin: 0 0 0 0;
   background: #fff;
+}
+
+input,
+select {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 span.line {
