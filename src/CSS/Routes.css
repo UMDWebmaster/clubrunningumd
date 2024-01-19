@@ -1,0 +1,11 @@
+.star {
+  display: inline-block;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: auto;
+  padding: 2px;
+  margin: 0 0 0 0;
+  background: #fff;
+}
