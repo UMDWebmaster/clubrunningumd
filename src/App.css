@@ -10,7 +10,7 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: scroll;
+  overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 50px;
   min-width: 100%;
@@ -22,8 +22,9 @@ body {
   text-align: center;
 }
 
-table {
-  overflow-x: scroll;
+.tableContainer {
+  overflow-x: auto;
+  max-width: 100%;
 }
 
 body::-webkit-scrollbar {

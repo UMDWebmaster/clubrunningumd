@@ -258,54 +258,58 @@ function Routes() {
             </span>
           </h4>
           <br></br>
-          <table className="mb-10">
-            <thead>
-              <tr>
-                <th>Route</th>
-                <th>Distance</th>
-                <th>Popularity</th>
-              </tr>
-            </thead>
-            <tbody>
-              {routesList
-                .filter(
-                  (item) =>
-                    searchVal === "" ||
-                    (!isNaN(parseInt(searchVal)) &&
-                      (Math.round(item.distance) === parseInt(searchVal) ||
-                        Math.floor(item.distance) === parseInt(searchVal))) ||
-                    (isNaN(parseInt(searchVal)) &&
-                      item.name.toLowerCase().includes(searchVal.toLowerCase()))
-                )
-                .map((item) => (
-                  <tr>
-                    <td>
-                      {item.name} (
-                      <a href={item.link} target="_blank" rel="noreferrer">
-                        link
-                      </a>
-                      )
-                    </td>
-                    <td>{item.distance} Miles</td>
-                    <td>
-                      {Array(item.popularity)
-                        .fill()
-                        .map((_, i) => {
-                          return (
-                            <AiFillStar
-                              className="star"
-                              color={"#e4e5e9"}
-                              size={25}
-                              display="inline-block"
-                            />
-                          );
-                        })}{" "}
-                      ({item.popularity})
-                    </td>
-                  </tr>
-                ))}
-            </tbody>
-          </table>
+          <div className="tableContainer">
+            <table className="mb-10 table-auto">
+              <thead>
+                <tr>
+                  <th>Route</th>
+                  <th>Distance</th>
+                  <th>Popularity</th>
+                </tr>
+              </thead>
+              <tbody>
+                {routesList
+                  .filter(
+                    (item) =>
+                      searchVal === "" ||
+                      (!isNaN(parseInt(searchVal)) &&
+                        (Math.round(item.distance) === parseInt(searchVal) ||
+                          Math.floor(item.distance) === parseInt(searchVal))) ||
+                      (isNaN(parseInt(searchVal)) &&
+                        item.name
+                          .toLowerCase()
+                          .includes(searchVal.toLowerCase()))
+                  )
+                  .map((item) => (
+                    <tr>
+                      <td>
+                        {item.name} (
+                        <a href={item.link} target="_blank" rel="noreferrer">
+                          link
+                        </a>
+                        )
+                      </td>
+                      <td>{item.distance} Miles</td>
+                      <td>
+                        {Array(item.popularity)
+                          .fill()
+                          .map((_, i) => {
+                            return (
+                              <AiFillStar
+                                className="star"
+                                color={"#e4e5e9"}
+                                size={25}
+                                display="inline-block"
+                              />
+                            );
+                          })}{" "}
+                        ({item.popularity})
+                      </td>
+                    </tr>
+                  ))}
+              </tbody>
+            </table>
+          </div>
           <h1>
             If a route is missing please use
             <strong>

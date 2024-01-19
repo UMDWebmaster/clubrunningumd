@@ -931,46 +931,48 @@ function Records() {
             </span>
           </h4>
           <br></br>
-          <table className="mb-10">
-            <thead>
-              <tr>
-                <th>Season</th>
-                <th>Event</th>
-                <th>Gender</th>
-                <th>Time/Mark</th>
-                <th>Athlete</th>
-                <th>Date</th>
-                <th>Meet</th>
-              </tr>
-            </thead>
-            <tbody>
-              {RecordsList.filter(
-                (item) =>
-                  (searchVal === "" ||
-                    item.athlete
-                      .toLowerCase()
-                      .includes(searchVal.toLowerCase()) ||
-                    item.event
-                      .toLowerCase()
-                      .includes(searchVal.toLowerCase()) ||
-                    item.meet
-                      .toLowerCase()
-                      .includes(searchVal.toLowerCase())) &&
-                  (seasonVal === "all" || seasonVal === item.season) &&
-                  (genderVal === "all" || genderVal === item.gender)
-              ).map((item) => (
+          <div className="tableContainer">
+            <table className="mb-10 table-auto">
+              <thead>
                 <tr>
-                  <td>{item.season}</td>
-                  <td>{item.event}</td>
-                  <td>{item.gender}</td>
-                  <td>{item.time}</td>
-                  <td>{item.athlete}</td>
-                  <td>{item.date}</td>
-                  <td>{item.meet}</td>
+                  <th>Season</th>
+                  <th>Event</th>
+                  <th>Gender</th>
+                  <th>Time/Mark</th>
+                  <th>Athlete</th>
+                  <th>Date</th>
+                  <th>Meet</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {RecordsList.filter(
+                  (item) =>
+                    (searchVal === "" ||
+                      item.athlete
+                        .toLowerCase()
+                        .includes(searchVal.toLowerCase()) ||
+                      item.event
+                        .toLowerCase()
+                        .includes(searchVal.toLowerCase()) ||
+                      item.meet
+                        .toLowerCase()
+                        .includes(searchVal.toLowerCase())) &&
+                    (seasonVal === "all" || seasonVal === item.season) &&
+                    (genderVal === "all" || genderVal === item.gender)
+                ).map((item) => (
+                  <tr>
+                    <td>{item.season}</td>
+                    <td>{item.event}</td>
+                    <td>{item.gender}</td>
+                    <td>{item.time}</td>
+                    <td>{item.athlete}</td>
+                    <td>{item.date}</td>
+                    <td>{item.meet}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
