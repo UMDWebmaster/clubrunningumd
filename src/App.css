@@ -1,33 +1,37 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 .App {
-    width: 100%;
-    max-width: 100%;
+  width: 100%;
+  max-width: 100%;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
-    min-width: 100%;
-    max-width: 100%;
-    background: linear-gradient(to top right, #fff152 0%, #ff5252 100%);
-    /* old color: linear-gradient(to top right, #b3b300 0%, #cc0000 100%); */
-    background-repeat: no-repeat;
-    width: 100%;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow-x: scroll;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px;
+  min-width: 100%;
+  max-width: 100%;
+  background: linear-gradient(to top right, #fff152 0%, #ff5252 100%);
+  /* old color: linear-gradient(to top right, #b3b300 0%, #cc0000 100%); */
+  background-repeat: no-repeat;
+  width: 100%;
+  text-align: center;
 }
 
-    body::-webkit-scrollbar {
-        display: none;
-    }
+table {
+  overflow-x: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
 
 @media only screen and (max-width: 1000px) {
-    body {
-        background-repeat: no-repeat;
-    }
+  body {
+    background-repeat: no-repeat;
+  }
 }
