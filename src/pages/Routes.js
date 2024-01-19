@@ -62,10 +62,10 @@ function Routes() {
       popularity: 2,
     },
     {
-      name: "Hyattschill",
+      name: "Hyattsville",
       distance: 8.09,
       link: "https://www.mapmyrun.com/routes/view/1403696812",
-      popularity: 1,
+      popularity: 2,
     },
     {
       name: "Cherry Chill",
