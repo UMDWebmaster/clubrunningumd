@@ -869,7 +869,8 @@ function Records() {
       );
       break;
     default:
-      RecordsList.sort((a, b) => a.season - b.season);
+      RecordsList.sort((a, b) => b.true_distance - a.true_distance);
+      RecordsList.sort((a, b) => a.season.localeCompare(b.season));
   }
 
   return (
