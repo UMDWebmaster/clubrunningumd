@@ -22,6 +22,10 @@ body {
   text-align: center;
 }
 
+html {
+  background: linear-gradient(to top right, #fff152 0%, #ff5252 100%);
+}
+
 .tableContainer {
   overflow-x: auto;
   max-width: 100%;
