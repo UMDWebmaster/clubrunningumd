@@ -235,21 +235,25 @@ function Routes() {
             UMD Club Running Routes
           </h3>
           <h4>
-            Search:{" "}
-            <input
-              type="text"
-              placeholder="Name or distance"
-              onChange={(e) => setSearchVal(e.target.value)}
-            ></input>{" "}
-            Sort By:{" "}
-            <select
-              value={selectedSorting}
-              onChange={(e) => setSelectedSorting(e.target.value)}
-            >
-              <option value="popularity">Popularity</option>
-              <option value="shortest">Distance (increasing)</option>
-              <option value="longest">Distance (decreasing)</option>
-            </select>
+            <span class="line">
+              Search:{" "}
+              <input
+                type="text"
+                placeholder="Name or distance"
+                onChange={(e) => setSearchVal(e.target.value)}
+              ></input>{" "}
+            </span>
+            <span class="line" style={{ paddingLeft: 5 + "px" }}>
+              Sort By:{" "}
+              <select
+                value={selectedSorting}
+                onChange={(e) => setSelectedSorting(e.target.value)}
+              >
+                <option value="popularity">Popularity</option>
+                <option value="shortest">Distance (increasing)</option>
+                <option value="longest">Distance (decreasing)</option>
+              </select>
+            </span>
           </h4>
           <br></br>
           <table className="mb-10">
