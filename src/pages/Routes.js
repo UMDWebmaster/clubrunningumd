@@ -41,7 +41,7 @@ function Routes() {
       name: "Riverdale Loop",
       distance: 7.65,
       link: "https://www.mapmyrun.com/routes/view/1391609449",
-      popularity: 1,
+      popularity: 2,
     },
     {
       name: "Cherry Chill Loop",
@@ -281,7 +281,7 @@ function Routes() {
                   <tr>
                     <td>
                       {item.name} (
-                      <a href={item.link} target="_blank">
+                      <a href={item.link} target="_blank" rel="noreferrer">
                         link
                       </a>
                       )
@@ -313,6 +313,7 @@ function Routes() {
                 class="link"
                 href="https://forms.gle/FvunMkBVNLjz65XL8"
                 target="_blank"
+                rel="noreferrer"
               >
                 {" "}
                 this form{" "}

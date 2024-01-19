@@ -1,19 +1,980 @@
-import React from 'react';
-import '../CSS/Construc.css';
-import construcPic from '../Pictures/trafficcone.png';
-
+import React from "react";
+import "../CSS/Races.css";
+import "../CSS/Routes.css";
+import fredHalfPic from "../Pictures/fredHalfTeam.JPG";
+import { useState } from "react";
 
 function Records() {
+  const RecordsList = [
+    {
+      season: "Indoor",
+      event: "1 mile",
+      gender: "M",
+      true_distance: 1609,
+      time: "4:23.37",
+      seconds: 4 * 60 + 23.37,
+      athlete: "Max Worley",
+      date: "2/11/2017",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "1 mile",
+      gender: "F",
+      true_distance: 1609,
+      time: "5:33.74",
+      seconds: 5 * 60 + 33.74,
+      athlete: "Shannon Ferguson",
+      date: "2/11/2012",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "800 meter",
+      gender: "M",
+      true_distance: 800,
+      time: "1:56.65",
+      seconds: 1 * 60 + 56.65,
+      athlete: "Sadou Sow",
+      date: "2/11/2023",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "800 meter",
+      gender: "F",
+      true_distance: 800,
+      time: "2:24.41",
+      seconds: 2 * 60 + 24.41,
+      athlete: "Kate Eckart",
+      date: "2/15/2020",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "4x400m Relay",
+      gender: "M",
+      true_distance: 1600,
+      time: "3:36.12",
+      seconds: 3 * 60 + 36.12,
+      athlete: "John Bolster, Scott Roman, Ryan Scott, Brion Tillman-Young",
+      date: "2/13/2016",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "4x400m Relay",
+      gender: "F",
+      true_distance: 1600,
+      time: "4:37.53",
+      seconds: 4 * 60 + 37.53,
+      athlete: "Katrina Hrabinski, Erin Langille, Julia Heiges, Catie Denz",
+      date: "2/11/2017",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "Distance Medley Relay",
+      gender: "M",
+      true_distance: 4000,
+      time: "11:03.99",
+      seconds: 11 * 60 + 3.99,
+      athlete: "Ethan Burbridge, DeWayne Haamid, Daniel Jordan, Jack Wavering",
+      date: "2/10/2018",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "Distance Medley Relay",
+      gender: "F",
+      true_distance: 4000,
+      time: "13:24.17",
+      seconds: 13 * 60 + 24.17,
+      athlete:
+        "Katrina Hrabinski, Shannon MacMaster, Luanne Zimmermann, Ellen Tuttle",
+      date: "2/10/2018",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "3000 meter",
+      gender: "M",
+      true_distance: 3000,
+      time: "8:49.13",
+      seconds: 8 * 60 + 49.13,
+      athlete: "Patrick Hanley",
+      date: "2/13/2016",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "3000 meter",
+      gender: "F",
+      true_distance: 3000,
+      time: "10:14.53",
+      seconds: 10 * 60 + 14.53,
+      athlete: "Shannon MacMaster",
+      date: "2/15/2020",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "400 meter",
+      gender: "M",
+      true_distance: 400,
+      time: "50.87",
+      seconds: 50.87,
+      athlete: "Clayton Buckman",
+      date: "2/15/2020",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "400 meter",
+      gender: "F",
+      true_distance: 400,
+      time: "1:04.06",
+      seconds: 1 * 60 + 4.06,
+      athlete: "Molly Wilson",
+      date: "2/12/2022",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "200 meter",
+      gender: "M",
+      true_distance: 200,
+      time: "23.06",
+      seconds: 23.06,
+      athlete: "Reggie Carnegie",
+      date: "2/10/2018",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "200 meter",
+      gender: "F",
+      true_distance: 200,
+      time: "29.62",
+      seconds: 29.62,
+      athlete: "Sofia Grossman",
+      date: "2/15/2020",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "4x200m Relay",
+      gender: "M",
+      true_distance: 800,
+      time: "1:37.53",
+      seconds: 1 * 60 + 37.53,
+      athlete: "Jonathan Shinholt, Drew Lepre, Kareem McDavid, Fares Massoud",
+      date: "2/10/2018",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "60 meter",
+      gender: "M",
+      true_distance: 60,
+      time: "7.12",
+      seconds: 7.12,
+      athlete: "Reggie Carnegie",
+      date: "2/10/2018",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "60 meter",
+      gender: "F",
+      true_distance: 60,
+      time: "8.85",
+      seconds: 8.85,
+      athlete: "Paige Munshell",
+      date: "2/10/2019",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "60m Hurdles",
+      gender: "M",
+      true_distance: 60,
+      time: "8.67",
+      seconds: 8.67,
+      athlete: "Drew Lepre",
+      date: "2/10/2018",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "60m Hurdles",
+      gender: "F",
+      true_distance: 60,
+      time: "10.14",
+      seconds: 10.14,
+      athlete: "Sofia Grossman",
+      date: "2/15/2020",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "High Jump",
+      gender: "M",
+      true_distance: 0,
+      time: "1.88 (Mark)",
+      seconds: 0,
+      athlete: "David Tarcza",
+      date: "2/13/2016",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "High Jump",
+      gender: "F",
+      true_distance: 0,
+      time: "1.52 (Mark)",
+      seconds: 0,
+      athlete: "Sofia Grossman",
+      date: "2/15/2020",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "Triple Jump",
+      gender: "M",
+      true_distance: 0,
+      time: "12 (Mark)",
+      seconds: 0,
+      athlete: "Pramodh Manian",
+      date: "2/10/2018",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "Long Jump",
+      gender: "M",
+      true_distance: 0,
+      time: "5.85 (Mark)",
+      seconds: 0,
+      athlete: "Chris Mitchell",
+      date: "2/10/2018",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "Shot Put",
+      gender: "M",
+      true_distance: 0,
+      time: "11.76 (Mark)",
+      athlete: "Henry Sheppard",
+      seconds: 0,
+      date: "2/12/2022",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Indoor",
+      event: "Shot Put",
+      gender: "F",
+      true_distance: 0,
+      time: "10.31 (Mark)",
+      seconds: 0,
+      athlete: "Sofia Grossman",
+      date: "2/11/2023",
+      meet: "Happy Valley Invitational",
+    },
+    {
+      season: "Outdoor",
+      event: "800 meter",
+      gender: "M",
+      true_distance: 800,
+      time: "1:55.53",
+      seconds: 1 * 60 + 55.53,
+      athlete: "Ryan Scott",
+      date: "4/30/2016",
+      meet: "Paul Kaiser Classic",
+    },
+    {
+      season: "Outdoor",
+      event: "800 meter",
+      gender: "F",
+      true_distance: 800,
+      time: "2:21.52",
+      seconds: 2 * 60 + 21.52,
+      athlete: "Kate Eckart",
+      date: "5/3/2019",
+      meet: "Kehoe Invitational",
+    },
+    {
+      season: "Outdoor",
+      event: "5000 meter",
+      gender: "M",
+      true_distance: 5000,
+      time: "14:52.84",
+      seconds: 14 * 60 + 52.84,
+      athlete: "Patrick Hanley",
+      date: "4/21/2016",
+      meet: "Widener Invitational",
+    },
+    {
+      season: "Outdoor",
+      event: "5000 meter",
+      gender: "F",
+      true_distance: 5000,
+      time: "17:48.36",
+      seconds: 17 * 60 + 48.36,
+      athlete: "Shannon MacMaster",
+      date: "4/13/2019",
+      meet: "NIRCA Nationals",
+    },
+    {
+      season: "Outdoor",
+      event: "4x400m Relay",
+      gender: "M",
+      true_distance: 1600,
+      time: "3:23.38",
+      seconds: 3 * 60 + 23.38,
+      athlete:
+        "Evan Gresser, Lester Crockett, Mark Kwegyir-Aggrey, Brion Tillman-Young",
+      date: "4/26/2017",
+      meet: "Penn Relays Carnival",
+    },
+    {
+      season: "Outdoor",
+      event: "4x400m Relay",
+      gender: "F",
+      true_distance: 1600,
+      time: "4:26.73",
+      seconds: 4 * 60 + 26.73,
+      athlete: "Lila Coffman, Kayleigh McNeill, Diana Liepinya, Molly Wilson",
+      date: "5/1/2022",
+      meet: "Paul Kaiser Invite",
+    },
+    {
+      season: "Outdoor",
+      event: "1500 meter",
+      gender: "M",
+      true_distance: 1500,
+      time: "3:57.31",
+      seconds: 3 * 60 + 57.31,
+      athlete: "Max Worley",
+      date: "5/5/2023",
+      meet: "Kehoe Twilight",
+    },
+    {
+      season: "Outdoor",
+      event: "1500 meter",
+      gender: "F",
+      true_distance: 1500,
+      time: "4:44.13",
+      seconds: 4 * 60 + 44.13,
+      athlete: "Shannon MacMaster",
+      date: "4/13/2019",
+      meet: "NIRCA Nationals",
+    },
+    {
+      season: "Outdoor",
+      event: "1 Mile",
+      gender: "M",
+      true_distance: 1609,
+      time: "4:25.00",
+      seconds: 4 * 60 + 25,
+      athlete: "Ryun Anderson",
+      date: "3/26/2016",
+      meet: "Cavalier Invitational",
+    },
+    {
+      season: "Outdoor",
+      event: "1 Mile",
+      gender: "F",
+      true_distance: 1609,
+      time: "5:17.76",
+      seconds: 5 * 60 + 17.76,
+      athlete: "Shannon MacMaster",
+      date: "3/30/2019",
+      meet: "Cavalier Invitational",
+    },
+    {
+      season: "Outdoor",
+      event: "4x1600m Relay",
+      gender: "M",
+      true_distance: 6400,
+      time: "18:40.80",
+      seconds: 18 * 60 + 40.8,
+      athlete: "Ethan Burbridge, Trey Crump, Adolfo Blassino, Chris Steenkamer",
+      date: "4/23/2016",
+      meet: "Club Penn Relays",
+    },
+    {
+      season: "Outdoor",
+      event: "4x1600m Relay",
+      gender: "F",
+      true_distance: 6400,
+      time: "23:46.23",
+      seconds: 23 * 60 + 46.23,
+      athlete: "LeAnne Young, Sara Shonkwiler, Shannon McHale, Emily Ruppel",
+      date: "3/29/2015",
+      meet: "Club Penn Relays",
+    },
+    {
+      season: "Outdoor",
+      event: "Distance Medley Relay",
+      gender: "M",
+      true_distance: 4000,
+      time: "10:56.13",
+      seconds: 10 * 60 + 56.13,
+      athlete:
+        "Patrick Hanley, Adolfo Blassino, Scott Berryman, Chris Steenkamer",
+      date: "3/29/2015",
+      meet: "Club Penn Relays",
+    },
+    {
+      season: "Outdoor",
+      event: "Distance Medley Relay",
+      gender: "F",
+      true_distance: 4000,
+      time: "14:39.33",
+      seconds: 14 * 60 + 39.33,
+      athlete: "LeAnne Young, Rachel Egan, Rachel Norton, Sami Tocman",
+      date: "4/23/2016",
+      meet: "Club Penn Relays",
+    },
+    {
+      season: "Outdoor",
+      event: "3000m Steeplechase",
+      gender: "M",
+      true_distance: 3000,
+      time: "9:59.60",
+      seconds: 9 * 60 + 59.6,
+      athlete: "Jack Wavering",
+      date: "4/28/2018",
+      meet: "Paul Kaiser Classic",
+    },
+    {
+      season: "Outdoor",
+      event: "3000m Steeplechase",
+      gender: "F",
+      true_distance: 3000,
+      time: "12:12.57",
+      seconds: 12 * 60 + 12.57,
+      athlete: "Katrina Hrabinski",
+      date: "4/13/2019",
+      meet: "NIRCA Nationals",
+    },
+    {
+      season: "Outdoor",
+      event: "200 meter",
+      gender: "M",
+      true_distance: 200,
+      time: "22.32",
+      seconds: 22.32,
+      athlete: "Clayton Buckman",
+      date: "3/20/2021",
+      meet: "Stan Romanoski Open",
+    },
+    {
+      season: "Outdoor",
+      event: "200 meter",
+      gender: "F",
+      true_distance: 200,
+      time: "27.18",
+      seconds: 27.18,
+      athlete: "Molly Wilson",
+      date: "4/23/2022",
+      meet: "Terrapin Invite",
+    },
+    {
+      season: "Outdoor",
+      event: "1600 meter",
+      gender: "M",
+      true_distance: 1600,
+      time: "4:27.96",
+      seconds: 4 * 60 + 27.96,
+      athlete: "Max Worley",
+      date: "3/25/2023",
+      meet: "Dashing Dukes Invitational 2023",
+    },
+    {
+      season: "Outdoor",
+      event: "1600 meter",
+      gender: "F",
+      true_distance: 1600,
+      time: "5:42.70",
+      seconds: 5 * 60 + 42.7,
+      athlete: "Anna Weiksner",
+      date: "3/25/2023",
+      meet: "Dashing Dukes Invitational 2023",
+    },
+    {
+      season: "Outdoor",
+      event: "3000 meter",
+      gender: "M",
+      true_distance: 3000,
+      time: "8:45.45",
+      seconds: 8 * 60 + 45.45,
+      athlete: "Patrick Hanley",
+      date: "4/30/2016",
+      meet: "Paul Kaiser Classic",
+    },
+    {
+      season: "Outdoor",
+      event: "3000 meter",
+      gender: "F",
+      true_distance: 3000,
+      time: "10:27.59",
+      seconds: 10 * 60 + 27.59,
+      athlete: "Shannon MacMaster",
+      date: "4/28/2018",
+      meet: "Paul Kaiser Classic",
+    },
+    {
+      season: "Outdoor",
+      event: "4x100m Relay",
+      gender: "M",
+      true_distance: 400,
+      time: "43.50",
+      seconds: 43.5,
+      athlete:
+        "Evan Gresser, Lester Crockett, Mark Kwegyir-Aggrey, Brion Tillman-Young",
+      date: "4/26/2017",
+      meet: "Penn Relays Carnival",
+    },
+    {
+      season: "Outdoor",
+      event: "4x100m Relay",
+      gender: "F",
+      true_distance: 400,
+      time: "53.86",
+      seconds: 53.86,
+      athlete: "Sabine Huber, Brittany Taylor, Grace Stanton, Alana Frederique",
+      date: "4/16/2016",
+      meet: "Hopkins Loyola Invitational",
+    },
+    {
+      season: "Outdoor",
+      event: "400m Hurdles",
+      gender: "M",
+      true_distance: 400,
+      time: "57.03",
+      seconds: 57.03,
+      athlete: "Evan Gresser",
+      date: "3/18/2017",
+      meet: "Maryland Invitational",
+    },
+    {
+      season: "Outdoor",
+      event: "400m Hurdles",
+      gender: "F",
+      true_distance: 400,
+      time: "1:10.36",
+      seconds: 1 * 60 + 10.36,
+      athlete: "Grace Olawuni",
+      date: "3/31/2017",
+      meet: "Danny Curran Invitational",
+    },
+    {
+      season: "Outdoor",
+      event: "10000 meter",
+      gender: "M",
+      true_distance: 10000,
+      time: "31:52.67",
+      seconds: 31 * 60 + 52.67,
+      athlete: "Patrick Hanley",
+      date: "3/18/2016",
+      meet: "Tribe Invitational",
+    },
+    {
+      season: "Outdoor",
+      event: "10000 meter",
+      gender: "F",
+      true_distance: 10000,
+      time: "40:35.56",
+      seconds: 40 * 60 + 35.56,
+      athlete: "Shannon Young",
+      date: "4/19/2019",
+      meet: "Widener Invitational (D3)",
+    },
+    {
+      season: "Outdoor",
+      event: "4x800m Relay",
+      gender: "M",
+      true_distance: 3200,
+      time: "8:03.20",
+      seconds: 8 * 60 + 3.2,
+      athlete: "Brian McCullough, Brian Lau, Max Worley, Christopher Scalzi",
+      date: "4/23/2022",
+      meet: "Terrapin Invite",
+    },
+    {
+      season: "Outdoor",
+      event: "4x800m Relay",
+      gender: "F",
+      true_distance: 3200,
+      time: "10:13.97",
+      seconds: 10 * 60 + 13.97,
+      athlete:
+        "Julia Heiges, Luanne Zimmermann, Katrina Hrabinski, Shannon MacMaster",
+      date: "4/14/2018",
+      meet: "NIRCA Track & Field National Championship",
+    },
+    {
+      season: "Outdoor",
+      event: "400 meter",
+      gender: "M",
+      true_distance: 400,
+      time: "49.38",
+      seconds: 49.38,
+      athlete: "Clayton Buckman",
+      date: "4/19/2019",
+      meet: "Widener Invitational (D3)",
+    },
+    {
+      season: "Outdoor",
+      event: "400 meter",
+      gender: "F",
+      true_distance: 400,
+      time: "1:00.18",
+      seconds: 1 * 60 + 0.18,
+      athlete: "Sabine Huber",
+      date: "4/16/2016",
+      meet: "Hopkins Loyola Invitational",
+    },
+    {
+      season: "Outdoor",
+      event: "Long Jump",
+      gender: "M",
+      true_distance: 0,
+      time: "6.37 (Mark)",
+      seconds: 0,
+      athlete: "Nabieu Kamara",
+      date: "4/30/2016",
+      meet: "Paul Kaiser Classic",
+    },
+    {
+      season: "Outdoor",
+      event: "Long Jump",
+      gender: "F",
+      true_distance: 0,
+      time: "4.71 (Mark)",
+      seconds: 0,
+      athlete: "Morgan Bailey",
+      date: "5/5/2023",
+      meet: "Kehoe Twilight",
+    },
+    {
+      season: "Outdoor",
+      event: "Sprint Medley Relay",
+      gender: "M",
+      true_distance: 1600,
+      time: "3:44.41",
+      seconds: 3 * 60 + 44.41,
+      athlete: "Zach Johnson, Keenan Eure, Dylan Briske, Adam Fofana",
+      date: "4/23/2016",
+      meet: "Club Penn Relays",
+    },
+    {
+      season: "Outdoor",
+      event: "Sprint Medley Relay",
+      gender: "F",
+      true_distance: 1600,
+      time: "4:47.18",
+      seconds: 4 * 60 + 47.18,
+      athlete: "Brittany Taylor, Sabine Huber, Shannon McHale, Sam F",
+      date: "3/29/2015",
+      meet: "Club Penn Relays",
+    },
+    {
+      season: "Outdoor",
+      event: "100 meter",
+      gender: "M",
+      true_distance: 100,
+      time: "11.33",
+      seconds: 11.33,
+      athlete: "Reggie Carnegie",
+      date: "3/30/2018",
+      meet: "Danny Curran Invitational",
+    },
+    {
+      season: "Outdoor",
+      event: "100 meter",
+      gender: "F",
+      true_distance: 100,
+      time: "12.80",
+      seconds: 12.8,
+      athlete: "Grace Olawuni",
+      date: "4/14/2017",
+      meet: "Hopkins Invitational",
+    },
+    {
+      season: "Outdoor",
+      event: "High Jump",
+      gender: "M",
+      true_distance: 0,
+      time: "1.96 (Mark)",
+      seconds: 0,
+      athlete: "Pramodh Manian",
+      date: "4/28/2018",
+      meet: "Paul Kaiser Classic",
+    },
+    {
+      season: "Outdoor",
+      event: "High Jump",
+      gender: "F",
+      true_distance: 0,
+      time: "1.60 (Mark)",
+      seconds: 0,
+      athlete: "Sofia Grossman",
+      date: "4/2/2022",
+      meet: "NIRCA Nationals",
+    },
+    {
+      season: "Outdoor",
+      event: "Shotput",
+      gender: "M",
+      true_distance: 0,
+      time: "11.07 (Mark)",
+      seconds: 0,
+      athlete: "Henry Sheppard",
+      date: "4/2/2022",
+      meet: "NIRCA Nationals",
+    },
+    {
+      season: "Outdoor",
+      event: "Shotput",
+      gender: "F",
+      true_distance: 0,
+      time: "10.44 (Mark)",
+      seconds: 0,
+      athlete: "Sofia Grossman",
+      date: "4/22/2023",
+      meet: "Hopkins Loyola Invite",
+    },
+    {
+      season: "Cross Country",
+      event: "8000 meter",
+      gender: "M",
+      true_distance: 8000,
+      time: "25:00.80",
+      seconds: 25 * 60 + 0.8,
+      athlete: "Chris Steenkamer",
+      date: "10/24/2015",
+      meet: "NIRCA Mid-Atlantic Regionals",
+    },
+    {
+      season: "Cross Country",
+      event: "Half Marathon",
+      gender: "M",
+      true_distance: 21097.5,
+      time: "1:13:14.00",
+      seconds: (1 * 60 + 13) * 60 + 14.0,
+      athlete: "Nick Gonzalez",
+      date: "10/15/2022",
+      meet: "Baltimore Running Festival 2022",
+    },
+    {
+      season: "Cross Country",
+      event: "Half Marathon",
+      gender: "F",
+      true_distance: 21097.5,
+      time: "1:26:58.00",
+      seconds: (1 * 60 + 26) * 60 + 58.0,
+      athlete: "Shannon MacMaster",
+      date: "5/6/2018",
+      meet: "Frederick Half Marathon",
+    },
+    {
+      season: "Cross Country",
+      event: "6000 meter",
+      gender: "F",
+      true_distance: 6000,
+      time: "21:49.00",
+      seconds: 21 * 60 + 49.0,
+      athlete: "Lucia Larrera",
+      date: "10/8/2022",
+      meet: "Dashing Dukes Invite 2022",
+    },
+    {
+      season: "Cross Country",
+      event: "5000 meter",
+      gender: "M",
+      true_distance: 5000,
+      time: "15:26.08",
+      seconds: 15 * 60 + 26.08,
+      athlete: "Chris Steenkamer",
+      date: "9/22/2012",
+      meet: "Cavalier Invitational",
+    },
+    {
+      season: "Cross Country",
+      event: "5000 meter",
+      gender: "F",
+      true_distance: 5000,
+      time: "18:27.00",
+      seconds: 18 * 60 + 27.0,
+      athlete: "Shannon MacMaster",
+      date: "9/8/2018",
+      meet: "Time Trial",
+    },
+    {
+      season: "Cross Country",
+      event: "Marathon",
+      gender: "M",
+      true_distance: 42195,
+      time: "2:43:09.00",
+      seconds: (2 * 60 + 43) * 60 + 9.0,
+      athlete: "Sean Rat",
+      date: "3/26/2011",
+      meet: "Rock n' Roll USA Marathon",
+    },
+    {
+      season: "Cross Country",
+      event: "Marathon",
+      gender: "F",
+      true_distance: 42195,
+      time: "3:11:02.00",
+      seconds: (3 * 60 + 11) * 60 + 2.0,
+      athlete: "Delana Nalesnik",
+      date: "3/10/2018",
+      meet: "Rock n' Roll USA Marathon",
+    },
+  ];
 
-    return (
-        <div className="construc-container">
-            <main>
-                <h1>Under Construction</h1>
-                <img src={construcPic} alt="Under Construction" className="construction-img" />
-                <p>We are currently working on something awesome. Stay tuned!</p>
-            </main>
+  const [selectedSorting, setSelectedSorting] = useState("default");
+  const [searchVal, setSearchVal] = useState("");
+  const [seasonVal, setSeasonVal] = useState("all");
+  const [genderVal, setGenderVal] = useState("all");
+
+  RecordsList.sort((a, b) => a.season - b.season);
+
+  switch (selectedSorting) {
+    case "time_slowest":
+      RecordsList.sort((a, b) => a.seconds - b.seconds);
+      break;
+    case "time_fastest":
+      RecordsList.sort((a, b) => b.seconds - a.seconds);
+      break;
+    case "shortest":
+      RecordsList.sort((a, b) => a.true_distance - b.true_distance);
+      break;
+    case "longest":
+      RecordsList.sort((a, b) => b.true_distance - a.true_distance);
+      break;
+    case "oldest":
+      RecordsList.sort(
+        (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
+      );
+      break;
+    case "newest":
+      RecordsList.sort(
+        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+      );
+      break;
+    default:
+      RecordsList.sort((a, b) => a.season - b.season);
+  }
+
+  return (
+    <div>
+      <div class="teamPic-container">
+        <img src={fredHalfPic} alt="" className="teamPic" />
+      </div>
+      <div>
+        <div className="flex flex-col items-center justify-center">
+          <h3 className="text-white text-3xl font-bold mt-5 mb-5">
+            UMD Club Running Records
+          </h3>
+          <h4>
+            <span class="line">
+              Search:{" "}
+              <input
+                type="text"
+                placeholder="Name, event, or meet"
+                onChange={(e) => setSearchVal(e.target.value)}
+              ></input>{" "}
+            </span>
+            <span class="line" style={{ paddingLeft: 5 + "px" }}>
+              Season:{" "}
+              <select
+                value={seasonVal}
+                onChange={(e) => setSeasonVal(e.target.value)}
+              >
+                <option value="all">All</option>
+                <option value="Indoor">Indoor</option>
+                <option value="Outdoor">Outdoor</option>
+                <option value="Cross Country">Cross Country</option>
+              </select>
+            </span>
+            <span class="line" style={{ paddingLeft: 5 + "px" }}>
+              Gender:{" "}
+              <select
+                value={genderVal}
+                onChange={(e) => setGenderVal(e.target.value)}
+              >
+                <option value="all">All</option>
+                <option value="M">M</option>
+                <option value="F">F</option>
+              </select>
+            </span>
+            <span class="line" style={{ paddingLeft: 5 + "px" }}>
+              Sort By:{" "}
+              <select
+                value={selectedSorting}
+                onChange={(e) => setSelectedSorting(e.target.value)}
+              >
+                <option value="default">Default</option>
+                <option value="time_slowest">Time (increasing)</option>
+                <option value="time_fastest">Time (decreasing)</option>
+                <option value="shortest">Distance (increasing)</option>
+                <option value="longest">Distance (decreasing)</option>
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+              </select>
+            </span>
+          </h4>
+          <br></br>
+          <table className="mb-10">
+            <thead>
+              <tr>
+                <th>Season</th>
+                <th>Event</th>
+                <th>Gender</th>
+                <th>Time/Mark</th>
+                <th>Athlete</th>
+                <th>Date</th>
+                <th>Meet</th>
+              </tr>
+            </thead>
+            <tbody>
+              {RecordsList.filter(
+                (item) =>
+                  (searchVal === "" ||
+                    item.athlete
+                      .toLowerCase()
+                      .includes(searchVal.toLowerCase()) ||
+                    item.event
+                      .toLowerCase()
+                      .includes(searchVal.toLowerCase()) ||
+                    item.meet
+                      .toLowerCase()
+                      .includes(searchVal.toLowerCase())) &&
+                  (seasonVal === "all" || seasonVal === item.season) &&
+                  (genderVal === "all" || genderVal === item.gender)
+              ).map((item) => (
+                <tr>
+                  <td>{item.season}</td>
+                  <td>{item.event}</td>
+                  <td>{item.gender}</td>
+                  <td>{item.time}</td>
+                  <td>{item.athlete}</td>
+                  <td>{item.date}</td>
+                  <td>{item.meet}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 export default Records;
