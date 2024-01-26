@@ -5,7 +5,7 @@ import domImage from "../Pictures/dominick.png";
 import zachImage from "../Pictures/zack.jpeg";
 import evanImage from "../Pictures/evanProfile.png";
 import lillianImage from "../Pictures/lillianProfile.JPG";
-import eamonImage from "../Pictures/eamon2021.jpeg";
+import staceyImage from "../Pictures/staceyPic.JPG";
 import jonahImage from "../Pictures/JonahProfile.jpeg";
 
 function About() {
@@ -124,15 +124,22 @@ function About() {
         {" "}
         {/*Image on the left*/}
         <div className="align-left md:w-1/2 md:order-2">
-          <img src={eamonImage} alt="eamon Pic" />
+          <img src={staceyImage} alt="Stacey Pic" />
         </div>
         <div className="flex flex-col md:w-1/2 ml-5 mr-5">
-          <h1 className="bio-content">Apparel Coordinator: Eamon Plante</h1>
+          <h1 className="bio-content">
+            Apparel Coordinator: Stacey Fitzsimmons
+          </h1>
           <p className="text-black mb-6">
-            Eamon Plante, a junior computer science major, has been a club
-            member since he was a freshman in 2020. Before attending UMD, he ran
-            cross country and track at Sherwood High School and was a team
-            captain. He also makes very lame bios
+            Stacey Fitzsimmons is a sophomore majoring in mathematics and
+            economics from Milwaukee, Wisconsin. When he's not running through
+            the frozen tundra of Wisconsin, he is probably watching every NBA
+            game that happens to be on, keeping track of his beloved fantasy
+            players (SGA is his favorite next to Giannis). On his high school
+            team he was pretty much a professional alternate runner, going on
+            free trips to state meets without the pressures of having to
+            compete. He hopes to fulfill all of your apparel hopes and dreams
+            and is always open to suggestions.
           </p>
         </div>
       </div>
