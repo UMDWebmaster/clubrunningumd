@@ -33,9 +33,16 @@ function About() {
                 <td>
                   <a href="https://docs.google.com/spreadsheets/d/1AbHRNlHQpEJKqNt1qOdgkTryfs4FNwnhgEYYr0_1PTc/edit#gid=0">
                     Fall
+                  </a>{" "}
+                  <a href="https://docs.google.com/spreadsheets/d/1AbHRNlHQpEJKqNt1qOdgkTryfs4FNwnhgEYYr0_1PTc/edit#gid=306304169">
+                    Spring
                   </a>
                 </td>
-                <td>N/A</td>
+                <td>
+                  <a href="https://docs.google.com/spreadsheets/d/1hULUTcCD6mjVhAhh_DO5DqyQEbGFEwRzxq31d9mqsBs/edit#gid=1947588523">
+                    Link
+                  </a>
+                </td>
               </tr>
               <tr>
                 <td>2022 - 2023</td>
