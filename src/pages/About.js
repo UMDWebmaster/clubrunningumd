@@ -5,6 +5,7 @@ import domImage from "../Pictures/dominick.png";
 import zachImage from "../Pictures/zack.jpeg";
 import evanImage from "../Pictures/evanProfile.png";
 import lillianImage from "../Pictures/lillianProfile.JPG";
+import samImage from "../Pictures/samPic.JPG";
 import staceyImage from "../Pictures/staceyPic.JPG";
 import jonahImage from "../Pictures/JonahProfile.jpeg";
 
@@ -34,18 +35,16 @@ function About() {
         {" "}
         {/*Image on the left*/}
         <div className="align-left md:w-1/2 md:order-2">
-          <img src={lillianImage} alt="Lillian Pic" />
+          <img src={samImage} alt="Sam Pic" />
         </div>
         <div className="flex flex-col md:w-1/2 ml-5 mr-5">
-          <h1 className="bio-content">Vice President: Lillian Hsu</h1>
+          <h1 className="bio-content">Vice President: Sam Fields</h1>
           <p className="text-black mb-6">
-            Lillian is a junior environmental science major from Germantown,
-            Maryland. After working for a semester as an unpaid intern under the
-            President Diana administration, she is now doing even more unpaid
-            work but now as your Vice President! Outside of running, she enjoys
-            art, crocheting, and Moge Tee. She can also be found taking pictures
-            at meets (and pawning the camera off on unsuspecting club members
-            when it's time for her race).
+            Sam Fields is a junior physics major from Towson, Maryland. When not
+            running, Sam can be found listening to Jimmy Hendrix and JPEGmafia.
+            In MarioKart Wii, he can be found using Funky Kong and the Flame
+            Runner. As Vice President, Sam does all the behind the scenes work
+            that allows you to attend races around the country!
           </p>
         </div>
       </div>
