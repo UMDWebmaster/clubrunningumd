@@ -53,14 +53,6 @@ function Records() {
             UMD Club Running Records
           </h3>
           <h4>
-            <span className="line">
-              Search:{" "}
-              <input
-                type="text"
-                placeholder="Name, event, or meet"
-                onChange={(e) => setSearchVal(e.target.value)}
-              ></input>{" "}
-            </span>
             <span className="line" style={{ paddingLeft: 5 + "px" }}>
               Season:{" "}
               <select
@@ -85,6 +77,14 @@ function Records() {
               </select>
             </span>
             <span className="line" style={{ paddingLeft: 5 + "px" }}>
+              Search:{" "}
+              <input
+                type="text"
+                placeholder="Name, event, or meet"
+                onChange={(e) => setSearchVal(e.target.value)}
+              ></input>{" "}
+            </span>
+            <span className="line" style={{ paddingLeft: 5 + "px" }}>
               Sort By:{" "}
               <select
                 value={selectedSorting}
@@ -101,48 +101,50 @@ function Records() {
             </span>
           </h4>
           <br></br>
-          <div className="tableContainer">
-            <table className="mb-10 table-auto">
-              <thead>
-                <tr>
-                  <th>Season</th>
-                  <th>Event</th>
-                  <th>Gender</th>
-                  <th>Time/Mark</th>
-                  <th>Athlete</th>
-                  <th>Date</th>
-                  <th>Meet</th>
-                </tr>
-              </thead>
-              <tbody>
-                {RecordsList.filter(
-                  (item) =>
-                    (searchVal === "" ||
-                      item.athlete
-                        .toLowerCase()
-                        .includes(searchVal.toLowerCase()) ||
-                      item.event
-                        .toLowerCase()
-                        .includes(searchVal.toLowerCase()) ||
-                      item.meet
-                        .toLowerCase()
-                        .includes(searchVal.toLowerCase())) &&
-                    (seasonVal === "all" || seasonVal === item.season) &&
-                    (genderVal === "all" || genderVal === item.gender)
-                ).map((item) => (
+          {seasonVal !== "all" && genderVal !== "all" ? (
+            <div className="tableContainer">
+              <table className="mb-10 table-auto">
+                <thead>
                   <tr>
-                    <td>{item.season}</td>
-                    <td>{item.event}</td>
-                    <td>{item.gender}</td>
-                    <td>{item.time}</td>
-                    <td>{item.athlete}</td>
-                    <td>{item.date}</td>
-                    <td>{item.meet}</td>
+                    <th>Event</th>
+                    <th>Time/Mark</th>
+                    <th>Athlete</th>
+                    <th>Date</th>
+                    <th>Meet</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                </thead>
+                <tbody>
+                  {RecordsList.filter(
+                    (item) =>
+                      (searchVal === "" ||
+                        item.athlete
+                          .toLowerCase()
+                          .includes(searchVal.toLowerCase()) ||
+                        item.event
+                          .toLowerCase()
+                          .includes(searchVal.toLowerCase()) ||
+                        item.meet
+                          .toLowerCase()
+                          .includes(searchVal.toLowerCase())) &&
+                      (seasonVal === "all" || seasonVal === item.season) &&
+                      (genderVal === "all" || genderVal === item.gender)
+                  ).map((item) => (
+                    <tr>
+                      <td>{item.event}</td>
+                      <td>{item.time}</td>
+                      <td>{item.athlete}</td>
+                      <td>{item.date}</td>
+                      <td>{item.meet}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ) : (
+            <h1 className="text-black text-2xl font-bold mt-5 mb-5">
+              Please select a season and gender to view records.
+            </h1>
+          )}
         </div>
       </div>
     </div>
