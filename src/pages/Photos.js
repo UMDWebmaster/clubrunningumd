@@ -24,7 +24,7 @@ function Races() {
             <tbody>
               <tr>
                 <td>2/10/2024</td>
-                <td>Happy Valley Invitational 2023</td>
+                <td>Happy Valley Invitational 2024</td>
                 <td>
                   <a href="https://photos.google.com/share/AF1QipMjTlKqfyDZjJiifFABmiJesH13_Lvmec3im3pKpdEFiKDOPzOGOxpQUVAajUcFtw?key=dVN6TmtEQzhlSXdkZ003c0tkQUpkREt1ckUybi13">
                     Photos
