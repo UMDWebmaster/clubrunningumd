@@ -12,6 +12,17 @@ function Records() {
   const [seasonVal, setSeasonVal] = useState("all");
   const [genderVal, setGenderVal] = useState("all");
 
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+
+  // if (urlParams.has("season")) {
+  //   setSeasonVal(urlParams.get("season"));
+  // }
+
+  // if (urlParams.has("gender")) {
+  //   setSeasonVal(urlParams.get("gender"));
+  // }
+
   RecordsList.sort((a, b) => a.season - b.season);
 
   switch (selectedSorting) {
@@ -57,7 +68,9 @@ function Records() {
               Season:{" "}
               <select
                 value={seasonVal}
-                onChange={(e) => setSeasonVal(e.target.value)}
+                onChange={(e) => {
+                  setSeasonVal(e.target.value);
+                }}
               >
                 <option value="all">All</option>
                 <option value="Indoor">Indoor</option>
@@ -69,7 +82,9 @@ function Records() {
               Gender:{" "}
               <select
                 value={genderVal}
-                onChange={(e) => setGenderVal(e.target.value)}
+                onChange={(e) => {
+                  setGenderVal(e.target.value);
+                }}
               >
                 <option value="all">All</option>
                 <option value="M">M</option>

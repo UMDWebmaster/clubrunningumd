@@ -26,10 +26,10 @@
     "event": "800 meter",
     "gender": "M",
     "true_distance": 800,
-    "time": "1:56.65",
-    "seconds": 116.65,
+    "time": "1:56.30",
+    "seconds": 116.3,
     "athlete": "Sadou Sow",
-    "date": "2/11/2023",
+    "date": "2/10/2024",
     "meet": "Happy Valley Invitational"
   },
   {
@@ -48,10 +48,10 @@
     "event": "4x400m Relay",
     "gender": "M",
     "true_distance": 1600,
-    "time": "3:36.12",
-    "seconds": 216.12,
-    "athlete": "John Bolster, Scott Roman, Ryan Scott, Brion Tillman-Young",
-    "date": "2/13/2016",
+    "time": "3:31.24",
+    "seconds": 211.24,
+    "athlete": "Dominick Cardone, Kalabe Arefeayne, Jared Kimiabakhsh, Sadou Sow",
+    "date": "2/10/2024",
     "meet": "Happy Valley Invitational"
   },
   {
@@ -114,10 +114,10 @@
     "event": "400 meter",
     "gender": "M",
     "true_distance": 400,
-    "time": "50.87",
-    "seconds": 50.87,
-    "athlete": "Clayton Buckman",
-    "date": "2/15/2020",
+    "time": "50.72",
+    "seconds": 50.72,
+    "athlete": "Kalabe, Arefeayne",
+    "date": "2/10/2024",
     "meet": "Happy Valley Invitational"
   },
   {
@@ -147,10 +147,10 @@
     "event": "200 meter",
     "gender": "F",
     "true_distance": 200,
-    "time": "29.62",
-    "seconds": 29.62,
-    "athlete": "Sofia Grossman",
-    "date": "2/15/2020",
+    "time": "27.99",
+    "seconds": 27.99,
+    "athlete": "Jenna Amrhein",
+    "date": "2/10/2024",
     "meet": "Happy Valley Invitational"
   },
   {
@@ -162,6 +162,17 @@
     "seconds": 97.53,
     "athlete": "Jonathan Shinholt, Drew Lepre, Kareem McDavid, Fares Massoud",
     "date": "2/10/2018",
+    "meet": "Happy Valley Invitational"
+  },
+  {
+    "season": "Indoor",
+    "event": "4x200m Relay",
+    "gender": "F",
+    "true_distance": 800,
+    "time": "1:54.03",
+    "seconds": 114.03,
+    "athlete": "Brenna Henderson, Jasmin Mohammadi, Morgan Bailey, Hannah Haber",
+    "date": "2/10/2024",
     "meet": "Happy Valley Invitational"
   },
   {
@@ -180,10 +191,10 @@
     "event": "60 meter",
     "gender": "F",
     "true_distance": 60,
-    "time": "8.85",
-    "seconds": 8.85,
-    "athlete": "Paige Munshell",
-    "date": "2/10/2019",
+    "time": "8.07",
+    "seconds": 8.07,
+    "athlete": "Erin, Henderson",
+    "date": "2/10/2024",
     "meet": "Happy Valley Invitational"
   },
   {
