@@ -116,7 +116,7 @@
     "true_distance": 400,
     "time": "50.72",
     "seconds": 50.72,
-    "athlete": "Kalabe, Arefeayne",
+    "athlete": "Kalabe Arefeayne",
     "date": "2/10/2024",
     "meet": "Happy Valley Invitational"
   },
@@ -254,13 +254,35 @@
   },
   {
     "season": "Indoor",
+    "event": "Triple Jump",
+    "gender": "F",
+    "true_distance": 0,
+    "time": "9.22 (Mark)",
+    "seconds": 0,
+    "athlete": "Caiya Campbell",
+    "date": "2/10/2024",
+    "meet": "Happy Valley Invitational"
+  },
+  {
+    "season": "Indoor",
     "event": "Long Jump",
     "gender": "M",
     "true_distance": 0,
-    "time": "5.85 (Mark)",
+    "time": "6.02 (Mark)",
     "seconds": 0,
-    "athlete": "Chris Mitchell",
-    "date": "2/10/2018",
+    "athlete": "Kalabe Arefeayne",
+    "date": "2/11/2023",
+    "meet": "Happy Valley Invitational"
+  },
+  {
+    "season": "Indoor",
+    "event": "Long Jump",
+    "gender": "F",
+    "true_distance": 0,
+    "time": "4.56 (Mark)",
+    "seconds": 0,
+    "athlete": "Jenna Amrhein",
+    "date": "2/10/2024",
     "meet": "Happy Valley Invitational"
   },
   {
@@ -653,9 +675,9 @@
     "event": "Long Jump",
     "gender": "F",
     "true_distance": 0,
-    "time": "4.71 (Mark)",
+    "time": "5.14 (Mark)",
     "seconds": 0,
-    "athlete": "Morgan Bailey",
+    "athlete": "Azariah Reid",
     "date": "5/5/2023",
     "meet": "Kehoe Twilight"
   },
@@ -724,6 +746,39 @@
     "athlete": "Sofia Grossman",
     "date": "4/2/2022",
     "meet": "NIRCA Nationals"
+  },
+  {
+    "season": "Outdoor",
+    "event": "Triple Jump",
+    "gender": "M",
+    "true_distance": 0,
+    "time": "9.44 (Mark)",
+    "seconds": 0,
+    "athlete": "Adam Gradess",
+    "date": "4/15/2023",
+    "meet": "2023 NIRCA Track Nationals"
+  },
+  {
+    "season": "Outdoor",
+    "event": "Triple Jump",
+    "gender": "F",
+    "true_distance": 0,
+    "time": "10.81 (Mark)",
+    "seconds": 0,
+    "athlete": "Azariah Reid",
+    "date": "5/5/2023",
+    "meet": "Kehoe Twilight 2023"
+  },
+  {
+    "season": "Outdoor",
+    "event": "110m Hurdles",
+    "gender": "M",
+    "true_distance": 110,
+    "time": "16.15",
+    "seconds": 16.15,
+    "athlete": "Mason Scott",
+    "date": "5/5/2023",
+    "meet": "Kehoe Twilight 2023"
   },
   {
     "season": "Outdoor",
