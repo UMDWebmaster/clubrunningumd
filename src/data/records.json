@@ -803,6 +803,17 @@
     "meet": "Hopkins Loyola Invite"
   },
   {
+    "season": "Outdoor",
+    "event": "Discus",
+    "gender": "M",
+    "true_distance": 0,
+    "time": "40.31 (Mark)",
+    "seconds": 0,
+    "athlete": "Henry Sheppard",
+    "date": "5/6/2022",
+    "meet": "Kehoe Twilight"
+  },
+  {
     "season": "Cross Country",
     "event": "8000 meter",
     "gender": "M",
