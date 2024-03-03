@@ -196,5 +196,17 @@
     "distance": 6.98,
     "link": "https://www.mapmyrun.com/routes/view/1875418334",
     "popularity": 2
+  },
+  {
+    "name": "Drake Plaza",
+    "distance": 4.01,
+    "link": "https://www.mapmyrun.com/routes/view/5916354265",
+    "popularity": 2
+  },
+  {
+    "name": "CLL (Something Lake Loop)",
+    "distance": 6.03,
+    "link": "https://www.mapmyrun.com/routes/view/5942545270/",
+    "popularity": 3
   }
 ]
