@@ -56,8 +56,8 @@ function Races() {
                 </tr>
                 <tr>
                   <td>3/30/2024</td>
-                  <td>Retreiver Invitational</td>
-                  <td>Catonsville, MD</td>
+                  <td>Cavalier Invitational</td>
+                  <td>Charlottesville, VA</td>
                   <td>NIRCA</td>
                 </tr>
                 <tr>
@@ -73,10 +73,10 @@ function Races() {
                   <td>Road</td>
                 </tr>
                 <tr>
-                  <td>4/12 - 4/13/2024</td>
-                  <td>Stevenson Invitational *Attendance is uncertain*</td>
-                  <td>Owings Mills</td>
-                  <td>DIII</td>
+                  <td>4/20/2024</td>
+                  <td>Terrapin Invitational</td>
+                  <td>College Park, MD</td>
+                  <td>NIRCA</td>
                 </tr>
                 <tr>
                   <td>4/27/2024</td>
