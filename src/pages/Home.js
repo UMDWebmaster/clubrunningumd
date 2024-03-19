@@ -123,10 +123,10 @@ function Home() {
                                                 <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required placeholder="Email Address" />
 
                                                 <label for="fName">First Name *</label>
-                                                <input type="text" name="FNAME" class=" text" id="mce-FNAME" placeholder="First Name" required />
+                                                <input type="text" name="FNAME" id="mce-FNAME" placeholder="First Name" required />
 
                                                 <label for="lName">Last Name *</label>
-                                                <input type="text" name="LNAME" class=" text" id="mce-LNAME" placeholder="Last Name" required />                                        
+                                                <input type="text" name="LNAME" id="mce-LNAME" placeholder="Last Name" required />                                        
                                                                                              
                                                 <div hidden=""><input type="hidden" name="tags" value="7835950" /></div>
                                                 <div id="mce-responses" class="clear foot">
