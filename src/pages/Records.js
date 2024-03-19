@@ -94,7 +94,8 @@ function Records() {
             <span className="line" style={{ paddingLeft: 5 + "px" }}>
               Search:{" "}
               <input
-                type="text" class="w-auto px-2 py-0 m-0 bg-white"
+                type="text"
+                class="w-auto px-2 py-0 m-0 bg-white"
                 placeholder="Name, event, or meet"
                 onChange={(e) => setSearchVal(e.target.value)}
               ></input>{" "}
