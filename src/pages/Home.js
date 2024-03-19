@@ -122,8 +122,8 @@ function Home() {
                                                 <label for="email">Email *</label>
                                                 <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required placeholder="Email Address" />
 
-                                                <label for="fName">First Namea *</label>
-                                                <input type="text" name="FNAME" class="text-white" id="mce-FNAME" placeholder="First Name" required />
+                                                <label for="fName">First Name *</label>
+                                                <input type="text" name="FNAME" class="w-full p-3 my-1 bg-gray-300" id="mce-FNAME" placeholder="First Name" required />
 
                                                 <label for="lName">Last Name *</label>
                                                 <input type="text" name="LNAME" class="required email" id="mce-LNAME" placeholder="Last Name" required />                                        
