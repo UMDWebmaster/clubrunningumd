@@ -1,5 +1,6 @@
 import React from "react";
 import "../CSS/About.css";
+import "../CSS/HomeMeet.css";
 import natsPic from "../Pictures/terpInvite.png";
 
 function About() {
