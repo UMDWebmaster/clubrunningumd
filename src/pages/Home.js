@@ -40,7 +40,7 @@ function Home() {
         {original: natsPic, subdescription: 'Learn More About Our Club Below!', description: 'WELCOME TO MARYLAND CLUB RUNNING!',link:"",},
         {original: lillianCapital, subdescription: 'Click Here To View Our Fall Training Plan!',description: 'CROSS COUNTRY IS HERE!',link:"https://docs.google.com/spreadsheets/d/1H2lJ0vdM073JJne8gObCv5u0RLwX3T6gv_9Z8tNiW8M/edit#gid=803727052",},
         {original: sprinting, subdescription: 'Check Out The Sprinter Training Plan Here!',description: 'SPRINT WORKOUTS ARE HERE!',link:"https://docs.google.com/spreadsheets/d/1AbHRNlHQpEJKqNt1qOdgkTryfs4FNwnhgEYYr0_1PTc/edit#gid=0",},
-        {original: stillTrain, subdescription: 'Yes! Join us Mon-Fri at SPH @ 4pm',description: 'ARE WE STILL TRAINING?',link:"",},
+        {original: stillTrain, subdescription: 'Yes! Join us Mon-Fri at SPH @ 5pm',description: 'ARE WE STILL TRAINING?',link:"",},
     ];
 
     const [showModal, setShowModal] = useState(false);
@@ -85,7 +85,7 @@ function Home() {
                     <div className="flex flex-col md:w-1/2 ml-5 mr-5">
                         <h1 className="text-black font-bold text-3xl mb-4 mt-5 md:mt-20 underline">About Us</h1>
                         <p className="text-black mb-6">
-                            Please sign up to join us Mon-Fri at the <a href="https://www.google.com/maps/place/PP1,+College+Park,+MD+20740/@38.9933786,-76.9425631,148m/data=!3m2!1e3!4b1!4m2!3m1!1s0x89b7c69f4dc17645:0xd2d09f5ca7e6b0d9" className="text-blue-700 font-bold">School of Public Health (SPH)</a> East Side (closest to Xfinity Center) starting <b>September 5th. Practices now start at 4pm! </b>
+                            Please sign up to join us Mon-Fri at the <a href="https://www.google.com/maps/place/PP1,+College+Park,+MD+20740/@38.9933786,-76.9425631,148m/data=!3m2!1e3!4b1!4m2!3m1!1s0x89b7c69f4dc17645:0xd2d09f5ca7e6b0d9" className="text-blue-700 font-bold">School of Public Health (SPH)</a> East Side (closest to Xfinity Center) starting <b>September 5th. Practices now start at 5pm! </b>
                         </p>
                         <p className="text-black mb-7">
                             Our mission is to support and encourage a healthy approach to running and training for all members of the University of Maryland. We provide an atmosphere in which runners of all abilities can meet each other, share running knowledge and simply enjoy running together as well as compete against other club college teams.
