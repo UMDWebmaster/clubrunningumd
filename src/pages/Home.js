@@ -123,7 +123,7 @@ function Home() {
                                                 <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required placeholder="Email Address" />
 
                                                 <label for="fName">First Name *</label>
-                                                <input type="text" name="FNAME" class="w-full p-3 my-1 bg-gray-300" id="mce-FNAME" placeholder="First Name" required />
+                                                <input type="text" name="FNAME" class="bg-red-300" id="mce-FNAME" placeholder="First Name" required />
 
                                                 <label for="lName">Last Name *</label>
                                                 <input type="text" name="LNAME" class="required email" id="mce-LNAME" placeholder="Last Name" required />                                        
