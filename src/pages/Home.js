@@ -120,7 +120,7 @@ function Home() {
 
 
                                                 <label for="email">Email *</label>
-                                                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required placeholder="Email Address" />
+                                                <input type="email" name="EMAIL" class="w-full p-3 my-1 bg-gray-300" id="mce-EMAIL" required placeholder="Email Address" />
 
                                                 <label for="fName">First Name *</label>
                                                 <input type="text" name="FNAME" class="w-full p-3 my-1 bg-gray-300" id="mce-FNAME" placeholder="First Name" required />
