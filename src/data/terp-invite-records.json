@@ -1,0 +1,302 @@
+[
+  {
+    "event": "100m",
+    "gender": "M",
+    "true_distance": 100,
+    "time": "11.36",
+    "seconds": 11.36,
+    "athlete": "Lud Blair",
+    "team": "Maryland",
+    "year": "2018"
+  },
+  {
+    "event": "100m",
+    "gender": "F",
+    "true_distance": 100,
+    "time": "13.32",
+    "seconds": 13.32,
+    "athlete": "Becca Leonard",
+    "team": "West Virginia",
+    "year": "2019"
+  },
+  {
+    "event": "200m",
+    "gender": "M",
+    "true_distance": 200,
+    "time": "22.76",
+    "seconds": 22.76,
+    "athlete": "Clayton Buckman",
+    "team": "Maryland",
+    "year": "2019"
+  },
+  {
+    "event": "200m",
+    "gender": "F",
+    "true_distance": 200,
+    "time": "27.18",
+    "seconds": 27.18,
+    "athlete": "Molly Wilson",
+    "team": "Maryland",
+    "year": "2022"
+  },
+  {
+    "event": "400m",
+    "gender": "M",
+    "true_distance": 400,
+    "time": "49.87",
+    "seconds": 49.87,
+    "athlete": "Clayton Buckman",
+    "team": "Maryland",
+    "year": "2019"
+  },
+  {
+    "event": "400m",
+    "gender": "F",
+    "true_distance": 400,
+    "time": "61.53",
+    "seconds": 61.53,
+    "athlete": "Molly Wilson",
+    "team": "Maryland",
+    "year": "2022"
+  },
+  {
+    "event": "800m",
+    "gender": "M",
+    "true_distance": 800,
+    "time": "1:59.24",
+    "seconds": 119.24,
+    "athlete": "Matt Goldsmith",
+    "team": "Penn",
+    "year": "2019"
+  },
+  {
+    "event": "800m",
+    "gender": "F",
+    "true_distance": 800,
+    "time": "2:13.23",
+    "seconds": 133.23,
+    "athlete": "Meghan Grimes",
+    "team": "Georgetown",
+    "year": "2019"
+  },
+  {
+    "event": "1500m",
+    "gender": "M",
+    "true_distance": 1500,
+    "time": "4:01.57",
+    "seconds": 241.57,
+    "athlete": "Alex Horgan",
+    "team": "Delaware",
+    "year": "2022"
+  },
+  {
+    "event": "1500m",
+    "gender": "F",
+    "true_distance": 1500,
+    "time": "4:48.05",
+    "seconds": 288.05,
+    "athlete": "Shannon MacMaster",
+    "team": "Maryland",
+    "year": "2019"
+  },
+  {
+    "event": "Alumni Mile",
+    "gender": "M",
+    "true_distance": 1608,
+    "time": "4:45.30",
+    "seconds": 285.3,
+    "athlete": "Colin SyBing",
+    "team": "Maryland Alumni",
+    "year": "2022"
+  },
+  {
+    "event": "Alumni Mile",
+    "gender": "F",
+    "true_distance": 1608,
+    "time": "6:13.02",
+    "seconds": 373.02,
+    "athlete": "Luanne Zimmerman",
+    "team": "Maryland Alumni",
+    "year": "2022"
+  },
+  {
+    "event": "5000m",
+    "gender": "M",
+    "true_distance": 5000,
+    "time": "15:36.28",
+    "seconds": 936.28,
+    "athlete": "Logan Burns",
+    "team": "Virginia",
+    "year": "2019"
+  },
+  {
+    "event": "5000m",
+    "gender": "F",
+    "true_distance": 5000,
+    "time": "18:33.44",
+    "seconds": 1113.44,
+    "athlete": "Shannon MacMaster",
+    "team": "Maryland",
+    "year": "2018"
+  },
+  {
+    "event": "100m Hurdles",
+    "gender": "F",
+    "true_distance": 100,
+    "time": "16.79",
+    "seconds": 16.79,
+    "athlete": "Tara Basir",
+    "team": "Maryland",
+    "year": "2018"
+  },
+  {
+    "event": "110m Hurdles",
+    "gender": "M",
+    "true_distance": 110,
+    "time": "16.10",
+    "seconds": 16.1,
+    "athlete": "Ryan Wallace",
+    "team": "Delaware",
+    "year": "2022"
+  },
+  {
+    "event": "400m Hurdles",
+    "gender": "M",
+    "true_distance": 400,
+    "time": "59.80",
+    "seconds": 59.8,
+    "athlete": "Jack Poland",
+    "team": "George Washington",
+    "year": "2022"
+  },
+  {
+    "event": "400m Hurdles",
+    "gender": "F",
+    "true_distance": 400,
+    "time": "1:13.69",
+    "seconds": 73.69,
+    "athlete": "Caroline Outlaw",
+    "team": "James Madison",
+    "year": "2019"
+  },
+  {
+    "event": "3000m Steeplechase",
+    "gender": "M",
+    "true_distance": 3000,
+    "time": "9:50.12",
+    "seconds": 590.12,
+    "athlete": "Sam Schroeder",
+    "team": "George Washington",
+    "year": "2019"
+  },
+  {
+    "event": "3000m Steeplechase",
+    "gender": "F",
+    "true_distance": 3000,
+    "time": "12:18.19",
+    "seconds": 738.19,
+    "athlete": "Annie Kay Combs",
+    "team": "James Madison",
+    "year": "2019"
+  },
+  {
+    "event": "High Jump",
+    "gender": "M",
+    "true_distance": 0,
+    "time": "1.83m",
+    "seconds": 0,
+    "athlete": "Nick Czaja",
+    "team": "West Virginia",
+    "year": "2019"
+  },
+  {
+    "event": "High Jump",
+    "gender": "F",
+    "true_distance": 0,
+    "time": "1.52m",
+    "seconds": 0,
+    "athlete": "Sofia Grossman",
+    "team": "Maryland",
+    "year": "2022"
+  },
+  {
+    "event": "Long Jump",
+    "gender": "M",
+    "true_distance": 0,
+    "time": "6.10m",
+    "seconds": 0,
+    "athlete": "Austin Juelfs",
+    "team": "West Virginia",
+    "year": "2019"
+  },
+  {
+    "event": "Long Jump",
+    "gender": "F",
+    "true_distance": 0,
+    "time": "5.05m",
+    "seconds": 0,
+    "athlete": "Morgan Bozarth",
+    "team": "VCU",
+    "year": "2022"
+  },
+  {
+    "event": "Triple Jump",
+    "gender": "M",
+    "true_distance": 0,
+    "time": "12.98m",
+    "seconds": 0,
+    "athlete": "Kj Davis",
+    "team": "East Carolina",
+    "year": "2019"
+  },
+  {
+    "event": "Triple Jump",
+    "gender": "F",
+    "true_distance": 0,
+    "time": "10.97m",
+    "seconds": 0,
+    "athlete": "Alayna Cavey",
+    "team": "UMBC",
+    "year": "2019"
+  },
+  {
+    "event": "Shot Put",
+    "gender": "M",
+    "true_distance": 0,
+    "time": "12.07m",
+    "seconds": 0,
+    "athlete": "James Agresto",
+    "team": "James Madison",
+    "year": "2022"
+  },
+  {
+    "event": "Shot Put",
+    "gender": "F",
+    "true_distance": 0,
+    "time": "9.21m",
+    "seconds": 0,
+    "athlete": "Sofia Grossman",
+    "team": "Maryland",
+    "year": "2022"
+  },
+  {
+    "event": "Discus Throw",
+    "gender": "M",
+    "true_distance": 0,
+    "time": "40.26m",
+    "seconds": 0,
+    "athlete": "Henry Sheppard",
+    "team": "Maryland",
+    "year": "2022"
+  },
+  {
+    "event": "Discus Throw",
+    "gender": "F",
+    "true_distance": 0,
+    "time": "24.00m",
+    "seconds": 0,
+    "athlete": "Caeley Philip",
+    "team": "West Virginia",
+    "year": "2019"
+  }
+]

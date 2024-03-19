@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
+import HomeMeet from "./pages/HomeMeet";
+import HomeMeetRecords from "./pages/HomeMeetRecords";
 import About from "./pages/About";
 import Races from "./pages/Races";
 import Blog from "./pages/Blog";
@@ -27,6 +29,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/races" element={<Races />} />
+        <Route path="/home-meet" element={<HomeMeet />} />
+        <Route path="/home-meet-records" element={<HomeMeetRecords />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/records" element={<Records />} />
         <Route path="/records/:season" element={<Records />} />

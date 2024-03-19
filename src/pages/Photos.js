@@ -23,6 +23,15 @@ function Races() {
             </thead>
             <tbody>
               <tr>
+                <td>2/23/2024</td>
+                <td>Capital Relays 2024</td>
+                <td>
+                  <a href="https://photos.google.com/share/AF1QipNduQRjGfiCVpaH9_N-NnDIKud61hMdru39HixUxpUgw9lwmML8bGWFwjgwubcaYg?key=bzdhcUMtVU90UlBfUW9ER0VrTlhXV1BLNTZ4c2d3">
+                    Photos
+                  </a>
+                </td>
+              </tr>
+              <tr>
                 <td>2/10/2024</td>
                 <td>Happy Valley Invitational 2024</td>
                 <td>

@@ -12,7 +12,10 @@ function Races() {
         <div className="flex flex-col items-center justify-center">
           <p className="text-white w-3/4 mt-8 mb-8">
             Maryland Club Running is a member of the{" "}
-            <a href="clubrunning.org">
+            <a
+              href="clubrunning.org"
+              style={{ textDecorationLine: "underline" }}
+            >
               National Intercollegiate Running Club Association
             </a>{" "}
             (NIRCA). NIRCA hosts races throughout the Fall Cross Country, Winter
