@@ -140,7 +140,7 @@ function Header() {
           <div className="scrollmenu font-bold text-white">
             <a href="https://evanmasiello.com/clubrunning/">Blog</a>
             <a href="/Photos">Photos</a>
-            <a href="/home-meet">Terapin Invite</a>
+            <a href="/home-meet">Terp Invite</a>
             <a href="/Races">Races</a>
             <a href="/Records">Records</a>
             <a href="/Workouts">Workouts</a>
