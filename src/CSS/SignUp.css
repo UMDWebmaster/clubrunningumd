@@ -39,6 +39,13 @@ input[type=text], input[type=email] {
     background: #ddd;
 }
 
+.text{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    background: #ddd;
+}
+
     input[type=text]:focus, input[type=email]:focus {
         border: 2px solid blue;
         color: #171717;
