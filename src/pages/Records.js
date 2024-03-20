@@ -1,30 +1,34 @@
 import React from "react";
-import "../CSS/Races.css";
+import "../CSS/Races.css"; // Importing CSS files for styling
 import "../CSS/Routes.css";
-import fredHalfPic from "../Pictures/fredHalfTeam.JPG";
+import fredHalfPic from "../Pictures/fredHalfTeam.JPG"; // Importing image
 import { useState } from "react";
 
 function Records() {
+  // Importing records data
   const RecordsList = require("../data/records.json");
 
+  // States for filters and sorting
   const [selectedSorting, setSelectedSorting] = useState("default");
   const [searchVal, setSearchVal] = useState("");
   const [seasonVal, setSeasonVal] = useState("all");
   const [genderVal, setGenderVal] = useState("all");
 
+  // Extracting query parameters from URL
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
 
+  // Applying filters based on query parameters if present
+  // These are currently commented out, might need to be revisited if needed
   // if (urlParams.has("season")) {
   //   setSeasonVal(urlParams.get("season"));
   // }
-
   // if (urlParams.has("gender")) {
   //   setSeasonVal(urlParams.get("gender"));
   // }
 
+  // Sorting RecordsList based on selectedSorting value
   RecordsList.sort((a, b) => a.season - b.season);
-
   switch (selectedSorting) {
     case "time_slowest":
       RecordsList.sort((a, b) => a.seconds - b.seconds);
@@ -55,14 +59,17 @@ function Records() {
 
   return (
     <div>
+      {/* Displaying image */}
       <div className="teamPic-container">
         <img src={fredHalfPic} alt="" className="teamPic" />
       </div>
       <div>
         <div className="flex flex-col items-center justify-center">
+          {/* Displaying heading */}
           <h3 className="text-white text-3xl font-bold mt-5 mb-5">
             UMD Club Running Records
           </h3>
+          {/* Filter options */}
           <h4>
             <span className="line" style={{ paddingLeft: 5 + "px" }}>
               Season:{" "}
@@ -117,6 +124,7 @@ function Records() {
             </span>
           </h4>
           <br></br>
+          {/* Displaying records table based on filters */}
           {seasonVal !== "all" && genderVal !== "all" ? (
             <div className="tableContainer">
               <table className="mb-10 table-auto">
@@ -157,6 +165,7 @@ function Records() {
               </table>
             </div>
           ) : (
+            // Displaying message if filters not selected
             <h1 className="text-black text-2xl font-bold mt-5 mb-5">
               Please select a season and gender to view records.
             </h1>

@@ -1,17 +1,18 @@
 import React from "react";
-import "../CSS/Races.css";
-import "../CSS/Routes.css";
-import sohanPic from "../Pictures/sohanRUnnn.JPG";
-import { AiFillStar } from "react-icons/ai";
-import { useState } from "react";
+import "../CSS/Races.css"; // Importing CSS file for races
+import "../CSS/Routes.css"; // Importing CSS file for routes
+import sohanPic from "../Pictures/sohanRUnnn.JPG"; // Importing image file
+import { AiFillStar } from "react-icons/ai"; // Importing star icon
+import { useState } from "react"; // Importing useState hook
 
 function Routes() {
+  // Importing routes data from JSON file and setting up state variables
   const routesList = require("../data/routes.json");
-
   const [selectedSorting, setSelectedSorting] = useState("popularity");
   const [searchVal, setSearchVal] = useState("");
 
-  routesList.sort((a, b) => a.distance - b.distance);
+  // Sorting routes based on selected criteria
+  routesList.sort((a, b) => a.distance - b.distance); // Sorting by distance initially
 
   switch (selectedSorting) {
     case "popularity":
@@ -24,19 +25,21 @@ function Routes() {
       routesList.sort((a, b) => b.distance - a.distance);
       break;
     default:
-      routesList.sort((a, b) => b.popularity - a.popularity);
+      routesList.sort((a, b) => b.popularity - a.popularity); // Default sorting by popularity
   }
 
   return (
     <div>
       <div className="teamPic-container">
-        <img src={sohanPic} alt="" className="teamPic" />
+        <img src={sohanPic} alt="" className="teamPic" />{" "}
+        {/* Displaying team picture */}
       </div>
       <div>
         <div className="flex flex-col items-center justify-center">
           <h3 className="text-white text-3xl font-bold mt-5 mb-5">
-            UMD Club Running Routes
+            UMD Club Running Routes {/* Heading */}
           </h3>
+          {/* Search and sort options */}
           <h4>
             <span className="line">
               Search:{" "}
@@ -59,6 +62,7 @@ function Routes() {
             </span>
           </h4>
           <br></br>
+          {/* Displaying routes in a table */}
           <div className="tableContainer">
             <table className="mb-10 table-auto">
               <thead>
@@ -69,6 +73,7 @@ function Routes() {
                 </tr>
               </thead>
               <tbody>
+                {/* Filtering and mapping routes */}
                 {routesList
                   .filter(
                     (item) =>
@@ -92,6 +97,7 @@ function Routes() {
                       </td>
                       <td>{item.distance} Miles</td>
                       <td>
+                        {/* Displaying popularity with star icons */}
                         {Array(item.popularity)
                           .fill()
                           .map((_, i) => {
@@ -112,6 +118,7 @@ function Routes() {
               </tbody>
             </table>
           </div>
+          {/* Submission form link */}
           <h1>
             If a route is missing please use
             <strong>

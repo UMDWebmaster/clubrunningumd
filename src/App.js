@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+// Importing individual page components
 import Home from "./pages/Home";
 import HomeMeet from "./pages/HomeMeet";
 import HomeMeetRecords from "./pages/HomeMeetRecords";
@@ -16,31 +17,40 @@ import Paths from "./pages/Routes";
 import JoinUs from "./pages/JoinUs";
 import SignUp from "./pages/SignUp";
 
+// Importing necessary routing components from react-router-dom
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
+    // Setting up the main Router component
     <Router>
+      {/* Displaying the header component */}
       <Header />
 
+      {/* Defining routes for different pages */}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/races" element={<Races />} />
-        <Route path="/home-meet" element={<HomeMeet />} />
-        <Route path="/home-meet-records" element={<HomeMeetRecords />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/records" element={<Records />} />
-        <Route path="/records/:season" element={<Records />} />
-        <Route path="/records/:gender" element={<Records />} />
-        <Route path="/workouts" element={<Workouts />} />
-        <Route path="/photos" element={<Photos />} />
-        <Route path="/routes" element={<Paths />} />
-        <Route path="/joinus" element={<JoinUs />} />
+        <Route path="/" element={<Home />} /> {/* Home page */}
+        <Route path="/home" element={<Home />} /> {/* Alias for Home page */}
+        <Route path="/about" element={<About />} /> {/* About page */}
+        <Route path="/signup" element={<SignUp />} /> {/* Sign Up page */}
+        <Route path="/races" element={<Races />} /> {/* Races page */}
+        <Route path="/home-meet" element={<HomeMeet />} />{" "}
+        {/* Home Meet page */}
+        <Route path="/home-meet-records" element={<HomeMeetRecords />} />{" "}
+        {/* Home Meet Records page */}
+        <Route path="/blog" element={<Blog />} /> {/* Blog page */}
+        <Route path="/records" element={<Records />} /> {/* Records page */}
+        <Route path="/records/:season" element={<Records />} />{" "}
+        {/* Records page with season parameter */}
+        <Route path="/records/:gender" element={<Records />} />{" "}
+        {/* Records page with gender parameter */}
+        <Route path="/workouts" element={<Workouts />} /> {/* Workouts page */}
+        <Route path="/photos" element={<Photos />} /> {/* Photos page */}
+        <Route path="/routes" element={<Paths />} /> {/* Routes page */}
+        <Route path="/joinus" element={<JoinUs />} /> {/* Join Us page */}
       </Routes>
 
+      {/* Displaying the footer component */}
       <Footer />
     </Router>
   );

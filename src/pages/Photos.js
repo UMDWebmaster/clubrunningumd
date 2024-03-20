@@ -1,19 +1,32 @@
+// Import React library for creating React components
 import React from "react";
+
+// Import CSS file for styling
 import "../CSS/Photos.css";
+
+// Import image for displaying in the component
 import JimmyRun from "../Pictures/JimmyRun.JPG";
+
+// Define a functional component named Races
 function Races() {
   return (
     <div>
+      {/* Container for displaying an image */}
       <div class="teamPic-container">
         <img src={JimmyRun} alt="" className="fredHalfPic" />
       </div>
 
+      {/* Container for the photo archive */}
       <div className="flex flex-col items-center justify-center">
+        {/* Heading for the photo archive */}
         <h3 className="text-white text-3xl font-bold mt-5 mb-5">
           Photo Archive
         </h3>
+
+        {/* Container for the table */}
         <div className="tableContainer">
           <table className="mb-10">
+            {/* Table header */}
             <thead>
               <tr>
                 <th>Date</th>
@@ -21,11 +34,14 @@ function Races() {
                 <th>Album</th>
               </tr>
             </thead>
+            {/* Table body */}
             <tbody>
+              {/* Row for each race */}
               <tr>
                 <td>2/23/2024</td>
                 <td>Capital Relays 2024</td>
                 <td>
+                  {/* Link to the Google Photos album for the race */}
                   <a href="https://photos.google.com/share/AF1QipNduQRjGfiCVpaH9_N-NnDIKud61hMdru39HixUxpUgw9lwmML8bGWFwjgwubcaYg?key=bzdhcUMtVU90UlBfUW9ER0VrTlhXV1BLNTZ4c2d3">
                     Photos
                   </a>

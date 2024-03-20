@@ -1,19 +1,26 @@
 import React from "react";
 import gabeZach from "../Pictures/gabe+zach.JPG";
 
+// Component for displaying information about club running workout schedules
 function About() {
   return (
     <div>
+      {/* Container for the team picture */}
       <div class="teamPic-container">
         <img src={gabeZach} alt="" className="teamPic" />
       </div>
 
+      {/* Container for workout schedule information */}
       <div className="flex flex-col items-center justify-center">
+        {/* Title for workout schedules */}
         <h3 className="text-white text-3xl font-bold mt-5 mb-5">
           Maryland Club Running Workout Schedules
         </h3>
+
+        {/* Table container for displaying workout schedules */}
         <div className="tableContainer">
           <table class="mb-10">
+            {/* Table header */}
             <thead>
               <tr>
                 <th>Year</th>
@@ -22,7 +29,9 @@ function About() {
                 <th>Mid/Distance</th>
               </tr>
             </thead>
+            {/* Table body with workout schedule links */}
             <tbody>
+              {/* Row for 2023-2024 workout schedules */}
               <tr>
                 <td>2023 - 2024</td>
                 <td>

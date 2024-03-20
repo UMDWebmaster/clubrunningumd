@@ -5,25 +5,20 @@ import terpInvitePic from "../Pictures/terpInvite.png";
 import { useState } from "react";
 
 function Records() {
+  // Importing the records data
   const RecordsList = require("../data/terp-invite-records.json");
 
+  // State variables for sorting, search, and gender filter
   const [selectedSorting, setSelectedSorting] = useState("default");
   const [searchVal, setSearchVal] = useState("");
   const [genderVal, setGenderVal] = useState("all");
 
+  // Extracting query parameters from the URL
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
 
-  // if (urlParams.has("season")) {
-  //   setSeasonVal(urlParams.get("season"));
-  // }
-
-  // if (urlParams.has("gender")) {
-  //   setSeasonVal(urlParams.get("gender"));
-  // }
-
+  // Sorting the records list based on selected criteria
   RecordsList.sort((a, b) => b.true_distance - a.true_distance);
-
   switch (selectedSorting) {
     case "time_slowest":
       RecordsList.sort((a, b) => a.seconds - b.seconds);
@@ -50,6 +45,7 @@ function Records() {
   return (
     <div>
       <div className="teamPic-container">
+        {/* Displaying the team picture */}
         <img src={terpInvitePic} alt="" className="teamPic" />
       </div>
       <div>
@@ -58,6 +54,7 @@ function Records() {
             Terrapin Invitational Meet Records
           </h3>
           <h4>
+            {/* Gender filter dropdown */}
             <span className="line" style={{ paddingLeft: 5 + "px" }}>
               Gender:{" "}
               <select
@@ -71,6 +68,7 @@ function Records() {
                 <option value="F">F</option>
               </select>
             </span>
+            {/* Search input field */}
             <span className="line" style={{ paddingLeft: 5 + "px" }}>
               Search:{" "}
               <input
@@ -80,6 +78,7 @@ function Records() {
                 onChange={(e) => setSearchVal(e.target.value)}
               ></input>{" "}
             </span>
+            {/* Sorting dropdown */}
             <span className="line" style={{ paddingLeft: 5 + "px" }}>
               Sort By:{" "}
               <select
@@ -98,6 +97,7 @@ function Records() {
           </h4>
           <br></br>
           <div className="tableContainer">
+            {/* Table displaying the records */}
             <table className="mb-10 table-auto">
               <thead>
                 <tr>
@@ -109,6 +109,7 @@ function Records() {
                 </tr>
               </thead>
               <tbody>
+                {/* Mapping over filtered records to display in the table */}
                 {RecordsList.filter(
                   (item) =>
                     searchVal === "" ||
@@ -122,6 +123,7 @@ function Records() {
                 ).map((item) => (
                   <tr>
                     <td>
+                      {/* Displaying event with gender */}
                       {item.gender == "M" ? "Men's" : "Women's"} {item.event}
                     </td>
                     <td>{item.time}</td>

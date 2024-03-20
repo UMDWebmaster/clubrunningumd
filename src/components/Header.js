@@ -4,18 +4,21 @@ import { useLocation } from "react-router-dom";
 import "../CSS/Header.css";
 
 function Header() {
+  // Get current URL location
   const location = useLocation();
+
+  // State variables for mobile view and hamburger menu
   const [isMobileView, setIsMobileView] = useState(false);
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
 
   useEffect(() => {
-    //removes active
+    // Remove active class from all tab items
     const listItems = document.querySelectorAll(".tab");
     listItems.forEach((item) => {
       item.classList.remove("active");
     });
 
-    //Adds active to current page on desktop
+    // Add active class to current page tab on desktop
     const activeListItem = document.querySelector(
       `.tab a[href*="${location.pathname}"]`
     );
@@ -23,23 +26,25 @@ function Header() {
       activeListItem.parentElement.classList.add("active");
     }
 
-    //for mobile
+    // Check if the view is on mobile by checking window width
     const handleResize = () => {
       setIsMobileView(window.innerWidth <= 768);
     };
     window.addEventListener("resize", handleResize);
     handleResize();
 
+    // Remove event listener on component unmount
     return () => window.removeEventListener("resize", handleResize);
   }, [location]);
 
+  // Toggle hamburger menu state
   const toggleMenu = () => {
     setIsHamburgerOpen(!isHamburgerOpen);
   };
 
   return (
     <header className="App-header bg-neutral-900">
-      {isMobileView && ( //title on mobile
+      {isMobileView && ( // Render title on mobile view
         <div className="MobileHome">
           <a
             href="/home"
@@ -54,6 +59,7 @@ function Header() {
         <Tab.List
           className={`text-white text-xl ${isMobileView ? "hidden" : ""}`}
         >
+          {/* Tab items for desktop view */}
           <Tab className="tab home no-highlight text-xl text-red-600">
             <a href="/home">UNIVERSITY OF MARYLAND CLUB RUNNING</a>
           </Tab>
@@ -61,6 +67,7 @@ function Header() {
             <a href="/signup" className="dropdown-toggle">
               Join Us
             </a>
+            {/* Dropdown menu for Join Us tab */}
             <ul className="dropdown">
               <li>
                 <a href="https://docs.google.com/document/d/1AbWsGq4yMjutG-I_jPUq9fuutEBvtcoPZ5IwTnRc1Ns/edit#heading=h.vkmalmlatt01">
@@ -72,6 +79,7 @@ function Header() {
               </li>
             </ul>
           </Tab>
+          {/* Other tabs */}
           <Tab className="tab active:text-red-600">
             <a href="https://evanmasiello.com/clubrunning/">Blog</a>
           </Tab>
@@ -79,6 +87,7 @@ function Header() {
             <a href="/Photos" className="dropdown-toggle">
               Archive
             </a>
+            {/* Dropdown menu for Archive tab */}
             <ul className="dropdown">
               <li>
                 <a href="/Photos">Photos</a>
@@ -90,10 +99,12 @@ function Header() {
               </li>
             </ul>
           </Tab>
+          {/* More tabs */}
           <Tab className="tab">
             <a href="/Races" className="dropdown-toggle">
               Info
             </a>
+            {/* Dropdown menu for Info tab */}
             <ul className="dropdown">
               <li>
                 <a href="/home-meet">Terapin Invite</a>
@@ -118,7 +129,7 @@ function Header() {
         </Tab.List>
       </Tab.Group>
 
-      {isMobileView && ( //hamburger menu
+      {isMobileView && ( // Render hamburger menu for mobile view
         <>
           <div className="header-wrapper flex justify-end">
             <div
@@ -136,7 +147,7 @@ function Header() {
       )}
 
       {isMobileView &&
-        isHamburgerOpen && ( //scrollable menu on click
+        isHamburgerOpen && ( // Render scrollable menu on hamburger menu click
           <div className="scrollmenu font-bold text-white">
             <a href="https://evanmasiello.com/clubrunning/">Blog</a>
             <a href="/Photos">Photos</a>

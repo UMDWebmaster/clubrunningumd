@@ -1,15 +1,20 @@
 import React from "react";
-import "../CSS/Races.css";
-import natsPic from "../Pictures/natsTeamPic.JPG";
+import "../CSS/Races.css"; // Importing CSS file for styling
+import natsPic from "../Pictures/natsTeamPic.JPG"; // Importing image
 
+// Functional component for rendering race information
 function Races() {
   return (
     <div>
+      {/* Container for displaying team picture */}
       <div class="teamPic-container">
         <img src={natsPic} alt="" className="teamPic" />
       </div>
+
+      {/* Main content section */}
       <div>
         <div className="flex flex-col items-center justify-center">
+          {/* Introduction paragraph about the club's participation in races */}
           <p className="text-white w-3/4 mt-8 mb-8">
             Maryland Club Running is a member of the{" "}
             <a
@@ -22,12 +27,15 @@ function Races() {
             Indoor, and Spring Outdoor Track seasons. Our club participates in
             both NIRCA hosted meets and open college meets. During the fall, we
             primarily compete in NIRCA or club meets, while in the spring, our
-            focus shifts to open college meets
+            focus shifts to open college meets.
           </p>
 
+          {/* Heading for the spring 2024 race schedule */}
           <h3 className="text-white text-3xl font-bold mt-5 mb-5">
             Spring 2024 Race Schedule
           </h3>
+
+          {/* Container for displaying the race schedule in a table */}
           <div className="tableContainer">
             <table className="mb-10">
               <thead>
@@ -39,6 +47,7 @@ function Races() {
                 </tr>
               </thead>
               <tbody>
+                {/* Individual rows for each race with date, race name, location, and meet type */}
                 <tr>
                   <td>2/10/2024</td>
                   <td>Happy Valley Invitational</td>
@@ -108,4 +117,4 @@ function Races() {
   );
 }
 
-export default Races;
+export default Races; // Exporting the Races component

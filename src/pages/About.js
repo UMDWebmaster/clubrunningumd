@@ -1,6 +1,6 @@
 import React from "react";
-import "../CSS/About.css";
-import dayImage from "../Pictures/dayPic.JPG";
+import "../CSS/About.css"; // Importing CSS styles
+import dayImage from "../Pictures/dayPic.JPG"; // Importing images
 import domImage from "../Pictures/dominick.png";
 import zachImage from "../Pictures/zack.jpeg";
 import evanImage from "../Pictures/evanProfile.png";
@@ -12,15 +12,25 @@ import jonahImage from "../Pictures/JonahProfile.jpeg";
 function About() {
   return (
     <div className="about-us-container">
+      {" "}
+      {/* Main container */}
+      {/* Zach's bio card */}
       <div className="bio-card">
         {" "}
-        {/*Image on the left*/}
+        {/* Container for each team member */}
         <div className="align-left md:w-1/2">
-          <img src={zachImage} alt="Zach Pic" />
+          {" "}
+          {/* Image container */}
+          <img src={zachImage} alt="Zach Pic" /> {/* Zach's image */}
         </div>
         <div className="flex flex-col md:w-1/2 ml-5 mr-5">
-          <h1 className="bio-content">President: Zach Kiedrowski</h1>
+          {" "}
+          {/* Content container */}
+          <h1 className="bio-content">President: Zach Kiedrowski</h1>{" "}
+          {/* Zach's position */}
           <p className="text-black mb-6">
+            {" "}
+            {/* Zach's bio */}
             Zach is a third-year member of the club and an Aberdeen High School
             alum. He is pursuing a dual degree in environmental science and
             statistics. Zach started running his sophomore year of high school
@@ -30,10 +40,8 @@ function About() {
           </p>
         </div>
       </div>
-
+      {/* Sam's bio card */}
       <div className="bio-card">
-        {" "}
-        {/*Image on the left*/}
         <div className="align-left md:w-1/2 md:order-2">
           <img src={samImage} alt="Sam Pic" />
         </div>
@@ -48,9 +56,8 @@ function About() {
           </p>
         </div>
       </div>
+      {/* Lillian's bio card */}
       <div className="bio-card">
-        {" "}
-        {/*Image on the left*/}
         <div className="align-left md:w-1/2 md:order-2">
           <img src={lillianImage} alt="Lillian Pic" />
         </div>
@@ -68,9 +75,8 @@ function About() {
           </p>
         </div>
       </div>
+      {/* Day's bio card */}
       <div className="bio-card">
-        {" "}
-        {/*Image on the left*/}
         <div className="align-left md:w-1/2">
           <img src={dayImage} alt="Day Pic" />
         </div>
@@ -97,10 +103,8 @@ function About() {
           </p>
         </div>
       </div>
-
+      {/* Dominick's bio card */}
       <div className="bio-card">
-        {" "}
-        {/*Image on the left*/}
         <div className="align-left md:w-1/2">
           <img src={domImage} alt="dom Pic" />
         </div>
@@ -118,10 +122,8 @@ function About() {
           </p>
         </div>
       </div>
-
+      {/* Stacey's bio card */}
       <div className="bio-card">
-        {" "}
-        {/*Image on the left*/}
         <div className="align-left md:w-1/2 md:order-2">
           <img src={staceyImage} alt="Stacey Pic" />
         </div>
@@ -142,10 +144,8 @@ function About() {
           </p>
         </div>
       </div>
-
+      {/* Jonah's bio card */}
       <div className="bio-card">
-        {" "}
-        {/*Image on the left*/}
         <div className="align-left md:w-1/2">
           <img src={jonahImage} alt="Jonah Pic" />
         </div>
@@ -166,10 +166,8 @@ function About() {
           </p>
         </div>
       </div>
-
+      {/* Evan's bio card */}
       <div className="bio-card">
-        {" "}
-        {/*Image on the left*/}
         <div className="align-left md:w-1/2 md:order-2">
           <img src={evanImage} alt="Evan Pic" />
         </div>
@@ -193,4 +191,4 @@ function About() {
   );
 }
 
-export default About;
+export default About; // Exporting the component
