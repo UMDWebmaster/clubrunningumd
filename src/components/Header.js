@@ -64,6 +64,14 @@ function Header() {
             <a href="/home">UNIVERSITY OF MARYLAND CLUB RUNNING</a>
           </Tab>
           <Tab className="tab">
+            <a
+              href="https://venmo.com/u/umdclubrunning"
+              className="dropdown-toggle"
+            >
+              Donate!
+            </a>
+          </Tab>
+          <Tab className="tab">
             <a href="/signup" className="dropdown-toggle">
               Join Us
             </a>
@@ -161,6 +169,7 @@ function Header() {
             <a href="https://docs.google.com/document/d/1AbWsGq4yMjutG-I_jPUq9fuutEBvtcoPZ5IwTnRc1Ns/edit">
               Join Us
             </a>
+            <a href="https://venmo.com/u/umdclubrunning">Donate!</a>
           </div>
         )}
     </header>

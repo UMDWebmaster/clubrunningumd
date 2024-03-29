@@ -200,6 +200,16 @@
     "year": "2019"
   },
   {
+    "event": "4x800m Relay",
+    "gender": "M",
+    "true_distance": 3200,
+    "time": "8:03.20",
+    "seconds": 483.2,
+    "athlete": "Brian McCullough, Brian Lau, Max Worley, Christopher Scalzi",
+    "team": "Maryland",
+    "year": "2022"
+  },
+  {
     "event": "High Jump",
     "gender": "M",
     "true_distance": 0,
