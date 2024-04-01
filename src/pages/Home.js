@@ -63,6 +63,15 @@ function Home() {
     },
   ];
 
+  // check if the date is april first
+  var aprilFools = {
+    month: 3,
+    date: 1,
+  };
+  var now = new Date();
+  var isItAprilFools =
+    now.getMonth() === aprilFools.month && now.getDate() === aprilFools.date;
+
   // State to manage modal visibility
   const [showModal, setShowModal] = useState(false);
 
@@ -95,7 +104,22 @@ function Home() {
 
   return (
     <div className="Home-container home-page">
-     <iframe  class="iframe" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=Y-eYRSVjhBzI4piz&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      {/* Load video if it's april 1st */}
+      {isItAprilFools ? (
+        <iframe
+          class="iframe"
+          height="400"
+          style={{ width: "100%", margin: "auto" }}
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=Y-eYRSVjhBzI4piz&autoplay=1&mute=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      ) : (
+        <span></span>
+      )}
       <div class="teamPic-container">
         {/* Image Gallery Component */}
         <ImageGallery
