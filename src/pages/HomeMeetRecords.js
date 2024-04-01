@@ -74,7 +74,7 @@ function Records() {
               <input
                 type="text"
                 class="w-auto px-2 py-0 m-0 bg-white"
-                placeholder="Name or event"
+                placeholder="Name, event, or team"
                 onChange={(e) => setSearchVal(e.target.value)}
               ></input>{" "}
             </span>
@@ -119,12 +119,16 @@ function Records() {
                     (item.event
                       .toLowerCase()
                       .includes(searchVal.toLowerCase()) &&
+                      (genderVal === "all" || genderVal === item.gender)) ||
+                    (item.team
+                      .toLowerCase()
+                      .includes(searchVal.toLowerCase()) &&
                       (genderVal === "all" || genderVal === item.gender))
                 ).map((item) => (
                   <tr>
                     <td>
                       {/* Displaying event with gender */}
-                      {item.gender == "M" ? "Men's" : "Women's"} {item.event}
+                      {item.gender === "M" ? "Men's" : "Women's"} {item.event}
                     </td>
                     <td>{item.time}</td>
                     <td>{item.athlete}</td>
