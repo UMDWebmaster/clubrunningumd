@@ -62,12 +62,11 @@ function About() {
         <h5 className="text-white text-s font-bold mt-5 mb-5">
           {/* List of events */}
           Women followed by Men <br></br>
-          <br></br> Track:<br></br> 9:00am: 10k (combined) **[Pending interest]{" "}
           <br></br> 10:00am: Alumni Mile (combined) <br></br> Swedish Medley
           Relay <br></br> 5000m Run <br></br> 4x800 Relay <br></br> 100mH/110mH{" "}
           <br></br> 100m Dash <br></br> 400m Dash <br></br> 1500m Run <br></br>{" "}
-          400m Hurdles <br></br> 3k Steeplechase <br></br> 4x100m Relay{" "}
-          <br></br> 800m Dash <br></br> 200m Dash <br></br> 4x400m Relay
+          400m Hurdles <br></br> 1500m Racewalk <br></br> 4x100m Relay <br></br>{" "}
+          800m Dash <br></br> 200m Dash <br></br> 4x400m Relay
           <br></br> <br></br>Field:<br></br> 9:30am- High Jump <br></br>{" "}
           10:00am- Shot Put (combined)<br></br> 11:15am- Women’s Long Jump{" "}
           <br></br> 12:00- Women’s Discus, Men’s Long Jump <br></br> 1:15pm-
