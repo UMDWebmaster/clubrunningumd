@@ -28,7 +28,7 @@ function Header() {
 
     // Check if the view is on mobile by checking window width
     const handleResize = () => {
-      setIsMobileView(window.innerWidth <= 768);
+      setIsMobileView(window.innerWidth <= 970);
     };
     window.addEventListener("resize", handleResize);
     handleResize();
