@@ -80,7 +80,7 @@ function About() {
         Registration: <br></br>
         <span className="text-lg">
           {/* Registration details */}
-          Registration opens on March 25, 2024 and closes on April 14, 2024 at
+          Registration opens on March 25, 2024 and closes on April 18, 2024 at
           11:59pm<br></br>
           Cost: $20 per runner or $300 per team.
         </span>
