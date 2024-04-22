@@ -83,6 +83,7 @@ function Records() {
                 <option value="Indoor">Indoor</option>
                 <option value="Outdoor">Outdoor</option>
                 <option value="Cross Country">Cross Country</option>
+                <option value="Special">Special Events</option>
               </select>
             </span>
             <span className="line" style={{ paddingLeft: 5 + "px" }}>

@@ -565,11 +565,11 @@
     "event": "4x100m Relay",
     "gender": "F",
     "true_distance": 400,
-    "time": "53.86",
-    "seconds": 53.86,
-    "athlete": "Sabine Huber, Brittany Taylor, Grace Stanton, Alana Frederique",
-    "date": "4/16/2016",
-    "meet": "Hopkins Loyola Invitational"
+    "time": "52.63",
+    "seconds": 52.63,
+    "athlete": "Morgan Bailey, Jenna Amrhein, Jasmin Mohammadi, Erin Henderson",
+    "date": "4/20/2024",
+    "meet": "Terrapin Invitational"
   },
   {
     "season": "Outdoor",
@@ -624,7 +624,7 @@
     "seconds": 483.2,
     "athlete": "Brian McCullough, Brian Lau, Max Worley, Christopher Scalzi",
     "date": "4/23/2022",
-    "meet": "Terrapin Invite"
+    "meet": "Terrapin Invitational"
   },
   {
     "season": "Outdoor",
@@ -664,11 +664,11 @@
     "event": "Long Jump",
     "gender": "M",
     "true_distance": 0,
-    "time": "6.37 (Mark)",
+    "time": "6.45 (Mark)",
     "seconds": 0,
-    "athlete": "Nabieu Kamara",
-    "date": "4/30/2016",
-    "meet": "Paul Kaiser Classic"
+    "athlete": "Ezekiel Jatto",
+    "date": "4/20/2024",
+    "meet": "Terrapin Invitational"
   },
   {
     "season": "Outdoor",
@@ -785,11 +785,11 @@
     "event": "Shotput",
     "gender": "M",
     "true_distance": 0,
-    "time": "11.07 (Mark)",
+    "time": "13.08 (Mark)",
     "seconds": 0,
-    "athlete": "Henry Sheppard",
-    "date": "4/2/2022",
-    "meet": "NIRCA Nationals"
+    "athlete": "Maxwell Pizzolato",
+    "date": "4/20/2024",
+    "meet": "Terrapin Invitational"
   },
   {
     "season": "Outdoor",
@@ -900,5 +900,93 @@
     "athlete": "Delana Nalesnik",
     "date": "3/10/2018",
     "meet": "Rock n' Roll USA Marathon"
+  },
+  {
+    "season": "Outdoor",
+    "event": "Swedish Relay",
+    "gender": "F",
+    "true_distance": 1000,
+    "time": "2:38",
+    "seconds": 158,
+    "athlete": "Katie Hernandez, Jenna Amrhein, Caiya Campbell, Mandy Callaghan",
+    "date": "4/20/2024",
+    "meet": "Terrapin Invitational"
+  },
+  {
+    "season": "Outdoor",
+    "event": "Swedish Relay",
+    "gender": "M",
+    "true_distance": 1000,
+    "time": "2:11.46",
+    "seconds": 131.46,
+    "athlete": "Daniel Lu, Aryaman Punshi, Dominick Cardone, Kalabe Arefeayne",
+    "date": "4/20/2024",
+    "meet": "Terrapin Invitational"
+  },
+  {
+    "season": "Outdoor",
+    "event": "1500m Race Walk",
+    "gender": "F",
+    "true_distance": 1500,
+    "time": "9:34.93",
+    "seconds": 514.93,
+    "athlete": "Hannah Haber",
+    "date": "4/20/2024",
+    "meet": "Terrapin Invitational"
+  },
+  {
+    "season": "Outdoor",
+    "event": "1500m Race Walk",
+    "gender": "M",
+    "true_distance": 1500,
+    "time": "9:07.32",
+    "seconds": 547.32,
+    "athlete": "Jared Kimiabakhsh",
+    "date": "4/20/2024",
+    "meet": "Terrapin Invitational"
+  },
+  {
+    "season": "Special",
+    "event": "Eppley Marathon",
+    "gender": "M",
+    "true_distance": 42164.81,
+    "time": "3:26",
+    "seconds": 12360,
+    "athlete": "Harrison Fike",
+    "date": "4/13/2024",
+    "meet": "The Eppley Indoor Track"
+  },
+  {
+    "season": "Special",
+    "event": "E Fields 50k",
+    "gender": "M",
+    "true_distance": 42164.81,
+    "time": "4:02",
+    "seconds": 14520,
+    "athlete": "Chris Withee",
+    "date": "11/30/2025",
+    "meet": "E Fields"
+  },
+  {
+    "season": "Special",
+    "event": "E Fields Marathon",
+    "gender": "M",
+    "true_distance": 42164.81,
+    "time": "3:20",
+    "seconds": 12000,
+    "athlete": "Chris Withee",
+    "date": "12/15/2023",
+    "meet": "E Fields"
+  },
+  {
+    "season": "Special",
+    "event": "Ice Cream Trifecta Run",
+    "gender": "M",
+    "true_distance": 6469.563,
+    "time": "29:33",
+    "seconds": 1773,
+    "athlete": "Zach Kiedrowski",
+    "date": "4/10/2024",
+    "meet": "Ice Cream Trifecta Run"
   }
 ]

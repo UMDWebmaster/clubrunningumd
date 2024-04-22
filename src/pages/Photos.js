@@ -38,6 +38,16 @@ function Races() {
             <tbody>
               {/* Row for each race */}
               <tr>
+                <td>4/20/2024</td>
+                <td>Terrapin Invitational</td>
+                <td>
+                  {/* Link to the Google Photos album for the race */}
+                  <a href="https://drive.google.com/drive/folders/12P1xI3qQImU26LFs1NCeUefFSGyTXgSw">
+                    Photos Link 1
+                  </a>
+                </td>
+              </tr>
+              <tr>
                 <td>4/7/2024</td>
                 <td>NIRCA Track & Field Nationals 2024</td>
                 <td>

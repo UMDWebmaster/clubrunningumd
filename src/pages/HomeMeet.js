@@ -32,7 +32,21 @@ function About() {
             >
               Meet Records
             </a>{" "}
-            {" - "} Results Coming Soon
+            {" and "}{" "}
+            <a
+              href="https://results.firstlanetiming.com/meets/35171"
+              style={{ textDecorationLine: "underline" }}
+            >
+              Results
+            </a>
+            <br></br>View {/* Link to home meet records */}
+            <a
+              href="https://drive.google.com/drive/folders/12P1xI3qQImU26LFs1NCeUefFSGyTXgSw"
+              target="_blank"
+              style={{ textDecorationLine: "underline" }}
+            >
+              Photos
+            </a>
           </h2>
 
           {/* Display the location using Google Maps */}

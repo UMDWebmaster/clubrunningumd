@@ -112,18 +112,15 @@ function Records() {
                 {/* Mapping over filtered records to display in the table */}
                 {RecordsList.filter(
                   (item) =>
-                    searchVal === "" ||
-                    item.athlete
-                      .toLowerCase()
-                      .includes(searchVal.toLowerCase()) ||
-                    (item.event
-                      .toLowerCase()
-                      .includes(searchVal.toLowerCase()) &&
-                      (genderVal === "all" || genderVal === item.gender)) ||
-                    (item.team
-                      .toLowerCase()
-                      .includes(searchVal.toLowerCase()) &&
-                      (genderVal === "all" || genderVal === item.gender))
+                    (genderVal === "all" || genderVal === item.gender) &&
+                    (searchVal === "" ||
+                      item.athlete
+                        .toLowerCase()
+                        .includes(searchVal.toLowerCase()) ||
+                      item.event
+                        .toLowerCase()
+                        .includes(searchVal.toLowerCase()) ||
+                      item.team.toLowerCase().includes(searchVal.toLowerCase()))
                 ).map((item) => (
                   <tr>
                     <td>

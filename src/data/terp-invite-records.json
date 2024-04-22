@@ -3,21 +3,21 @@
     "event": "100m",
     "gender": "M",
     "true_distance": 100,
-    "time": "11.36",
-    "seconds": 11.36,
-    "athlete": "Lud Blair",
-    "team": "Maryland",
-    "year": "2018"
+    "time": "11.34",
+    "seconds": 11.34,
+    "athlete": "Jamil Yacoubou Adam",
+    "team": "Los Dos Colores",
+    "year": "2024"
   },
   {
     "event": "100m",
     "gender": "F",
     "true_distance": 100,
-    "time": "13.32",
-    "seconds": 13.32,
-    "athlete": "Becca Leonard",
-    "team": "West Virginia",
-    "year": "2019"
+    "time": "13.02",
+    "seconds": 13.02,
+    "athlete": "Rebecca Sloboh",
+    "team": "Towson",
+    "year": "2024"
   },
   {
     "event": "200m",
@@ -63,11 +63,11 @@
     "event": "800m",
     "gender": "M",
     "true_distance": 800,
-    "time": "1:59.24",
-    "seconds": 119.24,
-    "athlete": "Matt Goldsmith",
-    "team": "Penn",
-    "year": "2019"
+    "time": "1:58.07",
+    "seconds": 118.07,
+    "athlete": "Sadou Sow",
+    "team": "Maryland",
+    "year": "2024"
   },
   {
     "event": "800m",
@@ -103,21 +103,21 @@
     "event": "Alumni Mile",
     "gender": "M",
     "true_distance": 1608,
-    "time": "4:45.30",
-    "seconds": 285.3,
-    "athlete": "Colin SyBing",
+    "time": "5:01.11",
+    "seconds": 301.11,
+    "athlete": "Matthew Metz",
     "team": "Maryland Alumni",
-    "year": "2022"
+    "year": "2024"
   },
   {
     "event": "Alumni Mile",
     "gender": "F",
     "true_distance": 1608,
-    "time": "6:13.02",
-    "seconds": 373.02,
-    "athlete": "Luanne Zimmerman",
-    "team": "Maryland Alumni",
-    "year": "2022"
+    "time": "6:07.98",
+    "seconds": 367.98,
+    "athlete": "Theresa Falgoust",
+    "team": "GWU Alumni",
+    "year": "2024"
   },
   {
     "event": "5000m",
@@ -133,11 +133,11 @@
     "event": "5000m",
     "gender": "F",
     "true_distance": 5000,
-    "time": "18:33.44",
-    "seconds": 1113.44,
-    "athlete": "Shannon MacMaster",
-    "team": "Maryland",
-    "year": "2018"
+    "time": "18:06.8",
+    "seconds": 1086.8,
+    "athlete": "Jane Smith",
+    "team": "Georgetown",
+    "year": "2024"
   },
   {
     "event": "100m Hurdles",
@@ -153,11 +153,11 @@
     "event": "110m Hurdles",
     "gender": "M",
     "true_distance": 110,
-    "time": "16.10",
-    "seconds": 16.1,
-    "athlete": "Ryan Wallace",
-    "team": "Delaware",
-    "year": "2022"
+    "time": "15.57",
+    "seconds": 15.57,
+    "athlete": "Jamil Yacoubou Adam",
+    "team": "Los Dos Colores",
+    "year": "2024"
   },
   {
     "event": "400m Hurdles",
@@ -173,11 +173,11 @@
     "event": "400m Hurdles",
     "gender": "F",
     "true_distance": 400,
-    "time": "1:13.69",
-    "seconds": 73.69,
-    "athlete": "Caroline Outlaw",
-    "team": "James Madison",
-    "year": "2019"
+    "time": "1:08.22",
+    "seconds": 68.22,
+    "athlete": "Elizabeth Szybalski",
+    "team": "Unattached",
+    "year": "2024"
   },
   {
     "event": "3000m Steeplechase",
@@ -210,6 +210,16 @@
     "year": "2022"
   },
   {
+    "event": "4x800m Relay",
+    "gender": "F",
+    "true_distance": 3200,
+    "time": "10:39.44",
+    "seconds": 639.44,
+    "athlete": "Rachel Hylan, Anna Weiksner, Mandy Callaghan, Brooke Walz",
+    "team": "Maryland",
+    "year": "2024"
+  },
+  {
     "event": "High Jump",
     "gender": "M",
     "true_distance": 0,
@@ -233,11 +243,11 @@
     "event": "Long Jump",
     "gender": "M",
     "true_distance": 0,
-    "time": "6.10m",
+    "time": "6.45m",
     "seconds": 0,
-    "athlete": "Austin Juelfs",
-    "team": "West Virginia",
-    "year": "2019"
+    "athlete": "Ezekiel Jatto",
+    "team": "Maryland",
+    "year": "2024"
   },
   {
     "event": "Long Jump",
@@ -270,14 +280,14 @@
     "year": "2019"
   },
   {
-    "event": "Shot Put",
+    "event": "Shotput",
     "gender": "M",
     "true_distance": 0,
-    "time": "12.07m",
+    "time": "13.08 (Mark)",
     "seconds": 0,
-    "athlete": "James Agresto",
-    "team": "James Madison",
-    "year": "2022"
+    "athlete": "Maxwell Pizzolato",
+    "team": "Maryland",
+    "year": "2024"
   },
   {
     "event": "Shot Put",
@@ -308,5 +318,85 @@
     "athlete": "Caeley Philip",
     "team": "West Virginia",
     "year": "2019"
+  },
+  {
+    "event": "Swedish Relay",
+    "gender": "F",
+    "true_distance": 1000,
+    "time": "2:38",
+    "seconds": 158,
+    "athlete": "Katie Hernandez, Jenna Amrhein, Caiya Campbell, Mandy Callaghan",
+    "team": "Maryland",
+    "year": "2024"
+  },
+  {
+    "event": "Swedish Relay",
+    "gender": "M",
+    "true_distance": 1000,
+    "time": "2:11.46",
+    "seconds": 131.46,
+    "athlete": "Daniel Lu, Aryaman Punshi, Dominick Cardone, Kalabe Arefeayne",
+    "team": "Maryland",
+    "year": "2024"
+  },
+  {
+    "event": "4x100m Relay",
+    "gender": "F",
+    "true_distance": 400,
+    "time": "52.63",
+    "seconds": 52.63,
+    "athlete": "Morgan Bailey, Jenna Amrhein, Jasmin Mohammadi, Erin Henderson",
+    "team": "Maryland",
+    "year": "2024"
+  },
+  {
+    "event": "4x100m Relay",
+    "gender": "M",
+    "true_distance": 400,
+    "time": "44.76",
+    "seconds": 44.76,
+    "athlete": "Uzoma Nwosu, Aryaman Punshi, Daniel Lu, Kalabe Arefeayne",
+    "team": "Maryland",
+    "year": "2024"
+  },
+  {
+    "event": "1500m Race Walk",
+    "gender": "F",
+    "true_distance": 1500,
+    "time": "8:32.53",
+    "seconds": 512.53,
+    "athlete": "Lucia Lavallee",
+    "team": "Georgetown",
+    "year": "2024"
+  },
+  {
+    "event": "1500m Race Walk",
+    "gender": "M",
+    "true_distance": 1500,
+    "time": "8:54.16",
+    "seconds": 534.16,
+    "athlete": "Isaac Ager",
+    "team": "American University",
+    "year": "2024"
+  },
+  {
+    "event": "4x400",
+    "gender": "F",
+    "true_distance": 1600,
+    "time": "4:23.66",
+    "seconds": 263.66,
+    "athlete": "Rachel Hylan, Raquel Tolin, Jenna Amrhein, Amanda Callaghan",
+    "team": "Maryland",
+    "year": "2024"
+  },
+  {
+    "event": "4x400",
+    "gender": "F",
+    "true_distance": 1600,
+    "time": "3:33.41",
+    "seconds": 213.41,
+    "athlete": "Kalabe Arefeayne, Dominick Cardone, Joel Ukpelegbu, Sadou Sow",
+    "team": "Maryland",
+    "year": "2024"
   }
 ]
