@@ -45,7 +45,14 @@ function About() {
               target="_blank"
               style={{ textDecorationLine: "underline" }}
             >
-              Photos
+              Photos 1
+            </a>{" "}
+            <a
+              href="https://photos.google.com/share/AF1QipP8Pa1V-Syhpmx3eaTicXqeQM3XARYSg-ctr0F-kSCapVh3cqC1wK9tRhOqU2QiXg?key=cEdBb29aRXRIcUI2U3RDRmtnWVRfWGNjSG5tcFRR"
+              target="_blank"
+              style={{ textDecorationLine: "underline" }}
+            >
+              Photos 2
             </a>
           </h2>
 

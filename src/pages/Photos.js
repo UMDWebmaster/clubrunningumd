@@ -43,7 +43,10 @@ function Races() {
                 <td>
                   {/* Link to the Google Photos album for the race */}
                   <a href="https://drive.google.com/drive/folders/12P1xI3qQImU26LFs1NCeUefFSGyTXgSw">
-                    Photos Link 1
+                    Photos 1
+                  </a>{" "}
+                  <a href="https://photos.google.com/share/AF1QipP8Pa1V-Syhpmx3eaTicXqeQM3XARYSg-ctr0F-kSCapVh3cqC1wK9tRhOqU2QiXg?key=cEdBb29aRXRIcUI2U3RDRmtnWVRfWGNjSG5tcFRR">
+                    Photos 2
                   </a>
                 </td>
               </tr>
