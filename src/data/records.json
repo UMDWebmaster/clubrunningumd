@@ -999,5 +999,27 @@
     "athlete": "Ryken Mak & Abhyuday Srivatsa",
     "date": "1/14/2024",
     "meet": "Ice Cream Trifecta Run"
+  },
+  {
+    "season": "Special",
+    "event": "Hot Sauce Night Champion",
+    "gender": "M",
+    "true_distance": 0,
+    "time": "A lot of hot sauce",
+    "seconds": 0,
+    "athlete": "Jared Kimiabakhsh",
+    "date": "4/12/2024",
+    "meet": "Hot Sauce Night"
+  },
+  {
+    "season": "Special",
+    "event": "Hot Sauce Night Champion",
+    "gender": "F",
+    "true_distance": 0,
+    "time": "A lot of hot sauce",
+    "seconds": 0,
+    "athlete": "Lily Scherer",
+    "date": "4/12/2024",
+    "meet": "Hot Sauce Night"
   }
 ]
