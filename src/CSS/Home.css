@@ -1,7 +1,6 @@
 .image-gallery-slide img {
     max-width: 50vw; 
     height: auto; 
-    border-radius: 30px;
 }
 
 .teamPic-container {
@@ -100,7 +99,6 @@
     .image-gallery-slide img {
         max-width: 100%;
         height: auto;
-        border-radius: 0;
     }
 
     .image-gallery-left-nav {

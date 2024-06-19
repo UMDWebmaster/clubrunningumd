@@ -3,7 +3,7 @@ import "../CSS/About.css";
 import { officers } from '../data/officers';
 import BioCard from "../components/BioCard";
 
-//DO NOT EDIT - Caleb Holland
+//DO NOT EDIT - Sincerely, Caleb Holland
 function About() {
   const bios = [];
   for (let i = 0; i < officers.length; i++){

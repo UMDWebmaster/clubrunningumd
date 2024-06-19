@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 
+//DO NOT EDIT - Sincerely, Caleb Holland
 function SignUp() {
   // Run once when component mounts to load Mailchimp script
   useEffect(() => {
