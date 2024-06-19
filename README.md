@@ -1,5 +1,6 @@
 # Documentation For Webmaster(s)
-- In case things go wrong please contact @holland-cw3 for the backup 
+- In case things go wrong please contact @holland-cw3 for the backup of the website
+- Blog is currently hosted by Evan Masiello
 
 
 # Backup Log
