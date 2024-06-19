@@ -26,6 +26,7 @@ function App() {
         <Route path="/" element={<Home />} /> {/* Home page */}
         <Route path="/home" element={<Home />} /> {/* Alias for Home page */}
         <Route path="/about" element={<About />} /> {/* About page */}
+        <Route path="/signup.php" element={<SignUp />} /> {/* Sign Up page */}
         <Route path="/signup" element={<SignUp />} /> {/* Sign Up page */}
         <Route path="/races" element={<Races />} /> {/* Races page */}
         <Route path="/home-meet" element={<HomeMeet />} />{" "}
@@ -42,6 +43,7 @@ function App() {
         <Route path="/photos" element={<Photos />} /> {/* Photos page */}
         <Route path="/routes" element={<Paths />} /> {/* Routes page */}
         <Route path="/joinus" element={<JoinUs />} /> {/* Join Us page */}
+        <Route path="/*" element={<Home />} /> {/* Join Us page */}
       </Routes>
 
       <Footer />
