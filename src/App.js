@@ -2,8 +2,6 @@
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-
-// Importing individual page components
 import Home from "./pages/Home";
 import HomeMeet from "./pages/HomeMeet";
 import HomeMeetRecords from "./pages/HomeMeetRecords";
@@ -17,17 +15,13 @@ import Paths from "./pages/Routes";
 import JoinUs from "./pages/JoinUs";
 import SignUp from "./pages/SignUp";
 
-// Importing necessary routing components from react-router-dom
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    // Setting up the main Router component
     <Router>
-      {/* Displaying the header component */}
       <Header />
 
-      {/* Defining routes for different pages */}
       <Routes>
         <Route path="/" element={<Home />} /> {/* Home page */}
         <Route path="/home" element={<Home />} /> {/* Alias for Home page */}
@@ -50,7 +44,6 @@ function App() {
         <Route path="/joinus" element={<JoinUs />} /> {/* Join Us page */}
       </Routes>
 
-      {/* Displaying the footer component */}
       <Footer />
     </Router>
   );
