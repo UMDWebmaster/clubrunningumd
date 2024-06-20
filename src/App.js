@@ -12,10 +12,14 @@ import Workouts from "./pages/Workouts";
 import Photos from "./pages/Photos";
 import Paths from "./pages/Routes";
 import SignUp from "./pages/SignUp";
+import PrivatePage from './internalTools/photoUpload';
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import { BrowserRouter as Router, Routes, Route, Redirect  } from "react-router-dom";
 
 function App() {
+  const isLocalhost = window.location.hostname === 'localhost';
+
   return (
     <Router>
       <Header />
@@ -27,6 +31,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} /> {/* Sign Up page */}
         <Route path="/races" element={<Races />} /> {/* Races page */}
         <Route path="/home-meet" element={<HomeMeet />} />{" "}
+        <Route path="/private" element={isLocalhost ? <PrivatePage /> : <Home />}/>
         {/* Home Meet page */}
         <Route path="/home-meet-records" element={<HomeMeetRecords />} />{" "}
         {/* Home Meet Records page */}
