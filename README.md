@@ -10,8 +10,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-- On this github page click the green code button\
-- Copy the https web url: (something like https://github.com)\
+- On this github page click the green code button
+- Copy the https web url: (something like https://github.com)
 - Open terminal and navigate to a convenient folder, run: git clone #HTTPSLINK#\
 - Open Visual Studio Code -> open folder -> find and clubrunningumd
 
