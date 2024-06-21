@@ -1,4 +1,4 @@
-﻿import React from "react";
+﻿import React, {useEffect} from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -15,14 +15,25 @@ import SignUp from "./pages/SignUp";
 import PrivatePage from './internalTools/photoUpload';
 
 
-import { BrowserRouter as Router, Routes, Route, Redirect  } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation   } from "react-router-dom";
 
 function App() {
   const isLocalhost = window.location.hostname === 'localhost';
 
+
+  function ConditionalHeader() {
+    const location = useLocation();
+    return (location.pathname === "/private" && isLocalhost) ? null : <Header />;
+  }
+  function ConditionalFooter() {
+    const location = useLocation();
+    return (location.pathname === "/private" && isLocalhost) ? null : <Footer />;
+  }
+  
+
   return (
     <Router>
-      <Header />
+      <ConditionalHeader/>
       <Routes>
         <Route path="/" element={<Home />} /> {/* Home page */}
         <Route path="/home" element={<Home />} /> {/* Alias for Home page */}
@@ -45,7 +56,7 @@ function App() {
         <Route path="/routes" element={<Paths />} /> {/* Routes page */}
         <Route path="/*" element={<Home />} /> {/* Join Us page */}
       </Routes>
-      <Footer />
+      <ConditionalFooter />
     </Router>
   );
 }
