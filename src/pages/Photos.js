@@ -5,8 +5,7 @@ import JimmyRun from "../Pictures/JimmyRun.JPG";
 import { photoArchive } from '../data/photoArchive';
 
 
-// Define a functional component named Races
-function Races() {
+function Photos() {
   const tableRows = [];
   for (let i = 0; i < photoArchive.length; i++) {
     const links = [];
@@ -55,4 +54,4 @@ function Races() {
   ); 
 }
 
-export default Races;
+export default Photos;

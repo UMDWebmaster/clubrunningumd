@@ -5,7 +5,6 @@
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     width: 100%;
-    background-color: #fff;
     background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     flex-direction: column;
@@ -13,34 +12,10 @@
     flex-direction: row;
 }
 
-.bio-card img {
-    border-radius: 30px;
-    width: 95%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 8px;
-}
-
-.bio-content {
-    color: black;
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
-
 .about-us-container {
-    max-width: 60%;
     margin: 0 auto;
     padding: 20px;
     margin-top: 50px;
-
-}
-
-.page {
-    background: linear-gradient(to top right, #fff152 0%, #ff5252 100%);
-    /* old color: linear-gradient(to top right, #b3b300 0%, #cc0000 100%); */
-    background-repeat: no-repeat;
 
 }
 
@@ -52,5 +27,4 @@
     .bio-card {
         flex-direction: column;
     }
-
 }
