@@ -3,13 +3,9 @@
     border-radius: 30px;
     display: block;
     margin: 0 auto;
-}
-
-
+} 
   
-
 @media only screen and (max-width: 1000px){
-
     .fredHalfPic {
         width: 100%;
         height: auto;
