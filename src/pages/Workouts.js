@@ -4,7 +4,7 @@ import gabeZach from "../Pictures/gabe+zach.JPG";
 // Component for displaying information about club running workout schedules
 function About() {
   return (
-    <div>
+    <div className="page">
       {/* Container for the team picture */}
       <div class="teamPic-container">
         <img src={gabeZach} alt="" className="teamPic" />

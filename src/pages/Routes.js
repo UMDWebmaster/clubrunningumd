@@ -29,7 +29,7 @@ function Routes() {
   }
 
   return (
-    <div>
+    <div className="page">
       <div className="teamPic-container">
         <img src={sohanPic} alt="" className="teamPic" />{" "}
         {/* Displaying team picture */}

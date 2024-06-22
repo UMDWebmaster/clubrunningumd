@@ -1,3 +1,4 @@
+import { Container } from "@mui/material";
 import React from "react";
 
 
@@ -7,9 +8,12 @@ function photoUpload() {
 
   return (
     <>
-    <form>
-
-    </form>
+      <Container className="bg-white">
+        <ul>
+        <li>hi</li>
+          <li>hi</li>
+        </ul>
+      </Container>
     </>
       
   ); 

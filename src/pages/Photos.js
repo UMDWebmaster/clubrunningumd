@@ -25,7 +25,7 @@ function Races() {
   }
 
   return (
-    <div>
+    <div className="page">
       <div class="teamPic-container">
         <img src={JimmyRun} alt="" className="fredHalfPic" />
       </div>

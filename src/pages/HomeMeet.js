@@ -6,7 +6,7 @@ import natsPic from "../Pictures/terpInvite.png";
 // Define the About component
 function About() {
   return (
-    <div>
+    <div className="page">
       {/* Container for the team picture */}
       <div class="teamPic-container">
         {/* Display the team picture */}

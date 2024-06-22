@@ -6,14 +6,18 @@ import BioCard from "../components/BioCard";
 //DO NOT EDIT - Sincerely, Caleb Holland
 function About() {
   const bios = [];
-  for (let i = 0; i < officers.length; i++){
+  for (let i = 0; i < officers.length; i++) {
     bios.push(BioCard(officers[i].position, officers[i].name, officers[i].image, officers[i].description, (i % 2 === 0 ? 0 : 2)));
   }
-  
+
   return (
-    <div className="about-us-container">
-      {bios}
+    <div className="page">
+      <div className="about-us-container">
+        {bios}
+      </div>
+
     </div>
+
   );
 }
 

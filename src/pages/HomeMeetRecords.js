@@ -43,7 +43,7 @@ function Records() {
   }
 
   return (
-    <div>
+    <div className="page">
       <div className="teamPic-container">
         {/* Displaying the team picture */}
         <img src={terpInvitePic} alt="" className="teamPic" />
