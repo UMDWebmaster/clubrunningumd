@@ -83,7 +83,7 @@ function Header() {
                 </a>
               </li>
               <li>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2us1hfXDZmbNgB9cDvSIaE09DtGH_9q4PHpZqoEFZJjdMEQ/viewform?edit2=2_ABaOnucPovAYwTbz7I1IDv4rOo11xP3VN_An3UdvQ2tyMMMkh-usifnoTt6IJByVvw&pli=1">Emails</a>
+                <a href="/SignUp">Emails</a>
               </li>
             </ul>
           </Tab>
@@ -165,7 +165,7 @@ function Header() {
             <a href="/Workouts">Workouts</a>
             <a href="/Routes">Routes</a>
             <a href="/about">Officers</a>
-            <a href="/signup">Email List</a>
+            <a href="/SignUp">Email List</a>
             <a href="https://docs.google.com/document/d/1AbWsGq4yMjutG-I_jPUq9fuutEBvtcoPZ5IwTnRc1Ns/edit">
               Join Us
             </a>
