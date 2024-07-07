@@ -154,7 +154,7 @@ function Home() {
                 School of Public Health (SPH)
               </a>{" "}
               East Side (closest to Xfinity Center) starting{" "}
-              <b>September 5th. Practices now start at 5pm! </b>
+              <b>Tuesday, September 3rd. Practices now start at 5pm! </b>
             </p>
             <p className="text-black mb-7">
               Our mission is to support and encourage a healthy approach to
@@ -199,6 +199,9 @@ function Home() {
             <div>
               <button className="button" onClick={toggleModal}>
                 <span>Sign-Up!</span>
+              </button>
+               {/*<button className="button" href="https://docs.google.com/forms/d/e/1FAIpQLSc2us1hfXDZmbNgB9cDvSIaE09DtGH_9q4PHpZqoEFZJjdMEQ/viewform?edit2=2_ABaOnucPovAYwTbz7I1IDv4rOo11xP3VN_An3UdvQ2tyMMMkh-usifnoTt6IJByVvw&pli=1">
+                <span>Sign-Up!</span>*/}
               </button>
               {/* Modal for Sign-up Form */}
               {showModal && (
