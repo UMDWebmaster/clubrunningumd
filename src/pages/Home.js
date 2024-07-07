@@ -200,9 +200,7 @@ function Home() {
               <button className="button" onClick={toggleModal}>
                 <span>Sign-Up!</span>
               </button>
-               {/*<button className="button" href="https://docs.google.com/forms/d/e/1FAIpQLSc2us1hfXDZmbNgB9cDvSIaE09DtGH_9q4PHpZqoEFZJjdMEQ/viewform?edit2=2_ABaOnucPovAYwTbz7I1IDv4rOo11xP3VN_An3UdvQ2tyMMMkh-usifnoTt6IJByVvw&pli=1">
-                <span>Sign-Up!</span>*/}
-              </button>
+             
               {/* Modal for Sign-up Form */}
               {showModal && (
                 <div className="modal">
