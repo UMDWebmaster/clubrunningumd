@@ -2,8 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-
-
 body {
   margin: 0;
   padding: 0;
@@ -15,9 +13,7 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   text-align: center;
-
 }
-
 
 .tableContainer {
   overflow-x: auto;
