@@ -197,9 +197,11 @@ function Home() {
 
             {/* Sign-up Button */}
             <div>
-              <button className="button" onClick={toggleModal}>
-                <span>Sign-Up!</span>
-              </button>
+              <a href="SignUp">
+                <button className="button" onClick={toggleModal}>
+                  <span>Sign-Up!</span>
+                </button>
+              </a>
 
               {/* Modal for Sign-up Form */}
               {showModal && (
