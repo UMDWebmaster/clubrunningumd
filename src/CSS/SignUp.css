@@ -1,82 +1,93 @@
 body.active-modal {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 .btn-modal {
-    padding: 10px 20px;
-    display: block;
-    margin: 100px auto 0;
-    font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
 }
 
-.modal, .overlay {
-    width: 100vw;
-    height: 100vh;
-    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .overlay {
-    background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    line-height: 1.4;
-    background: white;
-    padding: 14px 28px;
-    border-radius: 30px;
-    max-width: 600px;
-    min-width: 360px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: white;
+  padding: 14px 28px;
+  border-radius: 30px;
+  max-width: 600px;
+  min-width: 50%;
 }
 
+.iframeWrapperHome {
+  min-width: 50%;
+}
 
-    input[type=text]:focus, input[type=email]:focus {
-        border: 2px solid blue;
-        color: #171717;
-    }
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border: 2px solid blue;
+  color: #171717;
+}
 
-    label {
-        font-weight: bold;
-        float: left;
-        clear: left;
-        width: 100%;
-        text-align: left;
-    }
+label {
+  font-weight: bold;
+  float: left;
+  clear: left;
+  width: 100%;
+  text-align: left;
+}
 
-    
 .float-left {
-    float: left;
-    clear: left;
-    width: 100%;
-    text-align: left;
+  float: left;
+  clear: left;
+  width: 100%;
+  text-align: left;
 }
 
 .branding-logo {
-    float: right;
-    clear: right;
-    width: 100%;
-    text-align: right;
+  float: right;
+  clear: right;
+  width: 100%;
+  text-align: right;
 }
-
-
 
 /* Set a style for all buttons */
 .button1 {
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-    border-radius: 30px;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 30px;
 }
 
 @media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
-        width: 100%;
-    }
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
+
+.signUpIframe {
+  margin: auto;
 }

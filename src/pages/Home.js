@@ -205,96 +205,17 @@ function Home() {
                 <div className="modal">
                   <div onClick={toggleModal} className="overlay"></div>
                   <div className="modal-content mt-10 ">
-                    <form
-                      action="https://gmail.us4.list-manage.com/subscribe/post?u=aea7db195a60f69f817e5110d&amp;id=c08d6f1486&amp;f_id=002edfe8f0"
-                      method="post"
-                      id="mc-embedded-subscribe-form"
-                      name="mc-embedded-subscribe-form"
-                      class="validate"
-                      target="_blank"
-                      novalidate
-                    >
-                      <div class="container">
-                        <h1 className="font-bold mb-5 md:text-2xl color-black">
-                          CLUB RUNNING 2023-2024 EMAIL LIST
-                        </h1>
-
-                        {/* Email Input */}
-                        <label for="email">Email *</label>
-                        <input
-                          type="email"
-                          name="EMAIL"
-                          class="w-full p-3 my-1 bg-gray-300"
-                          id="mce-EMAIL"
-                          required
-                          placeholder="Email Address"
-                        />
-
-                        {/* First Name Input */}
-                        <label for="fName">First Name *</label>
-                        <input
-                          type="text"
-                          name="FNAME"
-                          class="w-full p-3 my-1 bg-gray-300"
-                          id="mce-FNAME"
-                          placeholder="First Name"
-                          required
-                        />
-
-                        {/* Last Name Input */}
-                        <label for="lName">Last Name *</label>
-                        <input
-                          type="text"
-                          name="LNAME"
-                          class="w-full p-3 my-1 bg-gray-300"
-                          id="mce-LNAME"
-                          placeholder="Last Name"
-                          required
-                        />
-
-                        {/* Hidden Field for Tags */}
-                        <div hidden="">
-                          <input type="hidden" name="tags" value="7835950" />
-                        </div>
-                        <div id="mce-responses" class="clear foot">
-                          <div class="response" id="mce-error-response"></div>
-                          <div class="response" id="mce-success-response"></div>
-                        </div>
-
-                        {/* Buttons */}
-                        <div class="clearfix mb-5 mt-2">
-                          <button
-                            className="button1 bg-green-500"
-                            type="submit"
-                          >
-                            Sign Up
-                          </button>
-                          <button
-                            className="button1 bg-red-500"
-                            type="button"
-                            onClick={toggleModal}
-                          >
-                            Cancel
-                          </button>
-                        </div>
-
-                        {/* Mailchimp Logo */}
-                        <div className="text-center flex justify-center items-center">
-                          {" "}
-                          {/* Center the Mailchimp logo */}
-                          <a
-                            href="http://eepurl.com/h8EvGH"
-                            title="Mailchimp Logo"
-                            className="flex justify-center items-center"
-                          >
-                            <img
-                              src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"
-                              alt="mailChimp"
-                            />
-                          </a>
-                        </div>
-                      </div>
-                    </form>
+                    <div className="iframeWrapperHome">
+                      <iframe
+                        className="signUpIframe"
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSc2us1hfXDZmbNgB9cDvSIaE09DtGH_9q4PHpZqoEFZJjdMEQ/viewform?embedded=true"
+                        width="100%"
+                        height="500"
+                        marginwidth="0"
+                      >
+                        Loading…
+                      </iframe>
+                    </div>
                   </div>
                 </div>
               )}
