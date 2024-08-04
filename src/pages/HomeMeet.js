@@ -1,12 +1,11 @@
 import React from "react";
 import "../CSS/About.css";
-import "../CSS/HomeMeet.css";
 import natsPic from "../Pictures/terpInvite.png";
 
 // Define the About component
 function About() {
   return (
-    <div>
+    <div className="page text-white font-bold">
       {/* Container for the team picture */}
       <div class="teamPic-container">
         {/* Display the team picture */}
@@ -42,14 +41,12 @@ function About() {
             <br></br>View {/* Link to home meet records */}
             <a
               href="https://drive.google.com/drive/folders/12P1xI3qQImU26LFs1NCeUefFSGyTXgSw"
-              target="_blank"
               style={{ textDecorationLine: "underline" }}
             >
               Photos 1
             </a>{" "}
             <a
               href="https://photos.google.com/share/AF1QipP8Pa1V-Syhpmx3eaTicXqeQM3XARYSg-ctr0F-kSCapVh3cqC1wK9tRhOqU2QiXg?key=cEdBb29aRXRIcUI2U3RDRmtnWVRfWGNjSG5tcFRR"
-              target="_blank"
               style={{ textDecorationLine: "underline" }}
             >
               Photos 2
@@ -69,6 +66,7 @@ function About() {
             width="500"
             height="450"
             style={{ border: "0" }}
+            title="Kehoe Track"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -108,15 +106,16 @@ function About() {
       </h4>
 
       {/* Section for awards */}
-      <h4 className="text-white text-2xl font-bold mt-5 mb-5">
-        Awards: <br></br>
-        <span className="text-lg">
-          {/* Information about awards */}
-          The winner of each event will receive a Terrapin Invite pint glass.
-          <br></br>
-          Team awards will go to the top 3 teams overall.
-        </span>
+      <h4 className="text-white text-2xl font-bold mt-5">
+        Awards:
       </h4>
+      <span className="text-lg">
+        {/* Information about awards */}
+        The winner of each event will receive a Terrapin Invite pint glass.
+        <br></br>
+        Team awards will go to the top 3 teams overall.
+      </span>
+
     </div>
   );
 }

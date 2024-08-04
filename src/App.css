@@ -2,10 +2,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.App {
-  width: 100%;
-  max-width: 100%;
-}
+
 
 body {
   margin: 0;
@@ -15,20 +12,21 @@ body {
   margin-top: 50px;
   min-width: 100%;
   max-width: 100%;
-  background: linear-gradient(to top right, #fff152 0%, #ff5252 100%);
-  /* old color: linear-gradient(to top right, #b3b300 0%, #cc0000 100%); */
   background-repeat: no-repeat;
   width: 100%;
   text-align: center;
+
 }
 
-html {
-  background: linear-gradient(to top right, #fff152 0%, #ff5252 100%);
-}
 
 .tableContainer {
   overflow-x: auto;
   max-width: 100%;
+}
+
+.page {
+  background: linear-gradient(to top right, #fff152 0%, #ff5252 100%);
+  background-repeat: no-repeat;
 }
 
 body::-webkit-scrollbar {

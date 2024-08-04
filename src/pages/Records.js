@@ -58,7 +58,7 @@ function Records() {
   }
 
   return (
-    <div>
+    <div className="page">
       {/* Displaying image */}
       <div className="teamPic-container">
         <img src={fredHalfPic} alt="" className="teamPic" />

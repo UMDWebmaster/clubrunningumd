@@ -5,7 +5,7 @@ import natsPic from "../Pictures/natsTeamPic.JPG"; // Importing image
 // Functional component for rendering race information
 function Races() {
   return (
-    <div>
+    <div className="page">
       {/* Container for displaying team picture */}
       <div class="teamPic-container">
         <img src={natsPic} alt="" className="teamPic" />
