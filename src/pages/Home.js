@@ -200,7 +200,7 @@ function Home() {
               <button className="button" onClick={toggleModal}>
                 <span>Sign-Up!</span>
               </button>
-             
+
               {/* Modal for Sign-up Form */}
               {showModal && (
                 <div className="modal">

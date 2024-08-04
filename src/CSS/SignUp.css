@@ -33,7 +33,7 @@ body.active-modal {
   background: white;
   padding: 14px 28px;
   border-radius: 30px;
-  max-width: 600px;
+  /* max-width: 600px; */
   min-width: 50%;
 }
 
