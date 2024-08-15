@@ -1,20 +1,41 @@
 import { Container } from "@mui/material";
-import TextField from '@mui/material/TextField';
 import { Formik, Form, Field } from 'formik';
 
-import React from "react";
+
+const photoArchive = require("../data/photoArchive.json");
 
 
-// Define a functional component named Races
-function photoUpload() {
+
+// Define a functional component named raceNames
+export default function photoUpload() {
   return (
     <>
       <Container className="bg-white">
-        <TextField onBlur={(value) => {alert(value)}}></TextField>
-      </Container>
+        <Formik
+          initialValues={{
+            date: '',
+            raceName: '',
+            links: '',
+          }}
+          onSubmit={async (values) => {
+            const temp = photoArchive;
+            temp.push(values);
+
+      
+          }}
+        >
+          <Form>
+            <label htmlFor="date">date</label>
+            <Field id="date" name="date" placeholder="Date" />
+            <label htmlFor="raceName">raceName</label>
+            <Field id="raceName" name="raceName" placeholder="raceName" />
+            <label htmlFor="links">Email</label>
+            <Field id="links" name="links" placeholder="link" />
+            <button type="submit" >Submit</button>
+          </Form>
+        </Formik>
+    </Container >
     </>
       
-  ); 
+  );
 }
-
-export default photoUpload;

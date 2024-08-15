@@ -1,11 +1,13 @@
-import React from "react";
 import "../CSS/Photos.css";
 import "../CSS/table.css"
 import JimmyRun from "../Pictures/JimmyRun.JPG";
-import { photoArchive } from '../data/photoArchive';
+
+const photoArchive = require("../data/photoArchive.json");
 
 
 function Photos() {
+
+  
   const tableRows = [];
   for (let i = 0; i < photoArchive.length; i++) {
     const links = [];
