@@ -1,9 +1,8 @@
-import React from "react";
-import "../CSS/Races.css"; // Importing CSS file for races
-import "../CSS/Routes.css"; // Importing CSS file for routes
-import sohanPic from "../Pictures/sohanRUnnn.JPG"; // Importing image file
-import { AiFillStar } from "react-icons/ai"; // Importing star icon
-import { useState } from "react"; // Importing useState hook
+import "../CSS/Races.css";
+import "../CSS/Routes.css";
+import sohanPic from "../Pictures/sohanRUnnn.JPG";
+import { AiFillStar } from "react-icons/ai";
+import { useState } from "react";
 
 export default function Routes() {
   // Importing routes data from JSON file and setting up state variables

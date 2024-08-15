@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../CSS/Home.css";
 import "../CSS/SignUp.css";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -9,33 +9,7 @@ import stillTrain from "../Pictures/Nationals-51.jpg";
 import people from "../Pictures/grouppiccropped.jpg";
 import sprinting from "../Pictures/sprintPic.JPG";
 
-export default function Home() {
-  // Load Mailchimp script on component mount
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    script.onload = () => {
-      const $ = window.jQuery; // Assuming jQuery is loaded by the Mailchimp script
-
-      if ($) {
-        // Ensure these variables are accessible for Mailchimp
-        window.fnames = window.fnames || [];
-        window.ftypes = window.ftypes || [];
-
-        window.fnames[0] = "EMAIL";
-        window.ftypes[0] = "email";
-        window.fnames[1] = "FNAME";
-        window.ftypes[1] = "text";
-        window.fnames[2] = "LNAME";
-        window.ftypes[2] = "text";
-      }
-    };
-  }, []); // Run the effect only once
-
-  // Array of images for the image gallery component
+export default function Home() {  
   const images = [
     {
       original: natsPic,
@@ -71,14 +45,6 @@ export default function Home() {
   var now = new Date();
   var isItAprilFools =
     now.getMonth() === aprilFools.month && now.getDate() === aprilFools.date;
-
-  // State to manage modal visibility
-  const [showModal, setShowModal] = useState(false);
-
-  // Function to toggle modal visibility
-  const toggleModal = () => {
-    setShowModal(!showModal);
-  };
 
   // Function to render custom image item for image gallery
   const renderCustomImageItem = (item) => {
@@ -196,33 +162,11 @@ export default function Home() {
             </p>
 
             {/* Sign-up Button */}
-            <div>
               <a href="SignUp">
-                <button className="button" onClick={toggleModal}>
+                <button className="button" href="/SignUp">
                   <span>Sign-Up!</span>
                 </button>
               </a>
-
-              {/* Modal for Sign-up Form */}
-              {showModal && (
-                <div className="modal">
-                  <div onClick={toggleModal} className="overlay"></div>
-                  <div className="modal-content mt-10 ">
-                    <div className="iframeWrapperHome">
-                      <iframe
-                        className="signUpIframe"
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSc2us1hfXDZmbNgB9cDvSIaE09DtGH_9q4PHpZqoEFZJjdMEQ/viewform?embedded=true"
-                        width="100%"
-                        height="500"
-                        marginwidth="0"
-                      >
-                        Loading…
-                      </iframe>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
           </div>
         </div>
       </section>

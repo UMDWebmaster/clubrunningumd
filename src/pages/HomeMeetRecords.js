@@ -13,10 +13,6 @@ export default function Records() {
   const [searchVal, setSearchVal] = useState("");
   const [genderVal, setGenderVal] = useState("all");
 
-  // Extracting query parameters from the URL
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-
   // Sorting the records list based on selected criteria
   RecordsList.sort((a, b) => b.true_distance - a.true_distance);
   switch (selectedSorting) {
