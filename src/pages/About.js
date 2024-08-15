@@ -1,14 +1,11 @@
-import React from "react";
-import "../CSS/About.css";
 import { officers } from '../data/officers';
 import BioCard from "../components/BioCard";
 
 //DO NOT EDIT - Sincerely, Caleb Holland
-function About() {
-  const bios = [];
-  for (let i = 0; i < officers.length; i++) {
-    bios.push(BioCard(officers[i].position, officers[i].name, officers[i].image, officers[i].description, (i % 2 === 0 ? 0 : 2)));
-  }
+export default function About() {
+  const bios = officers.map((officer, index) => (
+    BioCard(officer.position, officer.name, officer.image, officer.description, index % 2 === 0 ? 0 : 2)
+  ));
 
   return (
     <div className="page">
@@ -16,8 +13,5 @@ function About() {
         {bios}
       </div>
     </div>
-
   );
 }
-
-export default About; 

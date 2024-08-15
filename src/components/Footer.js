@@ -1,6 +1,4 @@
-import React from "react";
-import { Box, Stack } from "@mui/material";
-import Link from '@mui/material/Link'
+import { Box, Stack, Link } from "@mui/material";
 import { FaFacebook, FaTwitter, FaInstagram, FaStrava, FaEnvelope } from "react-icons/fa";
 
 function Footer() {

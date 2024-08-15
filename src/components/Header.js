@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Tab } from "@headlessui/react";
 import { useLocation } from "react-router-dom";
 import "../CSS/Header.css";
