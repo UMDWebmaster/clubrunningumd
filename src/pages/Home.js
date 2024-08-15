@@ -9,7 +9,7 @@ import stillTrain from "../Pictures/Nationals-51.jpg";
 import people from "../Pictures/grouppiccropped.jpg";
 import sprinting from "../Pictures/sprintPic.JPG";
 
-function Home() {
+export default function Home() {
   // Load Mailchimp script on component mount
   useEffect(() => {
     const script = document.createElement("script");
@@ -229,5 +229,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

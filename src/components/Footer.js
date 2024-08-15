@@ -1,7 +1,7 @@
 import { Box, Stack, Link } from "@mui/material";
 import { FaFacebook, FaTwitter, FaInstagram, FaStrava, FaEnvelope } from "react-icons/fa";
 
-function Footer() {
+export default function Footer() {
   return (
       <Box className="bg-neutral-900 border-t border-white border-opacity-70 pt-6 pb-1 w-full"
         sx={{ '& a': { color: 'white' } }}>
@@ -20,4 +20,3 @@ function Footer() {
       </Box>
   );
 }
-export default Footer;

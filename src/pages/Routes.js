@@ -5,7 +5,7 @@ import sohanPic from "../Pictures/sohanRUnnn.JPG"; // Importing image file
 import { AiFillStar } from "react-icons/ai"; // Importing star icon
 import { useState } from "react"; // Importing useState hook
 
-function Routes() {
+export default function Routes() {
   // Importing routes data from JSON file and setting up state variables
   const routesList = require("../data/routes.json");
   const [selectedSorting, setSelectedSorting] = useState("popularity");
@@ -29,7 +29,7 @@ function Routes() {
   }
 
   return (
-    <div className="page">
+    <>
       <div className="teamPic-container">
         <img src={sohanPic} alt="" className="teamPic" />{" "}
         {/* Displaying team picture */}
@@ -63,7 +63,7 @@ function Routes() {
           </h4>
           <br></br>
           {/* Displaying routes in a table */}
-          <div className="tableContainer">
+          <div className="overflow-x-auto max-w-full">
             <table className="mb-10 table-auto">
               <thead>
                 <tr>
@@ -137,8 +137,6 @@ function Routes() {
           <br></br>
         </div>
       </div>
-    </div>
+    </>
   );
 }
-
-export default Routes;

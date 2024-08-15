@@ -68,7 +68,7 @@ function Header() {
               href="https://venmo.com/u/umdclubrunning"
               className="dropdown-toggle"
             >
-              Donate!
+              Donate
             </a>
           </Tab>
           <Tab className="tab">
@@ -169,7 +169,7 @@ function Header() {
             <a href="https://docs.google.com/document/d/1AbWsGq4yMjutG-I_jPUq9fuutEBvtcoPZ5IwTnRc1Ns/edit">
               Join Us
             </a>
-            <a href="https://venmo.com/u/umdclubrunning">Donate!</a>
+            <a href="https://venmo.com/u/umdclubrunning">Donate</a>
           </div>
         )}
     </header>

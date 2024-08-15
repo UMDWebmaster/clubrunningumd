@@ -4,7 +4,7 @@ import "../CSS/Routes.css";
 import terpInvitePic from "../Pictures/terpInvite.png";
 import { useState } from "react";
 
-function Records() {
+export default function Records() {
   // Importing the records data
   const RecordsList = require("../data/terp-invite-records.json");
 
@@ -43,7 +43,7 @@ function Records() {
   }
 
   return (
-    <div className="page">
+    <>
       <div className="teamPic-container">
         {/* Displaying the team picture */}
         <img src={terpInvitePic} alt="" className="teamPic" />
@@ -96,7 +96,7 @@ function Records() {
             </span>
           </h4>
           <br></br>
-          <div className="tableContainer">
+          <div className="overflow-x-auto max-w-full">
             {/* Table displaying the records */}
             <table className="mb-10 table-auto">
               <thead>
@@ -138,8 +138,6 @@ function Records() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
-
-export default Records;

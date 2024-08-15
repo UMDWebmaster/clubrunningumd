@@ -1,11 +1,10 @@
 import React from "react";
-import "../CSS/Races.css"; // Importing CSS file for styling
-import natsPic from "../Pictures/natsTeamPic.JPG"; // Importing image
+import "../CSS/Races.css";
+import natsPic from "../Pictures/natsTeamPic.JPG";
 
-// Functional component for rendering race information
-function Races() {
+export default function Races() {
   return (
-    <div className="page">
+    <>
       {/* Container for displaying team picture */}
       <div class="teamPic-container">
         <img src={natsPic} alt="" className="teamPic" />
@@ -113,8 +112,6 @@ function Races() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
-
-export default Races; // Exporting the Races component

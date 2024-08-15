@@ -10,28 +10,18 @@ body {
   margin-top: 50px;
   min-width: 100%;
   max-width: 100%;
-  background-color: aqua;
+  background: linear-gradient(to top right, #fff152 0%, #ff5252 100%);
   background-repeat: no-repeat;
   width: 100%;
   text-align: center;
 }
-
-.tableContainer {
-  overflow-x: auto;
-  max-width: 100%;
-}
-
-.page {
-  background: linear-gradient(to top right, #fff152 0%, #ff5252 100%);
-  background-repeat: no-repeat;
-}
-
 body::-webkit-scrollbar {
   display: none;
 }
 
-@media only screen and (max-width: 1000px) {
-  body {
-    background-repeat: no-repeat;
-  }
+/* .tableContainer {
+  overflow-x: auto;
+  max-width: 100%;
 }
+ */
+

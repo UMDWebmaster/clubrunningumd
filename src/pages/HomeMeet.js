@@ -2,10 +2,9 @@ import React from "react";
 import "../CSS/About.css";
 import natsPic from "../Pictures/terpInvite.png";
 
-// Define the About component
-function About() {
+export default function About() {
   return (
-    <div className="page text-white font-bold">
+    <div className="text-white font-bold">
       {/* Container for the team picture */}
       <div class="teamPic-container">
         {/* Display the team picture */}
@@ -119,6 +118,3 @@ function About() {
     </div>
   );
 }
-
-// Export the About component
-export default About;

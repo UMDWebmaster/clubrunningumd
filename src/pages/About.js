@@ -8,10 +8,8 @@ export default function About() {
   ));
 
   return (
-    <div className="page">
       <div className="about-us-container md:w-[60%] sm:w-[100%]">
         {bios}
       </div>
-    </div>
   );
 }

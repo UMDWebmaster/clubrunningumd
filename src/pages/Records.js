@@ -4,7 +4,7 @@ import "../CSS/Routes.css";
 import fredHalfPic from "../Pictures/fredHalfTeam.JPG"; // Importing image
 import { useState } from "react";
 
-function Records() {
+export default function Records() {
   // Importing records data
   const RecordsList = require("../data/records.json");
 
@@ -58,7 +58,7 @@ function Records() {
   }
 
   return (
-    <div className="page">
+    <>
       {/* Displaying image */}
       <div className="teamPic-container">
         <img src={fredHalfPic} alt="" className="teamPic" />
@@ -127,7 +127,7 @@ function Records() {
           <br></br>
           {/* Displaying records table based on filters */}
           {seasonVal !== "all" && genderVal !== "all" ? (
-            <div className="tableContainer">
+            <div className="overflow-x-auto max-w-full">
               <table className="mb-10 table-auto">
                 <thead>
                   <tr>
@@ -173,8 +173,6 @@ function Records() {
           )}
         </div>
       </div>
-    </div>
+    </>
   );
 }
-
-export default Records;

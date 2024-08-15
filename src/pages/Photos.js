@@ -1,13 +1,9 @@
+import React, { useState } from 'react';
+import app from '../firebaseConfig';
+import { getDatabase, ref, get } from 'firebase/database';
 import "../CSS/Photos.css";
 import "../CSS/table.css"
 import JimmyRun from "../Pictures/JimmyRun.JPG";
-
-import React, {useState} from 'react';
-import app from '../firebaseConfig';
-import {getDatabase, ref, get} from 'firebase/database';
-
-
-//const photoArchive = require("../data/photoArchive.json");
 
 
 function Photos() {
@@ -17,16 +13,16 @@ function Photos() {
     const db = getDatabase(app);
     const dbRef = ref(db, "archives/photos");
     const snapshot = await get(dbRef);
-    if(snapshot.exists()){
+    if (snapshot.exists()) {
       setPhotoArchive(Object.values(snapshot.val()));
-    } 
+    }
   }
   fetchData();
 
   const tableRows = [];
   for (let i = 0; i < photoArchive.length; i++) {
     const links = [];
-    for (let j = 0; j < photoArchive[i].links.length; j++){
+    for (let j = 0; j < photoArchive[i].links.length; j++) {
       links.push(<a href={photoArchive[i].links[j]}>Photos {j + 1}{" "}</a>)
     }
     tableRows.push(
@@ -41,7 +37,7 @@ function Photos() {
   }
 
   return (
-    <div className="page">
+    <>
       <div class="teamPic-container">
         <img src={JimmyRun} alt="" className="fredHalfPic" />
       </div>
@@ -67,8 +63,8 @@ function Photos() {
           </table>
         </div>
       </div>
-    </div>
-  ); 
+    </>
+  );
 }
 
 export default Photos;
