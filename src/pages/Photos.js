@@ -2,12 +2,27 @@ import "../CSS/Photos.css";
 import "../CSS/table.css"
 import JimmyRun from "../Pictures/JimmyRun.JPG";
 
-const photoArchive = require("../data/photoArchive.json");
+import React, {useState} from 'react';
+import app from '../firebaseConfig';
+import {getDatabase, ref, get} from 'firebase/database';
+
+
+//const photoArchive = require("../data/photoArchive.json");
 
 
 function Photos() {
+  let [photoArchive, setPhotoArchive] = useState([]);
 
-  
+  const fetchData = async () => {
+    const db = getDatabase(app);
+    const dbRef = ref(db, "archives/photos");
+    const snapshot = await get(dbRef);
+    if(snapshot.exists()){
+      setPhotoArchive(Object.values(snapshot.val()));
+    } 
+  }
+  fetchData();
+
   const tableRows = [];
   for (let i = 0; i < photoArchive.length; i++) {
     const links = [];
