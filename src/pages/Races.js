@@ -31,7 +31,7 @@ export default function Races() {
 
           {/* Heading for the spring 2024 race schedule */}
           <h3 className="text-white text-3xl font-bold mt-5 mb-5">
-            Spring 2024 Race Schedule
+            Fall 2024 Race Schedule
           </h3>
 
           {/* Container for displaying the race schedule in a table */}
@@ -42,70 +42,45 @@ export default function Races() {
                   <th>Date</th>
                   <th>Race</th>
                   <th>Location</th>
-                  <th>Meet Type</th>
                 </tr>
               </thead>
               <tbody>
                 {/* Individual rows for each race with date, race name, location, and meet type */}
                 <tr>
-                  <td>2/10/2024</td>
-                  <td>Happy Valley Invitational</td>
-                  <td>State College, PA</td>
-                  <td>NIRCA Indoor Meet</td>
+                  <td>9/7/2024</td>
+                  <td>Terrapin Time Trial</td>
+                  <td>Greenbelt, MD</td>
+                  <td>Home</td>
                 </tr>
                 <tr>
-                  <td>2/24/2024</td>
-                  <td>Capital Relays</td>
-                  <td>American University, DC</td>
+                  <td>9/14/2024</td>
+                  <td>DC Invite</td>
+                  <td>Wheaton, MD</td>
                   <td>NIRCA</td>
                 </tr>
                 <tr>
-                  <td>3/16/2024</td>
-                  <td>Towson Spring Opener</td>
-                  <td>Towson, MD</td>
-                  <td>DI</td>
-                </tr>
-                <tr>
-                  <td>3/30/2024</td>
-                  <td>Cavalier Invitational</td>
-                  <td>Charlottesville, VA</td>
+                  <td>9/21/2024</td>
+                  <td>Cavalier Invite</td>
+                  <td>Earlysville, VA</td>
                   <td>NIRCA</td>
                 </tr>
                 <tr>
-                  <td>4/6 - 4/7/2024</td>
-                  <td>NIRCA Track Nationals</td>
-                  <td>Richmond, VA</td>
+                  <td>10/5/2024</td>
+                  <td>Paul Short Run</td>
+                  <td>Bethlehem, PA</td>
+                  <td>NCAA</td>
+                </tr>
+                <tr>
+                  <td>10/19/2024</td>
+                  <td>NIRCA Mid-Atlantic Regionals</td>
+                  <td>Bethlehem, PA</td>
                   <td>NIRCA</td>
                 </tr>
                 <tr>
-                  <td>4/6/2024</td>
-                  <td>NIRCA Half Marathon Nationals</td>
-                  <td>Petersburg, VA</td>
-                  <td>Road</td>
-                </tr>
-                <tr>
-                  <td>4/20/2024</td>
-                  <td>Terrapin Invitational</td>
-                  <td>College Park, MD</td>
+                  <td>11/9/2024</td>
+                  <td>NIRCA Nationals</td>
+                  <td>Hershey, PA</td>
                   <td>NIRCA</td>
-                </tr>
-                <tr>
-                  <td>4/27/2024</td>
-                  <td>Paul Kaiser</td>
-                  <td>Shippensburg, PA</td>
-                  <td>DII</td>
-                </tr>
-                <tr>
-                  <td>5/3/2024</td>
-                  <td>Kehoe Twilight Meet</td>
-                  <td>College Park, MD</td>
-                  <td>DI</td>
-                </tr>
-                <tr>
-                  <td>5/5/2024</td>
-                  <td>Fredrick Half Marathon</td>
-                  <td>Fredrick, MD</td>
-                  <td>Road</td>
                 </tr>
               </tbody>
             </table>
