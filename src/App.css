@@ -18,10 +18,3 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-
-/* .tableContainer {
-  overflow-x: auto;
-  max-width: 100%;
-}
- */
-

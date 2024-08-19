@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "../CSS/SignUp.css";
 
-//DO NOT EDIT - Sincerely, Caleb Holland
 export default function SignUp() {
+  //DO NOT REMOVE THIS COMMENT
   // // Run once when component mounts to load Mailchimp script
   // useEffect(() => {
   //   // Create script element
