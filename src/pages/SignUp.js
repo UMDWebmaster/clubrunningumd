@@ -37,6 +37,9 @@ export default function SignUp() {
   // Render sign-up form
   return (
     <>
+      <span>
+        <br></br>
+      </span>
       <h3 className="text-white text-3xl font-bold mt-7 mb-5">
         UMD Club Running Email Sign Up{/* Heading */}
       </h3>

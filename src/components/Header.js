@@ -101,9 +101,7 @@ function Header() {
                 <a href="/Photos">Photos</a>
               </li>
               <li>
-                <a href="https://us4.campaign-archive.com/home/?u=aea7db195a60f69f817e5110d&id=c08d6f1486">
-                  Emails
-                </a>
+                <a href="/Emails">Emails</a>
               </li>
             </ul>
           </Tab>
