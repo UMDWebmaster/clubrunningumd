@@ -8,6 +8,7 @@ const emailList = require("..//emails/email_list.json");
 
 function EmailArchive() {
   const [selectedEmail, setSelectedEmail] = useState("none");
+  const [selectedEmailSubject, setSelectedEmailSubject] = useState("none");
 
   return (
     <>
@@ -32,7 +33,7 @@ function EmailArchive() {
             >
               Close Email
             </p>
-            <p>{selectedEmail}</p>
+            <p>{selectedEmailSubject}</p>
             <embed
               src={require("..//emails/email_files/" + selectedEmail)}
               width="800px"
@@ -61,6 +62,7 @@ function EmailArchive() {
                     <span
                       onClick={(e) => {
                         setSelectedEmail(item.filename);
+                        setSelectedEmailSubject(item.subject);
                       }}
                     >
                       Click to read
