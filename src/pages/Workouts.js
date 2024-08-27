@@ -33,6 +33,20 @@ function About() {
             <tbody>
               {/* Row for 2023-2024 workout schedules */}
               <tr>
+                <td>2024 - 2025</td>
+                <td>
+                  <a href="https://docs.google.com/spreadsheets/d/1gumP1osVNLEffEBS2_wqSs3SWEV-b-13_EhcCoZMehI/edit?gid=1947588523#gid=1947588523">
+                    Link
+                  </a>
+                </td>
+                <td>
+                  <a href="https://docs.google.com/spreadsheets/d/1CnSSl_4Z9OO95mmb0hq1PxQuuNXYCCrursbGMv-TXZo/edit?gid=355227437#gid=355227437">
+                    Fall
+                  </a>
+                </td>
+                <td>Coming in Spring</td>
+              </tr>
+              <tr>
                 <td>2023 - 2024</td>
                 <td>
                   <a href="https://docs.google.com/spreadsheets/d/1H2lJ0vdM073JJne8gObCv5u0RLwX3T6gv_9Z8tNiW8M/edit#gid=803727052">
