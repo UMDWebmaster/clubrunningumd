@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-import app from '../firebaseConfig';
-import { getDatabase, ref, get } from 'firebase/database';
+import React, { useState } from "react";
+import app from "../firebaseConfig";
+import { getDatabase, ref, get } from "firebase/database";
 import "../CSS/Photos.css";
-import "../CSS/table.css"
+import "../CSS/table.css";
 import JimmyRun from "../Pictures/JimmyRun.JPG";
-
 
 function Photos() {
   let [photoArchive, setPhotoArchive] = useState([]);
@@ -16,22 +15,24 @@ function Photos() {
     if (snapshot.exists()) {
       setPhotoArchive(Object.values(snapshot.val()));
     }
-  }
+  };
   fetchData();
+
+  photoArchive.sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
 
   const tableRows = [];
   for (let i = 0; i < photoArchive.length; i++) {
     const links = [];
     for (let j = 0; j < photoArchive[i].links.length; j++) {
-      links.push(<a href={photoArchive[i].links[j]}>Photos {j + 1}{" "}</a>)
+      links.push(<a href={photoArchive[i].links[j]}>Photos {j + 1} </a>);
     }
     tableRows.push(
       <tr>
         <td>{photoArchive[i].date}</td>
         <td>{photoArchive[i].raceName}</td>
-        <td>
-          {links}
-        </td>
+        <td>{links}</td>
       </tr>
     );
   }
@@ -57,9 +58,7 @@ function Photos() {
                 <th>Album</th>
               </tr>
             </thead>
-            <tbody>
-              {tableRows}
-            </tbody>
+            <tbody>{tableRows}</tbody>
           </table>
         </div>
       </div>
