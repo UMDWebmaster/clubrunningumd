@@ -913,6 +913,28 @@
     "meet": "Rock n' Roll USA Marathon"
   },
   {
+    "season": "Cross Country",
+    "event": "12k Challenge",
+    "gender": "F",
+    "true_distance": 12000,
+    "time": "55:55",
+    "seconds": 3355,
+    "athlete": "Lillian Hsu",
+    "date": "11/9/2024",
+    "meet": "Nirca Nationals"
+  },
+  {
+    "season": "Cross Country",
+    "event": "14k Challenge",
+    "gender": "M",
+    "true_distance": 14000,
+    "time": "1:03:28",
+    "seconds": 3808,
+    "athlete": "Evan Masiello",
+    "date": "11/9/2024",
+    "meet": "Nirca Nationals"
+  },
+  {
     "season": "Outdoor",
     "event": "Swedish Relay",
     "gender": "F",
