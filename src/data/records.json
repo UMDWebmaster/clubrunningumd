@@ -147,11 +147,11 @@
     "event": "200 meter",
     "gender": "F",
     "true_distance": 200,
-    "time": "27.99",
-    "seconds": 27.99,
-    "athlete": "Jenna Amrhein",
-    "date": "2/10/2024",
-    "meet": "Happy Valley Invitational"
+    "time": "26.02",
+    "seconds": 26.02,
+    "athlete": "Erin Henderson",
+    "date": "5/03/2024",
+    "meet": "Kehoe Twilight 2024"
   },
   {
     "season": "Indoor",
@@ -171,7 +171,7 @@
     "true_distance": 800,
     "time": "1:54.03",
     "seconds": 114.03,
-    "athlete": "Brenna Henderson, Jasmin Mohammadi, Morgan Bailey, Hannah Haber",
+    "athlete": "Erin Henderson, Jasmin Mohammadi, Morgan Bailey, Hannah Haber",
     "date": "2/10/2024",
     "meet": "Happy Valley Invitational"
   },
@@ -721,9 +721,9 @@
     "true_distance": 100,
     "time": "12.75",
     "seconds": 12.75,
-    "athlete": "Jenna Amrhein",
-    "date": "2/24/2024",
-    "meet": "Capital Relays 2024"
+    "athlete": "Erin Henderson",
+    "date": "5/2/2024",
+    "meet": "Kehoe Twilight 2024"
   },
   {
     "season": "Outdoor",
