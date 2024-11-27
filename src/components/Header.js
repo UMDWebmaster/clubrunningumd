@@ -72,15 +72,13 @@ function Header() {
             </a>
           </Tab>
           <Tab className="tab">
-            <a href="/signup" className="dropdown-toggle">
+            <a href="/joinus" className="dropdown-toggle">
               Join Us
             </a>
             {/* Dropdown menu for Join Us tab */}
             <ul className="dropdown">
               <li>
-                <a href="https://docs.google.com/document/d/1AbWsGq4yMjutG-I_jPUq9fuutEBvtcoPZ5IwTnRc1Ns/edit#heading=h.vkmalmlatt01">
-                  How To
-                </a>
+                <a href="/joinus">How To</a>
               </li>
               <li>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2us1hfXDZmbNgB9cDvSIaE09DtGH_9q4PHpZqoEFZJjdMEQ/viewform">
@@ -168,9 +166,7 @@ function Header() {
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2us1hfXDZmbNgB9cDvSIaE09DtGH_9q4PHpZqoEFZJjdMEQ/viewform">
               Email List
             </a>
-            <a href="https://docs.google.com/document/d/1AbWsGq4yMjutG-I_jPUq9fuutEBvtcoPZ5IwTnRc1Ns/edit">
-              Join Us
-            </a>
+            <a href="/joinus">Join Us</a>
             <a href="https://venmo.com/u/umdclubrunning">Donate</a>
           </div>
         )}

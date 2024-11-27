@@ -14,6 +14,7 @@ import Paths from "./pages/Routes";
 import SignUp from "./pages/SignUp";
 import EmailArchive from "./pages/EmailArchive";
 import PrivatePage from "./internalTools/photoUpload";
+import NewMemberInfo from "./pages/NewMemberInfo";
 
 import {
   BrowserRouter as Router,
@@ -43,6 +44,8 @@ function App() {
         <Route path="/about" element={<About />} /> {/* About page */}
         <Route path="/signup.php" element={<SignUp />} /> {/* Sign Up page */}
         <Route path="/signup" element={<SignUp />} /> {/* Sign Up page */}
+        <Route path="/joinus" element={<NewMemberInfo />} />{" "}
+        {/* Sign Up page */}
         <Route path="/races" element={<Races />} /> {/* Races page */}
         <Route path="/home-meet" element={<HomeMeet />} />{" "}
         <Route
