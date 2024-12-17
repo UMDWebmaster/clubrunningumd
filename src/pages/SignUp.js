@@ -43,6 +43,12 @@ export default function SignUp() {
       <h3 className="text-white text-3xl font-bold mt-7 mb-5">
         UMD Club Running Email Sign Up{/* Heading */}
       </h3>
+      <p>
+        Please sign up for the email list using this{" "}
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2us1hfXDZmbNgB9cDvSIaE09DtGH_9q4PHpZqoEFZJjdMEQ/viewform">
+          <strong>link</strong> if the form isn't working
+        </a>
+      </p>
       <div className="iframeWrapper">
         <iframe
           className="signUpIframe"
