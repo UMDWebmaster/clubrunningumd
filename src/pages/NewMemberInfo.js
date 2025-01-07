@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 import "../CSS/Photos.css";
 import "../CSS/table.css";
 import natsPic from "../Pictures/natsTeamPic.JPG";
@@ -22,6 +20,7 @@ function EmailArchive() {
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSc2us1hfXDZmbNgB9cDvSIaE09DtGH_9q4PHpZqoEFZJjdMEQ/viewform"
               target="_blank"
+              rel="noreferrer"
             >
               here
             </a>
@@ -32,6 +31,7 @@ function EmailArchive() {
             <a
               href="https://groupme.com/join_group/101188221/kLKAA5Pg"
               target="_blank"
+              rel="noreferrer"
             >
               here
             </a>

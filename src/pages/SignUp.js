@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import "../CSS/SignUp.css";
 
 export default function SignUp() {
@@ -52,6 +51,7 @@ export default function SignUp() {
       <div className="iframeWrapper">
         <iframe
           className="signUpIframe"
+          title='signup'
           src="https://docs.google.com/forms/d/e/1FAIpQLSc2us1hfXDZmbNgB9cDvSIaE09DtGH_9q4PHpZqoEFZJjdMEQ/viewform?embedded=true"
           width="100%"
           height="1036"
