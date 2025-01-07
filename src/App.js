@@ -20,7 +20,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  useLocation,
+  useLocation, Navigate
 } from "react-router-dom";
 
 function App() {
@@ -39,14 +39,11 @@ function App() {
     <Router>
       <ConditionalHeader />
       <Routes>
-        <Route path="/" element={<Home />} /> {/* Home page */}
-        <Route path="/home" element={<Home />} /> {/* Alias for Home page */}
-        <Route path="/about" element={<About />} /> {/* About page */}
-        <Route path="/signup.php" element={<SignUp />} /> {/* Sign Up page */}
-        <Route path="/signup" element={<SignUp />} /> {/* Sign Up page */}
+        <Route path="/" element={<Home />} /> 
+        <Route path="/about" element={<About />} /> 
+        <Route path="/signup" element={<SignUp />} /> 
         <Route path="/joinus" element={<NewMemberInfo />} />{" "}
-        {/* Sign Up page */}
-        <Route path="/races" element={<Races />} /> {/* Races page */}
+        <Route path="/races" element={<Races />} />
         <Route path="/home-meet" element={<HomeMeet />} />{" "}
         <Route
           path="/private"
@@ -55,17 +52,17 @@ function App() {
         {/* Home Meet page */}
         <Route path="/home-meet-records" element={<HomeMeetRecords />} />{" "}
         {/* Home Meet Records page */}
-        <Route path="/records" element={<Records />} /> {/* Records page */}
+        <Route path="/records" element={<Records />} />
         <Route path="/records/:season" element={<Records />} />{" "}
         {/* Records page with season parameter */}
         <Route path="/records/:gender" element={<Records />} />{" "}
         {/* Records page with gender parameter */}
-        <Route path="/workouts" element={<Workouts />} /> {/* Workouts page */}
-        <Route path="/photos" element={<Photos />} /> {/* Photos page */}
+        <Route path="/workouts" element={<Workouts />} /> 
+        <Route path="/photos" element={<Photos />} /> 
         <Route path="/emails" element={<EmailArchive />} />{" "}
-        {/* Email Archive page */}
-        <Route path="/routes" element={<Paths />} /> {/* Routes page */}
-        <Route path="/*" element={<Home />} /> {/* Join Us page */}
+        <Route path="/routes" element={<Paths />} /> 
+        <Route path="*" element={<Navigate to="/" replace />} />
+
       </Routes>
       <ConditionalFooter />
     </Router>
