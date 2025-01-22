@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -63,7 +63,7 @@ function App() {
         <Route path="/workouts" element={<Workouts />} /> 
         <Route path="/photos" element={<Photos />} /> 
         <Route path="/emails" element={<EmailArchive />} />{" "}
-<<<<<<< HEAD
+
         {/* Email Archive page */}
         <Route path="/routes" element={<Paths />} /> {/* Routes page */}
         <Route path="/*" element={<Home />} /> {/* Join Us page */}
@@ -71,11 +71,9 @@ function App() {
       <Route path="/blog" element={<Login/>}/>
       <Route path="/blog_feed" element={<Feed/>}/>
       <Route path="/article/:id" element={<Article/>}/>
-=======
         <Route path="/routes" element={<Paths />} /> 
         <Route path="*" element={<Navigate to="/" replace />} />
 
->>>>>>> 585145753e6f237eced59de5fa1637b0a6bf51af
       </Routes>
       <ConditionalFooter />
     </Router>
