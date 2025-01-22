@@ -15,8 +15,8 @@ export default function Records() {
   const [genderVal, setGenderVal] = useState("all");
 
   // Extracting query parameters from URL
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
+  // const queryString = window.location.search;
+  // const urlParams = new URLSearchParams(queryString);
 
   // Applying filters based on query parameters if present
   // These are currently commented out, might need to be revisited if needed

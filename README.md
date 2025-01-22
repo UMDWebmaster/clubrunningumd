@@ -23,6 +23,11 @@ To learn React, check out the [React documentation](https://reactjs.org/).
   - git add .
   - git commit -m "MESSAGE"
   - git push
+ 
+# Making Changes - Officer Bios
+- Go to /Data -> Officers.js
+- Edit strings for names and descriptions
+- DO NOT CHANGE THE TEMPLATE FOR THE BIOS, variable names & the bioCard component are not meant to be changed
 
 # Notes From Previous Webmaster(s)
 - In case things go wrong please contact @holland-cw3 for the backup of the website

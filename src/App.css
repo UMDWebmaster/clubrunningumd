@@ -15,6 +15,7 @@ body {
   /* background-repeat: no-repeat; */
   width: 100%;
   text-align: center;
+  
 }
 body::-webkit-scrollbar {
   display: none;
