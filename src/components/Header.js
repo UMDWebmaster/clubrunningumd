@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Tab } from "@headlessui/react";
 import { useLocation } from "react-router-dom";
 import "../CSS/Header.css";
-
+import "../CSS/umd-fonts.css";
 function Header() {
   // Get current URL location
   const location = useLocation();
@@ -43,15 +43,22 @@ function Header() {
   };
 
   return (
-    <header className="App-header bg-neutral-900">
+    <header className="App-header bg-black">
       {isMobileView && ( // Render title on mobile view
         <div className="MobileHome">
           <a
-            href="/home"
-            className="home no-highlight text-xl text-red-600 font-bold whitespace-nowrap"
+            href="/home" 
+            className="home no-highlight text-xl text-red-600  whitespace-nowrap"
+            
           >
-            UMD CLUB RUNNING
+            <div>
+            <h1 class="terrafont-mobile" >maryland club running</h1>
+            <p class="wallsmith">Turtles Aren't Slow</p>
+            </div>
+            
+            
           </a>
+          
         </div>
       )}
 
@@ -61,7 +68,9 @@ function Header() {
         >
           {/* Tab items for desktop view */}
           <Tab className="tab home no-highlight text-xl text-red-600">
-            <a href="/home">UNIVERSITY OF MARYLAND CLUB RUNNING</a>
+            <a href="/home"> <h1 class="terrafont-desktop" >maryland club running</h1>
+            <h2 class="wallsmith">Turtles Aren't Slow</h2>
+            </a>
           </Tab>
           <Tab className="tab">
             <a
@@ -163,9 +172,7 @@ function Header() {
             <a href="/Workouts">Workouts</a>
             <a href="/Routes">Routes</a>
             <a href="/about">Officers</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2us1hfXDZmbNgB9cDvSIaE09DtGH_9q4PHpZqoEFZJjdMEQ/viewform">
-              Email List
-            </a>
+          
             <a href="/joinus">Join Us</a>
             <a href="https://venmo.com/u/umdclubrunning">Donate</a>
           </div>

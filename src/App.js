@@ -15,7 +15,10 @@ import SignUp from "./pages/SignUp";
 import EmailArchive from "./pages/EmailArchive";
 import PrivatePage from "./internalTools/photoUpload";
 import NewMemberInfo from "./pages/NewMemberInfo";
-
+import Login from "./components/Login"
+import TextEditor from "./components/TextEditor";
+import Feed from "./pages/BlogFeed"
+import Article from "./pages/Article";
 import {
   BrowserRouter as Router,
   Routes,
@@ -66,6 +69,10 @@ function App() {
         {/* Email Archive page */}
         <Route path="/routes" element={<Paths />} /> {/* Routes page */}
         <Route path="/*" element={<Home />} /> {/* Join Us page */}
+        {/* {Blog Editor page} */}
+      <Route path="/blog" element={<Login/>}/>
+      <Route path="/blog_feed" element={<Feed/>}/>
+      <Route path="/article/:id" element={<Article/>}/>
       </Routes>
       <ConditionalFooter />
     </Router>

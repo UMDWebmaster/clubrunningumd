@@ -5,10 +5,11 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
 import natsPic from "../Pictures/natsTeamPic.JPG";
 import lillianCapital from "../Pictures/lillianCapital.JPG";
-import stillTrain from "../Pictures/Nationals-51.jpg";
+import stillTrain from "../Pictures/IMG_3948.JPG";
 import people from "../Pictures/grouppiccropped.jpg";
 import sprinting from "../Pictures/sprintPic.JPG";
-
+import abtPhoto from "../Pictures/team.JPG"
+import blogImg from  "../Pictures/lol.JPG"
 export default function Home() {  
   const images = [
     {
@@ -19,20 +20,26 @@ export default function Home() {
     },
     {
       original: lillianCapital,
-      subdescription: "Click Here To View Our Fall Training Plan!",
-      description: "CROSS COUNTRY IS HERE!",
-      link: "https://docs.google.com/spreadsheets/d/1H2lJ0vdM073JJne8gObCv5u0RLwX3T6gv_9Z8tNiW8M/edit#gid=803727052",
+      subdescription: "Click Here To View Our Spring Distance Training Plan!",
+      description: "TRACK SEASON IS HERE!",
+      link: "https://docs.google.com/spreadsheets/d/1BHrkHspXGHE4oJr3LlzBXdvKGYdZYg9rEkXLG7xC9Ns/edit?usp=sharing",
     },
     {
       original: sprinting,
       subdescription: "Check Out The Sprinter Training Plan Here!",
       description: "SPRINT WORKOUTS ARE HERE!",
-      link: "https://docs.google.com/spreadsheets/d/1AbHRNlHQpEJKqNt1qOdgkTryfs4FNwnhgEYYr0_1PTc/edit#gid=0",
+      link: "https://docs.google.com/spreadsheets/d/1fj68G6LMrUwHmI1imWAxgUwwEmS-ZkZcERkE2z5CbcY/edit?usp=sharing",
     },
     {
       original: stillTrain,
-      subdescription: "Yes! Join us Mon-Fri at SPH @ 5pm",
+      subdescription: "Yes! Join us Mon-Fri at SPH @ 4pm",
       description: "ARE WE STILL TRAINING?",
+      link: "",
+    },
+    {
+      original: blogImg,
+      subdescription: "Stay tuned for new details.",
+      description: "NEW BLOG COMING SOON!",
       link: "",
     },
   ];
@@ -105,7 +112,7 @@ export default function Home() {
       >
         <div className="rounded-xl border-2 border-white mt-10 mb-10 w-11/12 bg-white bg-opacity-70 flex flex-col md:flex-row">
           <div className="align-left md:w-1/2">
-            <img src={natsPic} alt="Team Pic" className="rounded-xl" />
+            <img src={abtPhoto} alt="Team Pic" className="rounded-xl" />
           </div>
           <div className="flex flex-col md:w-1/2 ml-5 mr-5">
             <h1 className="text-black font-bold text-3xl mb-4 mt-5 md:mt-20 underline">
@@ -120,7 +127,7 @@ export default function Home() {
                 School of Public Health (SPH)
               </a>{" "}
               East Side (closest to Xfinity Center) starting{" "}
-              <b>Tuesday, September 3rd. Practices now start at 5pm! </b>
+              <b>Monday, January 27th. Practices now start at 4pm! </b>
             </p>
             <p className="text-black mb-7">
               Our mission is to support and encourage a healthy approach to
@@ -130,7 +137,7 @@ export default function Home() {
               enjoy running together as well as compete against other club
               college teams.
             </p>
-            <a href="https://docs.google.com/document/d/1AbWsGq4yMjutG-I_jPUq9fuutEBvtcoPZ5IwTnRc1Ns/edit#heading=h.vkmalmlatt01">
+            <a href="/joinus">
               <button className="button">
                 <span>Join Us!</span>
               </button>
@@ -170,6 +177,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* <iframe src="https://calendar.google.com/calendar/embed?src=umdclubrunning%40gmail.com&ctz=America%2FNew_York"  width="800" height="600" frameborder="0" scrolling="no"></iframe> */}
     </div>
   );
 }

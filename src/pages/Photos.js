@@ -3,7 +3,7 @@ import app from "../firebaseConfig";
 import { getDatabase, ref, get } from "firebase/database";
 import "../CSS/Photos.css";
 import "../CSS/table.css";
-import JimmyRun from "../Pictures/JimmyRun.JPG";
+import Cam from "../Pictures/photos.JPG";
 
 function Photos() {
   let [photoArchive, setPhotoArchive] = useState([]);
@@ -40,7 +40,7 @@ function Photos() {
   return (
     <>
       <div class="teamPic-container">
-        <img src={JimmyRun} alt="" className="fredHalfPic" />
+        <img src={Cam} alt="" className="fredHalfPic" />
       </div>
 
       {/* Container for the photo archive */}

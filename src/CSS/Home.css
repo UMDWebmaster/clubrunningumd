@@ -95,9 +95,10 @@
         }
 
     .Home-container{
-        background: linear-gradient(to top right, #fff152 0%, #ff5252 100%);
+        /* background: linear-gradient(to top right, #fff152 0%, #ff5252 100%); */
         /* old color: linear-gradient(to top right, #b3b300 0%, #cc0000 100%); */
         background-repeat: no-repeat;
+      
     }
 
 

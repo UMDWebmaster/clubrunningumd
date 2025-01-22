@@ -10,11 +10,13 @@ body {
   margin-top: 50px;
   min-width: 100%;
   max-width: 100%;
-  background: linear-gradient(to top right, #fff152 0%, #ff5252 100%);
-  background-repeat: no-repeat;
+  /* background: linear-gradient(to top right, #fff152 0%, #ff5252 100%);  */
+  background-color: #e21833;
+  /* background-repeat: no-repeat; */
   width: 100%;
   text-align: center;
 }
 body::-webkit-scrollbar {
   display: none;
+  background-color: #e21833;
 }

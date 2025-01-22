@@ -1,4 +1,6 @@
-
+body{
+    background-color:#2e2e2e;
+}
 .teamPic {
     width: 50vw;
     border-radius: 30px;

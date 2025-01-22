@@ -33,7 +33,7 @@ export default function Races() {
           </p>
 
           <h3 className="text-white text-3xl font-bold mt-5 mb-5">
-            Fall 2024 Race Schedule
+            Spring 2025 Race Schedule
           </h3>
 
           <table className="mb-10">

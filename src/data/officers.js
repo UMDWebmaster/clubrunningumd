@@ -1,67 +1,66 @@
-import dayimage from "../Pictures/dayPic.JPG";
-import domimage from "../Pictures/dominick.png";
-import zachimage from "../Pictures/zack.jpeg";
-import evanimage from "../Pictures/evanProfile.png";
-import lillianimage from "../Pictures/lillianProfile.JPG";
-import jbimage from "../Pictures/Jacobubshpic.png";
-import staceyimage from "../Pictures/staceyPic.JPG";
+import rykenimage from "../Pictures/rykenImage.png";
+import joeyimage from "../Pictures/joeyImage.jpeg";
+import evanimage from "../Pictures/evanProfile.jpeg";
+import ellaimage from "../Pictures/ellaImg.JPG";
+import benimage from "../Pictures/benImage.png";
+import staceyimage from "../Pictures/tonyImg.png";
 import jonahimage from "../Pictures/JonahProfile.jpeg";
-
+import jeremyimage from "../Pictures/jeremyImg.png";
 export const officers = [
   {
     position: "President",
-    name: "Zach Kiedrowski",
-    image: zachimage,
-    description:
-      "Zach is a fourth-year member of the club and an Aberdeen High School alum. He is pursuing a dual degree in environmental science and statistics. Zach started running his sophomore year of high school and fell in love the sport, acting as the captain of his track team his senior year. Zach ran 2:55:38 at the 2022 Baltimore Marathon but his crowning achievement is winning the 2023 Ice Cream Trifecta Run!",
-  },
-  {
-    position: "Vice President",
-    name: "Jacob Bush",
-    image: jbimage,
-    description:
-      "Jacob Bush is a senior computer science major from Calvert County, Maryland. When not running long distances across space and time, Jacob can be found playing card games with chips, playing Mario Kart, and reading books like Rendezvous with Rama by Arthur C. Clarke. As Vice President, Jacob does all the fun behind the scenes work to make it possible for the club to travel and race across the country! ",
-  },
-  {
-    position: "Co-Treasurer",
-    name: "Lillian Hsu",
-    image: lillianimage,
-    description:
-      "Lillian is an environmental science major from Germantown, Maryland. After a year of being Vice President of the club she decided that she’d rather spend her free time looking at the club’s Venmo transactions as your Club Financial Treasurer. Lillian can also be found taking photos at meets (and she doesn’t charge for or watermark them which is a nice perk). She is also a collector of singlets and is currently in the market for a UM-Duluth singlet (if you know anyone).",
-  },
-  {
-    position: "Co-Treasurer",
-    name: "Day Leone",
-    image: dayimage,
-    description:
-      "Day is a  junior \"STEM\" major from Cecil County, Maryland (yeah I'm not sure where that is either). Day is known for his love of carbonated beverages, long runs, and playing Mario Kart (his main is Yoshi). When not doing his homework or going for long runs, Day can be found reading books like Rendezvous with Rama by Arthur C. Clarke. Day is known for his hatred of air conditioning and voluntarily lived in Hagerstown Hall in his sophomore year at UMD. Day's job as fundraising treasurer is to help the club raise money to make competing with the club affordable for club members like you. ",
-  },
-  {
-    position: "Sprint Chair",
-    name: "Dominick Cardone",
-    image: domimage,
-    description:
-      "Dominick is a junior computer science major from the beautiful, definitely not smelly, plains of New Jersey. When not running, he enjoys lifting weights, eating, experimenting with new recipies, and playing other sports. His favorite part of track, aside from all the amazing people, is getting to sleep and becoming a glutton after every meet. Whether you want to set a club record or just want to run with friends, I'll do my best to help you. Come to the track and run with the sprinters!",
-  },
-  {
-    position: "Apparel Coordinator",
-    name: "Stacey Fitzsimmons",
-    image: staceyimage,
-    description:
-      " Stacey Fitzsimmons is a sophomore majoring in mathematics and economics from Milwaukee, Wisconsin. When he's not running through the frozen tundra of Wisconsin, he is probably watching every NBA game that happens to be on, keeping track of his beloved fantasy players (SGA is his favorite next to Giannis). On his high school team he was pretty much a professional alternate runner, going on free trips to state meets without the pressures of having to compete. He hopes to fulfill all of your apparel hopes and dreams and is always open to suggestions.",
-  },
-  {
-    position: "Social Chair",
-    name: "Jonah Plotkin",
-    image: jonahimage,
-    description:
-      'Jonah Plotkin is a freshman majoring in computer science from Bethesda, Maryland. He has been an avid runner since early middle school and was a varsity runner for the Walt Whitman Vikings. If you ever ask him where his favorite place to run, he will almost always say, "The canal!" (It will be long before the canal is dethroned). Aside from running, Jonah loves to ski, sail, learn guitar riffs, and follow NFL and Formula One. His future athletic ambitions include becoming a marathoner, possibly a triathlete, and running more PRs. He also really wants to visit the Grand Canyon. As social chair, Jonah aims to ensure club running is a memorable experience for everyone.',
-  },
-  {
-    position: "Webmaster",
     name: "Evan Masiello",
     image: evanimage,
     description:
-      'Evan Masiello is a sophomore studying computer science. Evan is known for hosting the most elite radio show of all time "Yoshi City Subway" and he is also the creator of the least toxic and most loved social media app "Geo Cam". Evan started running in 5th grade and has been grinding ever since, becoming a captain and key member of the Voorhees Higschool 2022 Sectional Championship Cross Country Team. Evan is currently eyeing a big PR this spring in the Freddy half and is somewhat interested in running track races. Evan would also like to shoutout previous webamster Caleb Holland for creating this new website!',
+      "Evan Masiello is a junior studying computer science. Evan is known for hosting the incredibly popular radio show Yoshi City Subway which can be listened to on 90.5 FM or wmuc.umd.edu Mondays at 8pm. Evan started running in 5th grade and has been grinding ever since, becoming a captain of his high school track and cross country teams. Evan peaked this year when he ran the Baltimore marathon with many of his best buddies from the club. Evan is very excited to be president and is looking forward to an eventful and fun year for the club!",
+  },
+  {
+    position: "Vice President",
+    name: "Ben Waterman",
+    image: benimage,
+    description:
+      "Ben Waterman is a sophomore biology and psychology major from Bethesda, Maryland. He is excited to race NIRCA and Freddy Half this spring, and maybe a marathon in the fall. Besides running, Ben enjoys skiing, carb loading, reading, and swimming. As Vice President, Ben does all the fun behind the scenes work to make it possible for the club to travel and race across the country!",
+  },
+  {
+    position: "Financial Treasurer",
+    name: "Ella Quigley",
+    image: ellaimage,
+    description:
+      "Ella is a sophomore majoring in mechanical engineering from Odenton, MD. Ella’s favorite route to run for club running practice is lake loop, making up at least 90% of her runs at UMD. Her favorite memory about club running was driving in a van back from 2023 cross county nationals nationals in Indiana. Aside from running, Ella is learning how to crochet and has crocheted multiple turtles for her family and friends. As financial treasure Ella will be making sure everyone pays their debts to the club and will be finding people if they don’t.",
+  },
+  {
+    position: "Fundraising Treasurer",
+    name: "Ryken Mak",
+    image: rykenimage,
+    description:
+      "Ryken is a sophomore psychology major from the Bay Area, California. He started running in fourth grade and has loved it ever since. When not running, he can be found at the gym, the club sports office, or watching highlights of his beloved Commanders.",
+  },
+  {
+    position: "Sprint Chair",
+    name: "Joey Zolkiewicz",
+    image: joeyimage,
+    description:
+      "Joey is a junior double major in government and politics and history. He hails from the small town of Mount Airy, MD in Carroll County, where there may or may not be more cows than people. Apart from running sprints, Joey can be found reading a book, cooking, or binging the latest big Netflix show three years after everyone else. As sprint chair, Joey typically leads the sprinter practices at the track.",
+  },
+  {
+    position: "Apparel Coordinator",
+    name: "Tony Boscolo",
+    image: staceyimage,
+    description:
+      "Tony first started running seriously when he joined Mount Saint Joseph high school’s cross country team and really enjoyed the team. He then joined the high school indoor and outdoor track teams and did all 4 year for all 3 sports. He loved the team aspect and wanted something similar so he joined Club Running at University of Maryland. Club Running has been one of the greatest things about college for him as it has given him some of his closest friends and led to great memories. It has allowed him to continue his competitive running career where his favorite event is the mile.",
+  },
+  {
+    position: "Social Chair",
+    name: "Jeremy Epstein",
+    image: jeremyimage,
+    description:
+      'Jeremy is a sophomore civil engineering student from Gaithersburg Maryland. He is excited to train for the NIRCA and Fredrick half marathons this spring and the xc 8K in the fall. In his free time, Jeremy loves hiking, camping, and skiing. As social chair, he hopes to bring the club even closer this year through fun events like game nights and outdoor trips.',
+  },
+  {
+    position: "Webmaster",
+    name: "Jonah Plotkin",
+    image: jonahimage,
+    description:
+    'Jonah Plotkin is a sophomore majoring in computer science from Bethesda, Maryland. He has been an avid runner since early middle school and was a varsity runner for the Walt Whitman Vikings. Aside from running, Jonah loves to ski, sail, learn guitar riffs, and follow NFL and Formula One. His future athletic ambitions include becoming a marathoner, possibly a triathlete, and running more PRs. Jonah aims to ensure club running is a memorable experience for everyone.',
   },
 ];

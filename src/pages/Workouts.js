@@ -41,10 +41,13 @@ function About() {
                 </td>
                 <td>
                   <a href="https://docs.google.com/spreadsheets/d/1CnSSl_4Z9OO95mmb0hq1PxQuuNXYCCrursbGMv-TXZo/edit?gid=355227437#gid=355227437">
-                    Fall
-                  </a>
+                    Fall</a>{" "}
+
+                  <a href="https://docs.google.com/spreadsheets/d/1fj68G6LMrUwHmI1imWAxgUwwEmS-ZkZcERkE2z5CbcY/edit?usp=sharing">Spring</a>
                 </td>
-                <td>Coming in Spring</td>
+                <td>
+                <a href="https://docs.google.com/spreadsheets/d/1BHrkHspXGHE4oJr3LlzBXdvKGYdZYg9rEkXLG7xC9Ns/edit?usp=sharing">Link</a>
+                </td>
               </tr>
               <tr>
                 <td>2023 - 2024</td>

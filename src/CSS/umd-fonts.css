@@ -1,0 +1,40 @@
+/* Maryland logo text font */
+@font-face {
+    font-family: 'Terrafont'; /* Name your font family */
+    src: url('https://static.umterps.com/custompages/custom-nextgen/Terrafont-Regular.ttf'); /* Locate the .ttf file within your directory*/
+  }
+.terrafont-desktop {
+    font-family: 'Terrafont', sans-serif; /* Use the font family */
+    text-transform: uppercase;
+    line-height: 1;
+    color: #CE1126;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #FCD116;
+    letter-spacing: 4.5px;
+    font-size: xx-large;
+}
+.terrafont-mobile {
+    font-family: 'Terrafont', sans-serif; /* Use the font family */
+    text-transform: uppercase;
+    line-height: 1;
+    color: #CE1126;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FCD116;
+    letter-spacing: 4.5px;
+    font-size: larger;
+    
+}
+  
+/* scripts/classic maryland font */
+@font-face {
+    font-family: 'Wallsmith'; /* Name your font family */
+    src: url('https://static.umterps.com/custompages/custom-nextgen/Wallsmith-Regular.ttf'); /* Locate the .ttf file within your directory*/
+}
+  
+.wallsmith {
+    font-family: 'Wallsmith', sans-serif; /* Use the font family */
+    line-height: 1.5;
+    color: #CE1126;
+    letter-spacing: 4.5px;
+    font-size: large;
+}
