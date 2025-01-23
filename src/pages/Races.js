@@ -7,6 +7,7 @@ export default function Races() {
       <td>{race.date}</td>
       <td>{race.name}</td>
       <td>{race.location}</td>
+      <td>{race.type}</td>
     </tr>
   ));
 
@@ -42,6 +43,7 @@ export default function Races() {
                 <th>Date</th>
                 <th>Race</th>
                 <th>Location</th>
+                <th>Type</th>
               </tr>
             </thead>
             <tbody>
