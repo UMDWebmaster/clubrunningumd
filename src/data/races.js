@@ -7,9 +7,9 @@ export const races = [
 
   },
   {
-    "date": "Sat, Feb 22",
+    "date": "Sun, Feb 23",
     "name": "Capital Relays",
-    "location": "Washington, DC",
+    "location": "Bethesda, MD",
     "type":"Club"
   },
   {
