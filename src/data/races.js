@@ -55,7 +55,7 @@ export const races = [
     "type":"Club"
   },
   {
-    "date": "TBD",
+    "date": "Sun, April 27",
     "name": "Terrapin Invitational",
     "location": "College Park, MD",
     "type":"Club"

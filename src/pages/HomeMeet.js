@@ -1,29 +1,38 @@
 import React from "react";
-import "../CSS/About.css";
 import natsPic from "../Pictures/terpInvite.png";
-
+import "../CSS/PageDefault.css";
 export default function About() {
   return (
-    <div className="text-white font-bold">
+ 
+    <div className="text-white font-bold bg-black">
       {/* Container for the team picture */}
       <div class="teamPic-container">
         {/* Display the team picture */}
         <img src={natsPic} alt="" className="teamPic" />
       </div>
-
+      <div className="text-left max-w-4xl mx-auto p-6 text-left">
       {/* Section for event details */}
       <div>
         {/* Main content container */}
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col">
           {/* Title of the event */}
-          <h3 className="text-white text-4xl font-bold mt-5 mb-5">
-            4th Annual Terrapin Invitational
-          </h3>
+     
+          <h1 className="text-5xl font-bold mt-5 mb-5 text-center">
+            5th Annual Terrapin Invitational
+          </h1>
+          <p>Join us for the 5th annual Terrapin Invitational on Sunday, April 27th! Meet day details and registration are still being worked out. You can take a look below at last year's information for a general idea of what to expect. See you soon! 🏃‍♂️🏃‍♀️ </p>
 
           {/* Date and location of the event */}
-          <h2 className="text-white text-2xl font-bold mt-5 mb-5">
-            4/20/2024 - College Park, MD{"\n"}
-            <br></br>View {/* Link to home meet records */}
+          <h2 className="text-2xl font-bold mt-5 mb-5">
+            When and Where?
+          </h2>
+          <ol>
+            <li>
+              <a href="https://maps.app.goo.gl/Yzw4hC2NY6ynLfP68">Kehoe Track and Field Complex
+7898 Championship Ln, College Park, MD 20742</a></li>
+            <li>April, 27th 2025 (Start time probably same as last year, 10 AM)</li>
+          </ol>
+          <br></br>View {/* Link to home meet records */}
             <a
               href="./home-meet-records"
               style={{ textDecorationLine: "underline" }}
@@ -37,84 +46,88 @@ export default function About() {
             >
               Results
             </a>
-            <br></br>View {/* Link to home meet records */}
-            <a
-              href="https://drive.google.com/drive/folders/12P1xI3qQImU26LFs1NCeUefFSGyTXgSw"
-              style={{ textDecorationLine: "underline" }}
-            >
-              Photos 1
-            </a>{" "}
+          
+         
             <a
               href="https://photos.google.com/share/AF1QipP8Pa1V-Syhpmx3eaTicXqeQM3XARYSg-ctr0F-kSCapVh3cqC1wK9tRhOqU2QiXg?key=cEdBb29aRXRIcUI2U3RDRmtnWVRfWGNjSG5tcFRR"
               style={{ textDecorationLine: "underline" }}
             >
               Photos 2
             </a>
-          </h2>
+       
 
-          {/* Display the location using Google Maps */}
-          <div className="contentLocation"></div>
-          <h4 className="text-white text-2xl font-bold mt-5 mb-5">
-            Location: <br></br>Kehoe Track and Field Complex<br></br> 7898
-            Championship Ln, College Park, MD 20742
-          </h4>
-
-          {/* Embed Google Maps iframe */}
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1749.999025924254!2d-76.95096242204218!3d38.98797578534567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c69065bd94bb%3A0x3c9fa3164b2eee7!2sLudwig%20Field!5e0!3m2!1sen!2sus!4v1710859163671!5m2!1sen!2sus"
-            width="500"
-            height="450"
-            style={{ border: "0" }}
-            title="Kehoe Track"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
         </div>
 
         {/* Section for order of events */}
         <div className="contentOrderOfEvents"></div>
-        <h4 className="text-white text-2xl font-bold mt-5 mb-5">
+        <h2 className="text-2xl font-bold mt-5 mb-5">
           Order of Events:
-        </h4>
-        <h5 className="text-white text-s font-bold mt-5 mb-5">
-          {/* List of events */}
-          Women followed by Men <br></br>
-          <br></br> 10:00am: Alumni Mile (combined) <br></br> Swedish Medley
-          Relay <br></br> 5000m Run <br></br> 4x800 Relay <br></br> 100mH/110mH{" "}
-          <br></br> 100m Dash <br></br> 400m Dash <br></br> 1500m Run <br></br>{" "}
-          400m Hurdles <br></br> 1500m Racewalk <br></br> 4x100m Relay <br></br>{" "}
-          800m Dash <br></br> 200m Dash <br></br> 4x400m Relay
-          <br></br> <br></br>Field:<br></br> 9:30am- High Jump <br></br>{" "}
-          10:00am- Shot Put (combined)<br></br> 11:15am- Women’s Long Jump{" "}
-          <br></br> 12:00- Women’s Discus, Men’s Long Jump <br></br> 1:15pm-
-          Men’s Discus, Women’s Triple Jump <br></br> 2:00pm Men’s Triple Jump
-        </h5>
+        </h2>
+        <div class="p-4 mb-4 text-sm text-orange-500 rounded-lg bg-yellow-50 dark:bg-gray-800" role="alert">
+         ⚠️ We have not finalized this year's order of events. It will likely be similar to last year's which you can find below.
+        </div>
+          <p>Women's group first, followed by men's group</p>
+          <h3 className="text-xl">Track Events (Starts at 10 AM)</h3>
+          {/* List of track events */}
+          <ol className="">
+            <li>Alumni Mile (Combined)</li>
+            <li>Swedish Medley Relay</li>
+            <li>5000m Run</li>
+            <li>4x800 Relay</li>
+            <li>100m Hurdles/110m Hurdles</li>
+            <li>100m Dash</li>
+            <li>400m Dash</li>
+            <li>1500m Run</li>
+            <li>400m Hurdles</li>
+            <li>1500m Racewalk</li>
+            <li>4x100m Relay</li>
+            <li>800m Dash</li>
+            <li>200m Dash</li>
+            <li>4x400m Relay</li>
+          </ol>
+          <h3 className="text-xl">Field Events</h3>
+          <ol>
+            <li>9:30am - High Jump</li>
+            <li>10:00am - Shot Put (combined)</li>
+            <li>11:15am - Women’s Long Jump</li>
+            <li>12:00 - Women’s Discus, Men’s Long Jump</li>
+            <li>1:15pm - Men’s Discus, Women’s Triple Jump</li>
+            <li>2:00pm - Men’s Triple Jump</li>
+          </ol>
       </div>
 
       {/* Section for registration */}
       <div className="contentRegistration"></div>
-      <h4 className="text-white text-2xl font-bold mt-5 mb-5">
-        Registration: <br></br>
-        <span className="text-lg">
-          {/* Registration details */}
-          Registration opens on March 25, 2024 and closes on April 18, 2024 at
-          11:59pm<br></br>
-          Cost: $20 per runner or $300 per team.
-        </span>
-      </h4>
-
+      <h2 className=" text-2xl font-bold mt-5 mb-5">
+        Registration </h2>
+      <div class="p-4 mb-4 text-sm text-orange-500 rounded-lg bg-yellow-50 dark:bg-gray-800" role="alert">
+         ⚠️ We have not finalized this year's registration. It will likely be similar to last year's which you can find below.
+        </div>
+        <p>
+        $20 per runner or $300 per team.
+        </p>
+        <p>
+        Registration opens on March 25, 2024 and closes on April 18, 2024 at
+          11:59pm
+        </p>
       {/* Section for awards */}
-      <h4 className="text-white text-2xl font-bold mt-5">
-        Awards:
-      </h4>
-      <span className="text-lg">
-        {/* Information about awards */}
+      <h2 className="text-2xl font-bold mt-5">
+        Awards
+      </h2>
+      <p>
         The winner of each event will receive a Terrapin Invite pint glass.
-        <br></br>
         Team awards will go to the top 3 teams overall.
-      </span>
-
+      </p>
+      
+      <h2 className="text-2xl">Archived Meet Results</h2>
+      <p>Meet records can be found <a href="/home-meet-records">here</a>.</p>
+      <ol>
+        <li><a href="https://results.firstlanetiming.com/meets/35171">2024 Results</a></li>
+      </ol>
+    
     </div>
+    
+    </div>
+   
   );
 }

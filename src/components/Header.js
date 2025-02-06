@@ -48,11 +48,11 @@ function Header() {
         <div className="MobileHome">
           <a
             href="/home" 
-            className="home no-highlight text-xl text-red-600  whitespace-nowrap"
+            className="home no-highlight text-xl text-red-600  whitespace-nowrap no-underline"
             
           >
             <div>
-            <h1 class="terrafont-mobile" >maryland club running</h1>
+            <h1 className="terrafont-mobile text-xl" >maryland club running</h1>
             <p class="wallsmith">Turtles Aren't Slow</p>
             </div>
             
@@ -68,7 +68,7 @@ function Header() {
         >
           {/* Tab items for desktop view */}
           <Tab className="tab home no-highlight text-xl text-red-600">
-            <a href="/home"> <h1 class="terrafont-desktop" >maryland club running</h1>
+            <a href="/home"> <h1 className="terrafont-desktop no-underline" >maryland club running</h1>
             <h2 class="wallsmith">Turtles Aren't Slow</h2>
             </a>
           </Tab>
