@@ -1,6 +1,6 @@
 import { officers } from '../data/officers';
 import BioCard from "../components/BioCard";
-
+import "../CSS/About.css"
 //DO NOT EDIT - Sincerely, Caleb Holland
 export default function About() {
   const bios = officers.map((officer, index) => (

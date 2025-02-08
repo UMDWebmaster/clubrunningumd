@@ -1,6 +1,6 @@
 import React from "react";
 import natsPic from "../Pictures/terpInvite.png";
-import "../CSS/PageDefault.css";
+
 export default function About() {
   return (
  
@@ -32,28 +32,6 @@ export default function About() {
 7898 Championship Ln, College Park, MD 20742</a></li>
             <li>April, 27th 2025 (Start time probably same as last year, 10 AM)</li>
           </ol>
-          <br></br>View {/* Link to home meet records */}
-            <a
-              href="./home-meet-records"
-              style={{ textDecorationLine: "underline" }}
-            >
-              Meet Records
-            </a>{" "}
-            {" and "}{" "}
-            <a
-              href="https://results.firstlanetiming.com/meets/35171"
-              style={{ textDecorationLine: "underline" }}
-            >
-              Results
-            </a>
-          
-         
-            <a
-              href="https://photos.google.com/share/AF1QipP8Pa1V-Syhpmx3eaTicXqeQM3XARYSg-ctr0F-kSCapVh3cqC1wK9tRhOqU2QiXg?key=cEdBb29aRXRIcUI2U3RDRmtnWVRfWGNjSG5tcFRR"
-              style={{ textDecorationLine: "underline" }}
-            >
-              Photos 2
-            </a>
        
 
         </div>
@@ -67,7 +45,7 @@ export default function About() {
          ⚠️ We have not finalized this year's order of events. It will likely be similar to last year's which you can find below.
         </div>
           <p>Women's group first, followed by men's group</p>
-          <h3 className="text-xl">Track Events (Starts at 10 AM)</h3>
+          <h3 className="text-xl underline">Track Events (Starts at 10 AM)</h3>
           {/* List of track events */}
           <ol className="">
             <li>Alumni Mile (Combined)</li>
@@ -85,7 +63,7 @@ export default function About() {
             <li>200m Dash</li>
             <li>4x400m Relay</li>
           </ol>
-          <h3 className="text-xl">Field Events</h3>
+          <h3 className="text-xl underline">Field Events</h3>
           <ol>
             <li>9:30am - High Jump</li>
             <li>10:00am - Shot Put (combined)</li>
@@ -118,13 +96,13 @@ export default function About() {
         The winner of each event will receive a Terrapin Invite pint glass.
         Team awards will go to the top 3 teams overall.
       </p>
-      
+     
       <h2 className="text-2xl">Archived Meet Results</h2>
-      <p>Meet records can be found <a href="/home-meet-records">here</a>.</p>
+      <p>Meet records can be found <a className="underline" href="/home-meet-records">here</a>.</p>
       <ol>
-        <li><a href="https://results.firstlanetiming.com/meets/35171">2024 Results</a></li>
+        <li className="underline"><a href="https://results.firstlanetiming.com/meets/35171">2024 Results</a></li>
       </ol>
-    
+
     </div>
     
     </div>
