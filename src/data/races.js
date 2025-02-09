@@ -37,11 +37,12 @@ export const races = [
     "type":"Club"
   },
   {
-    "date": "Sat, Apr 26",
-    "name": "Paul Kaiser Invitational",
-    "location": "Shippensburg, PA",
+    "date": "Sun, April 27",
+    "name": "Terrapin Invitational",
+    "location": "College Park, MD",
     "type":"Club"
   },
+
   {
     "date": "Fri, May 2",
     "name": "Kehoe Twilight Invitational",
@@ -52,12 +53,6 @@ export const races = [
     "date": "Sun, May 4",
     "name": "Frederick Half Marathon",
     "location": "Frederick, MD",
-    "type":"Club"
-  },
-  {
-    "date": "Sun, April 27",
-    "name": "Terrapin Invitational",
-    "location": "College Park, MD",
     "type":"Club"
   }
 ];

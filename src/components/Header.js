@@ -122,7 +122,7 @@ function Header() {
             {/* Dropdown menu for Info tab */}
             <ul className="dropdown">
               <li>
-                <a href="/home-meet">Terapin Invite</a>
+                <a href="/home-meet">Terrapin Invite</a>
               </li>
               <li>
                 <a href="/Races">Races</a>
