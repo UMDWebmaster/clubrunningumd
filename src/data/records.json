@@ -749,14 +749,14 @@
   },
   {
     "season": "Outdoor",
-    "event": "Triple Jump *Under Review*",
+    "event": "Triple Jump",
     "gender": "M",
     "true_distance": 0,
-    "time": "10.82m (Mark)",
+    "time": "12.96m (Mark)",
     "seconds": 0,
-    "athlete": "Joseph Jackson",
-    "date": "4/20/2024",
-    "meet": "Terrapin Invitational"
+    "athlete": "Benjamin Osuala",
+    "date": "3/1/2025",
+    "meet": "UVA Club Track and Field Meet"
   },
   {
     "season": "Outdoor",
@@ -823,6 +823,17 @@
     "athlete": "Henry Sheppard",
     "date": "4/7/2024",
     "meet": "NIRCA Nationals"
+  },
+  {
+    "season": "Outdoor",
+    "event": "Discus",
+    "gender": "F",
+    "true_distance": 0,
+    "time": "18.99 (Mark)",
+    "seconds": 0,
+    "athlete": "Bailey Unchester",
+    "date": "2/1/2025",
+    "meet": "UVA Club Track and Field Meet"
   },
   {
     "season": "Cross Country",
