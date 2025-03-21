@@ -127,7 +127,7 @@ export default function Home() {
                 School of Public Health (SPH)
               </a>{" "}
               East Side (closest to Xfinity Center) starting{" "}
-              <b>Monday, January 27th. Practices now start at 4pm! </b>
+              <b>Monday, January 27th. Practices now start at 5pm! </b>
             </p>
             <p className="text-black mb-7">
               Our mission is to support and encourage a healthy approach to
