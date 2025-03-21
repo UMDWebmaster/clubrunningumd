@@ -82,7 +82,7 @@ export default function About() {
          ⚠️ We have not finalized this year's registration. It will likely be similar to last year's which you can find below.
         </div>
         <p>
-        $20 per runner or $300 per team.
+        $30 per athlete or $450 per team.
         </p>
         <p>
         Registration opens on March 25, 2024 and closes on April 18, 2024 at
