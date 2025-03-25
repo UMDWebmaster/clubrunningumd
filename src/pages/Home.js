@@ -32,7 +32,7 @@ export default function Home() {
     },
     {
       original: stillTrain,
-      subdescription: "Yes! Join us Mon-Fri at SPH @ 4pm",
+      subdescription: "Yes! Join us Mon-Fri at SPH @ 5pm",
       description: "ARE WE STILL TRAINING?",
       link: "",
     },
