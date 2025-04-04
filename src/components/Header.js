@@ -174,7 +174,8 @@ function Header() {
             <a href="/Routes">Routes</a>
             <a href="/about">Officers</a>
           
-            <a href="/joinus">Join Us</a>
+            {/* <a href="/joinus">Join Us</a> */}
+            <a href="/calendar">Calendar</a>
             <a href="https://venmo.com/u/umdclubrunning">Donate</a>
           </div>
         )}
