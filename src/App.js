@@ -19,6 +19,7 @@ import Login from "./components/Login"
 import TextEditor from "./components/TextEditor";
 import Feed from "./pages/BlogFeed"
 import Article from "./pages/Article";
+import Calendar from "./pages/Calendar"
 import {
   BrowserRouter as Router,
   Routes,
@@ -73,7 +74,8 @@ function App() {
       <Route path="/article/:id" element={<Article/>}/>
         <Route path="/routes" element={<Paths />} /> 
         <Route path="*" element={<Navigate to="/" replace />} />
-
+        {/* Calendar page route */}
+        <Route path="/calendar" element={<Calendar />}/>
       </Routes>
       <ConditionalFooter />
     </Router>

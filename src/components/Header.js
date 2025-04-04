@@ -81,11 +81,12 @@ function Header() {
             </a>
           </Tab>
           <Tab className="tab">
-            <a href="/joinus" className="dropdown-toggle">
+            <a href="/calendar">Calendar</a>
+            {/* <a href="/joinus" className="dropdown-toggle">
               Join Us
-            </a>
+            </a> */}
             {/* Dropdown menu for Join Us tab */}
-            <ul className="dropdown">
+            {/* <ul className="dropdown">
               <li>
                 <a href="/joinus">How To</a>
               </li>
@@ -94,7 +95,7 @@ function Header() {
                   Emails
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </Tab>
           {/* Other tabs */}
           <Tab className="tab active:text-red-600">

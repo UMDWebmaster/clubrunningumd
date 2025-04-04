@@ -8,7 +8,6 @@ import lillianCapital from "../Pictures/lillianCapital.JPG";
 import stillTrain from "../Pictures/IMG_3948.JPG";
 import people from "../Pictures/grouppiccropped.jpg";
 import sprinting from "../Pictures/sprintPic.JPG";
-import abtPhoto from "../Pictures/team.JPG"
 import blogImg from  "../Pictures/lol.JPG"
 export default function Home() {  
   const images = [
@@ -112,9 +111,10 @@ export default function Home() {
       >
         <div className="rounded-xl border-2 border-white mt-10 mb-10 w-11/12 bg-white bg-opacity-70 flex flex-col md:flex-row">
           <div className="align-left md:w-1/2">
-            <img src={abtPhoto} alt="Team Pic" className="rounded-xl" />
+          <iframe width="100%"class="rounded-xl" height="100%" src="https://www.youtube.com/embed/CHT-1unx3wo" title="UMD CLUB RUNNING HYPE VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
           </div>
-          <div className="flex flex-col md:w-1/2 ml-5 mr-5">
+          <div className="flex flex-col md:w-1/2 ml-5 mr-5 ">
             <h1 className="text-black font-bold text-3xl mb-4 mt-5 md:mt-20 underline">
               About Us
             </h1>
