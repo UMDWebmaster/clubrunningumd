@@ -20,6 +20,7 @@ import TextEditor from "./components/TextEditor";
 import Feed from "./pages/BlogFeed"
 import Article from "./pages/Article";
 import Calendar from "./pages/Calendar"
+import XCHomeMeet from "./pages/XCHomeMeet";
 import {
   BrowserRouter as Router,
   Routes,
@@ -49,6 +50,7 @@ function App() {
         <Route path="/joinus" element={<NewMemberInfo />} />{" "}
         <Route path="/races" element={<Races />} />
         <Route path="/home-meet" element={<HomeMeet />} />{" "}
+        <Route path="/old-bay-invite" element = {<XCHomeMeet />}/>
         <Route
           path="/private"
           element={isLocalhost ? <PrivatePage /> : <Home />}
