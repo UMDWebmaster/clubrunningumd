@@ -38,7 +38,7 @@ function EmailArchive() {
       <p>The best way to contact us is via email: <a href="mailto:umdclubrunning@gmail.com" class="text-red-400 underline">umdclubrunning@gmail.com</a>. You can also connect with us on:</p>
       <ul class="list-disc list-inside">
         <li><a href="https://umdclubrunning.com" class="text-red-400 underline">Website</a></li>
-        <li><a href="https://groupme.com/join_group/101188221/kLKAA5Pg" class="text-red-400 underline">GroupMe</a></li>
+        <li><a href="https://groupme.com/join_group/108665912/yF0Y8FZw" class="text-red-400 underline">GroupMe</a></li>
         <li><a href="https://www.strava.com/clubs/UMDCR" class="text-red-400 underline">Strava</a></li>
         <li><a href="https://instagram.com/umdclubrunning" class="text-red-400 underline">Instagram</a></li>
       </ul>
