@@ -3,7 +3,7 @@ import "../CSS/Home.css";
 import "../CSS/SignUp.css";
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
-import natsPic from "../Pictures/natsTeamPic.JPG";
+import natsPic from "../Pictures/2025-team.jpeg";
 import lillianCapital from "../Pictures/lillianCapital.JPG";
 import stillTrain from "../Pictures/IMG_3948.JPG";
 import people from "../Pictures/grouppiccropped.jpg";
@@ -18,10 +18,10 @@ export default function Home() {
       link: "",
     },
     {
-      original: lillianCapital,
-      subdescription: "Click Here To View Our Spring Distance Training Plan!",
-      description: "TRACK SEASON IS HERE!",
-      link: "https://docs.google.com/spreadsheets/d/1BHrkHspXGHE4oJr3LlzBXdvKGYdZYg9rEkXLG7xC9Ns/edit?usp=sharing",
+      original: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/5a/b9/ba/terrapin-beach-park.jpg?w=900&h=500&s=1',
+      subdescription: "Click Here To Learn About Our First Home XC Meet!",
+      description: "RACE ALONG THE BAY!",
+      link: "/old-bay-invite",
     },
     {
       original: sprinting,
@@ -31,8 +31,8 @@ export default function Home() {
     },
     {
       original: stillTrain,
-      subdescription: "Yes! Join us Mon-Fri at SPH @ 5pm",
-      description: "ARE WE STILL TRAINING?",
+      subdescription: "YES! Join us Mon-Fri at SPH @ 5pm Starting Sept 3rd!",
+      description: "FIRST PRACTICE SOON?",
       link: "",
     },
     {
@@ -127,7 +127,7 @@ export default function Home() {
                 School of Public Health (SPH)
               </a>{" "}
               East Side (closest to Xfinity Center) starting{" "}
-              <b>Monday, January 27th. Practices now start at 5pm! </b>
+              <b>Tuesday, September 3rd. Practices start at 5pm! </b>
             </p>
             <p className="text-black mb-7">
               Our mission is to support and encourage a healthy approach to

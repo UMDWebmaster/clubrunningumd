@@ -126,6 +126,9 @@ function Header() {
                 <a href="/home-meet">Terrapin Invite</a>
               </li>
               <li>
+                <a href="/old-bay-invite">Old Bay Invite</a>
+              </li>
+              <li>
                 <a href="/Races">Races</a>
               </li>
               <li>
@@ -167,6 +170,7 @@ function Header() {
           <div className="scrollmenu font-bold text-white">
             <a href="https://evanmasiello.com/clubrunning/">Blog</a>
             <a href="/Photos">Photos</a>
+            <a href="/old-bay-invite">Old Bay Invite</a>
             <a href="/home-meet">Terp Invite</a>
             <a href="/Races">Races</a>
             <a href="/Records">Records</a>

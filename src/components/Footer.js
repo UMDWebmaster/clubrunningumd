@@ -20,7 +20,7 @@ export default function Footer() {
           <div>
             <Link href="/contact" underline="none">
               Report bugs or request features to{" "}
-              <strong>umdwebmast3r@gmail.com</strong>
+              <strong>umdclubrunning@gmail.com</strong>
             </Link>
           </div>
           <div class="logos">
