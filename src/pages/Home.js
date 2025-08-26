@@ -31,7 +31,7 @@ export default function Home() {
     },
     {
       original: stillTrain,
-      subdescription: "YES! Join us Mon-Fri at SPH @ 5pm Starting Sept 3rd!",
+      subdescription: "YES! Join us Mon-Fri at SPH @ 5pm Starting Sept 2nd!",
       description: "FIRST PRACTICE SOON?",
       link: "",
     },
@@ -127,7 +127,7 @@ export default function Home() {
                 School of Public Health (SPH)
               </a>{" "}
               East Side (closest to Xfinity Center) starting{" "}
-              <b>Tuesday, September 3rd. Practices start at 5pm! </b>
+              <b>Tuesday, September 2nd. Practices start at 5pm! </b>
             </p>
             <p className="text-black mb-7">
               Our mission is to support and encourage a healthy approach to
