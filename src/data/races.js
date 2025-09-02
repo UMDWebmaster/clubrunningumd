@@ -1,58 +1,46 @@
 export const races = [
   {
-    "date": "Sun, Feb 9",
-    "name": "Happy Valley Invitational",
-    "location": "State College, PA",
-    "type":"Club"
+    "date": "Sat, Sep 6",
+    "name": "Terrapin Time Trial",
+    "location": "Greenbelt, MD",
+    "type":"TT"
 
   },
   {
-    "date": "Sun, Feb 23",
-    "name": "Capital Relays",
-    "location": "Bethesda, MD",
-    "type":"Club"
-  },
-  {
-    "date": "Sat, Mar 1",
+    "date": "Sat, Sep 13",
     "name": "Cavalier Invitational",
-    "location": "Charlottesville, VA",
+    "location": "Earlysville, VA",
     "type":"Club"
   },
   {
-    "date": "Sat, Mar 29",
-    "name": "Towson Invitational",
-    "location": "Towson, MD",
-    "type":"Division 1"
-  },
-  {
-    "date": "Sat-Sun, Apr 5-6",
-    "name": "NIRCA Nationals & Half",
-    "location": "Richmond, VA",
+    "date": "Sat, Sep 27",
+    "name": "Old Bay Invitational",
+    "location": "Stevensville, MD",
     "type":"Club"
   },
   {
-    "date": "Sat, Apr 19",
-    "name": "Blue Hen Invitational",
-    "location": "Newark, DE",
+    "date": "Fri, Oct 3",
+    "name": "Paul Short Run",
+    "location": "Bethlehem, PA",
+    "type":"D1"
+  },
+  {
+    "date": "Sat, Oct 4",
+    "name": "VCU Run with the Rams (Paul Short Backup)*",
+    "location": "Mechanicsville, VA",
     "type":"Club"
   },
   {
-    "date": "Sun, April 27",
-    "name": "Terrapin Invitational",
-    "location": "College Park, MD",
+    "date": "Sat, Oct 18",
+    "name": "NIRCA Mid-Atlantic Regionals",
+    "location": "Earlysville, VA",
     "type":"Club"
   },
 
   {
-    "date": "Fri, May 2",
-    "name": "Kehoe Twilight Invitational",
-    "location": "College Park, MD",
-    "type":"Division 1"
-  },
-  {
-    "date": "Sun, May 4",
-    "name": "Frederick Half Marathon",
-    "location": "Frederick, MD",
+    "date": "Sat, Nov 8",
+    "name": "NIRCA Cross Country Nationals",
+    "location": "Hershey, PA",
     "type":"Club"
   }
 ];
