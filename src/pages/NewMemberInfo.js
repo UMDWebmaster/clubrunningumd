@@ -47,12 +47,12 @@ function EmailArchive() {
       <h2 class="text-2xl font-bold text-yellow-400 mb-4">How do I join?</h2>
       <p>Follow these three easy steps to join the club:</p>
       <div class="p-4 mb-4 text-sm text-yellow-800 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300" role="alert">
-  <span class="font-medium">IMPORTANT: As of 8/25/2024 the new 2024-2025 imleagues team is now available to
+  <span class="font-medium">IMPORTANT: As of 8/25/2025 the new 2025-2026 imleagues team is now available to
 sign up for. It is vital that you sign up on the most current roster before attending
 practice</span> Change a few things up and try submitting again.
 </div>
       <ol class="list-decimal list-inside">
-        <li>Join the email list <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2us1hfXDZmbNgB9cDvSIaE09DtGH_9q4PHpZqoEFZJjdMEQ/viewform" class="text-red-400 underline">here</a>.</li>
+        <li>Join the email list <a href="https://forms.gle/Jk6LDeeY2D4FBq5q6" class="text-red-400 underline">here</a>.</li>
         <p>If for some reason you do not get any emails, you can find them archived <a class="text-red-400 underline" href="/Emails">here</a>!</p>
         <li>Sign up on <a href="https://www.imleagues.com/spa/club/4395e0c781af4905a4088a9561509399/home" class="text-red-400 underline">IMLeagues</a>:
           <ol class="list-decimal list-inside ml-4">
@@ -74,7 +74,7 @@ practice</span> Change a few things up and try submitting again.
 
     <section id="practices" class="mb-8">
       <h2 class="text-2xl font-bold text-yellow-400 mb-4">When/where are practices?</h2>
-      <p><b>First day of practice:</b> September 3, 2024 (Fall), January 27 (Spring) </p>
+      <p><b>First day of practice:</b> September 2, 2025 (Fall), January 27 (Spring) </p>
       <p><b>Schedule:</b> Monday-Friday at 5:00 PM (4:00 PM after daylight savings).</p>
       <p>Meeting locations:</p>
       <ul class="list-disc list-inside">
