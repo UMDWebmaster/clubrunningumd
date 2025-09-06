@@ -27,13 +27,13 @@ export default function Home() {
       original: sprinting,
       subdescription: "Check Out The Sprinter Training Plan Here!",
       description: "SPRINT WORKOUTS ARE HERE!",
-      link: "https://docs.google.com/spreadsheets/d/1fj68G6LMrUwHmI1imWAxgUwwEmS-ZkZcERkE2z5CbcY/edit?usp=sharing",
+      link: "https://docs.google.com/spreadsheets/d/1fj68G6LMrUwHmI1imWAxgUwwEmS-ZkZcERkE2z5CbcY/edit?gid=2070129658#gid=2070129658",
     },
     {
       original: stillTrain,
-      subdescription: "YES! Join us Mon-Fri at SPH @ 5pm Starting Sept 2nd!",
-      description: "FIRST PRACTICE SOON?",
-      link: "",
+      subdescription: "Check Out The Distance Training Plan Here!",
+      description: "DISTANCE PLAN HERE!",
+      link: "https://docs.google.com/spreadsheets/d/1fXUqcuotXMNfaRq0uRI9C7rgnyxK4TNF_hamKlKUXdQ/edit?gid=1947588523#gid=1947588523",
     },
     {
       original: blogImg,
