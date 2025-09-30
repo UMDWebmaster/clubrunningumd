@@ -21,6 +21,7 @@ import Feed from "./pages/BlogFeed"
 import Article from "./pages/Article";
 import Calendar from "./pages/Calendar"
 import XCHomeMeet from "./pages/XCHomeMeet";
+import RecordManager from "./internalTools/recordManager";
 import {
   BrowserRouter as Router,
   Routes,
@@ -55,6 +56,7 @@ function App() {
           path="/private"
           element={isLocalhost ? <PrivatePage /> : <Home />}
         />
+         <Route path="/private/recordManager" element={isLocalhost ? <RecordManager /> : <Home />} />
         {/* Home Meet page */}
         <Route path="/home-meet-records" element={<HomeMeetRecords />} />{" "}
         {/* Home Meet Records page */}
