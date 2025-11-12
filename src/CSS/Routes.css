@@ -1,15 +1,281 @@
+/* Toolbar */
+.routes-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid rgba(244, 245, 247, 0.08);
+  margin-bottom: 40px;
+}
+
+.routes-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: min(240px, 100%);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(244, 245, 247, 0.65);
+}
+
+.routes-input {
+  appearance: none;
+  border-radius: 10px;
+  border: 1px solid var(--umd-border);
+  background: #10141b;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--umd-ink);
+  transition: border-color 0.18s ease;
+}
+
+.routes-input:focus {
+  outline: none;
+  border-color: var(--umd-gold);
+}
+
+.routes-input::placeholder {
+  color: rgba(176, 183, 195, 0.5);
+}
+
+.routes-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Card */
+.route-card {
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid rgba(244, 245, 247, 0.08);
+  padding: 40px 0 32px 0;
+  display: grid;
+  gap: 20px;
+  position: relative;
+}
+
+.route-card:first-of-type {
+  border-top: 1px solid rgba(244, 245, 247, 0.08);
+}
+
+.route-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 72px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--umd-red), var(--umd-gold));
+  border-radius: 999px;
+}
+
+.route-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.route-card-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.route-card-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  color: rgba(229, 57, 53, 0.7);
+}
+
+.route-card-title {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.8vw, 1.85rem);
+  font-weight: 900;
+  color: var(--umd-ink);
+}
+
+.route-card-meta {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--umd-muted);
+}
+
+.route-card-rating {
+  display: inline-flex;
+  gap: 6px;
+  color: rgba(176, 183, 195, 0.3);
+}
+
+.route-card-rating .rating-star {
+  width: 18px;
+  height: 18px;
+  stroke-width: 1.5;
+  transition: color 0.2s ease, fill 0.2s ease;
+}
+
+.route-card-rating .rating-star.active {
+  color: var(--umd-red);
+  fill: rgba(229, 57, 53, 0.18);
+}
+
+.route-card-preview {
+  border-radius: 14px;
+  border: 1px solid rgba(249, 207, 69, 0.24);
+  background: linear-gradient(135deg, rgba(194, 24, 29, 0.2), rgba(249, 207, 69, 0.18));
+  overflow: hidden;
+  min-height: 220px;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.route-card-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.route-card-canvas {
+  fill: rgba(15, 17, 21, 0.85);
+  stroke: rgba(244, 245, 247, 0.08);
+  stroke-width: 1;
+}
+
+.route-card-path {
+  stroke: var(--umd-ink);
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.35));
+}
+
+.route-card-node {
+  fill: var(--umd-ink);
+  stroke-width: 3;
+  stroke: var(--umd-ink);
+}
+
+.route-card-node.start {
+  fill: var(--umd-red);
+}
+
+.route-card-node.end {
+  fill: var(--umd-gold);
+}
+
+.route-card-placeholder {
+  display: grid;
+  place-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--umd-muted);
+  min-height: 200px;
+}
+
+.route-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.route-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.route-card .icon {
+  width: 18px;
+  height: 18px;
+}
+
+.route-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 8px 14px;
+  background: linear-gradient(115deg, rgba(194, 24, 29, 0.38), rgba(249, 207, 69, 0.32));
+  border-radius: 999px;
+  border: 1px solid rgba(249, 207, 69, 0.28);
+  color: rgba(251, 246, 230, 0.92);
+}
+
+.route-card-description {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--umd-muted);
+}
+
+.route-card-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.route-card-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  font-size: 0.85rem;
+  padding: 0;
+  border-radius: 0;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.route-card-action.primary {
+  color: var(--umd-gold);
+}
+
+.route-card-action.secondary {
+  color: var(--umd-ink);
+}
+
+.route-card-action:hover {
+  color: var(--umd-gold);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .routes-toolbar {
+    padding: 0 0 16px 0;
+  }
+
+  .route-card {
+    padding: 20px;
+  }
+
+  .route-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .route-card-preview {
+    min-height: 180px;
+  }
+}
+
 .star {
-  display: inline-block;
-}
-
-
-
-input,
-select {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-span.line {
   display: inline-block;
 }

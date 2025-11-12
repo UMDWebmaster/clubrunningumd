@@ -1,116 +1,180 @@
 import React from "react";
-import natsPic from "../Pictures/terpInvite.png";
+import terpInvitePoster from "../Pictures/terpInvite.png";
 
-export default function About() {
+const trackEvents = [
+  "Alumni Mile (combined)",
+  "Swedish Medley Relay",
+  "5000m Run",
+  "4x800 Relay",
+  "100m Dash",
+  "100m Hurdles / 110m Hurdles",
+  "400m Dash",
+  "1500m Run",
+  "4x100m Relay",
+  "800m Run",
+  "200m Dash",
+  "4x400m Relay",
+];
+
+const specialRelay = {
+  title: "4x Anything but a 400 Relay (Not Scored)",
+  description:
+    "Four runners, four legs, 1600m total team distance. The team may hand off anywhere so each athlete can run any distance — the only rule is no one can run exactly a 400m leg.",
+};
+
+const fieldEvents = [
+  "9:30 AM — High Jump",
+  "10:00 AM — Shot Put (combined)",
+  "11:15 AM — Women's Long Jump",
+  "12:00 PM — Women's Discus & Men's Long Jump",
+  "1:15 PM — Men's Discus & Women's Triple Jump",
+  "2:00 PM — Men's Triple Jump",
+];
+
+const archivedResults = [
+  {
+    label: "2024 Results",
+    href: "https://results.firstlanetiming.com/meets/35171",
+  },
+];
+
+export default function HomeMeet() {
   return (
- 
-    <div className="text-white font-bold bg-black">
-      {/* Container for the team picture */}
-      <div class="teamPic-container">
-        {/* Display the team picture */}
-        <img src={natsPic} alt="" className="teamPic" />
-      </div>
-      <div className="text-left max-w-4xl mx-auto p-6 text-left">
-      {/* Section for event details */}
-      <div>
-        {/* Main content container */}
-        <div className="flex flex-col">
-          {/* Title of the event */}
-     
-          <h1 className="text-5xl font-bold mt-5 mb-5 text-center">
-            5th Annual Terrapin Invitational
-          </h1>
-          <p>Join us for the 5th annual Terrapin Invitational on Sunday, April 27th! Meet day details and registration are up to date and you can take a look below. See you soon! 🏃‍♂️🏃‍♀️ </p>
-
-          {/* Date and location of the event */}
-          <h2 className="text-2xl font-bold mt-5 mb-5">
-            When and Where?
-          </h2>
-          <ol>
-            <li>
-              <a href="https://maps.app.goo.gl/Yzw4hC2NY6ynLfP68">Kehoe Track and Field Complex
-7898 Championship Ln, College Park, MD 20742</a></li>
-            <li>April, 27th 2025</li>
-          </ol>
-       
-
-        </div>
-
-        {/* Section for order of events */}
-        <div className="contentOrderOfEvents"></div>
-        <h2 className="text-2xl font-bold mt-5 mb-5">
-          Order of Events:
-        </h2>
-        <div class="p-4 mb-4 text-sm text-green-500 rounded-lg bg-yellow-50 dark:bg-gray-800" role="alert">
-        ✅ Event details for this year's (2025) meet are up to date!
-        </div>
-          <p>Women's group first, followed by men's group</p>
-          <h3 className="text-xl underline">Track Events (Starts at 10 AM)</h3>
-          {/* List of track events */}
-          <ol className="">
-            <li>Alumni Mile (Combined)</li>
-            <li>Swedish Medley Relay</li>
-            <li>5000m Run</li>
-            <li>4x800 Relay</li>
-            <li>100m Dash</li>
-            <li>100m Hurdles/110m Hurdles</li>
-            <li>400m Dash</li>
-            <li>1500m Run</li>
-            <li>4x100m Relay</li>
-            <li>800m Dash</li>
-            <li>200m Dash</li>
-            <li>4x400m Relay</li>
-            <li>4x Anything but a 400 Relay (Not Scored): 
-              <ol>
-                <li>Four runners, four legs, 1600m total team distance. But you CANNOT run a 400! The team races a 1600m total and can hand off wherever so that each person can run any distance (each person still runs only one leg of the race).</li>
-              </ol>
-            </li>
-          </ol>
-          <h3 className="text-xl underline">Field Events</h3>
-          <ol>
-            <li>9:30am - High Jump</li>
-            <li>10:00am - Shot Put (combined)</li>
-            <li>11:15am - Women’s Long Jump</li>
-            <li>12:00pm - Women’s Discus, Men’s Long Jump</li>
-            <li>1:15pm - Men’s Discus, Women’s Triple Jump</li>
-            <li>2:00pm - Men’s Triple Jump</li>
-          </ol>
+    <div className="page-shell">
+      <div className="page-hero">
+        <img
+          src={terpInvitePoster}
+          alt="Terrapin Invitational poster"
+          className="page-hero-image contain"
+        />
       </div>
 
-      {/* Section for registration */}
-      <div className="contentRegistration"></div>
-      <h2 className=" text-2xl font-bold mt-5 mb-5">
-        Registration </h2>
-      <div class="p-4 mb-4 text-sm text-green-500 rounded-lg bg-yellow-50 dark:bg-gray-800" role="alert">
-         ✅ Registration details for this year's (2025) meet are up to date!
-        </div>
-        <p>
-        $30 per athlete or $450 per team.
-        </p>
-        <p>
-        Registration opens on Friday March 21 and closes on Saturday April 19 at 11:59 PM
-        </p>
-        <p>
-          Registration can be found by clicking <a className="text-red-500 underline" href="https://www.athletic.net/TrackAndField/meet/593578/">here</a>.
-        </p>
-      {/* Section for awards */}
-      <h2 className="text-2xl font-bold mt-5">
-        Awards
-      </h2>
-      <p>
-        The winner of each event will receive a Terrapin Invite pint glass.
-        Team awards will go to the top 3 teams overall.
-      </p>
-     
-      <h2 className="text-2xl">Archived Meet Results</h2>
-      <p>Meet records can be found <a className="underline text-red-500" href="/home-meet-records">here</a>.</p>
-      <ol>
-        <li className="underline"><a className="underline text-red-500" href="https://results.firstlanetiming.com/meets/35171">2024 Results</a></li>
-      </ol>
+      <div className="content-container">
+        <header className="page-header">
+          <span className="page-eyebrow">Home Meet</span>
+          <h1 className="page-title">Terrapin Invitational</h1>
+          <p className="page-subtitle">
+            Sunday, April 27 • Kehoe Track &amp; Field Complex • College Park,
+            MD. All event details and registration info for our fifth annual
+            home invitational live here. See you on the track!
+          </p>
+        </header>
 
+        <section className="page-section">
+          <div className="page-card">
+            <h2 className="text-2xl font-bold text-neutral-800">When &amp; Where</h2>
+            <ul className="mt-4 space-y-2 text-neutral-600">
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/Yzw4hC2NY6ynLfP68"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Kehoe Track &amp; Field Complex, 7898 Championship Ln, College
+                  Park, MD 20742
+                </a>
+              </li>
+              <li>Sunday, April 27, 2025</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="page-section">
+          <div className="page-card">
+            <div className="page-callout mb-4 text-sm font-semibold">
+              ✅ Event details for 2025 are confirmed.
+            </div>
+            <h2 className="text-2xl font-bold text-neutral-800">Order of Events</h2>
+            <p className="mt-2 text-neutral-600">
+              Women's heats will precede men's heats for each event.
+            </p>
+
+            <div className="mt-6 grid gap-6 md:grid-cols-2">
+              <div>
+                <h3 className="text-xl font-semibold text-neutral-800">
+                  Track Events (10:00 AM Start)
+                </h3>
+                <ol className="mt-3 list-decimal space-y-2 pl-5 text-neutral-600">
+                  {trackEvents.map((event) => (
+                    <li key={event}>{event}</li>
+                  ))}
+                  <li className="space-y-2">
+                    <span className="font-semibold text-neutral-800">
+                      {specialRelay.title}
+                    </span>
+                    <p className="text-sm text-neutral-500">
+                      {specialRelay.description}
+                    </p>
+                  </li>
+                </ol>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-neutral-800">Field Events</h3>
+                <ul className="mt-3 space-y-2 text-neutral-600">
+                  {fieldEvents.map((event) => (
+                    <li key={event}>{event}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="page-section">
+          <div className="page-card">
+            <div className="page-callout mb-4 text-sm font-semibold">
+              ✅ Registration for 2025 is open now.
+            </div>
+            <h2 className="text-2xl font-bold text-neutral-800">Registration</h2>
+            <ul className="mt-4 space-y-3 text-neutral-600">
+              <li>$30 per athlete or $450 per team</li>
+              <li>Opens Friday, March 21 · Closes Saturday, April 19 at 11:59 PM</li>
+              <li>
+                Register on{" "}
+                <a
+                  href="https://www.athletic.net/TrackAndField/meet/593578/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Athletic.net
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="page-section page-grid two">
+          <div className="page-card">
+            <h2 className="text-2xl font-bold text-neutral-800">Awards</h2>
+            <p className="mt-3 text-neutral-600">
+              Event winners earn a Terrapin Invite pint glass. Team trophies go
+              to the top three clubs overall.
+            </p>
+          </div>
+
+          <div className="page-card">
+            <h2 className="text-2xl font-bold text-neutral-800">Archived Results</h2>
+            <p className="mt-3 text-neutral-600">
+              Explore past results and{" "}
+              <a href="/home-meet-records">meet records</a>.
+            </p>
+            <ul className="mt-4 space-y-2">
+              {archivedResults.map((result) => (
+                <li key={result.href}>
+                  <a
+                    href={result.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[#d62828] hover:text-[#8b3dff]"
+                  >
+                    {result.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      </div>
     </div>
-    
-    </div>
-   
   );
 }

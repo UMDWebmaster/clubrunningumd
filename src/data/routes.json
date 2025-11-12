@@ -1,224 +1,400 @@
 [
-  {
-    "name":"Jeremy Spoke In",
-    "distance":9,
-    "link":"https://footpathapp.com/routes/AD404D04-7B11-4169-9E84-9C660FF3ED00",
-    "popularity":2
-  },
+
   {
     "name": "Hamster Cage V2",
+    "slug": "hamster-cage-v2",
     "distance": 4.45,
     "link": "https://www.mapmyrun.com/routes/view/5868853243",
-    "popularity": 2
+    "rating": 2,
+    "surface": "Road",
+    "lit": true,
+    "elevationGain": 111,
+    "gpx": "hamster-cage-v2.gpx"
   },
   {
     "name": "Hills 4 Redacted",
+    "slug": "hills-4-redacted",
     "distance": 7.09,
     "link": "https://www.mapmyrun.com/routes/view/5868922576",
-    "popularity": 2
+    "rating": 2,
+    "surface": "Road",
+    "lit": false,
+    "elevationGain": 177,
+    "gpx": "hills-4-redacted.gpx"
   },
   {
     "name": "Lake Loop",
+    "slug": "lake-loop",
     "distance": 4.61,
     "link": "http://www.mapmyrun.com/routes/view/1391591584",
-    "popularity": 4
+    "rating": 4,
+    "surface": "Paved Trail",
+    "lit": true, 
+    "elevationGain": 184,
+    "gpx": "lake-loop.gpx"
   },
   {
     "name": "Brigg's Beltway Bash",
+    "slug": "brigg-s-beltway-bash",
     "distance": 7.47,
     "link": "https://www.mapmyrun.com/routes/view/1821774887",
-    "popularity": 1
+    "rating": 1,
+    "surface": "Road",
+    "lit": false,
+    "elevationGain": 187,
+    "gpx": "brigg-s-beltway-bash.gpx"
   },
   {
     "name": "Historic Berwyn",
+    "slug": "historic-berwyn",
     "distance": 4.76,
     "link": "https://www.mapmyrun.com/routes/view/2289721822",
-    "popularity": 1
+    "rating": 1,
+    "surface": "Road",
+    "lit": true,
+    "elevationGain": 119,
+    "gpx": "historic-berwyn.gpx"
+  },
+    {
+    "name": "Tax Bracket",
+    "slug": "tax-bracket",
+    "distance": 10,
+    "link": "https://www.strava.com/activities/15859315888",
+    "rating": 1,
+    "surface": "Road",
+    "lit": true,
+    "elevationGain": 500,
+    "gpx": "tax-bracket.gpx"
   },
   {
     "name": "Riverdale Loop",
+    "slug": "riverdale-loop",
     "distance": 7.65,
     "link": "https://www.mapmyrun.com/routes/view/1391609449",
-    "popularity": 2
+    "rating": 2,
+    "surface": "Road",
+    "lit": false,
+    "elevationGain": 191,
+    "gpx": "riverdale-loop.gpx"
   },
   {
     "name": "Cherry Chill Loop",
+    "slug": "cherry-chill-loop",
     "distance": 4.88,
     "link": "https://www.mapmyrun.com/routes/view/2289717640",
-    "popularity": 1
+    "rating": 1,
+    "surface": "Road",
+    "lit": true,
+    "elevationGain": 122,
+    "gpx": "cherry-chill-loop.gpx"
   },
   {
     "name": "Greenbelt Metro",
+    "slug": "greenbelt-metro",
     "distance": 7.85,
     "link": "https://www.mapmyrun.com/routes/view/2289720103",
-    "popularity": 2
+    "rating": 2,
+    "surface": "Road",
+    "lit": false,
+    "elevationGain": 196,
+    "gpx": "greenbelt-metro.gpx"
   },
   {
     "name": "Hamster Cage V1",
+    "slug": "hamster-cage-v1",
     "distance": 4.92,
     "link": "https://www.mapmyrun.com/routes/view/5868848695",
-    "popularity": 2
+    "rating": 2,
+    "surface": "Road",
+    "lit": true,
+    "elevationGain": 123,
+    "gpx": "hamster-cage-v1.gpx"
   },
   {
     "name": "Hyattsville",
+    "slug": "hyattsville",
     "distance": 8.09,
     "link": "https://www.mapmyrun.com/routes/view/1403696812",
-    "popularity": 2
+    "rating": 2,
+    "surface": "Road",
+    "lit": false,
+    "elevationGain": 202,
+    "gpx": "hyattsville.gpx"
   },
   {
     "name": "Cherry Chill",
+    "slug": "cherry-chill",
     "distance": 5.1,
     "link": "http://www.mapmyrun.com/routes/view/1391575675",
-    "popularity": 4
+    "rating": 4,
+    "surface": "Paved Trail",
+    "lit": true,
+    "elevationGain": 128,
+    "gpx": "cherry-chill.gpx"
   },
   {
     "name": "Mikey T's",
+    "slug": "mikey-t-s",
     "distance": 8.5,
     "link": "https://www.mapmyrun.com/routes/view/1821760106",
-    "popularity": 2
+    "rating": 2,
+    "surface": "Road",
+    "lit": false,
+    "elevationGain": 212,
+    "gpx": "mikey-t-s.gpx"
   },
   {
     "name": "Neighborhoods",
+    "slug": "neighborhoods",
     "distance": 5.36,
     "link": "https://www.mapmyrun.com/routes/view/1403709331",
-    "popularity": 3
+    "rating": 3,
+    "surface": "Road",
+    "lit": true,
+    "elevationGain": 134,
+    "gpx": "neighborhoods.gpx"
   },
   {
     "name": "Lost",
+    "slug": "lost",
     "distance": 8.53,
     "link": "https://www.mapmyrun.com/routes/view/1875414515",
-    "popularity": 1
+    "rating": 1,
+    "surface": "Road",
+    "lit": false,
+    "elevationGain": 213,
+    "gpx": "lost.gpx"
   },
   {
     "name": "Hammock Park",
+    "slug": "hammock-park",
     "distance": 5.39,
     "link": "https://www.mapmyrun.com/routes/view/1875419546",
-    "popularity": 1
+    "rating": 1,
+    "surface": "Road",
+    "lit": true,
+    "elevationGain": 135,
+    "gpx": "hammock-park.gpx"
   },
   {
     "name": "North Northwest",
+    "slug": "north-northwest",
     "distance": 9.05,
     "link": "https://www.mapmyrun.com/routes/view/1391628139",
-    "popularity": 2
+    "rating": 2,
+    "surface": "Road",
+    "lit": false,
+    "elevationGain": 226,
+    "gpx": "north-northwest.gpx"
   },
   {
     "name": "Communism",
+    "slug": "communism",
     "distance": 5.72,
     "link": "https://www.mapmyrun.com/routes/view/1875411272",
-    "popularity": 1
+    "rating": 1,
+    "surface": "Road",
+    "lit": true,
+    "elevationGain": 143,
+    "gpx": "communism.gpx"
   },
   {
     "name": "Greenbelt Lake",
+    "slug": "greenbelt-lake",
     "distance": 9.5,
     "link": "https://www.mapmyrun.com/routes/view/2289731311",
-    "popularity": 1
+    "rating": 1,
+    "surface": "Trail",
+    "lit": false,
+    "elevationGain": 380,
+    "gpx": "greenbelt-lake.gpx"
+  },
+  {
+    "name": "Greenbelt Park",
+    "slug": "greenbelt-park",
+    "distance": 8.2,
+    "link": "https://www.strava.com/activities/16275894468",
+    "rating": 2,
+    "surface": "Road",
+    "lit": false,
+    "elevationGain": 312,
+    "gpx": "greenbelt-park.gpx"
   },
   {
     "name": "Shorter Metro",
+    "slug": "shorter-metro",
     "distance": 5.72,
     "link": "https://www.mapmyrun.com/routes/view/5869893229/",
-    "popularity": 3
+    "rating": 3,
+    "surface": "Road",
+    "lit": true,
+    "elevationGain": 143,
+    "gpx": "shorter-metro.gpx"
   },
   {
     "name": "Berwyn",
+    "slug": "berwyn",
     "distance": 9.84,
     "link": "https://www.mapmyrun.com/routes/view/1391636146",
-    "popularity": 2
+    "rating": 2,
+    "surface": "Road",
+    "lit": false,
+    "elevationGain": 246,
+    "gpx": "berwyn.gpx"
   },
   {
     "name": "Trolley Trail / Farmers Market",
+    "slug": "trolley-trail-farmers-market",
     "distance": 6.04,
     "link": "https://www.mapmyrun.com/routes/view/5869010728",
-    "popularity": 2
+    "rating": 2,
+    "surface": "Trail",
+    "lit": true,
+    "elevationGain": 242,
+    "gpx": "trolley-trail-farmers-market.gpx"
   },
   {
     "name": "Cemetery",
+    "slug": "cemetery",
     "distance": 9.89,
     "link": "https://www.mapmyrun.com/routes/view/2289727930",
-    "popularity": 1
+    "rating": 1,
+    "surface": "Road",
+    "lit": false,
+    "elevationGain": 247,
+    "gpx": "cemetery.gpx"
   },
   {
     "name": "Metro",
+    "slug": "metro",
     "distance": 6.06,
     "link": "https://www.mapmyrun.com/routes/view/1391623825",
-    "popularity": 3
+    "rating": 3,
+    "surface": "Road",
+    "lit": true,
+    "elevationGain": 152,
+    "gpx": "metro.gpx"
   },
   {
     "name": "Sligo",
+    "slug": "sligo",
     "distance": 11.1,
     "link": "https://www.mapmyrun.com/routes/view/2289733390",
-    "popularity": 1
-  },
-  {
-    "name": "Old Hills 4 Days",
-    "distance": 6.07,
-    "link": "https://www.mapmyrun.com/routes/view/2648473711",
-    "popularity": 2
+    "rating": 1,
+    "surface": "Road",
+    "lit": false,
+    "elevationGain": 278,
+    "gpx": "sligo.gpx"
   },
   {
     "name": "Cherry Kill",
+    "slug": "cherry-kill",
     "distance": 11.23,
     "link": "https://www.mapmyrun.com/routes/view/1821782096",
-    "popularity": 1
+    "rating": 1,
+    "surface": "Road",
+    "lit": false,
+    "elevationGain": 281,
+    "gpx": "cherry-kill.gpx"
   },
   {
     "name": "Hills 4 Days V2",
+    "slug": "hills-4-days-v2",
     "distance": 6.07,
     "link": "https://www.mapmyrun.com/routes/view/5868878107",
-    "popularity": 3
+    "rating": 3,
+    "surface": "Road",
+    "lit": true,
+    "elevationGain": 152,
+    "gpx": "hills-4-days-v2.gpx"
   },
   {
-    "name": "South Northwest",
+    "name": "Big Loop",
+    "slug": "big-loop",
     "distance": 11.45,
     "link": "https://www.mapmyrun.com/routes/view/1403705587",
-    "popularity": 1
+    "rating": 1,
+    "surface": "Road",
+    "lit": false,
+    "elevationGain": 286,
+    "gpx": "big-loop.gpx"
   },
   {
     "name": "Neighborhoods V2",
+    "slug": "neighborhoods-v2",
     "distance": 6.35,
     "link": "https://www.mapmyrun.com/routes/view/2289735244",
-    "popularity": 3
+    "rating": 3,
+    "surface": "Road",
+    "lit": true,
+    "elevationGain": 159,
+    "gpx": "neighborhoods-v2.gpx"
   },
   {
     "name": "CP Woods",
+    "slug": "cp-woods",
     "distance": 6.39,
     "link": "https://www.mapmyrun.com/routes/view/5868859933",
-    "popularity": 2
+    "rating": 2,
+    "surface": "Trail",
+    "lit": true,
+    "elevationGain": 256,
+    "gpx": "cp-woods.gpx"
   },
   {
     "name": "Duck Pond",
+    "slug": "duck-pond",
     "distance": 6.55,
     "link": "https://www.mapmyrun.com/routes/view/1875416639",
-    "popularity": 1
+    "rating": 1,
+    "surface": "Road",
+    "lit": false,
+    "elevationGain": 164,
+    "gpx": "duck-pond.gpx"
   },
   {
     "name": "PG Plaza to Riverdale",
+    "slug": "pg-plaza-to-riverdale",
     "distance": 6.86,
     "link": "https://www.mapmyrun.com/routes/view/2648461723",
-    "popularity": 2
+    "rating": 2,
+    "surface": "Road",
+    "lit": false,
+    "elevationGain": 172,
+    "gpx": "pg-plaza-to-riverdale.gpx"
   },
   {
     "name": "PG Plaza",
-    "distance": 6.98,
+    "slug": "pg-plaza",
+    "distance": 7,
     "link": "https://www.mapmyrun.com/routes/view/1875418334",
-    "popularity": 2
+    "rating": 2,
+    "surface": "Road",
+    "lit": false,
+    "elevationGain": 174,
+    "gpx": "pg-plaza.gpx"
   },
   {
     "name": "Drake Plaza",
+    "slug": "drake-plaza",
     "distance": 4.01,
     "link": "https://www.mapmyrun.com/routes/view/5916354265",
-    "popularity": 2
+    "rating": 2,
+    "surface": "Road",
+    "lit": true,
+    "elevationGain": 100,
+    "gpx": "drake-plaza.gpx"
   },
   {
     "name": "CLL (Something Lake Loop)",
+    "slug": "cll-something-lake-loop",
     "distance": 6.03,
     "link": "https://www.mapmyrun.com/routes/view/5942545270/",
-    "popularity": 2
-  },
-  {
-    "name": "PBTX2",
-    "distance": 20.97,
-    "link": "https://www.mapmyrun.com/routes/view/5809606084",
-    "popularity": 2
+    "rating": 2,
+    "surface": "Trail",
+    "lit": true,
+    "elevationGain": 241,
+    "gpx": "cll-something-lake-loop.gpx"
   }
+  
 ]

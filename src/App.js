@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -11,15 +11,15 @@ import Records from "./pages/Records";
 import Workouts from "./pages/Workouts";
 import Photos from "./pages/Photos";
 import Paths from "./pages/Routes";
+import RecordManager from "./internalTools/recordManager";
 import SignUp from "./pages/SignUp";
 import EmailArchive from "./pages/EmailArchive";
 import PrivatePage from "./internalTools/photoUpload";
 import NewMemberInfo from "./pages/NewMemberInfo";
-import Login from "./components/Login"
-import TextEditor from "./components/TextEditor";
-import Feed from "./pages/BlogFeed"
+import Login from "./components/Login";
+import Feed from "./pages/BlogFeed";
 import Article from "./pages/Article";
-import Calendar from "./pages/Calendar"
+import Calendar from "./pages/Calendar";
 import XCHomeMeet from "./pages/XCHomeMeet";
 import {
   BrowserRouter as Router,
@@ -55,6 +55,7 @@ function App() {
           path="/private"
           element={isLocalhost ? <PrivatePage /> : <Home />}
         />
+        <Route path="/private/recordManager" element={isLocalhost ? <RecordManager /> : <Home />} />
         {/* Home Meet page */}
         <Route path="/home-meet-records" element={<HomeMeetRecords />} />{" "}
         {/* Home Meet Records page */}

@@ -1,0 +1,191 @@
+  const recordHeadline = isCrossCountrySeason
+    ? "Top Individual Cross Country Performances"
+    : "Top Individual Track & Field Performances";
+
+  const bannerImage = heroImages[0];
+
+  return (
+    <div className="home-page page-shell">
+      {isItAprilFools ? (
+        <section className="home-rick">
+          <div className="content-container">
+            <iframe
+              className="home-rick-iframe"
+              height="400"
+              style={{ width: "100%", margin: "auto" }}
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=Y-eYRSVjhBzI4piz&autoplay=1&mute=1"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </section>
+      ) : (
+        <span></span>
+      )}
+
+        {/* Hero */}
+        <section className="home-hero">
+          <div className="content-container">
+            <div className="home-hero-layout">
+              <div className="home-hero-copy">
+                <span className="hero-eyebrow">Maryland Club Running</span>
+                <h1 className="hero-title">Run With Us.</h1>
+              <p className="hero-sub">
+                Monday through Friday at 5:00 PM we meet under the{" "}
+                <a
+                  href="https://www.google.com/maps/place/PP1,+College+Park,+MD+20740/@38.9933786,-76.9425631,148m/data=!3m2!1e3!4b1!4m2!3m1!1s0x89b7c69f4dc17645:0xd2d09f5ca7e6b0d9"
+                  className="band-link"
+                >
+                  School of Public Health overhang
+                </a>{" "}
+                (Kehoe Track once the lights flip on). Come for tempos, shakeouts,
+                or a walk-and-talk—there&apos;s always a group your pace.
+              </p>
+              <div className="home-cta-row">
+                <a href="/joinus" className="cta">
+                  Join the Club
+                </a>
+                <a href="/about" className="cta cta-secondary">
+                  Meet The Officers
+                </a>
+              </div>
+              <ul className="home-pill-list">
+                <li>
+                  <MdOutlinePeopleOutline /> 300+ Terps
+                </li>
+                <li>
+                  <MdEmojiEvents /> NIRCA Trips
+                </li>
+                <li>
+                  <IoTimeSharp /> Daily Practices
+                </li>
+                <li>
+                  <MdOutlineMoving /> Community Runs
+                </li>
+              </ul>
+            </div>
+
+            {bannerImage ? (
+              <div className="home-hero-banner">
+                <img
+                  src={bannerImage.src ?? bannerImage}
+                  alt={bannerImage.alt ?? "UMD Club Running team"}
+                  loading="eager"
+                />
+              </div>
+            ) : null}
+          </div>
+        </div>
+      </section>
+
+      <div className="section-transition">
+        <WaterfallMosaic
+          images={heroImages}
+          tileCount={12}
+          startIndex={3}
+        />
+      </div>
+
+        {/* Top Routes */}
+        <section className="home-top-routes">
+        <div className="content-container">
+            <header className="home-section-header">
+              <h2 className="section-title">Top Routes Right Now</h2>
+            <a href="/routes" className="section-link">
+              View All Routes →
+            </a>
+          </header>
+          <ol className="top-routes-grid">
+            {topRoutes.map((route, index) => (
+              <TopRouteCard key={route.slug} route={route} rank={index + 1} />
+            ))}
+          </ol>
+        </div>
+      </section>
+
+        {/* Calendar Section */}
+        <section className="home-events">
+        <div className="content-container">
+            <header className="home-section-header">
+              <h2 className="section-title">Upcoming Events</h2>
+            <a href="/calendar" className="section-link">
+              View Full Calendar →
+            </a>
+          </header>
+          <div className="calendar-container">
+            <GoogleCalendarEvents
+              calendarId="umdclubrunning@gmail.com"
+              apiKey="AIzaSyDwCHjBYal-URvqtp-BzYKpZPpPmUZC9RE"
+              maxResults={6}
+            />
+          </div>
+        </div>
+      </section>
+
+        <section className="home-records">
+        <div className="content-container">
+          <header className="home-section-header">
+            <h2 className="section-title">{recordHeadline}</h2>
+            <a href="/records" className="section-link">
+              View All Records →
+            </a>
+          </header>
+          {displayRecords.length ? (
+            <div className="table-wrapper">
+              <table className="modern-table">
+                <thead>
+                  <tr>
+                    <th>Event</th>
+                    <th>Athlete</th>
+                    <th>Performance</th>
+                    <th>Meet</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {displayRecords.slice(0, 10).map((entry) => (
+                    <tr
+                      key={`${entry.event}-${entry.athlete}-${entry.time}-${entry.date}`}
+                    >
+                      <td>
+                        {entry.gender === "M" ? "Men's" : "Women's"}{" "}
+                        {entry.event}
+                      </td>
+                      <td>{entry.athlete}</td>
+                      <td>{entry.time}</td>
+                      <td>{entry.meet}</td>
+                      <td>{entry.date}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ) : (
+            <p className="home-muted-note">
+              We&apos;re still logging results from the latest meet—check back
+              soon.
+            </p>
+          )}
+        </div>
+        </section>
+    </div>
+  );
+}
+      <div className="section-transition">
+        <WaterfallMosaic
+          images={heroImages}
+          tileCount={12}
+          startIndex={9}
+        />
+      </div>
+
+      <div className="section-transition">
+        <WaterfallMosaic
+          images={heroImages}
+          tileCount={12}
+          startIndex={18 % heroImages.length}
+        />
+      </div>

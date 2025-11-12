@@ -30,10 +30,10 @@ body.active-modal {
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 1.4;
-  background: white;
-  padding: 14px 28px;
-  border-radius: 30px;
-  /* max-width: 600px; */
+  background: var(--umd-surface-alt);
+  padding: 18px 28px;
+  border-radius: 20px;
+  border: 1px solid var(--umd-border);
   min-width: 50%;
 }
 
@@ -43,8 +43,8 @@ body.active-modal {
 
 input[type="text"]:focus,
 input[type="email"]:focus {
-  border: 2px solid blue;
-  color: #171717;
+  border: 2px solid var(--umd-red);
+  color: var(--umd-ink);
 }
 
 label {
@@ -71,7 +71,8 @@ label {
 
 /* Set a style for all buttons */
 .button1 {
-  color: white;
+  background: linear-gradient(135deg, var(--umd-red), var(--umd-gold));
+  color: #0f1115;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -79,6 +80,12 @@ label {
   width: 100%;
   opacity: 0.9;
   border-radius: 30px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.button1:hover {
+  opacity: 1;
+  transform: translateY(-1px);
 }
 
 @media screen and (max-width: 300px) {
@@ -90,4 +97,71 @@ label {
 
 .signUpIframe {
   margin: auto;
+}
+
+.signup-embed {
+  margin-top: 24px;
+  border-top: 1px solid rgba(249, 207, 69, 0.18);
+  padding-top: 24px;
+}
+
+.join-page {
+  position: relative;
+  padding-top: clamp(4rem, 6vw, 6rem);
+}
+
+.join-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(3, 3, 5, 0.9);
+  z-index: 0;
+}
+
+.join-page .content-container {
+  position: relative;
+  z-index: 1;
+}
+
+.join-page .page-header,
+.join-page .page-section {
+  background: rgba(18, 22, 32, 0.9);
+  border: 1px solid rgba(249, 207, 69, 0.16);
+  border-radius: 28px;
+  padding: clamp(1.8rem, 4vw, 2.6rem);
+  box-shadow: 0 25px 65px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(8px);
+}
+
+.join-page .page-header {
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.join-page .page-title {
+  color: #ffffff;
+  text-shadow: 0 22px 55px rgba(0, 0, 0, 0.65);
+}
+
+.join-page .page-subtitle {
+  color: rgba(255, 255, 255, 0.94);
+}
+
+.join-page .signup-embed {
+  border-top-color: rgba(249, 207, 69, 0.24);
+}
+
+.join-page :where(p, span, label, li, strong, b, h1, h2, h3, h4, h5, h6) {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.join-page :where(.text-neutral-800, .text-gray-800, .text-slate-800) {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.join-page a {
+  color: var(--umd-gold);
+}
+
+.join-page a:hover {
+  color: var(--umd-red);
 }

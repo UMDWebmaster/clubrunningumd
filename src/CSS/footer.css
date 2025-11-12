@@ -1,48 +1,48 @@
 footer {
-    background-color: black;
-    width: 100%;
-    bottom: 0;
-  }
-  
+  background-color: #10141b;
+  width: 100%;
+  border-top: 1px solid rgba(244, 245, 247, 0.06);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px clamp(1.25rem, 4vw, 2.75rem);
+  font-size: 16px;
+  color: var(--umd-muted);
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(16px, 3vw, 28px);
+}
+
+.logos .link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--umd-gold);
+  transition: transform 0.15s ease, color 0.2s ease;
+}
+
+.logos .link:hover {
+  color: var(--umd-red) !important;
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 900px) {
   .footer-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-left: 1.5vw;
-    font-size: 16px;
-    padding: 5px;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
   }
-  
+
   .logos {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-left: auto;
-    margin-right: 2vw;
+    justify-content: center;
   }
-  
-  .logos .link {
-    margin-left: 2vw;
-  }
-  
-  @media screen and (max-width: 1000px) {
-    .footer-content {
-      display: flex;
-      flex-direction: column; /* Stack items vertically */
-      align-items: center;
-      text-align: center;
-      font-size: 20px;
-    }
-  
-    .logos {
-      margin: 1rem 0; /* Add spacing above and below */
-      flex-direction: row;
-      justify-content: center;
-    }
-  
-    .logos .link {
-      margin-left: 4vw;
-      font-size: 100px;
-    }
-  }
-  
+}

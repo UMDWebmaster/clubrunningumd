@@ -1,6 +1,8 @@
-p{
-    color:white;
+.new-member-info p {
+    color: var(--umd-muted);
 }
-b{
-    color:red;
+
+.new-member-info strong,
+.new-member-info b {
+    color: var(--umd-red);
 }

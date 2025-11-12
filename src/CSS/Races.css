@@ -1,11 +1,10 @@
-body{
-    /* background-color:#2e2e2e; */
-}
 .teamPic {
-    width: 50vw;
-    border-radius: 30px;
+    width: min(960px, 90vw);
+    border-radius: 14px;
     display: block;
     margin: 0 auto;
+    border: 1px solid var(--umd-border);
+    box-shadow: none;
 }
 
 .records {
@@ -16,40 +15,55 @@ body{
     width: 90%;
 }
 
+.records-page label {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.records-input {
+    border-radius: 12px;
+    border: 2px solid rgba(25, 27, 39, 0.8);
+    background: #ffffff;
+    color: #050505;
+    padding: 10px 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 4px 4px 0 rgba(17, 20, 24, 0.12);
+}
+
+.records-input::placeholder {
+    color: rgba(17, 20, 24, 0.5);
+}
+
+.records-input:focus {
+    border-color: #d62828;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(246, 166, 34, 0.35);
+    color: #050505;
+    background: #ffffff;
+}
+
+.records-page select,
+.records-page input {
+    color: #050505 !important;
+}
+
+.records-page select:focus,
+.records-page input:focus {
+    color: #050505 !important;
+}
 
 .divider {
     margin-bottom: 50px;
-}
-
-/* Note styles */
-p strong {
-    color: #333;
-    font-weight: bold;
-    margin-top: 30px;
-    line-height: 2;
-}
-
-p {
-    color: #333;
-    line-height: 2.25;
 }
 
 .tabs li a:active {
     background-color: none;
 }
 
-/* Styles for small mobile devices (up to 1000px) */
 @media only screen and (max-width: 1000px) {
-    body {
-        margin-top: 30px;
-        font-size: 18px;
-        width:90%;
-
-    }
-
     .teamPic {
         width: 100%;
         height: auto;
-        border-radius: 0;
+        border-radius: 14px;
     }
 }

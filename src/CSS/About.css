@@ -1,30 +1,91 @@
-
-.bio-card {
-    border-radius: 30px;
-    border-width: 0.125rem;
-    border-color: #fff;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-direction: row;
+/* About page styling */
+.about-page {
+  color: var(--umd-ink);
 }
 
-.about-us-container {
-    margin: 0 auto;
+.about-title {
+  font-weight: 900;
+  font-size: clamp(2.25rem, 4vw, 3.25rem);
+  margin-bottom: 36px;
+  text-align: left;
+}
+
+.officers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.officer-tile {
+  background: var(--umd-surface-alt);
+  border: 1px solid rgba(244, 245, 247, 0.12);
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 24px 40px rgba(9, 11, 15, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.officer-image {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.officer-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(244, 245, 247, 0.12);
+}
+
+.officer-info {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.officer-position {
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: var(--umd-gold);
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+}
+
+.officer-name {
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: var(--umd-ink);
+  margin: 0 0 12px 0;
+}
+
+.officer-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(247, 248, 252, 0.78);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .officers-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-title {
+    font-size: 2.4rem;
+    margin-bottom: 28px;
+  }
+
+  .officer-tile {
     padding: 20px;
-    margin-top: 50px;
-}
-
-@media only screen and (max-width: 1000px) {
-    .about-us-container {
-        max-width: 100%;
-    }
-
-    .bio-card {
-        flex-direction: column;
-    }
+  }
 }

@@ -1,21 +1,19 @@
 import React from "react";
-import TextEditor from "../components/TextEditor"
-import Login from "../components/Login"
-// import "../App.css"
-// import "../CSS/Home.css";
-// import "../CSS/Header.css"
-// import "react-image-gallery/styles/css/image-gallery.css";
-export default function Blog() { 
+import Login from "../components/Login";
 
-return(
-<>
-
-{/* <TextEditor /> */}
- <Login/>
-{/* <TextEditor/> */}
-</>
-
-
-);
-
+export default function Blog() {
+  return (
+    <div className="page-shell">
+      <div className="content-container">
+        <header className="page-header">
+          <span className="page-eyebrow">Blog Admin</span>
+          <h1 className="page-title">Editor Login</h1>
+          <p className="page-subtitle">
+            Access the Maryland Club Running blog editor by signing in below.
+          </p>
+        </header>
+        <Login />
+      </div>
+    </div>
+  );
 }

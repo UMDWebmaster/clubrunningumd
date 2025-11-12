@@ -1,36 +1,13 @@
-table th {
-    background-color: #171717;
-    color: white;
-    padding: 10px;
-    width: 50vw;
-    margin-left: 10px;
-    text-align: center;
-    border-bottom: 1px solid white;
+.tableContainer {
+    width: 100%;
 }
 
-table td {
-padding: 10px;
-color: white;
-border-bottom: 1px solid #ccc;
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-table td a {
-    color: #ffd200;
-    text-decoration: underline;
-}
-
-
-table tr {
-background: rgba(0,0,0,0.3);
-}
-
-
-
-
-
-@media only screen and (min-width: 1000px) {
-table th {   
-    width: 25vw;
-}  
-
+th,
+td {
+    padding: 12px 16px;
 }

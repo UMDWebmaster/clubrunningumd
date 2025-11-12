@@ -1,17 +1,16 @@
 .fredHalfPic {
-    width: 55vw;
-    border-radius: 30px;
+    width: min(960px, 90vw);
+    border-radius: 14px;
     display: block;
     margin: 0 auto;
-} 
+    border: 1px solid var(--umd-border);
+    box-shadow: none;
+}
   
 @media only screen and (max-width: 1000px){
     .fredHalfPic {
         width: 100%;
         height: auto;
-        border-radius: 0;
+        border-radius: 18px;
     }
-}
-body{
-    /* background-color: #e21833; */
 }

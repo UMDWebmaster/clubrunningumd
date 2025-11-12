@@ -1,108 +1,133 @@
 .App-header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	border-bottom: 1px solid rgba(255,255,255, 0.3);
-	z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(249, 207, 69, 0.18);
+  box-shadow: 0 12px 24px rgba(8, 10, 17, 0.42);
+  z-index: 999;
+  background: linear-gradient(90deg, rgba(8, 10, 17, 0.92), rgba(15, 18, 27, 0.92));
 }
 
 .tab {
-	float: right;
-	width: 110px;
+  float: right;
+  width: 110px;
 }
 
 .home {
-	float: left;
-	width: 32%;
-	user-select: none;
+  float: left;
+  width: 32%;
+  user-select: none;
 }
 
 .tab a {
-	display: block;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-weight: bold;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 700;
+  color: rgba(249, 207, 69, 0.8);
 }
-	.tab a:hover:not(.no-highlight) {
-		text-decoration: underline red 3px;
-		text-underline-offset: 10px; 
-		}
+.tab a:hover:not(.no-highlight) {
+  text-decoration: underline var(--umd-red) 3px;
+  text-underline-offset: 8px;
+  color: var(--umd-ink);
+}
 
-	.tab.active:not(.no-highlight) {
-		text-decoration: underline red 3px;
-		color: red;
-		text-underline-offset: 10px; 
-	}
+.tab.active:not(.no-highlight) {
+  text-decoration: underline var(--umd-red) 3px;
+  color: var(--umd-ink);
+  text-underline-offset: 8px;
+}
 
 .no-highlight a:hover {
-	text-decoration: transparent !important;
+  text-decoration: transparent !important;
 }
 
 .tab ul.dropdown {
-	width: 110px;
-	background-color: #171717;
-	position: absolute;
-	z-index: 999;
-	display: none;
+  width: 110px;
+  background-color: #14181f;
+  border: 1px solid rgba(244, 245, 247, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.35);
+  position: absolute;
+  z-index: 999;
+  display: none;
+  padding: 6px 0;
 }
 
 .tab:hover ul.dropdown {
-	display: block;
+  display: block;
+}
+
+.tab ul.dropdown li a {
+  display: block;
+  padding: 10px 14px;
+  color: var(--umd-muted);
+  text-align: left;
+}
+
+.tab ul.dropdown li a:hover {
+  background: rgba(229, 57, 53, 0.16);
+  color: var(--umd-ink);
+  text-decoration: none;
 }
 
 /*mobile scroll menu*/
 div.scrollmenu {
-	overflow: auto;
-	white-space: nowrap;
+  overflow: auto;
+  white-space: nowrap;
 }
 
-	div.scrollmenu a {
-		display: inline-block;
-		text-align: center;
-		padding: 12px;
-		text-decoration: none;
-	}
+div.scrollmenu a {
+  display: inline-block;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  color: rgba(249, 207, 69, 0.8);
+}
 
-	div.scrollmenu a:hover {
-		text-decoration: underline red 3px;
-		text-underline-offset: 10px;
-	}
+div.scrollmenu a:hover {
+  text-decoration: underline rgba(255, 255, 255, 0.85) 3px;
+  text-underline-offset: 8px;
+}
 
-
-.MobileHome{
-	margin-top: 3%;
-	margin-bottom: 3%;
-	margin-left: 3%;
+.MobileHome {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 3%;
 }
 
 /*Hamburger menu stuff*/
 .container {
-	display: inline-block; 
-	cursor: pointer;
+  display: inline-block;
+  cursor: pointer;
 }
 
-.bar1, .bar2, .bar3 {
-	margin: 6px 0;
-	transition: 0.4s;
+.bar1,
+.bar2,
+.bar3 {
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
 .change .bar1 {
-	transform: translate(0, 11px) rotate(-45deg);
+  transform: translate(0, 11px) rotate(-45deg);
 }
 
 .change .bar2 {
-	opacity: 0;
+  opacity: 0;
 }
 
 .change .bar3 {
-	transform: translate(0, -11px) rotate(45deg);
+  transform: translate(0, -11px) rotate(45deg);
 }
 
 /*hide traditional tabs on mobile*/
 @media (max-width: 970px) {
-	.tabs-container .tabs {
-		display: none;
-	}
+  .tabs-container .tabs {
+    display: none;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
 }
