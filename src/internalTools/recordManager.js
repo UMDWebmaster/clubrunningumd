@@ -16,8 +16,12 @@ export default function EditableTable() {
   useEffect(() => {
     const loadData = async () => {
       try {
+<<<<<<< HEAD
         // Replace this path with your actual JSON file path
         
+=======
+    
+>>>>>>> 023145f321f1bcedc280d888b349e1d2e8651c6c
         const RecordsList = require("../data/records.json");
         
         const dataArray = Array.isArray(RecordsList) ? RecordsList : [RecordsList];

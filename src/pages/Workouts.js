@@ -258,6 +258,7 @@ export default function Workouts() {
           </p>
         </header>
 
+<<<<<<< HEAD
         <section className="page-section">
           <div className="page-card">
             <p>
@@ -267,6 +268,51 @@ export default function Workouts() {
             </p>
           </div>
         </section>
+=======
+        {/* Table container for displaying workout schedules */}
+        <div className="tableContainer">
+          <table class="mb-10">
+            {/* Table header */}
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>XC</th>
+                <th>Sprinters</th>
+                <th>Mid/Distance</th>
+              </tr>
+            </thead>
+            {/* Table body with workout schedule links */}
+            <tbody>
+                <tr>
+                <td>2025 - 2026</td>
+                <td>
+                  <a href="https://docs.google.com/spreadsheets/d/1fXUqcuotXMNfaRq0uRI9C7rgnyxK4TNF_hamKlKUXdQ/edit?gid=1947588523#gid=1947588523">
+                    Link
+                  </a>
+                </td>
+                <td>
+                  <a href="https://docs.google.com/spreadsheets/d/1fj68G6LMrUwHmI1imWAxgUwwEmS-ZkZcERkE2z5CbcY/edit?gid=2070129658#gid=2070129658">
+                    Fall</a>{" "}
+
+                  <a href=""></a>
+                </td>
+                <td>
+                <a href=""></a>
+                </td>
+              </tr>
+              <tr></tr>
+              {/* Row for 2023-2024 workout schedules */}
+              <tr>
+                <td>2024 - 2025</td>
+                <td>
+                  <a href="https://docs.google.com/spreadsheets/d/1gumP1osVNLEffEBS2_wqSs3SWEV-b-13_EhcCoZMehI/edit?gid=1947588523#gid=1947588523">
+                    Link
+                  </a>
+                </td>
+                <td>
+                  <a href="https://docs.google.com/spreadsheets/d/1CnSSl_4Z9OO95mmb0hq1PxQuuNXYCCrursbGMv-TXZo/edit?gid=355227437#gid=355227437">
+                    Fall</a>{" "}
+>>>>>>> 023145f321f1bcedc280d888b349e1d2e8651c6c
 
         <section className="page-section">
           <div className="table-wrapper">
