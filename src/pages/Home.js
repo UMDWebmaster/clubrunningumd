@@ -259,7 +259,7 @@ export default function Home() {
             <div className="home-hero-layout">
               <div className="home-hero-copy">
     
-                <h1 className="hero-title">Run With Us.</h1>
+                <h1 className="hero-title">Run With Us!</h1>
                 <p className="hero-sub">
                   Monday through Friday at 4:00 PM we meet under the{" "}
                   <a
