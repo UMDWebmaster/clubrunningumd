@@ -46,6 +46,7 @@ function App() {
       <ConditionalHeader />
       <Routes>
         <Route path="/" element={<Home />} /> 
+        <Route path="/home" element={<Home />} /> 
         <Route path="/about" element={<About />} /> 
         <Route path="/signup" element={<SignUp />} /> 
         <Route path="/joinus" element={<NewMemberInfo />} />{" "}
