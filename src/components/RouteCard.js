@@ -52,13 +52,6 @@ export default function RouteCard({ route }) {
   const surfaceLabel = route?.surface ? `${route.surface} surface` : null;
   const hasCustomGpx = Boolean(route?.gpx) && !isPlaceholderGpx;
   const showPreview = hasCustomGpx && preview.status === "ready";
-  const previewStatusLabel = hasCustomGpx
-    ? {
-        loading: "Loading preview…",
-        empty: "GPX preview coming soon.",
-        error: "Couldn't load the GPX file.",
-      }[preview.status] ?? "Preview ready soon."
-    : "Route preview coming soon.";
 
   return (
     <article className="route-card">
@@ -132,9 +125,7 @@ export default function RouteCard({ route }) {
             ) : null}
           </motion.svg>
         ) : (
-          <div className="route-card-placeholder">
-            <span>{previewStatusLabel}</span>
-          </div>
+          <div className="route-card-placeholder" aria-hidden="true" />
         )}
       </div>
 

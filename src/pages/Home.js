@@ -61,13 +61,6 @@ function TopRouteCard({ route, rank }) {
     TOP_ROUTE_VIEWBOX
   );
   const showPreview = hasDownload && preview.status === "ready";
-  const previewStatus = hasDownload
-    ? {
-        loading: "Loading preview…",
-        empty: "Preview coming soon",
-        error: "Preview unavailable",
-      }[preview.status] ?? "Preview ready soon"
-    : "Preview coming soon";
 
   return (
     <li className="top-route-card">
@@ -105,9 +98,7 @@ function TopRouteCard({ route, rank }) {
             ) : null}
           </svg>
         ) : (
-          <div className="top-route-placeholder">
-            <span>{previewStatus}</span>
-          </div>
+          <div className="top-route-placeholder" aria-hidden="true" />
         )}
       </div>
 

@@ -1,36 +1,6 @@
 import { useEffect, useState } from "react";
 
-export const PLACEHOLDER_GPX_FILES = new Set([
-  "berwyn.gpx",
-  "brigg-s-beltway-bash.gpx",
-  "cemetery.gpx",
-  "cherry-chill-loop.gpx",
-  "cherry-kill.gpx",
-  "cll-something-lake-loop.gpx",
-  "communism.gpx",
-  "cp-woods.gpx",
-  "drake-plaza.gpx",
-  "duck-pond.gpx",
-  "greenbelt-lake.gpx",
-  "greenbelt-metro.gpx",
-  "hammock-park.gpx",
-  "hamster-cage-v1.gpx",
-  "hamster-cage-v2.gpx",
-  "hills-4-redacted.gpx",
-  "historic-berwyn.gpx",
-  "jeremy-spoke-in.gpx",
-  "lost.gpx",
-  "neighborhoods-v2.gpx",
-  "neighborhoods.gpx",
-  "north-northwest.gpx",
-  "old-hills-4-days.gpx",
-  "pbtx2.gpx",
-  "pg-plaza-to-riverdale.gpx",
-  "riverdale-loop.gpx",
-  "sligo.gpx",
-  "south-northwest.gpx",
-  "trolley-trail-farmers-market.gpx",
-]);
+export const PLACEHOLDER_GPX_FILES = new Set();
 
 export const ROUTE_PREVIEW_VIEWBOX = {
   width: 560,

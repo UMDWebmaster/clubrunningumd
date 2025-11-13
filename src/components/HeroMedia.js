@@ -44,13 +44,6 @@ function HeroRouteSlide({ route }) {
     .filter(Boolean)
     .join(" • ");
 
-  const statusLabel = isPlaceholderGpx
-    ? "Route preview coming soon"
-    : {
-        loading: "Loading route sketch…",
-        empty: "Preview coming soon",
-        error: "Preview unavailable",
-      }[preview.status] ?? "Preview ready soon";
   const showPreview = !isPlaceholderGpx && preview.status === "ready";
 
   return (
@@ -102,9 +95,7 @@ function HeroRouteSlide({ route }) {
             ) : null}
           </motion.svg>
         ) : (
-          <div className="hero-route-placeholder">
-            <span>{statusLabel ?? "Preview ready soon"}</span>
-          </div>
+          <div className="hero-route-placeholder" aria-hidden="true" />
         )}
       </div>
       <div className="hero-route-overlay">
