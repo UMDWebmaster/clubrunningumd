@@ -16,11 +16,12 @@ import SignUp from "./pages/SignUp";
 import EmailArchive from "./pages/EmailArchive";
 import PrivatePage from "./internalTools/photoUpload";
 import NewMemberInfo from "./pages/NewMemberInfo";
-import Login from "./components/Login";
+import Blog from "./pages/Blog";
 import Feed from "./pages/BlogFeed";
 import Article from "./pages/Article";
 import Calendar from "./pages/Calendar";
 import XCHomeMeet from "./pages/XCHomeMeet";
+import ProfilePage from "./pages/ProfilePage";
 
 import {
   BrowserRouter as Router,
@@ -74,9 +75,10 @@ function App() {
         <Route path="/routes" element={<Paths />} /> {/* Routes page */}
         <Route path="/*" element={<Home />} /> {/* Join Us page */}
         {/* {Blog Editor page} */}
-      <Route path="/blog" element={<Login/>}/>
+      <Route path="/blog" element={<Blog/>}/>
       <Route path="/blog_feed" element={<Feed/>}/>
-      <Route path="/article/:id" element={<Article/>}/>
+      <Route path="/article/:slug" element={<Article/>}/>
+      <Route path="/profiles/:slug" element={<ProfilePage />} />
         <Route path="/routes" element={<Paths />} /> 
         <Route path="*" element={<Navigate to="/" replace />} />
         {/* Calendar page route */}

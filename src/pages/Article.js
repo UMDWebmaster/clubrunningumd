@@ -1,32 +1,42 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import DOMPurify from "dompurify";
-import axios from "axios";
+import { fetchPostById, fetchPostBySlug } from "../blog/api";
 
 export default function Article() {
   const [article, setArticle] = useState(null);
   const [loading, setLoading] = useState(true);
-  const { id } = useParams();
+  const [error, setError] = useState(null);
+  const { slug } = useParams();
 
   useEffect(() => {
     const fetchArticle = async () => {
       setLoading(true);
-      const formData = new FormData();
-      formData.append("post_id", id);
-
       try {
-        const response = await axios.post(
-          "https://marylandclubrunningblogapi.vercel.app/get_article",
-          formData
-        );
-        setArticle(response.data);
+        const bySlug = await fetchPostBySlug(slug);
+        if (bySlug) {
+          setArticle(bySlug);
+          setError(null);
+          return;
+        }
+        const byId = await fetchPostById(slug);
+        if (byId) {
+          setArticle(byId);
+          setError(null);
+        } else {
+          setArticle(null);
+          setError("We couldn’t find that article. Please try again later.");
+        }
+      } catch (err) {
+        setError("Unable to load that article right now.");
+        setArticle(null);
       } finally {
         setLoading(false);
       }
     };
 
     fetchArticle();
-  }, [id]);
+  }, [slug]);
 
   if (loading) {
     return (
@@ -45,15 +55,23 @@ export default function Article() {
       <div className="page-shell">
         <div className="content-container">
           <div className="page-card">
-            <p>We couldn&apos;t find that article. Please try again later.</p>
+            <p>{error || "We couldn&apos;t find that article. Please try again later."}</p>
           </div>
         </div>
       </div>
     );
   }
 
-  const { clicks, contents, date, title, writer_id } = article;
-  const cleanedContent = DOMPurify.sanitize(contents);
+  const { content, publishedAt, title, authorDisplayName } = article;
+  const cleanedContent = DOMPurify.sanitize(content);
+  const formattedDate =
+    publishedAt && typeof publishedAt.toDate === "function"
+      ? publishedAt.toDate().toLocaleDateString("en-US", {
+          month: "long",
+          day: "numeric",
+          year: "numeric",
+        })
+      : "Preview";
 
   return (
     <div className="page-shell">
@@ -62,7 +80,7 @@ export default function Article() {
           <span className="page-eyebrow">The Blog</span>
           <h1 className="page-title">{title}</h1>
           <p className="page-subtitle">
-            Written by {writer_id} · {date}
+            Written by {authorDisplayName} · {formattedDate}
           </p>
         </header>
 
@@ -72,7 +90,6 @@ export default function Article() {
               className="article-contents space-y-4 leading-relaxed text-neutral-700"
               dangerouslySetInnerHTML={{ __html: cleanedContent }}
             />
-            <p className="mt-8 text-sm text-neutral-500">Views: {clicks}</p>
           </div>
         </section>
       </div>

@@ -1,27 +1,39 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import { Link } from "react-router-dom";
 import "../CSS/umd-fonts.css";
 import fredHalfPic from "../Pictures/fredHalfTeam.JPG";
+import { fetchPublishedPosts } from "../blog/api";
 
 export default function BlogFeed() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchPosts = async () => {
+    const loadPosts = async () => {
       try {
-        const response = await axios.get(
-          "https://marylandclubrunningblogapi.vercel.app/get_feed"
-        );
-        setPosts(response.data);
+        const data = await fetchPublishedPosts(12);
+        setPosts(data);
+      } catch (err) {
+        setError("Unable to load the blog feed right now.");
       } finally {
         setLoading(false);
       }
     };
-
-    fetchPosts();
+    loadPosts();
   }, []);
+
+  const formatDate = (timestamp) => {
+    if (!timestamp) return "Coming Soon";
+    if (typeof timestamp.toDate === "function") {
+      return timestamp.toDate().toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+      });
+    }
+    return timestamp;
+  };
 
   return (
     <div className="page-shell">
@@ -49,6 +61,12 @@ export default function BlogFeed() {
               <p>Loading the latest posts...</p>
             </div>
           </section>
+        ) : error ? (
+          <section className="page-section">
+            <div className="page-card">
+              <p>{error}</p>
+            </div>
+          </section>
         ) : posts.length === 0 ? (
           <section className="page-section">
             <div className="page-card">
@@ -59,15 +77,14 @@ export default function BlogFeed() {
           <section className="page-section page-grid two">
             {posts.map((post) => {
               const preview =
-                post.preview ||
-                post.summary ||
+                post.excerpt ||
                 "Tap through to read the latest update from the team.";
               return (
-                <article key={post.post_id} className="page-card">
-                  <div className="flex flex-col gap-4 h-full">
+                <article key={post.id} className="page-card">
+                  <div className="flex h-full flex-col gap-4">
                     <div className="flex items-center justify-between text-sm text-neutral-500">
-                      <span>{post.date}</span>
-                      <span>{post.writer_id}</span>
+                      <span>{formatDate(post.publishedAt)}</span>
+                      <span>{post.authorDisplayName}</span>
                     </div>
                     <h2 className="text-2xl font-bold text-neutral-800">
                       {post.title}
@@ -75,7 +92,7 @@ export default function BlogFeed() {
                     <p className="text-neutral-600 leading-relaxed">{preview}</p>
                     <div className="mt-auto">
                       <Link
-                        to={`/article/${post.post_id}`}
+                        to={`/article/${post.slug}`}
                         className="inline-flex items-center gap-2 rounded-full border border-transparent bg-gradient-to-r from-[#f6a622] via-[#ff8fab] to-[#6a5cf6] px-4 py-2 text-sm font-semibold text-white shadow-lg transition hover:shadow-xl"
                       >
                         Read More
