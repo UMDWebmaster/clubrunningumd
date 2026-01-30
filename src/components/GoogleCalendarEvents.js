@@ -25,13 +25,14 @@ export default function GoogleCalendarEvents({
 
         const data = await response.json();
         // Filter out practice events and take first 4
-        const filteredEvents = (data.items || [])
-          .filter((event) => {
-            const title = event.summary?.toLowerCase() || "";
-            return !title.includes("practice");
-          })
-          .slice(0, 4);
-        setEvents(filteredEvents);
+        //This has been deprecated for now.
+        // const filteredEvents = (data.items || [])
+        //   .filter((event) => {
+        //     const title = event.summary?.toLowerCase() || "";
+        //     return !title.includes("practice");
+        //   })
+        //   .slice(0, 4);
+        setEvents(data.items.slice(0,4));
       } catch (err) {
         console.error("Error fetching calendar events:", err);
         setError(err.message);
@@ -120,7 +121,7 @@ export default function GoogleCalendarEvents({
                 ? "All Day"
                 : "TBD"}
             </div>
-            <h4 className="event-title">{event.summary || "Untitled Event"}</h4>
+            <h4 className="event-title">{event.summary}</h4>
             {event.location && (
               <p className="event-location">📍 {event.location}</p>
             )}

@@ -23,6 +23,7 @@ import Calendar from "./pages/Calendar";
 import XCHomeMeet from "./pages/XCHomeMeet";
 import ProfilePage from "./pages/ProfilePage";
 
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -79,6 +80,7 @@ function App() {
       <Route path="/blog_feed" element={<Feed/>}/>
       <Route path="/article/:slug" element={<Article/>}/>
       <Route path="/profiles/:slug" element={<ProfilePage />} />
+
         <Route path="/routes" element={<Paths />} /> 
         <Route path="*" element={<Navigate to="/" replace />} />
         {/* Calendar page route */}

@@ -1,8 +1,30 @@
 import natsPic from "../Pictures/natsTeamPic.JPG";
-import { races } from "../data/races";
+import { races as defaultRaces } from "../data/races";
+import { useState, useEffect } from "react";
 
 export default function Races() {
-  const rows = races.map((race) => (
+  const [raceList, setRaceList] = useState(defaultRaces);
+  const [scheduleTitle, setScheduleTitle] = useState("Fall 2025 Meet Schedule");
+
+  // Load data from JSON file on mount
+  useEffect(() => {
+    fetchRacesData();
+  }, []);
+
+  const fetchRacesData = async () => {
+    try {
+      const response = await fetch('/races-data.json');
+      const data = await response.json();
+      setRaceList(data.races);
+      setScheduleTitle(data.scheduleTitle);
+    } catch (error) {
+      console.error('Error fetching races data:', error);
+      // Fallback to default data if JSON file fails
+      setRaceList(defaultRaces);
+    }
+  };
+
+  const rows = raceList.map((race) => (
     <tr key={`${race.date}-${race.name}`}>
       <td>{race.date}</td>
       <td>{race.name}</td>
@@ -51,7 +73,7 @@ export default function Races() {
 
         <section className="page-section">
           <h2 className="text-2xl font-bold text-neutral-800 mb-4">
-            Fall 2025 Meet Schedule
+            {scheduleTitle}
           </h2>
           <div className="table-wrapper">
             <table className="modern-table">

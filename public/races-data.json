@@ -1,0 +1,59 @@
+{
+  "scheduleTitle": "Spring 2026 Meet Schedule",
+  "races": [
+    {
+      "date": "Sun, Feb 15",
+      "name": "Happy Valley Invitational",
+      "location": "State College, PA",
+      "type": "Club"
+    },
+    {
+      "date": "Sat, Mar 7",
+      "name": "Lloyd Sigler Meet",
+      "location": "Sailsbury, MD",
+      "type": "D3"
+    },
+    {
+      "date": "Sat, Mar 28",
+      "name": "DMV Championship",
+      "location": "Harrisonburg, VA",
+      "type": "Club"
+    },
+    {
+      "date": "Fri-Sat, Apr 3-4",
+      "name": "Dalton Ebanks Invitational",
+      "location": "Fairfax, VA",
+      "type": "D1"
+    },
+    {
+      "date": "Fri-Sun, Apr 10-12",
+      "name": "NIRCA Nationals & Half Marathon",
+      "location": "Olivet, MI",
+      "type": "Club"
+    },
+    {
+      "date": "Sat, Apr 18",
+      "name": "Terrapin Invitational",
+      "location": "College Park, MD",
+      "type": "Club"
+    },
+    {
+      "date": "Sat, Apr 25",
+      "name": "Blue Hen Invitational",
+      "location": "Newark, DE",
+      "type": "Club"
+    },
+      {
+      "date": "Fri, May 1",
+      "name": "Kehoe Twilight Invitational",
+      "location": "College Park, MD",
+      "type": "D1"
+    },
+      {
+      "date": "Sun, May 3",
+      "name": "Frederick Half Marathon",
+      "location": "Frederick, MD",
+      "type": "Road (Unattached)"
+    }
+  ]
+}

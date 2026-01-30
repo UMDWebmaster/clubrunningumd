@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useMemo } from "react";
+import DOMPurify from "dompurify";
 import "../CSS/Home.css";
 import HeroMosaic from "../components/HeroMosaic";
 import GoogleCalendarEvents from "../components/GoogleCalendarEvents";
@@ -13,6 +14,8 @@ import { MdEmojiEvents } from "react-icons/md";
 import { MdOutlineMoving } from "react-icons/md";
 import { Star } from "lucide-react";
 import { PLACEHOLDER_GPX_FILES, useRoutePreview } from "../hooks/useRoutePreview";
+import { defaultHomeContent } from "../cms/contentDefaults";
+import { useContentDoc } from "../cms/useContent";
 import natsxc2025pic from "../Pictures/xcnats2025.jpg";
 import chuckcav25 from "../Pictures/chuckcav25.JPG";
 import xccav25rh from "../Pictures/xccav25rh.JPG"
@@ -133,6 +136,8 @@ function TopRouteCard({ route, rank }) {
 }
 
 export default function Home() {
+  const { data: homeContent } = useContentDoc("home", defaultHomeContent);
+  const home = homeContent || defaultHomeContent;
   const heroImages = [
     {
       src: womens_oldbay_huddle,
@@ -216,11 +221,28 @@ export default function Home() {
 
   const topRoutes = sortedRoutes.slice(0, 4);
 
+  const sectionTitles = {
+    ...defaultHomeContent.sectionTitles,
+    ...(home.sectionTitles || {}),
+  };
+
   const recordHeadline = isCrossCountrySeason
-    ? "Top Fall Individual Performances"
-    : "Top Spring Individual Performances";
+    ? sectionTitles.recordsFall
+    : sectionTitles.recordsSpring;
 
   const heroMosaicTiles = Math.min(heroImages.length, 48);
+  const heroSubtitle = useMemo(
+    () => ({ __html: DOMPurify.sanitize(home.heroSubtitleHtml || "") }),
+    [home.heroSubtitleHtml]
+  );
+  const ctas = Array.isArray(home.ctas) ? home.ctas : defaultHomeContent.ctas;
+  const pills = Array.isArray(home.pills) ? home.pills : defaultHomeContent.pills;
+  const iconMap = {
+    people: MdOutlinePeopleOutline,
+    events: MdEmojiEvents,
+    time: IoTimeSharp,
+    motion: MdOutlineMoving,
+  };
 
   return (
     <div className="home-page page-shell">
@@ -259,38 +281,30 @@ export default function Home() {
             <div className="home-hero-layout">
               <div className="home-hero-copy">
     
-                <h1 className="hero-title">Run With Us!</h1>
-                <p className="hero-sub">
-                  Monday through Friday at 4:00 PM we meet under the{" "}
-                  <a
-                    href="https://www.google.com/maps/place/PP1,+College+Park,+MD+20740/@38.9933786,-76.9425631,148m/data=!3m2!1e3!4b1!4m2!3m1!1s0x89b7c69f4dc17645:0xd2d09f5ca7e6b0d9"
-                    className="band-link"
-                  >
-                    School of Public Health overhang
-                  </a>{" "}
-                    for distance runners and Kehoe Track for sprinters.
-                </p>
+                <h1 className="hero-title">{home.heroTitle}</h1>
+                <p className="hero-sub" dangerouslySetInnerHTML={heroSubtitle} />
                 <div className="home-cta-row">
-                  <a href="/joinus" className="cta">
-                    Join the Club
-                  </a>
-                  <a href="/about" className="cta cta-secondary">
-                    Meet The Officers
-                  </a>
+                  {ctas.map((cta, index) => (
+                    <a
+                      key={`${cta.label}-${index}`}
+                      href={cta.href}
+                      className={
+                        cta.variant === "secondary" ? "cta cta-secondary" : "cta"
+                      }
+                    >
+                      {cta.label}
+                    </a>
+                  ))}
                 </div>
                 <ul className="home-pill-list">
-                  <li>
-                    <MdOutlinePeopleOutline /> 300+ Terps
-                  </li>
-                  <li>
-                    <MdEmojiEvents /> NIRCA Meets
-                  </li>
-                  <li>
-                    <IoTimeSharp /> Daily Practices
-                  </li>
-                  <li>
-                    <MdOutlineMoving /> Motion
-                  </li>
+                  {pills.map((pill, index) => {
+                    const Icon = iconMap[pill.icon];
+                    return (
+                      <li key={`${pill.label}-${index}`}>
+                        {Icon ? <Icon /> : null} {pill.label}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </div>
@@ -300,7 +314,7 @@ export default function Home() {
         <section className="home-top-routes home-section">
           <div className="content-container">
             <header className="home-section-header">
-              <h2 className="section-title">Top Routes Right Now</h2>
+              <h2 className="section-title">{sectionTitles.topRoutes}</h2>
               <a href="/routes" className="section-link">
                 View All Routes →
               </a>
@@ -316,7 +330,7 @@ export default function Home() {
         <section className="home-events home-section">
           <div className="content-container">
             <header className="home-section-header">
-              <h2 className="section-title">Upcoming Events</h2>
+              <h2 className="section-title">{sectionTitles.events}</h2>
               <a href="/calendar" className="section-link">
                 View Full Calendar →
               </a>
