@@ -142,6 +142,17 @@
     "date": "2/10/2018",
     "meet": "Happy Valley Invitational"
   },
+    {
+    "season": "Indoor",
+    "event": "200 meter",
+    "gender": "F",
+    "true_distance": 200,
+    "time": "27.99",
+    "seconds": 27.99,
+    "athlete": "Jenna Amrhein",
+    "date": "2/10/2024",
+    "meet": "Happy Valley Invitational"
+  },
   {
     "season": "Outdoor",
     "event": "200 meter",
