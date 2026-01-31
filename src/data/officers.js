@@ -2,7 +2,7 @@ import fundraisingTreasurerImage from "../Pictures/rykenImage.png";
 import sprintChairImage from "../Pictures/joeyImage.jpeg";
 import presidentImage from "../Pictures/benImage.png";
 import financialTreasurerImage from "../Pictures/niki.jpg";
-import vicePresidentOneImage from "../Pictures/benImage.png";
+import vicePresidentOneImage from "../Pictures/joe.jpeg";
 import vicePresidentTwoImage from "../Pictures/beatrice.jpg";
 import apparelImage from "../Pictures/mandi.jpg";
 import webmasterImage from "../Pictures/JonahProfile.jpeg";
@@ -81,9 +81,9 @@ export const officers = [
   {
     position: "Co-Vice President",
     name: "Joseph Jackson",
-    image: null,
+    image: vicePresidentOneImage,
     description:
-      "",
+      "Joe Jackson is a Junior Stats and Economics major from Annapolis, Maryland. Joe's favorite race is the Half Marathon, and he is particularly looking forward to the NIRCA half this Spring. Joe also loves hiking and kayaking, and really likes sports statistics. As Co-VP, Joe does a lot of the 'behind the scenes work' for the club and allow the club to compete in all the meets we do.",
   },
     {
     position: "Co-Vice President",
@@ -125,7 +125,7 @@ export const officers = [
     name: "Logan Cyford",
     image: null,
     description:
-      '',
+      'Logan is a 2025 ice cream trifecta champion!',
   },
   {
     position: "Webmaster",
