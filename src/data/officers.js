@@ -1,12 +1,12 @@
 import fundraisingTreasurerImage from "../Pictures/rykenImage.png";
-import sprintChairImage from "../Pictures/joeyImage.jpeg";
+// import sprintChairImage from "../Pictures/joeyImage.jpeg";
 import presidentImage from "../Pictures/benImage.png";
 import financialTreasurerImage from "../Pictures/niki.jpg";
 import vicePresidentOneImage from "../Pictures/joe.jpeg";
 import vicePresidentTwoImage from "../Pictures/beatrice.jpg";
 import apparelImage from "../Pictures/mandi.jpg";
 import webmasterImage from "../Pictures/JonahProfile.jpeg";
-import socialChairImage from "../Pictures/jeremyImg.png";
+// import socialChairImage from "../Pictures/jeremyImg.png";
 export const officers = [
   // {
   //   position: "President",
