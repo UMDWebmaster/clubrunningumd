@@ -1,12 +1,12 @@
 import fundraisingTreasurerImage from "../Pictures/rykenImage.png";
-// import sprintChairImage from "../Pictures/joeyImage.jpeg";
+import sprintChairImage from "../Pictures/hurney.jpg";
 import presidentImage from "../Pictures/benImage.png";
 import financialTreasurerImage from "../Pictures/niki.jpg";
 import vicePresidentOneImage from "../Pictures/joe.jpeg";
 import vicePresidentTwoImage from "../Pictures/beatrice.jpg";
 import apparelImage from "../Pictures/mandi.jpg";
 import webmasterImage from "../Pictures/JonahProfile.jpeg";
-// import socialChairImage from "../Pictures/jeremyImg.png";
+import socialChairImage from "../Pictures/cyford.jpg";
 export const officers = [
   // {
   //   position: "President",
@@ -109,9 +109,9 @@ export const officers = [
   {
     position: "Sprint Chair",
     name: "Logan Hurney",
-    image: null,
+    image: sprintChairImage,
     description:
-      ""
+      "Logan is a sophomore Mechanical Engineering major from the middle of nowhere on the eastern shore of Maryland. His favorite race distance is the 400m along with any relay distance ever. When not running, you may be able to find him drawing, playing IM sports, cheering on a losing Maryland athletics team, or doing school work because he is bad at managing his time. As sprint chair Logan hopes to write fun and helpful workouts, be able to adequately represent sprinters and help everybody have a good time at UMD Club Running!"
   },
   {
     position: "Apparel Coordinator",
@@ -123,9 +123,9 @@ export const officers = [
   {
     position: "Social Chair",
     name: "Logan Cyford",
-    image: null,
+    image: socialChairImage,
     description:
-      'Logan is a 2025 ice cream trifecta champion!',
+      'Logan is a junior computer engineering major from Eldersburg, MD. His favorite race is the 800m and he’s looking forward to racing again this spring! Outside of running, he loves to lift, and he’ll play practically any sport. Logan also loves to ski, hike, and climb, and he’s a huge Ravens fan. After college, he plans to become a triathlete and eventually complete an Ironman. Logan is looking forward to hosting tons of fun club events and bringing everyone together!',
   },
   {
     position: "Webmaster",
