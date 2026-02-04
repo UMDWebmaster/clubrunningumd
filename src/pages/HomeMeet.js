@@ -17,9 +17,9 @@ const trackEvents = [
 ];
 
 const specialRelay = {
-  title: "4x Anything but a 400 Relay (Not Scored)",
+  title: "Some special/funky event",
   description:
-    "Four runners, four legs, 1600m total team distance. The team may hand off anywhere so each athlete can run any distance — the only rule is no one can run exactly a 400m leg.",
+    "TBA",
 };
 
 const fieldEvents = [
@@ -36,6 +36,10 @@ const archivedResults = [
     label: "2024 Results",
     href: "https://results.firstlanetiming.com/meets/35171",
   },
+  {
+    label: "2025 Results",
+    href: "https://results.mdtimingllc.com/meets/47857"
+  }
 ];
 
 export default function HomeMeet() {
@@ -54,7 +58,7 @@ export default function HomeMeet() {
           <span className="page-eyebrow">Home Meet</span>
           <h1 className="page-title">Terrapin Invitational</h1>
           <p className="page-subtitle">
-            Sunday, April 27 • Kehoe Track &amp; Field Complex • College Park,
+            Saturday, April 18 (Tentative) • Kehoe Track &amp; Field Complex • College Park,
             MD. All event details and registration info for our fifth annual
             home invitational live here. See you on the track!
           </p>
@@ -74,7 +78,7 @@ export default function HomeMeet() {
                   Park, MD 20742
                 </a>
               </li>
-              <li>Sunday, April 27, 2025</li>
+              <li>Saturday, April 18, 2026</li>
             </ul>
           </div>
         </section>
@@ -82,7 +86,7 @@ export default function HomeMeet() {
         <section className="page-section">
           <div className="page-card">
             <div className="page-callout mb-4 text-sm font-semibold">
-              ✅ Event details for 2025 are confirmed.
+              🕓 Event details for 2026 are pending. (Below is last year's schedule)
             </div>
             <h2 className="text-2xl font-bold text-neutral-800">Order of Events</h2>
             <p className="mt-2 text-neutral-600">
@@ -123,13 +127,12 @@ export default function HomeMeet() {
         <section className="page-section">
           <div className="page-card">
             <div className="page-callout mb-4 text-sm font-semibold">
-              ✅ Registration for 2025 is open now.
+              🕓 Registration for 2026 Terrapin Invitational will open on <b>March 23, 2026</b> and close on <b>April 11, 2026 at 11:59 PM</b>.
             </div>
             <h2 className="text-2xl font-bold text-neutral-800">Registration</h2>
             <ul className="mt-4 space-y-3 text-neutral-600">
-              <li>$30 per athlete or $450 per team</li>
-              <li>Opens Friday, March 21 · Closes Saturday, April 19 at 11:59 PM</li>
-              <li>
+              <li>$25 per athlete or $500 per team</li>
+              {/* <li>
                 Register on{" "}
                 <a
                   href="https://www.athletic.net/TrackAndField/meet/593578/"
@@ -138,7 +141,7 @@ export default function HomeMeet() {
                 >
                   Athletic.net
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </section>
@@ -147,8 +150,9 @@ export default function HomeMeet() {
           <div className="page-card">
             <h2 className="text-2xl font-bold text-neutral-800">Awards</h2>
             <p className="mt-3 text-neutral-600">
-              Event winners earn a Terrapin Invite pint glass. Team trophies go
-              to the top three clubs overall.
+              {/* Event winners earn a Terrapin Invite pint glass. Team trophies go
+              to the top three clubs overall. */}
+              TBA
             </p>
           </div>
 
