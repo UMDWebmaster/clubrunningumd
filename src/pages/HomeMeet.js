@@ -78,7 +78,7 @@ export default function HomeMeet() {
                   Park, MD 20742
                 </a>
               </li>
-              <li>Saturday, April 18, 2026</li>
+              <li>Saturday, April 18, 2026 (Tentative)</li>
             </ul>
           </div>
         </section>
