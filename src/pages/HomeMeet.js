@@ -58,7 +58,7 @@ export default function HomeMeet() {
           <span className="page-eyebrow">Home Meet</span>
           <h1 className="page-title">Terrapin Invitational</h1>
           <p className="page-subtitle">
-            Saturday, April 18 (Tentative) • Kehoe Track &amp; Field Complex • College Park,
+            Saturday, April 18 • Kehoe Track &amp; Field Complex • College Park,
             MD. All event details and registration info for our fifth annual
             home invitational live here. See you on the track!
           </p>
@@ -78,7 +78,7 @@ export default function HomeMeet() {
                   Park, MD 20742
                 </a>
               </li>
-              <li>Saturday, April 18, 2026 (Tentative)</li>
+              <li>Saturday, April 18, 2026</li>
             </ul>
           </div>
         </section>
