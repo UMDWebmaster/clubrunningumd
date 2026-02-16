@@ -6,3 +6,64 @@
 .new-member-info b {
     color: var(--umd-red);
 }
+
+/* Join Us page */
+.gdoc-embed h2 {
+    color: #fff;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.gdoc-embed p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.gdoc-embed a {
+    color: var(--umd-red);
+    text-decoration: underline;
+}
+
+.gdoc-embed ul,
+.gdoc-embed ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--umd-muted);
+}
+
+.gdoc-embed li {
+    margin-bottom: 0.4rem;
+    line-height: 1.7;
+}
+
+.gdoc-banner {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+}
+
+.gdoc-mission {
+    font-size: 1.05rem;
+    border-left: 3px solid var(--umd-red);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+}
+
+.gdoc-toc {
+    margin: 1.5rem 0;
+    padding: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+.gdoc-toc ol {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+}
+
+.gdoc-closing {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}

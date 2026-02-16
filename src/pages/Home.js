@@ -349,9 +349,11 @@ export default function Home() {
           <div className="content-container">
             <header className="home-section-header">
               <h2 className="section-title">{recordHeadline}</h2>
+              
               <a href="/records" className="section-link">
                 View All Records →
               </a>
+              <p>(This is a preview of some of the records for the season)</p>
             </header>
             {displayRecords.length ? (
               <div className="table-wrapper">
@@ -363,12 +365,13 @@ export default function Home() {
                       <th>Performance</th>
                       <th>Meet</th>
                       <th>Date</th>
+                      <th>Season</th>
                     </tr>
                   </thead>
                   <tbody>
                     {displayRecords.slice(0, 10).map((entry) => (
                       <tr
-                        key={`${entry.event}-${entry.athlete}-${entry.time}-${entry.date}`}
+                        key={`${entry.event}-${entry.athlete}-${entry.time}-${entry.date}-${entry.season}`}
                       >
                         <td>
                           {entry.gender === "M" ? "Men's" : "Women's"}{" "}
@@ -378,6 +381,7 @@ export default function Home() {
                         <td>{entry.time}</td>
                         <td>{entry.meet}</td>
                         <td>{entry.date}</td>
+                        <td>{entry.season}</td>
                       </tr>
                     ))}
                   </tbody>

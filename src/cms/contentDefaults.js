@@ -15,7 +15,7 @@ export const defaultHomeContent = {
   sectionTitles: {
     topRoutes: "Top Routes Right Now",
     events: "Upcoming Events",
-    recordsFall: "Top Fall Individual Performances",
-    recordsSpring: "Top Spring Individual Performances",
+    recordsFall: "All-time Fall Performances",
+    recordsSpring: "All-time Spring Performances",
   },
 };
