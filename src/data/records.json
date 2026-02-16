@@ -4,7 +4,7 @@
     "event": "1 mile",
     "gender": "M",
     "true_distance": 1609,
-    "time": "4:23.37",
+    "time": "4:23.27",
     "seconds": 263.37,
     "athlete": "Max Worley",
     "date": "2/11/2017",
@@ -59,10 +59,10 @@
     "event": "4x400m Relay",
     "gender": "F",
     "true_distance": 1600,
-    "time": "4:37.53",
-    "seconds": 277.53,
-    "athlete": "Katrina Hrabinski, Erin Langille, Julia Heiges, Catie Denz",
-    "date": "2/11/2017",
+    "time": "4:35.28",
+    "seconds": 275.28,
+    "athlete": "Raquel Tolin, Caiya Campbell, Rachel Hylan, Mandy Callaghan",
+    "date": "2/15/2026",
     "meet": "Happy Valley Invitational"
   },
   {
@@ -70,10 +70,10 @@
     "event": "Distance Medley Relay",
     "gender": "M",
     "true_distance": 4000,
-    "time": "11:03.99",
-    "seconds": 663.99,
-    "athlete": "Ethan Burbridge, DeWayne Haamid, Daniel Jordan, Jack Wavering",
-    "date": "2/10/2018",
+    "time": "10:52.64",
+    "seconds": 652.64,
+    "athlete": "Ryan Tyberg, Logan Cyford, Dylan Schmidt, Abhyuday Srivatsa",
+    "date": "2/15/2026",
     "meet": "Happy Valley Invitational"
   },
   {
@@ -136,10 +136,10 @@
     "event": "200 meter",
     "gender": "M",
     "true_distance": 200,
-    "time": "23.06",
-    "seconds": 23.06,
-    "athlete": "Reggie Carnegie",
-    "date": "2/10/2018",
+    "time": "22.19",
+    "seconds": 22.19,
+    "athlete": "Jamill Yacoubou Adam",
+    "date": "2/15/2026",
     "meet": "Happy Valley Invitational"
   },
     {
@@ -169,10 +169,10 @@
     "event": "4x200m Relay",
     "gender": "M",
     "true_distance": 800,
-    "time": "1:37.53",
-    "seconds": 97.53,
-    "athlete": "Jonathan Shinholt, Drew Lepre, Kareem McDavid, Fares Massoud",
-    "date": "2/10/2018",
+    "time": "1:35.16",
+    "seconds": 95.16,
+    "athlete": "Logan Hurney, Nolan Racette, Calvin Waller, Olusegun Akinnusi",
+    "date": "2/15/2026",
     "meet": "Happy Valley Invitational"
   },
   {
@@ -191,10 +191,10 @@
     "event": "60 meter",
     "gender": "M",
     "true_distance": 60,
-    "time": "7.12",
-    "seconds": 7.12,
-    "athlete": "Reggie Carnegie",
-    "date": "2/10/2018",
+    "time": "6.86",
+    "seconds": 6.86,
+    "athlete": "Jamill Yacoubou Adam",
+    "date": "2/15/2026",
     "meet": "Happy Valley Invitational"
   },
   {
@@ -204,7 +204,7 @@
     "true_distance": 60,
     "time": "8.07",
     "seconds": 8.07,
-    "athlete": "Erin, Henderson",
+    "athlete": "Erin Henderson",
     "date": "2/10/2024",
     "meet": "Happy Valley Invitational"
   },
@@ -213,10 +213,10 @@
     "event": "60m Hurdles",
     "gender": "M",
     "true_distance": 60,
-    "time": "8.67",
-    "seconds": 8.67,
-    "athlete": "Drew Lepre",
-    "date": "2/10/2018",
+    "time": "7.89",
+    "seconds": 7.89,
+    "athlete": "Jamill Yacoubou Adam",
+    "date": "2/15/2026",
     "meet": "Happy Valley Invitational"
   },
   {
@@ -268,10 +268,10 @@
     "event": "Triple Jump",
     "gender": "F",
     "true_distance": 0,
-    "time": "9.22 (Mark)",
+    "time": "9.58 (Mark)",
     "seconds": 0,
-    "athlete": "Caiya Campbell",
-    "date": "2/10/2024",
+    "athlete": "Katie Callaghan",
+    "date": "2/15/2026",
     "meet": "Happy Valley Invitational"
   },
   {
@@ -279,10 +279,10 @@
     "event": "Long Jump",
     "gender": "M",
     "true_distance": 0,
-    "time": "6.02 (Mark)",
+    "time": "6.39 (Mark)",
     "seconds": 0,
-    "athlete": "Kalabe Arefeayne",
-    "date": "2/11/2023",
+    "athlete": "Nolan Racette",
+    "date": "2/15/2026",
     "meet": "Happy Valley Invitational"
   },
   {
