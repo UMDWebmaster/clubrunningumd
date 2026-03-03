@@ -1,14 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "../CSS/Photos.css";
 import "../CSS/table.css";
 import EvanFlag from "../Pictures/evanFlag.png";
 
-const emailList = require("..//emails/email_list.json");
+const DRIVE_FOLDER_URL =
+  "https://script.google.com/macros/s/AKfycbye_nMUjOoPmsbkktSalBJWDHR6qaLh-bOlCFYoBbfH3UgFJ9Byd2JZzMfx7L3xTE7y/exec";
 
 function EmailArchive() {
-  const [selectedEmail, setSelectedEmail] = useState("none");
-  const [selectedEmailSubject, setSelectedEmailSubject] = useState("none");
+  const [emails, setEmails] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [selectedDriveId, setSelectedDriveId] = useState(null);
+  const [selectedEmailSubject, setSelectedEmailSubject] = useState("");
+
+  useEffect(() => {
+    fetch(DRIVE_FOLDER_URL)
+      .then((res) => res.json())
+      .then((data) => {
+        setEmails(data);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, []);
 
   return (
     <div className="page-shell">
@@ -31,7 +44,7 @@ function EmailArchive() {
           </p>
         </header>
 
-        {selectedEmail !== "none" && (
+        {selectedDriveId && (
           <section className="page-section">
             <div className="page-card">
               <div className="flex flex-wrap items-center justify-between gap-3">
@@ -40,17 +53,20 @@ function EmailArchive() {
                 </h2>
                 <button
                   type="button"
-                  onClick={() => setSelectedEmail("none")}
+                  onClick={() => setSelectedDriveId(null)}
                   className="inline-flex items-center gap-1 rounded-full border border-[rgba(29,27,41,0.15)] px-3 py-1 text-sm font-semibold text-neutral-700 transition-colors hover:border-[#d62828] hover:text-[#d62828]"
                 >
                   Close
                 </button>
               </div>
               <div className="mt-4 w-full overflow-hidden rounded-2xl border border-[rgba(29,27,41,0.12)] bg-white shadow-inner">
-                <embed
-                  src={require("..//emails/email_files/" + selectedEmail)}
+                <iframe
+                  src={`https://drive.google.com/file/d/${selectedDriveId}/preview`}
+                  title={selectedEmailSubject}
                   width="100%"
                   height="900px"
+                  allow="autoplay"
+                  style={{ border: "none" }}
                 />
               </div>
             </div>
@@ -58,37 +74,47 @@ function EmailArchive() {
         )}
 
         <section className="page-section">
-          <div className="table-wrapper">
-            <table className="modern-table">
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Subject</th>
-                  <th>Open</th>
-                </tr>
-              </thead>
-              <tbody>
-                {emailList.map((item) => (
-                  <tr key={`${item.date}-${item.subject}`}>
-                    <td>{item.date}</td>
-                    <td>{item.subject}</td>
-                    <td>
-                      <button
-                        type="button"
-                        className="inline-flex items-center gap-2 rounded-full border border-[rgba(29,27,41,0.12)] bg-white px-3 py-1 text-sm font-semibold text-[#d62828] transition-colors hover:border-[#f6a622] hover:bg-[#fff3da]"
-                        onClick={() => {
-                          setSelectedEmail(item.filename);
-                          setSelectedEmailSubject(item.subject);
-                        }}
-                      >
-                        Read
-                      </button>
-                    </td>
+          {loading ? (
+            <p className="text-center text-neutral-500 py-8">Loading emails...</p>
+          ) : (
+            <div className="table-wrapper">
+              <table className="modern-table">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Subject</th>
+                    <th>Open</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                </thead>
+                <tbody>
+                  {emails.map((item) => (
+                    <tr key={item.driveId}>
+                      <td>
+                        {new Date(item.date).toLocaleDateString("en-US", {
+                          month: "numeric",
+                          day: "numeric",
+                          year: "2-digit",
+                        })}
+                      </td>
+                      <td>{item.name.replace(/\.pdf$/i, "")}</td>
+                      <td>
+                        <button
+                          type="button"
+                          className="inline-flex items-center gap-2 rounded-full border border-[rgba(29,27,41,0.12)] bg-white px-3 py-1 text-sm font-semibold text-[#d62828] transition-colors hover:border-[#f6a622] hover:bg-[#fff3da]"
+                          onClick={() => {
+                            setSelectedDriveId(item.driveId);
+                            setSelectedEmailSubject(item.name.replace(/\.pdf$/i, ""));
+                          }}
+                        >
+                          Read
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
         </section>
       </div>
     </div>
