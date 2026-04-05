@@ -499,11 +499,11 @@
     "event": "200 meter",
     "gender": "M",
     "true_distance": 200,
-    "time": "22.32",
-    "seconds": 22.32,
-    "athlete": "Clayton Buckman",
-    "date": "3/20/2021",
-    "meet": "Stan Romanoski Open"
+    "time": "22.00",
+    "seconds": 22.00,
+    "athlete": "Nolan Racette",
+    "date": "4/4/2026",
+    "meet": "George Mason Dalton Ebanks Invitational"
   },
   {
     "season": "Outdoor",
@@ -565,11 +565,11 @@
     "event": "4x100m Relay",
     "gender": "M",
     "true_distance": 400,
-    "time": "43.50",
-    "seconds": 43.5,
-    "athlete": "Evan Gresser, Lester Crockett, Mark Kwegyir-Aggrey, Brion Tillman-Young",
-    "date": "4/26/2017",
-    "meet": "Penn Relays Carnival"
+    "time": "42.62",
+    "seconds": 42.62,
+    "athlete": "Peter Capozzoli, Olusegun Akinnusi, Logan Hurney, Nolan Racette",
+    "date": "4/4/2026",
+    "meet": "George Mason Dalton Ebanks Invitational"
   },
   {
     "season": "Outdoor",
@@ -785,11 +785,11 @@
     "event": "110m Hurdles",
     "gender": "M",
     "true_distance": 110,
-    "time": "16.15",
-    "seconds": 16.15,
-    "athlete": "Mason Scott",
-    "date": "5/5/2023",
-    "meet": "Kehoe Twilight 2023"
+    "time": "13.89",
+    "seconds": 13.89,
+    "athlete": "Jamil Adam",
+    "date": "4/4/2026",
+    "meet": "George Mason Dalton Ebanks Invitational"
   },
   {
     "season": "Outdoor",
