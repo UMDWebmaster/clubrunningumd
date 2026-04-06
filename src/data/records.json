@@ -719,11 +719,11 @@
     "event": "100 meter",
     "gender": "M",
     "true_distance": 100,
-    "time": "11.33",
-    "seconds": 11.33,
-    "athlete": "Reggie Carnegie",
-    "date": "3/30/2018",
-    "meet": "Danny Curran Invitational"
+    "time": "10.86",
+    "seconds": 10.86,
+    "athlete": "Jamil Yacoubou Adam",
+    "date": "3/28/2026",
+    "meet": "Mid-Atlantic Showdown"
   },
   {
     "season": "Outdoor",
@@ -787,7 +787,7 @@
     "true_distance": 110,
     "time": "13.89",
     "seconds": 13.89,
-    "athlete": "Jamil Adam",
+    "athlete": "Jamil Yacoubou Adam",
     "date": "4/4/2026",
     "meet": "George Mason Dalton Ebanks Invitational"
   },

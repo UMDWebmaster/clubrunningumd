@@ -2,32 +2,38 @@ import React from "react";
 import terpInvitePoster from "../Pictures/terpInvite.png";
 
 const trackEvents = [
-  "Alumni Mile (combined)",
-  "Swedish Medley Relay",
-  "5000m Run",
-  "4x800 Relay",
-  "100m Dash",
-  "100m Hurdles / 110m Hurdles",
-  "400m Dash",
-  "1500m Run",
-  "4x100m Relay",
-  "800m Run",
-  "200m Dash",
-  "4x400m Relay",
+  { time: "10:00am", event: "Alumni Mile (combined)" },
+  { time: "10:15am", event: "Swedish Medley Relay" },
+  { time: "10:35am", event: "5000m Run" },
+  { time: "12:05pm", event: "4x800m Relay" },
+  { time: "12:35pm", event: "100m Hurdles / 110m Hurdles" },
+  { time: "1:10pm", event: "Officials Break", break: true },
+  { time: "1:20pm", event: "100m Dash" },
+  { time: "1:50pm", event: "400m Dash" },
+  { time: "2:10pm", event: "1500m Run" },
+  { time: "3:00pm", event: "400m Hurdles" },
+  { time: "3:25pm", event: "1500m Racewalk (combined)" },
+  { time: "3:45pm", event: "4x100m Relay" },
+  { time: "4:00pm", event: "800m Run" },
+  { time: "4:30pm", event: "200m Dash" },
+  { time: "4:45pm", event: "4x400m Relay" },
+  { time: "5:00pm", event: "Fun Relay (combined, not scored)" },
 ];
 
-const specialRelay = {
-  title: "Some special/funky event",
+const hexathlonEvents = ["200m", "1500m", "High Jump", "Long Jump", "Shot Put", "100/110m Hurdles"];
+
+const diceRelay = {
+  title: "Dice Relay (Fun Relay)",
   description:
-    "TBA",
+    "6 sided dice rolled before the race, and then again at the bell lap. Prior to the race, the roll determines how many 100m must be run by each athlete (example, 3 would mean 300m per leg for the first 3 legs). Then after the anchor completes their leg, the dice is rolled again. That roll determines how many more hundreds the anchor leg must run. For example, if the second roll is a 4, the anchor would run that same 300, then 400 more, for 700m total.",
 };
 
 const fieldEvents = [
   "9:30 AM — High Jump",
   "10:00 AM — Shot Put (combined)",
   "11:15 AM — Women's Long Jump",
-  "12:00 PM — Women's Discus & Men's Long Jump",
-  "1:15 PM — Men's Discus & Women's Triple Jump",
+  "12:00 PM — Women's Discus, Men's Long Jump",
+  "1:15 PM — Men's Discus, Women's Triple Jump",
   "2:00 PM — Men's Triple Jump",
 ];
 
@@ -86,39 +92,46 @@ export default function HomeMeet() {
         <section className="page-section">
           <div className="page-card">
             <div className="page-callout mb-4 text-sm font-semibold">
-              🕓 Event details for 2026 are pending. (Below is last year's schedule)
+              ✅ Event details for 2026 are published.
             </div>
             <h2 className="text-2xl font-bold text-neutral-800">Order of Events</h2>
             <p className="mt-2 text-neutral-600">
-              Women's heats will precede men's heats for each event.
+              Women's heats will precede men's heats for each event. We will follow a rolling schedule so the meet could be running ahead or behind, please listen to announcements about the schedule.
             </p>
 
             <div className="mt-6 grid gap-6 md:grid-cols-2">
               <div>
                 <h3 className="text-xl font-semibold text-neutral-800">
-                  Track Events (10:00 AM Start)
+                  Track Events — beginning at 10 AM
                 </h3>
-                <ol className="mt-3 list-decimal space-y-2 pl-5 text-neutral-600">
-                  {trackEvents.map((event) => (
-                    <li key={event}>{event}</li>
+                <ul className="mt-3 space-y-2 text-neutral-600">
+                  {trackEvents.map((e) => (
+                    <li key={e.event} className={e.break ? "italic text-neutral-400" : ""}>
+                      <span className="font-semibold">{e.time}</span> — {e.event}
+                    </li>
                   ))}
-                  <li className="space-y-2">
-                    <span className="font-semibold text-neutral-800">
-                      {specialRelay.title}
-                    </span>
-                    <p className="text-sm text-neutral-500">
-                      {specialRelay.description}
-                    </p>
-                  </li>
-                </ol>
+                </ul>
+                <div className="mt-4 p-3 rounded" style={{ backgroundColor: "rgba(0,0,0,0.05)" }}>
+                  <span className="font-semibold">{diceRelay.title}</span>
+                  <p className="text-sm mt-1">{diceRelay.description}</p>
+                </div>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-neutral-800">Field Events</h3>
+                <h3 className="text-xl font-semibold text-neutral-800">
+                  Field Events — beginning at 9:30 AM
+                </h3>
                 <ul className="mt-3 space-y-2 text-neutral-600">
                   {fieldEvents.map((event) => (
                     <li key={event}>{event}</li>
                   ))}
                 </ul>
+
+                <h3 className="text-xl font-semibold text-neutral-800 mt-6">
+                  Hexathlon
+                </h3>
+                <p className="mt-2 text-neutral-600">
+                  {hexathlonEvents.join(", ")}
+                </p>
               </div>
             </div>
           </div>
@@ -131,17 +144,17 @@ export default function HomeMeet() {
             </div>
             <h2 className="text-2xl font-bold text-neutral-800">Registration</h2>
             <ul className="mt-4 space-y-3 text-neutral-600">
-              <li>$25 per athlete or $500 per team</li>
-              {/* <li>
+              <li>$30 per athlete or $500 per team</li>
+              <li>
                 Register on{" "}
                 <a
-                  href="https://www.athletic.net/TrackAndField/meet/593578/"
+                  href="https://www.athletic.net/TrackAndField/meet/635868/info"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Athletic.net
                 </a>
-              </li> */}
+              </li> 
             </ul>
           </div>
         </section>
@@ -152,7 +165,7 @@ export default function HomeMeet() {
             <p className="mt-3 text-neutral-600">
               {/* Event winners earn a Terrapin Invite pint glass. Team trophies go
               to the top three clubs overall. */}
-              TBA
+              Event winners will win an awesome Terrapin Invitational pint glass.  Team winners will receive a flag.
             </p>
           </div>
 
