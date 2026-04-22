@@ -205,7 +205,7 @@ export default function Home() {
   const displayRecords = recordsList.filter((record) =>
     isCrossCountrySeason
       ? record.season === "Cross Country"
-      : ["Indoor", "Outdoor", "Track"].includes(record.season)
+      : [ "Outdoor", "Track"].includes(record.season)
   );
 
   const routesData = require("../data/routes.json");

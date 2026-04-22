@@ -10,7 +10,11 @@ const overviewCards = [
       "Location: Terrapin Nature Park, Stevensville, MD",
       "Terrain: Flat, sandy soft gravel with views of the Bay",
       "Spikes: Optional",
-      "Awards: Top 3 per race + top men's and women's teams",
+      "Changes: The course may be run in reverse compared to 2025",
+      "Awards: We will have some fun Maryland-themed awards for the top three 8k and 6k runners, in addition to flags for the top 8k and 6k team.",
+      "Freezy pops at the finish line."
+
+
     ],
   },
   {
@@ -35,10 +39,11 @@ const overviewCards = [
   {
     title: "Registration",
     body: [
-      "Opens: Sept 1, 2025",
-      "Closes: Sept 22, 2025 @ 11:59 PM",
+      "Opens: Aug 1, 2026",
+      "Closes: Sept 14, 2026 @ 11:59 PM",
       "Fee: $25 per runner or $500 per team",
       "Checks payable to University of Maryland Club Running",
+      
     ],
     link: {
       label: "Email umdclubrunning@gmail.com",
@@ -59,13 +64,12 @@ const overviewCards = [
   },
   {
     title: "Extras",
-    body: ["Meet T-shirt: Yes", "Social event: No"],
+    body: ["Meet T-shirt: No", "Social event: No"],
   },
   {
     title: "Cancellation Policy",
     body: [
-      "Entries are final as of Sept 22.",
-      "Payment is due at the meet. No refunds after that date.",
+"Entries will be due on September 14. Payment for all entries as of September 14 will be due at the meet. Cancellations after this time cannot be refunded."
     ],
   },
 ];
@@ -84,13 +88,15 @@ export default function XCHomeMeet() {
       <div className="content-container">
         <header className="page-header">
           <span className="page-eyebrow">Cross Country</span>
-          <h1 className="page-title">Old Bay Invitational</h1>
+          <h1 className="page-title">2nd Annual Old Bay Invitational</h1>
           <p className="page-subtitle">
-            Saturday, September 27, 2025 · Terrapin Nature Park, Stevensville,
+            Saturday, September 19, 2026 · Terrapin Nature Park, Stevensville,
             MD. Hosted by Maryland Club Running.
           </p>
         </header>
-
+              <div className="page-callout mb-4 text-sm font-semibold">
+              🚨Details for the 2nd Annual OBXC Invite are out. Details can be found below and at NIRCA site: https://clubrunning.org/races/race_info.php?race=1494
+            </div>
         <section className="page-section page-grid two">
           {overviewCards.map((card) => (
             <div key={card.title} className="page-card">

@@ -45,6 +45,10 @@ const archivedResults = [
   {
     label: "2025 Results",
     href: "https://results.mdtimingllc.com/meets/47857"
+  },
+  {
+    label:"2026 Results",
+    href:"https://results.firstlanetiming.com/meets/68033"
   }
 ];
 
@@ -92,7 +96,7 @@ export default function HomeMeet() {
         <section className="page-section">
           <div className="page-card">
             <div className="page-callout mb-4 text-sm font-semibold">
-              ✅ Event details for 2026 are published.
+              Thank you to everyone who joined us for the 2026 Terrapin Invite! Stay tuned for next year...
             </div>
             <h2 className="text-2xl font-bold text-neutral-800">Order of Events</h2>
             <p className="mt-2 text-neutral-600">
@@ -140,12 +144,12 @@ export default function HomeMeet() {
         <section className="page-section">
           <div className="page-card">
             <div className="page-callout mb-4 text-sm font-semibold">
-              🕓 Registration for 2026 Terrapin Invitational will open on <b>March 23, 2026</b> and close on <b>April 11, 2026 at 11:59 PM</b>.
+              🕓 Stay tuned for registration details next year...
             </div>
             <h2 className="text-2xl font-bold text-neutral-800">Registration</h2>
             <ul className="mt-4 space-y-3 text-neutral-600">
-              <li>$30 per athlete or $500 per team</li>
-              <li>
+              <li>TBA</li>
+              {/* <li>
                 Register on{" "}
                 <a
                   href="https://www.athletic.net/TrackAndField/meet/635868/info"
@@ -154,7 +158,7 @@ export default function HomeMeet() {
                 >
                   Athletic.net
                 </a>
-              </li> 
+              </li>  */}
             </ul>
           </div>
         </section>
