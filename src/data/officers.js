@@ -76,7 +76,7 @@ export const officers = [
     name: "Ben Waterman",
     image: presidentImage,
     description:
-      "Ben Waterman is a junior biology and psychology major from Bethesda, Maryland. He is excited to race NIRCA and Freddy Half this spring, and maybe a marathon in the fall. Besides running, Ben enjoys skiing, carb loading, reading, and swimming. As Vice President, Ben does all the fun behind the scenes work to make it possible for the club to travel and race across the country!",
+      "Ben Waterman is a junior biology and psychology major from Bethesda, Maryland. He is excited to race NIRCA and Freddy Half this spring, and cross country in the fall. Besides running, he enjoys skiing, carb loading, reading, and swimming. Ben is looking forward to hosting awesome meets and making the club even more fun and welcoming as President.",
   },
   {
     position: "Co-Vice President",

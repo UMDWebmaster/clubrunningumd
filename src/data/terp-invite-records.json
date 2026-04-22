@@ -3,61 +3,61 @@
     "event": "100m",
     "gender": "M",
     "true_distance": 100,
-    "time": "11.34",
-    "seconds": 11.34,
-    "athlete": "Jamil Yacoubou Adam",
-    "team": "Los Dos Colores",
-    "year": "2024"
+    "time": "10.83",
+    "seconds": 10.83,
+    "athlete": "Darrius Mason",
+    "team": "Wildkat Institute",
+    "year": "2025"
   },
   {
     "event": "100m",
     "gender": "F",
     "true_distance": 100,
-    "time": "13.02",
-    "seconds": 13.02,
-    "athlete": "Rebecca Sloboh",
-    "team": "Towson",
-    "year": "2024"
+    "time": "12.19",
+    "seconds": 12.19,
+    "athlete": "Nethmini Perera",
+    "team": "Maryland",
+    "year": "2025"
   },
   {
     "event": "200m",
     "gender": "M",
     "true_distance": 200,
-    "time": "22.76",
-    "seconds": 22.76,
-    "athlete": "Clayton Buckman",
-    "team": "Maryland",
-    "year": "2019"
+    "time": "21.97",
+    "seconds": 21.97,
+    "athlete": "Timothy Evans",
+    "team": "Unattached",
+    "year": "2025"
   },
   {
     "event": "200m",
     "gender": "F",
     "true_distance": 200,
-    "time": "27.18",
-    "seconds": 27.18,
-    "athlete": "Molly Wilson",
+    "time": "25.89",
+    "seconds": 25.89,
+    "athlete": "Nethmini Perera",
     "team": "Maryland",
-    "year": "2022"
+    "year": "2026"
   },
   {
     "event": "400m",
     "gender": "M",
     "true_distance": 400,
-    "time": "49.87",
-    "seconds": 49.87,
-    "athlete": "Clayton Buckman",
+    "time": "49.12",
+    "seconds": 49.12,
+    "athlete": "Logan Hurney",
     "team": "Maryland",
-    "year": "2019"
+    "year": "2026"
   },
   {
     "event": "400m",
     "gender": "F",
     "true_distance": 400,
-    "time": "61.53",
-    "seconds": 61.53,
-    "athlete": "Molly Wilson",
-    "team": "Maryland",
-    "year": "2022"
+    "time": "59.75",
+    "seconds":59.75,
+    "athlete": "Nariah Harley",
+    "team": "Unattached",
+    "year": "2026"
   },
   {
     "event": "800m",
@@ -103,11 +103,11 @@
     "event": "Alumni Mile",
     "gender": "M",
     "true_distance": 1608,
-    "time": "5:00.01",
-    "seconds": 300,
-    "athlete": "Jake Muma",
+    "time": "4:45.40",
+    "seconds": 285,
+    "athlete": "Brian McCullough",
     "team": "Maryland Alumni",
-    "year": "2025"
+    "year": "2026"
   },
   {
     "event": "Alumni Mile",
@@ -123,11 +123,11 @@
     "event": "5000m",
     "gender": "M",
     "true_distance": 5000,
-    "time": "15:36.28",
-    "seconds": 936.28,
-    "athlete": "Logan Burns",
-    "team": "Virginia",
-    "year": "2019"
+    "time": "15:19.50",
+    "seconds": 919,
+    "athlete": "Evan Diefenbeck",
+    "team": "Delaware",
+    "year": "2026"
   },
   {
     "event": "5000m",
@@ -143,21 +143,21 @@
     "event": "100m Hurdles",
     "gender": "F",
     "true_distance": 100,
-    "time": "16.79",
-    "seconds": 16.79,
-    "athlete": "Tara Basir",
+    "time": "16.06",
+    "seconds": 16.06,
+    "athlete": "Amanda Callaghan",
     "team": "Maryland",
-    "year": "2018"
+    "year": "2025"
   },
   {
     "event": "110m Hurdles",
     "gender": "M",
     "true_distance": 110,
-    "time": "15.57",
-    "seconds": 15.57,
-    "athlete": "Jamil Yacoubou Adam",
-    "team": "Los Dos Colores",
-    "year": "2024"
+    "time": "15.0",
+    "seconds": 15,
+    "athlete": "Alexander Bobba",
+    "team": "George Mason University",
+    "year": "2026"
   },
   {
     "event": "400m Hurdles",
@@ -173,11 +173,11 @@
     "event": "400m Hurdles",
     "gender": "F",
     "true_distance": 400,
-    "time": "1:08.22",
-    "seconds": 68.22,
-    "athlete": "Elizabeth Szybalski",
-    "team": "Unattached",
-    "year": "2024"
+    "time": "1:06.39",
+    "seconds": 66,
+    "athlete": "Kate Callaghan",
+    "team": "Maryland",
+    "year": "2025"
   },
   {
     "event": "3000m Steeplechase",
@@ -213,11 +213,11 @@
     "event": "4x800m Relay",
     "gender": "F",
     "true_distance": 3200,
-    "time": "10:39.44",
-    "seconds": 639.44,
-    "athlete": "Rachel Hylan, Anna Weiksner, Mandy Callaghan, Brooke Walz",
+    "time": "10:38.77",
+    "seconds": 638,
+    "athlete": "Amanda Callaghan, Rachel Hylan, Anna Weiksner, Ella Quigley",
     "team": "Maryland",
-    "year": "2024"
+    "year": "2025"
   },
   {
     "event": "High Jump",
@@ -323,61 +323,61 @@
     "event": "Swedish Relay",
     "gender": "F",
     "true_distance": 1000,
-    "time": "2:38",
-    "seconds": 158,
-    "athlete": "Katie Hernandez, Jenna Amrhein, Caiya Campbell, Mandy Callaghan",
-    "team": "Maryland",
-    "year": "2024"
+    "time": "2:36.22",
+    "seconds": 156,
+    "athlete": "Amanda Desenchak, Sophie Black, Riley Rupprecht, Anna Callaghan",
+    "team": "Delaware",
+    "year": "2026"
   },
   {
     "event": "Swedish Relay",
     "gender": "M",
     "true_distance": 1000,
-    "time": "2:11.46",
-    "seconds": 131.46,
-    "athlete": "Daniel Lu, Aryaman Punshi, Dominick Cardone, Kalabe Arefeayne",
-    "team": "Maryland",
-    "year": "2024"
+    "time": "2:04.69",
+    "seconds": 124,
+    "athlete": "Parker Small, Kurt Krummenacker, Devan Wasserman, Dave Kelly",
+    "team": "Delaware",
+    "year": "2026"
   },
   {
     "event": "4x100m Relay",
     "gender": "F",
     "true_distance": 400,
-    "time": "52.63",
-    "seconds": 52.63,
-    "athlete": "Morgan Bailey, Jenna Amrhein, Jasmin Mohammadi, Erin Henderson",
-    "team": "Maryland",
-    "year": "2024"
+    "time": "52.38",
+    "seconds": 52.38,
+    "athlete": "Amanda Desenchak, Sophie Black, Riley Rupprecht, Zoe Williams",
+    "team": "Delaware",
+    "year": "2026"
   },
   {
     "event": "4x100m Relay",
     "gender": "M",
     "true_distance": 400,
-    "time": "44.76",
-    "seconds": 44.76,
-    "athlete": "Uzoma Nwosu, Aryaman Punshi, Daniel Lu, Kalabe Arefeayne",
+    "time": "43.16",
+    "seconds": 43.16,
+    "athlete": "Ve Lee, Peter Capozzoli, Logan Hurney, Olusegun Akinnusi",
     "team": "Maryland",
-    "year": "2024"
+    "year": "2026"
   },
   {
     "event": "1500m Race Walk",
     "gender": "F",
     "true_distance": 1500,
-    "time": "8:32.53",
-    "seconds": 512.53,
-    "athlete": "Lucia Lavallee",
-    "team": "Georgetown",
-    "year": "2024"
+    "time": "8:09.51",
+    "seconds": 489,
+    "athlete": "Maddeline Glennon",
+    "team": "Maryland",
+    "year": "2026"
   },
   {
     "event": "1500m Race Walk",
     "gender": "M",
     "true_distance": 1500,
-    "time": "8:54.16",
-    "seconds": 534.16,
-    "athlete": "Isaac Ager",
-    "team": "American University",
-    "year": "2024"
+    "time": "7:29.53",
+    "seconds": 449,
+    "athlete": "Zvikomborero Mziti",
+    "team": "George Washington University",
+    "year": "2026"
   },
   {
     "event": "4x400",
@@ -391,7 +391,7 @@
   },
   {
     "event": "4x400",
-    "gender": "F",
+    "gender": "M",
     "true_distance": 1600,
     "time": "3:33.41",
     "seconds": 213.41,
