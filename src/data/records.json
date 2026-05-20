@@ -1087,5 +1087,27 @@
     "athlete": "Lily Scherer",
     "date": "4/12/2024",
     "meet": "Hot Sauce Night"
+  },
+    {
+    "season": "Outdoor",
+    "event": "Men's Hexathlon",
+    "gender": "M",
+    "true_distance": 0,
+    "time": "High Jump - 4'8 (1.42m), Shot Put (16 lb) - 25'0 (7.62m), Long Jump - 17'5 (5.30m), 110m Hurdles (42'') - 22.01, 1500m - 4:23.30, 200m - 25.34",
+    "seconds": 0,
+    "athlete": "Logan Cyford",
+    "date": "4/18/2026",
+    "meet": "Terrapin Invitational 2026"
+  },
+      {
+    "season": "Outdoor",
+    "event": "Womens's Hexathlon",
+    "gender": "F",
+    "true_distance": 0,
+    "time": "High Jump - 4'8 (1.42m), Shot Put (12 lb) - 18'5 (5.62m), Long Jump - 14'2 (4.31m), 100m Hurdles (33'') - 18.17, 1500m - 5:23.74, 200m - 28.01",
+    "seconds": 0,
+    "athlete": "Mandy Callaghan",
+    "date": "4/18/2026",
+    "meet": "Terrapin Invitational 2026"
   }
 ]
