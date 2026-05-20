@@ -95,7 +95,7 @@ export default function XCHomeMeet() {
           </p>
         </header>
               <div className="page-callout mb-4 text-sm font-semibold">
-              🚨Details for the 2nd Annual OBXC Invite are out. Details can be found below and at NIRCA site: https://clubrunning.org/races/race_info.php?race=1494
+              🚨Details for the 2nd Annual OBXC Invite are out. Details can be found below and at NIRCA site: <a href='https://clubrunning.org/races/race_info.php?race=1494'>Click Here</a>
             </div>
         <section className="page-section page-grid two">
           {overviewCards.map((card) => (
