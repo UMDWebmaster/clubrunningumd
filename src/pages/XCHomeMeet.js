@@ -8,6 +8,7 @@ const overviewCards = [
     title: "Race Info",
     body: [
       "Location: Terrapin Nature Park, Stevensville, MD",
+      "Date: Saturday, September 19, 2026",
       "Terrain: Flat, sandy soft gravel with views of the Bay",
       "Spikes: Optional",
       "Changes: The course may be run in reverse compared to 2025",
