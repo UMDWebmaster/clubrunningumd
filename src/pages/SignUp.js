@@ -19,7 +19,7 @@ export default function SignUp() {
             If the embedded form below refuses to load,{" "}
             <strong>
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSc2us1hfXDZmbNgB9cDvSIaE09DtGH_9q4PHpZqoEFZJjdMEQ/viewform"
+                href="https://forms.gle/B63rmMnZ13E4KXXQ8"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -33,7 +33,7 @@ export default function SignUp() {
             <iframe
               className="signUpIframe rounded-2xl"
               title="UMD Club Running email sign up form"
-              src="https://docs.google.com/forms/d/e/1FAIpQLSc2us1hfXDZmbNgB9cDvSIaE09DtGH_9q4PHpZqoEFZJjdMEQ/viewform?embedded=true"
+              src="https://forms.gle/B63rmMnZ13E4KXXQ8"
               width="100%"
               height="1036"
               marginWidth="0"
