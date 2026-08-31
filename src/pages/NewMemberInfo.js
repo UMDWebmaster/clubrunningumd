@@ -3,8 +3,15 @@ import "../CSS/Photos.css";
 import "../CSS/table.css";
 import "../CSS/Info.css";
 import natsPic from "../Pictures/natsTeamPic.JPG";
-import joinusBanner from "../Pictures/joinus-banner.png";
-import joinusFooter from "../Pictures/joinus-footer.png";
+import joinusBanner from "../Pictures/joinus-banner.jpg";
+import joinusFooter from "../Pictures/joinus-footer.jpg";
+import joinusOfficers from "../Pictures/joinus-officers.jpg";
+import joinusJoin from "../Pictures/joinus-join.jpg";
+import joinusPractices from "../Pictures/joinus-practices.jpg";
+import joinusSprinters from "../Pictures/joinus-sprinters.jpg";
+import joinusCompete from "../Pictures/joinus-compete.jpg";
+import joinusNirca from "../Pictures/joinus-nirca.jpg";
+import joinusCostChart from "../Pictures/joinus-cost-chart.png";
 
 export default function NewMemberInfo() {
   return (
@@ -30,7 +37,11 @@ export default function NewMemberInfo() {
 
         <section className="page-section">
           <div className="page-card gdoc-embed">
-            <img src={joinusBanner} alt="Club Running banner" className="gdoc-banner" />
+            <img
+              src={joinusBanner}
+              alt="The full Maryland Club Running team posing on the grass at a cross country meet"
+              className="gdoc-banner is-hero"
+            />
 
             <p className="gdoc-mission">
               <em>
@@ -51,7 +62,7 @@ export default function NewMemberInfo() {
                 <li><a href="#practices">When/where are practices?</a></li>
                 <li><a href="#sprinters">Does the club support sprinters, hurdlers, jumpers, and throwers?</a></li>
                 <li><a href="#training">How does the club train?</a></li>
-                <li><a href="#beginners">What if I&apos;m out of shape/not as experienced as a runner?</a></li>
+                <li><a href="#beginners">What if I&apos;m out of shape/not as experienced as a runner? Can I still come to practice?</a></li>
                 <li><a href="#compete">How can I compete with the club?</a></li>
                 <li><a href="#cost">How much does the club cost?</a></li>
               </ol>
@@ -67,6 +78,11 @@ export default function NewMemberInfo() {
               planning practices, coordinating competition travel, obtaining and
               managing funds, and hosting social events.
             </p>
+            <img
+              src={joinusOfficers}
+              alt="Two Maryland Club Running athletes racing side by side on the track"
+              className="gdoc-photo"
+            />
             <ul>
               <li>President: Ben Waterman</li>
               <li>Vice Presidents: Beatrice Wermuth &amp; Joe Jackson</li>
@@ -83,7 +99,7 @@ export default function NewMemberInfo() {
             <p>
               The best way to contact us is through our email,{" "}
               <a href="mailto:umdclubrunning@gmail.com">umdclubrunning@gmail.com</a>.
-              All nine officers have access to this account. You can expect a
+              All of the officers have access to this account. You can expect a
               response within two days during the school year, and within a week or
               two during the summer.
             </p>
@@ -109,13 +125,13 @@ export default function NewMemberInfo() {
                   </tr>
                   <tr>
                     <td>GroupMe</td>
-                    <td><a href="https://groupme.com/join_group/108665912/yF0Y8FZw">Link here</a></td>
+                    <td><a href="https://groupme.com/join_group/114863396/Y75EdPFh">Link here</a></td>
                     <td>Group chat with all club members</td>
                   </tr>
                   <tr>
                     <td>Instagram</td>
                     <td><a href="https://www.instagram.com/umdclubrunning/">@umdclubrunning</a></td>
-                    <td>Meet updates, member features, social event pictures</td>
+                    <td>Meet updates, member features, social event pictures, community service updates</td>
                   </tr>
                   <tr>
                     <td>Strava</td>
@@ -131,7 +147,7 @@ export default function NewMemberInfo() {
             <p>You can be a member of Club Running in 3 easy steps!</p>
             <ol>
               <li>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSek9rss9U2_uLiHt-qa1MDkVI-r2VpevPKlVhGTohIGxSs5ug/viewform?usp=dialog">
+                <a href="https://forms.gle/SpWqkP5LLzxqfQAn7">
                   Join the email list here
                 </a>
                 ! All essential information is communicated to members via the email
@@ -147,10 +163,15 @@ export default function NewMemberInfo() {
                 entire time at Maryland. Instructions to sign up are below.
               </li>
             </ol>
+            <img
+              src={joinusJoin}
+              alt="A Club Running member carrying the Maryland state flag along the Kehoe track"
+              className="gdoc-photo"
+            />
 
             <p>
               <strong>To register for IMLeagues</strong>: follow this link:{" "}
-              <a href="https://www.imleagues.com/spa/club/4395e0c781af4905a4088a9561509399/home">
+              <a href="https://www.imleagues.com/spa/team/1e274e5053bb4f64aa198609373e6092/home">
                 IMLeagues Club Running
               </a>
             </p>
@@ -180,7 +201,7 @@ export default function NewMemberInfo() {
             </p>
             <ol>
               <li>Click &quot;Sign In&quot; at the upper right corner of the page, and log in with your UMD login.</li>
-              <li>Search &quot;Maryland Club Running&quot; in the search bar and click &quot;Maryland Club Running&quot; on the dropdown menu.</li>
+              <li>Search &quot;Maryland Club Running&quot; in the search bar in the middle of the screen, then click &quot;Maryland Club Running&quot; on the dropdown menu.</li>
               <li>Click the blue &quot;Join&quot; and submit a request to join the team.</li>
             </ol>
             <p>
@@ -190,11 +211,16 @@ export default function NewMemberInfo() {
 
             {/* 4. Practices */}
             <h2 id="practices">4. When/where are practices?</h2>
+            <img
+              src={joinusPractices}
+              alt="The men's pack surging off the starting line at a cross country meet"
+              className="gdoc-photo"
+            />
             <p>
-              <strong>First day of practice for Spring 2026:</strong> January 26th, 2026 (first day of classes)
+              <strong>First day of practice for Fall 2026:</strong> August 31, 2026 (first day of classes)
             </p>
             <p>
-              <strong>Practice schedule:</strong> Mon–Fri, 4:00 PM (Changes to 5:00 PM when daylight savings time ends on March 9th)
+              <strong>Practice schedule:</strong> Mon–Fri, 5:00 PM (Changes to 4:00 PM when daylight savings time ends on November 2nd)
             </p>
             <p>
               <strong>Check out our club <a href="https://umdclubrunning.com/calendar">calendar</a>!</strong>
@@ -206,7 +232,7 @@ export default function NewMemberInfo() {
               practices as you would like.
             </p>
             <p>
-              <strong>Meeting location (distance team):</strong>{" "}
+              <strong>Practice location (distance team):</strong>{" "}
               <a href="https://goo.gl/maps/tG2f123Uw4M7tMwr7">
                 School of Public Health (SPH) overhang
               </a>{" "}
@@ -220,10 +246,10 @@ export default function NewMemberInfo() {
               <li>
                 Entering SPH on the side closest to Eppley, heading to the bottom
                 floor, and walking all the way down the long hallway and out the
-                glass double doors at the opposite end of the building.
+                double doors at the opposite end of the building.
               </li>
             </ol>
-            <p><strong>Meeting location (sprinters/throwers):</strong> Kehoe track</p>
+            <p><strong>Meeting location (sprinters/throwers):</strong> Kehoe Track</p>
             <p>
               <strong>Lockers:</strong> There are red lockers we can use in SPH
               located on the bottom floor on the side closest to Eppley. They do not
@@ -234,11 +260,16 @@ export default function NewMemberInfo() {
               official weekend runs. However, many of our members organize weekend
               runs on their own.
             </p>
+            <p>
+              <strong>Meets/Races:</strong> While not required, racing is a fun
+              opportunity for many club runners. More info is in the{" "}
+              <a href="#compete">competition section</a>!
+            </p>
 
             {/* 5. Sprinters */}
             <h2 id="sprinters">5. Does the club support sprinters, hurdlers, jumpers, and throwers?</h2>
             <p>
-              Yes! We attend about 6–7+ track meets during the Spring semester, at
+              Yes! We attend about 8 track meets during the Spring semester, at
               which sprint, hurdling, throwing, and jump events are contested. We
               have had a number of successful sprinters compete at Penn Relays and
               jumpers and hurdlers who have earned All-American status at Club
@@ -253,10 +284,15 @@ export default function NewMemberInfo() {
               our Sprint Chair, Logan Hurney, to learn about training and competing
               with our club.
             </p>
+            <img
+              src={joinusSprinters}
+              alt="A Club Running athlete carrying the baton through a relay leg"
+              className="gdoc-photo is-portrait"
+            />
             <p>
               There is a <strong>sprint-focused GroupMe</strong> which contains all
               the updates regarding sprint practices, and you can join{" "}
-              <a href="https://groupme.com/join_group/109740346/lIdVj8rF">here</a>.
+              <a href="https://groupme.com/join_group/115058456/QvJUxFSC">here</a>.
             </p>
 
             {/* 6. Training */}
@@ -265,7 +301,7 @@ export default function NewMemberInfo() {
               <strong>
                 Our training plans can be found on our website, and linked in the
                 weekly emails. Training plans have not yet been finalized for the
-                spring 2026 season but will send them out via our email list as soon
+                Fall 2026 season but will send them out via our email list as soon
                 as they are ready.
               </strong>
             </p>
@@ -276,18 +312,22 @@ export default function NewMemberInfo() {
               not everyone does workouts on Tues/Fri. Some people do them on a
               different day, and some people don&apos;t do the workouts at all. There
               is a separate training plan for sprinters structured to help everyone
-              reach their peak speed at the most crucial points in the season.
+              reach their peak speed at the most crucial points in the season, which
+              consists of workouts of various intensity and purpose throughout the
+              week.
             </p>
             <p>
               <strong>Workouts:</strong> Workouts are typically done on the track.
               Longer reps are sometimes done on trails or fields on/near campus. We
               encourage members to follow the club workout plans for camaraderie and
               for results, but there is no obligation to do so. There are plenty of
-              people that follow their own plans for workouts.
+              people that follow their own plans for workouts. Generally, distance
+              does workouts on Tuesdays.
             </p>
             <p>
               <strong>Easy runs:</strong> There are no routes, distances, or paces
-              specified on our plan for easy days. This means:
+              specified on our plan for easy days (although we are considering
+              changing this). This means:
             </p>
             <ul>
               <li>Routes/distances/paces are decided by whoever is at practice that day</li>
@@ -302,7 +342,7 @@ export default function NewMemberInfo() {
             </p>
 
             {/* 7. Beginners */}
-            <h2 id="beginners">7. What if I&apos;m out of shape/not as experienced as a runner?</h2>
+            <h2 id="beginners">7. What if I&apos;m out of shape/not as experienced as a runner? Can I still come to practice?</h2>
             <p>
               Yes! There are people on this club that could compete at the varsity
               level (or have done so in the past), there are people who are brand new
@@ -319,10 +359,15 @@ export default function NewMemberInfo() {
               school meets and if it&apos;s not your thing, there is no obligation to
               continue competing.
             </p>
+            <img
+              src={joinusCompete}
+              alt="A Club Running long jumper landing in the sand pit"
+              className="gdoc-photo"
+            />
             <p><strong>Who can compete:</strong> Everyone! There are no entry standards for most of our meets.</p>
             <p>
               <strong>Meet schedule:</strong> We attend about 6 XC meets in the fall,
-              and about 7 track meets in the spring. You can come to as many or as
+              and about 8 track meets in the spring. You can come to as many or as
               few as you would like. The official schedule is{" "}
               <a href="https://umdclubrunning.com/Races">posted on our website</a>{" "}
               and sent in the weekly emails during the semester.
@@ -347,6 +392,7 @@ export default function NewMemberInfo() {
                 <ul>
                   <li>Frederick Half Marathon in the beginning of May</li>
                   <li>NIRCA Nationals half marathon in mid April</li>
+                  <li>Blue &amp; Grey Half Marathon in early December</li>
                 </ul>
               </li>
             </ul>
@@ -360,21 +406,33 @@ export default function NewMemberInfo() {
                   National Intercollegiate Running Club Association (NIRCA)
                 </a>
                 . These meets have a very strong culture of inclusion and fun, while
-                still managing to be competitive for people of all skill levels.
+                still managing to be competitive for people of all skill levels
+                (results for these events can be found on clubrunning.org if
+                you&apos;d like to get a feel for the intensity level).
                 To paraphrase a member of UMBC&apos;s running club, &quot;The best
-                part about NIRCA is that half the kids are running it like it&apos;s
+                part about NIRCA is that half the people are running it like it&apos;s
                 the Olympics and the other half are running relay races with toy
                 lightsabers as batons and doing front-flips into the steeplechase
                 pit.&quot;
+                <img
+                  src={joinusNirca}
+                  alt="The women's squad huddling for high fives before a cross country race"
+                  className="gdoc-photo"
+                />
               </li>
               <li>
                 <em>Collegiate Varsity Level (D3/D2/D1)</em> – These meets are hosted
                 by college varsity teams, and they allow our club to enter either as
                 a complete team or as unattached competitors. These meets typically
                 accommodate our more competitive athletes, and the D1 meets are
-                especially exclusive. Additionally, the varsity team hosts two home
-                outdoor track meets every year, and they allow our athletes to
-                compete in them (provided they meet certain performance standards).
+                especially exclusive. These are the only meets where you may be
+                denied entry on the basis of your skill level, but they also
+                represent a minority of our meet schedule. Additionally, if you are
+                interested in moving up to the varsity team here at the University of
+                Maryland, the varsity team hosts two home outdoor track meets every
+                year, and they allow our athletes to compete in them (provided they
+                meet certain performance standards). These meets can be your chance
+                to compete in front of varsity coaches alongside other D1 athletes.
                 We have had a handful of dedicated athletes on our club eventually
                 walk-on to the varsity track team.
               </li>
@@ -396,6 +454,11 @@ export default function NewMemberInfo() {
                 to pay; the club is completely free!
               </strong>
             </p>
+            <img
+              src={joinusCostChart}
+              alt="Cost flowchart: running practices only is free; competing in one season is a $20 semester fee, both seasons is $30 for the year; each meet adds a $5 fee (more for overnight meets and road races); participating in one club fundraiser per semester is required."
+              className="gdoc-photo is-chart"
+            />
             <p>
               Competition fees and race fees will be collected only from competing
               members of the club to help cover the cost of entry fees and travel for
@@ -413,11 +476,11 @@ export default function NewMemberInfo() {
               <strong>pay an additional fee for every meet they compete in</strong>.
               For all meets except Nationals and road races, the fee is{" "}
               <strong>$5 per meet</strong>. Money can be paid to the club either
-              through Venmo (umdclubrunning) or in cash to one of the treasurers.
+              through Venmo (@umdclubrunning) or in cash to one of the treasurers.
             </p>
             <p>
               Please understand that running this club is expensive; the club
-              typically spends $15–35 <strong>per runner at every meet</strong>, and
+              typically spends $25–50 <strong>per runner at every meet</strong>, and
               more if it is an overnight meet where we have to get hotel rooms. We
               feel that for the amount of opportunities the club provides, $20 per
               semester or $30 for the year is a great price for a great team
@@ -444,8 +507,8 @@ export default function NewMemberInfo() {
               Thus,{" "}
               <strong>
                 if you are competing with us in any capacity (cross country, track,
-                road races, etc.) then we require you to do at least two fundraisers
-                with us.
+                road races, etc.) then we require you to do at least one fundraiser
+                per season that you compete.
               </strong>{" "}
               Think of helping us with fundraisers as a sort of substitute for not
               having to pay hundreds of dollars in competition and race fees. More
@@ -456,7 +519,11 @@ export default function NewMemberInfo() {
             <p className="gdoc-closing">
               <strong>Thank you and welcome again to Maryland Club Running!!!!!</strong>
             </p>
-            <img src={joinusFooter} alt="Club Running team" className="gdoc-banner" />
+            <img
+              src={joinusFooter}
+              alt="Four Club Running athletes in Maryland uniforms smiling trackside"
+              className="gdoc-banner"
+            />
           </div>
         </section>
       </div>

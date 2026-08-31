@@ -419,3 +419,115 @@ p {
     border-radius: 18px;
   }
 }
+
+/* ---- Workout library: current-season cards + archive table ---- */
+.section-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--umd-ink);
+  margin-bottom: 18px;
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.plan-card {
+  background: var(--umd-surface);
+  border: 1px solid var(--umd-border);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.plan-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--umd-ink);
+  margin-bottom: 12px;
+}
+
+.plan-card-pending {
+  color: var(--umd-muted-soft);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.plan-link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.plan-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: var(--umd-surface-alt);
+  color: var(--umd-gold);
+  border: 1px solid var(--umd-gold-soft);
+  transition: background-color 0.15s ease, border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.plan-link:hover {
+  background: var(--umd-gold);
+  border-color: var(--umd-gold);
+  color: #1f2432;
+}
+
+.plan-link.is-primary {
+  background: var(--umd-gold);
+  border-color: var(--umd-gold);
+  color: #1f2432;
+}
+
+.plan-link.is-primary:hover {
+  background: #ffdc72;
+  border-color: #ffdc72;
+}
+
+.plan-link-icon {
+  font-size: 0.8em;
+}
+
+/* Visible keyboard focus — links and the scrollable archive region. */
+.plan-link:focus-visible,
+.table-wrapper:focus-visible {
+  outline: 3px solid var(--umd-gold);
+  outline-offset: 2px;
+}
+
+.plan-table th[scope="row"].plan-year {
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 1rem;
+  font-weight: 700;
+  white-space: nowrap;
+  color: var(--umd-ink);
+  border-bottom: 1px solid rgba(244, 245, 247, 0.06);
+}
+
+.plan-empty {
+  color: var(--umd-muted-soft);
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 1.35rem;
+  }
+
+  .plan-grid {
+    grid-template-columns: 1fr;
+  }
+}

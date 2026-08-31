@@ -9,14 +9,21 @@
   background: linear-gradient(90deg, rgba(8, 10, 17, 0.92), rgba(15, 18, 27, 0.92));
 }
 
+/* Tabs sit in a flex row, so DOM order matches what you see and each tab is
+   only as wide as its label. */
+.nav-tablist {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 .tab {
-  float: right;
-  width: 110px;
+  position: relative;
+  flex: 0 0 auto;
 }
 
 .home {
-  float: left;
-  width: 32%;
+  margin-right: auto;
   user-select: none;
 }
 
@@ -24,6 +31,7 @@
   display: block;
   text-align: center;
   padding: 14px 16px;
+  white-space: nowrap;
   text-decoration: none;
   font-weight: 700;
   color: rgba(249, 207, 69, 0.8);
@@ -32,6 +40,31 @@
   text-decoration: underline var(--umd-red) 3px;
   text-underline-offset: 8px;
   color: var(--umd-ink);
+}
+
+/* Caret marking the tabs that open a menu. Drawn with borders rather than a
+   glyph so screen readers get nothing to announce and it inherits the tab
+   colour on hover. */
+.tab a.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.tab a.dropdown-toggle::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  transition: transform 0.15s ease;
+}
+
+.tab:hover a.dropdown-toggle::after,
+.tab:focus-within a.dropdown-toggle::after {
+  transform: rotate(180deg);
 }
 
 .tab.active:not(.no-highlight) {
@@ -45,7 +78,13 @@
 }
 
 .tab ul.dropdown {
-  width: 110px;
+  /* Grow to fit the longest label, but never narrower than the tab itself. */
+  min-width: 100%;
+  width: max-content;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  list-style: none;
   background-color: #14181f;
   border: 1px solid rgba(244, 245, 247, 0.08);
   border-radius: 12px;
@@ -56,7 +95,9 @@
   padding: 6px 0;
 }
 
-.tab:hover ul.dropdown {
+/* focus-within so the menus open for keyboard users too, not just on hover. */
+.tab:hover ul.dropdown,
+.tab:focus-within ul.dropdown {
   display: block;
 }
 
@@ -65,6 +106,7 @@
   padding: 10px 14px;
   color: var(--umd-muted);
   text-align: left;
+  white-space: nowrap;
 }
 
 .tab ul.dropdown li a:hover {

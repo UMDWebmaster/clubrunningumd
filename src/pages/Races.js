@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 export default function Races() {
   const [raceList, setRaceList] = useState(defaultRaces);
-  const [scheduleTitle, setScheduleTitle] = useState("Fall 2025 Meet Schedule");
+  const [scheduleTitle, setScheduleTitle] = useState("Fall 2026 Meet Schedule");
 
   // Load data from JSON file on mount
   useEffect(() => {
@@ -72,7 +72,7 @@ export default function Races() {
         </section>
 
         <section className="page-section">
-          <h2 className="text-2xl font-bold text-neutral-800 mb-4">
+          <h2 className="section-heading">
             {scheduleTitle}
           </h2>
           <div className="table-wrapper">

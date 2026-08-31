@@ -1,46 +1,44 @@
 export const races = [
   {
-    "date": "Sat, Sep 6",
+    "date": "Sat, Sep 5",
     "name": "Terrapin Time Trial",
     "location": "Greenbelt, MD",
-    "type":"TT"
-
+    "type": "TT"
   },
   {
-    "date": "Sat, Sep 13",
+    "date": "Sat, Sep 12",
     "name": "Cavalier Invitational",
     "location": "Earlysville, VA",
-    "type":"Club"
+    "type": "Club"
   },
   {
-    "date": "Sat, Sep 27",
+    "date": "Sat, Sep 19",
     "name": "Old Bay Invitational",
-    "location": "Stevensville, MD",
-    "type":"Club"
+    "location": "Kent Island, MD",
+    "type": "Club"
   },
   {
-    "date": "Fri, Oct 3",
+    "date": "Fri, Oct 2",
     "name": "Paul Short Run",
     "location": "Bethlehem, PA",
-    "type":"D1"
+    "type": "D1"
   },
   {
-    "date": "Sat, Oct 4",
-    "name": "VCU Run with the Rams (Paul Short Backup)*",
-    "location": "Mechanicsville, VA",
-    "type":"Club"
-  },
-  {
-    "date": "Sat, Oct 18",
+    "date": "Sat, Oct 17",
     "name": "NIRCA Mid-Atlantic Regionals",
     "location": "Earlysville, VA",
-    "type":"Club"
+    "type": "Club"
   },
-
   {
-    "date": "Sat, Nov 8",
+    "date": "Sat, Nov 7",
     "name": "NIRCA Cross Country Nationals",
-    "location": "Hershey, PA",
-    "type":"Club"
+    "location": "Shelbyville, IN",
+    "type": "Club"
+  },
+  {
+    "date": "Sun, Dec 6",
+    "name": "Blue & Grey Half Marathon",
+    "location": "Fredericksburg, VA",
+    "type": "Road"
   }
 ];

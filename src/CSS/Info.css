@@ -67,3 +67,33 @@
     font-size: 1.1rem;
     margin-top: 2rem;
 }
+
+/* Join Us page — photos pulled from the info doc */
+.gdoc-banner.is-hero {
+    width: 100%;
+    aspect-ratio: 624 / 293;
+    object-fit: cover;
+    object-position: center 60%;
+}
+
+.gdoc-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+}
+
+.gdoc-photo.is-portrait {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gdoc-photo.is-chart {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    padding: 0.75rem;
+}

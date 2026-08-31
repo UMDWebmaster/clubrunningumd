@@ -76,62 +76,62 @@ export const officers = [
     name: "Ben Waterman",
     image: presidentImage,
     description:
-      "Ben Waterman is a junior biology and psychology major from Bethesda, Maryland. He is excited to race NIRCA and Freddy Half this spring, and cross country in the fall. Besides running, he enjoys skiing, carb loading, reading, and swimming. Ben is looking forward to hosting awesome meets and making the club even more fun and welcoming as President.",
+      "Ben Waterman is a senior biology and psychology major from Bethesda, Maryland. He is excited to race NIRCA and Freddy Half this spring, and cross country in the fall. Besides running, he enjoys skiing, carb loading, reading, and swimming. Ben is looking forward to hosting awesome meets and making the club even more fun and welcoming as President.",
   },
   {
     position: "Co-Vice President",
     name: "Joseph Jackson",
     image: vicePresidentOneImage,
     description:
-      "Joe Jackson is a Junior Stats and Economics major from Annapolis, Maryland. Joe's favorite race is the Half Marathon, and he is particularly looking forward to the NIRCA half this Spring. Joe also loves hiking and kayaking, and really likes sports statistics. As Co-VP, Joe does a lot of the 'behind the scenes work' for the club and allow the club to compete in all the meets we do.",
+      "Joe Jackson is a senior Stats and Economics major from Annapolis, Maryland. Joe's favorite race is the Half Marathon, and he is particularly looking forward to the NIRCA half this Spring. Joe also loves hiking and kayaking, and really likes sports statistics. As Co-VP, Joe does a lot of the 'behind the scenes work' for the club and allow the club to compete in all the meets we do.",
   },
     {
     position: "Co-Vice President",
     name: "Beatrice Wermuth",
     image: vicePresidentTwoImage,
     description:
-      "Beatrice Wermuth is a sophomore majoring in  physiology and neurobiology. Her favorite race distance is a half marathon and her favorite club running activity is the DC long runs. Outside of running she enjoys lifting, cooking, and reading. She is excited to host fun meets and keep club members excited to run! ",
+      "Beatrice Wermuth is a junior majoring in physiology and neurobiology. Her favorite race distance is a half marathon and her favorite club running activity is the DC long runs. Outside of running she enjoys lifting, cooking, and reading. She is excited to host fun meets and keep club members excited to run! ",
   },
   {
     position: "Financial Treasurer",
     name: "Nikita Arya ",
     image: financialTreasurerImage,
     description:
-      "Niki is a sophomore double majoring in computer science and mathematics from Frederick, Maryland. She’s super excited to race the Freddy Half and a few 5Ks this spring! Many of her runs turn into side quests to Target or Home Depot, or adventures down new trails. Club running has given her some of her best memories and a pretty amazing group of friends. Outside of running, Niki spends a lot of time cooking random (and delicious) concoctions, traveling the world, and being artsy. As financial treasurer, she’ll make sure the club stands on strong financial ground!",
+      "Niki is a junior double majoring in computer science and mathematics from Frederick, Maryland. She’s super excited to race the Freddy Half and a few 5Ks this spring! Many of her runs turn into side quests to Target or Home Depot, or adventures down new trails. Club running has given her some of her best memories and a pretty amazing group of friends. Outside of running, Niki spends a lot of time cooking random (and delicious) concoctions, traveling the world, and being artsy. As financial treasurer, she’ll make sure the club stands on strong financial ground!",
   },
   {
     position: "Fundraising Treasurer",
     name: "Ryken Mak",
     image:  fundraisingTreasurerImage,
     description:
-      "Ryken is a senior psychology major from the Bay Area, California. He started running in fourth grade and has loved it ever since. When not running, he can be found at the gym, the club sports office, or watching highlights of his beloved Commanders.",
+      "Ryken is a senior information systems major from the Bay Area, California. He started running in fourth grade and has loved it ever since. When not running, he can be found at the gym, the club sports office, or watching highlights of his beloved Commanders.",
   },
   {
     position: "Sprint Chair",
     name: "Logan Hurney",
     image: sprintChairImage,
     description:
-      "Logan is a sophomore Mechanical Engineering major from the middle of nowhere on the eastern shore of Maryland. His favorite race distance is the 400m along with any relay distance ever. When not running, you may be able to find him drawing, playing IM sports, cheering on a losing Maryland athletics team, or doing school work because he is bad at managing his time. As sprint chair Logan hopes to write fun and helpful workouts, be able to adequately represent sprinters and help everybody have a good time at UMD Club Running!"
+      "Logan is a junior Mechanical Engineering major from the middle of nowhere on the eastern shore of Maryland. His favorite race distance is the 400m along with any relay distance ever. When not running, you may be able to find him drawing, playing IM sports, cheering on a losing Maryland athletics team, or doing school work because he is bad at managing his time. As sprint chair Logan hopes to write fun and helpful workouts, be able to adequately represent sprinters and help everybody have a good time at UMD Club Running!"
   },
   {
     position: "Apparel Coordinator",
     name: "Mandy Callaghan",
     image: apparelImage,
     description:
-      "Mandy is a junior studying computer engineering from Rising Sun in Cecil County, MD.  Mandy runs the 400m/800m, relays, and high jumps during the track season, while also tagging along for 6Ks (and recently, the 12K challenge) during cross country.  Mandy is happiest when running the Hamster Cage route, doing high jump drills, or when running long sprint reps on the track.  When she’s not running and jumping, Mandy likes to crochet, play intramural soccer, and let the Buffalo Bills dictate her mental health.  As apparel coordinator, Mandy will make sure everyone can represent Club Running in style!",
+      "Mandy is a senior studying computer engineering from Rising Sun in Cecil County, MD.  Mandy runs the 400m/800m, relays, and high jumps during the track season, while also tagging along for 6Ks (and recently, the 12K challenge) during cross country.  Mandy is happiest when running the Hamster Cage route, doing high jump drills, or when running long sprint reps on the track.  When she’s not running and jumping, Mandy likes to crochet, play intramural soccer, and let the Buffalo Bills dictate her mental health.  As apparel coordinator, Mandy will make sure everyone can represent Club Running in style!",
   },
   {
     position: "Social Chair",
     name: "Logan Cyford",
     image: socialChairImage,
     description:
-      'Logan is a junior computer engineering major from Eldersburg, MD. His favorite race is the 800m and he’s looking forward to racing again this spring! Outside of running, he loves to lift, and he’ll play practically any sport. Logan also loves to ski, hike, and climb, and he’s a huge Ravens fan. After college, he plans to become a triathlete and eventually complete an Ironman. Logan is looking forward to hosting tons of fun club events and bringing everyone together!',
+      'Logan is a senior computer engineering major from Eldersburg, MD. His favorite race is the 800m and he’s looking forward to racing again this spring! Outside of running, he loves to lift, and he’ll play practically any sport. Logan also loves to ski, hike, and climb, and he’s a huge Ravens fan. After college, he plans to become a triathlete and eventually complete an Ironman. Logan is looking forward to hosting tons of fun club events and bringing everyone together!',
   },
   {
     position: "Webmaster",
     name: "Jonah Plotkin",
     image: webmasterImage,
     description:
-    'Jonah Plotkin is a junior majoring in computer science from Bethesda, Maryland. He has been an avid runner since early middle school and was a varsity runner for the Walt Whitman Vikings. Aside from running, Jonah loves to ski, sail, learn guitar riffs, and follow NFL and Formula One. His future athletic ambitions include becoming a marathoner, possibly a triathlete, and running more PRs. Jonah aims to ensure club running is a memorable experience for everyone.',
+    'Jonah Plotkin is a senior majoring in computer science from Bethesda, Maryland. He has been an avid runner since early middle school and was a varsity runner for the Walt Whitman Vikings. Aside from running, Jonah loves to ski, sail, learn guitar riffs, and follow NFL and Formula One. His future athletic ambitions include becoming a marathoner, possibly a triathlete, and running more PRs. Jonah aims to ensure club running is a memorable experience for everyone.',
   },
 ];

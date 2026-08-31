@@ -1,59 +1,47 @@
 {
-  "scheduleTitle": "Spring 2026 Meet Schedule",
+  "scheduleTitle": "Fall 2026 Meet Schedule",
   "races": [
     {
-      "date": "Sun, Feb 15",
-      "name": "Happy Valley Invitational",
-      "location": "State College, PA",
+      "date": "Sat, Sep 5",
+      "name": "Terrapin Time Trial",
+      "location": "Greenbelt, MD",
+      "type": "TT"
+    },
+    {
+      "date": "Sat, Sep 12",
+      "name": "Cavalier Invitational",
+      "location": "Earlysville, VA",
       "type": "Club"
     },
     {
-      "date": "Sat, Mar 7",
-      "name": "Lloyd Sigler Meet",
-      "location": "Sailsbury, MD",
-      "type": "D3"
-    },
-    {
-      "date": "Sat, Mar 28",
-      "name": "DMV Championship",
-      "location": "Harrisonburg, VA",
+      "date": "Sat, Sep 19",
+      "name": "Old Bay Invitational",
+      "location": "Kent Island, MD",
       "type": "Club"
     },
     {
-      "date": "Fri-Sat, Apr 3-4",
-      "name": "Dalton Ebanks Invitational",
-      "location": "Fairfax, VA",
+      "date": "Fri, Oct 2",
+      "name": "Paul Short Run",
+      "location": "Bethlehem, PA",
       "type": "D1"
     },
     {
-      "date": "Fri-Sun, Apr 10-12",
-      "name": "NIRCA Nationals & Half Marathon",
-      "location": "Olivet, MI",
+      "date": "Sat, Oct 17",
+      "name": "NIRCA Mid-Atlantic Regionals",
+      "location": "Earlysville, VA",
       "type": "Club"
     },
     {
-      "date": "Sat, Apr 18",
-      "name": "Terrapin Invitational",
-      "location": "College Park, MD",
+      "date": "Sat, Nov 7",
+      "name": "NIRCA Cross Country Nationals",
+      "location": "Shelbyville, IN",
       "type": "Club"
     },
     {
-      "date": "Sat, Apr 25",
-      "name": "Blue Hen Invitational",
-      "location": "Newark, DE",
-      "type": "Club"
-    },
-      {
-      "date": "Fri, May 1",
-      "name": "Kehoe Twilight Invitational",
-      "location": "College Park, MD",
-      "type": "D1"
-    },
-      {
-      "date": "Sun, May 3",
-      "name": "Frederick Half Marathon",
-      "location": "Frederick, MD",
-      "type": "Road (Unattached)"
+      "date": "Sun, Dec 6",
+      "name": "Blue & Grey Half Marathon",
+      "location": "Fredericksburg, VA",
+      "type": "Road"
     }
   ]
 }

@@ -62,9 +62,9 @@ function Header() {
 
       <Tab.Group className={`tabs ${isMobileView ? "hidden" : ""}`}>
         <Tab.List
-          className={`text-lg font-semibold text-white ${isMobileView ? "hidden" : ""}`}
+          className={`nav-tablist text-lg font-semibold text-white ${isMobileView ? "hidden" : ""}`}
         >
-          {/* Tab items for desktop view */}
+          {/* Tab items for desktop view. DOM order is left-to-right. */}
           <Tab className="tab home no-highlight text-xl text-red-600">
             <a href="/home">
               {" "}
@@ -75,77 +75,66 @@ function Header() {
             </a>
           </Tab>
           <Tab className="tab">
-            <a
-              href="https://venmo.com/u/umdclubrunning"
-              className="dropdown-toggle"
-            >
-              Donate
-            </a>
+            <a href="/joinus">Join Us</a>
           </Tab>
           <Tab className="tab">
             <a href="/calendar">Calendar</a>
-            {/* <a href="/joinus" className="dropdown-toggle">
-              Join Us
-            </a> */}
-            {/* Dropdown menu for Join Us tab */}
-            {/* <ul className="dropdown">
-              <li>
-                <a href="/joinus">How To</a>
-              </li>
-              <li>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2us1hfXDZmbNgB9cDvSIaE09DtGH_9q4PHpZqoEFZJjdMEQ/viewform">
-                  Emails
-                </a>
-              </li>
-            </ul> */}
           </Tab>
-          {/* Other tabs */}
-          <Tab className="tab active:text-red-600">
-            <a href="https://evanmasiello.com/clubrunning/">Blog</a>
-          </Tab>
-          <Tab className="tab">
-            <a href="/Photos" className="dropdown-toggle">
-              Archive
-            </a>
-            {/* Dropdown menu for Archive tab */}
-            <ul className="dropdown">
-              <li>
-                <a href="/Photos">Photos</a>
-              </li>
-              <li>
-                <a href="/Emails">Emails</a>
-              </li>
-            </ul>
-          </Tab>
-          {/* More tabs */}
+          {/* Racing: our schedule, our results, and the meets we host */}
           <Tab className="tab">
             <a href="/Races" className="dropdown-toggle">
-              Info
+              Compete
             </a>
-            {/* Dropdown menu for Info tab */}
             <ul className="dropdown">
+              <li>
+                <a href="/Races">Race Schedule</a>
+              </li>
+              <li>
+                <a href="/Records">Club Records</a>
+              </li>
               <li>
                 <a href="/home-meet">Terrapin Invite</a>
               </li>
               <li>
                 <a href="/old-bay-invite">Old Bay Invite</a>
               </li>
+            </ul>
+          </Tab>
+          {/* Training resources */}
+          <Tab className="tab">
+            <a href="/Workouts" className="dropdown-toggle">
+              Train
+            </a>
+            <ul className="dropdown">
               <li>
-                <a href="/Races">Races</a>
+                <a href="/Workouts">Training Plans</a>
               </li>
               <li>
-                <a href="/Records">Records</a>
+                <a href="/Routes">Running Routes</a>
+              </li>
+            </ul>
+          </Tab>
+          {/* Who we are and what we've done */}
+          <Tab className="tab">
+            <a href="/about" className="dropdown-toggle">
+              Team
+            </a>
+            <ul className="dropdown">
+              <li>
+                <a href="/about">Officers</a>
               </li>
               <li>
-                <a href="/Workouts">Train</a>
+                <a href="/Photos">Photos</a>
               </li>
               <li>
-                <a href="/Routes">Routes</a>
+                <a href="/Emails">Newsletters</a>
               </li>
             </ul>
           </Tab>
           <Tab className="tab">
-            <a href="/about">About</a>
+            <a href="https://umdclubrunningfundraising.lovable.app/">
+              Fundraising
+            </a>
           </Tab>
         </Tab.List>
       </Tab.Group>
@@ -170,19 +159,21 @@ function Header() {
       {isMobileView &&
         isHamburgerOpen && ( // Render scrollable menu on hamburger menu click
           <div className="scrollmenu font-bold text-neutral-800">
-            <a href="https://evanmasiello.com/clubrunning/">Blog</a>
-            <a href="/Photos">Photos</a>
-            <a href="/old-bay-invite">Old Bay Invite</a>
-            <a href="/home-meet">Terp Invite</a>
-            <a href="/Races">Races</a>
-            <a href="/Records">Records</a>
-            <a href="/Workouts">Workouts</a>
-            <a href="/Routes">Routes</a>
-            <a href="/about">Officers</a>
-
-            {/* <a href="/joinus">Join Us</a> */}
+            {/* Same order as the desktop tabs above */}
+            <a href="/joinus">Join Us</a>
             <a href="/calendar">Calendar</a>
-            <a href="https://venmo.com/u/umdclubrunning">Donate</a>
+            <a href="/Races">Race Schedule</a>
+            <a href="/Records">Club Records</a>
+            <a href="/home-meet">Terrapin Invite</a>
+            <a href="/old-bay-invite">Old Bay Invite</a>
+            <a href="/Workouts">Training Plans</a>
+            <a href="/Routes">Running Routes</a>
+            <a href="/about">Officers</a>
+            <a href="/Photos">Photos</a>
+            <a href="/Emails">Newsletters</a>
+            <a href="https://umdclubrunningfundraising.lovable.app/">
+              Fundraising
+            </a>
           </div>
         )}
     </header>
