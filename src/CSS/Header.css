@@ -167,9 +167,55 @@ div.scrollmenu a:hover {
 
 /*hide traditional tabs on mobile*/
 @media (max-width: 970px) {
-  .tabs-container .tabs {
+  .App-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 44px;
+    align-items: center;
+    column-gap: 8px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+  }
+
+  .App-header .MobileHome {
+    margin: 0;
+    min-width: 0;
+  }
+
+  .App-header .terrafont-mobile {
+    margin: 0;
+    font-size: clamp(14px, 4vw, 20px);
+    letter-spacing: 1.5px;
+  }
+
+  .App-header .MobileHome .wallsmith {
+    margin: 2px 0 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .App-header .hamburger-menu {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .App-header .hamburger-menu > div {
+    margin: 3px 0;
+  }
+
+  .App-header .scrollmenu {
+    grid-column: 1 / -1;
+    min-width: 0;
+  }
+
+  .App-header .nav-tablist {
     display: none;
-    max-width: 100vw;
-    overflow-x: hidden;
   }
 }

@@ -8,7 +8,7 @@ function Header() {
   const location = useLocation();
 
   // State variables for mobile view and hamburger menu
-  const [isMobileView, setIsMobileView] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(() => window.innerWidth <= 970);
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
 
   useEffect(() => {
@@ -142,8 +142,11 @@ function Header() {
       {isMobileView && ( // Render hamburger menu for mobile view
         <>
           <div className="header-wrapper flex justify-end">
-            <div
-              className={`hamburger-menu mr-5 -mt-2 mb-1 ${
+            <button
+              type="button"
+              aria-label={isHamburgerOpen ? "Close navigation" : "Open navigation"}
+              aria-expanded={isHamburgerOpen}
+              className={`hamburger-menu ${
                 isHamburgerOpen ? "change" : ""
               }`}
               onClick={toggleMenu}
@@ -151,7 +154,7 @@ function Header() {
               <div className="bar1 bg-white/90 w-6 h-[5px] rounded"></div>
               <div className="bar2 bg-white/90 w-6 h-[5px] rounded"></div>
               <div className="bar3 bg-white/90 w-6 h-[5px] rounded"></div>
-            </div>
+            </button>
           </div>
         </>
       )}

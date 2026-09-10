@@ -23,6 +23,8 @@ const overviewCards = [
     body: [
       "10:00 AM — Men's 8k",
       "11:00 AM — Women's 6k",
+      "11:45 AM — Awards",
+      "12:00 PM — OPEN 6k",
       "Schedule subject to change",
     ],
   },
@@ -38,7 +40,7 @@ const overviewCards = [
     },
   },
   {
-    title: "Registration",
+    title: "NIRCA Registration",
     body: [
       "Opens: Aug 1, 2026",
       "Closes: Sept 14, 2026 @ 11:59 PM",
@@ -52,10 +54,21 @@ const overviewCards = [
     },
   },
   {
-    title: "Eligibility & Nationals",
+    title: "Open 6k Registration",
+    body: [
+      "Race time: 12:00 PM",
+      "The Open 6k has separate registration through RunSignup. Use the link below to sign up.",
+    ],
+    link: {
+      label: "Register for the Open 6k",
+      href: "https://runsignup.com/Race/MD/Stevensville/obxc",
+    },
+  },
+  {
+    title: "NIRCA Eligibility & Nationals",
     body: [
       "This is a qualifying event for NIRCA Nationals.",
-      "All competitors must be student members of a NIRCA club.",
+      "Competitors in the NIRCA races must be student members of a NIRCA club.",
       "Participation here satisfies one qualifying criterion for Nationals.",
     ],
     link: {
